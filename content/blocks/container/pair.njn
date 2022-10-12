@@ -1,0 +1,204 @@
+{
+  "type": "page",
+  "title": "Pair Block",
+  "description": "A demonstration of the Pair Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Pair Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",       "text": ["Introduction"] },
+                    { "type": "a", "href": "#content-with-image", "text": ["Content with Image"] },
+                    { "type": "a", "href": "#image-with-content", "text": ["Image with Content"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Pair blocks are an interesting feature because",
+                            "they allow for two separate bits of content to be",
+                            "paired together side-by-side."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "As pair blocks are considered containers, they",
+                            "can contain any inline enjin block available."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "pair",
+            "tag": "content-with-image",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": ["Content with Image"],
+
+                "section": [
+                    {
+                        "type": "content",
+                        "tag": "content",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "link-href": "#",
+                        "link-text": "Does nothing",
+                        "content": {
+                            "header": ["Introduction"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This content block has a heading,",
+                                        "content section and footer with a",
+                                        "decorated link. The image next to",
+                                        "this is of <q>tall</q> size."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "image",
+                        "tag": "example-image",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "size": "tall",
+                        "content": {
+                            "picture": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg",
+                                    "alt": "an example image"
+                                },
+                                "sources": [
+                                    {
+                                        "type": "source",
+                                        "srcset": "/media/bg-door-art.jpg",
+                                        "media": "(max-width: 1024px)"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The next pair block is reversed with an image",
+                            "first and then content. It also does not have a",
+                            "title, caption or link."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "pair",
+            "tag": "image-with-content",
+            "profile": "outer--inner",
+            "padding": "none",
+            "margins": "none",
+            "jump-top": "true",
+            "jump-link": "true",
+            "pair-order": "reverse",
+            "content": {
+                "section": [
+
+                    {
+                        "type": "content",
+                        "tag": "second-content",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "content": {
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This content block has no header or",
+                                        "footer and the image next to this is",
+                                        "of normal or default size."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "image",
+                        "tag": "second-image",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "picture": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg",
+                                    "alt": "an example image"
+                                },
+                                "sources": [
+                                    {
+                                        "type": "source",
+                                        "srcset": "/media/bg-bonsai.jpg",
+                                        "media": "(max-width: 1024px)"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+
+                ]
+            }
+        }
+
+
+
+]

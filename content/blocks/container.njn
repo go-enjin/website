@@ -1,0 +1,131 @@
+{
+  "type": "page",
+  "title": "Container Blocks",
+  "description": "An introduction to Container Blocks"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Inline Blocks"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction",    "text": ["Introduction"] },
+                { "type": "a", "href": "#carousel-blocks", "text": ["Carousel Blocks"] },
+                { "type": "a", "href": "#pair-blocks",     "text": ["Pair Blocks"] },
+                { "type": "a", "href": "#sidebar-blocks",  "text": ["Sidebar Blocks"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This page presents a brief introduction for each of the container enjin blocks."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "carousel-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/container/carousel",
+        "link-text": "Learn about carousel blocks",
+        "content": {
+            "header": [
+                "Carousel Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Carousel blocks (also known as sliders) present card blocks in a horizontally scrolling",
+                        "fashion and when reaching the end can loop back to the first card in the list."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "pair-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/container/pair",
+        "link-text": "Learn about pair blocks",
+        "content": {
+            "header": [
+                "Pair Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Pair blocks present two smaller sections of content side-by-side (stacked on mobile). The",
+                        "content can be copytext or images for example."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "sidebar-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/container/sidebar",
+        "link-text": "Learn about sidebar blocks",
+        "content": {
+            "header": [
+                "Sidebar Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Sidebar blocks are a sort of container of containers type of block. When placed on a page,",
+                        "an <q>aside</q> region is added that can contain other blocks like Link-Lists or Notices.",
+                        "Sidebar blocks also present a reduced-width content area where any other kind of block can be",
+                        "placed, such as carousel, image and content blocks."
+                    ]
+                }
+            ]
+        }
+    }
+]

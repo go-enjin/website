@@ -1,0 +1,217 @@
+{
+  "type": "page",
+  "title": "Profile",
+  "description": "An introduction to Semantic Theme block profile"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Profile"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#full-full", "text": ["Full/Full"] },
+                { "type": "a", "href": "#full-outer", "text": ["Full/Outer"] },
+                { "type": "a", "href": "#full-inner", "text": ["Full/Inner"] },
+                { "type": "a", "href": "#outer-outer", "text": ["Outer/Outer"] },
+                { "type": "a", "href": "#outer-inner", "text": ["Outer/Inner"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "full-full",
+        "profile": "full--full",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "Full/Full"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid background colour to show that the background is <q>full</q> width. ",
+                        "The content being also of <q>full</q> width means that this text is weirdly flush with the ",
+                        "browser's left-hand boundary or border."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Notice how the header and footer are not in fact full page width. They are contextual data ",
+                        "around the content and so are always of at least outer column alignment."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "If not obvious, this block profile is best suited for wide image blocks rather than content ",
+                        "blocks for example."
+                    ]
+                }
+            ],
+            "footer": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This is some text within the footer of this <q>full--full</q> profile block."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "full-outer",
+        "profile": "full--outer",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "social",
+        "content": {
+            "header": [
+                "Full/Outer"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid background colour to show that the background is <q>full</q> width. ",
+                        "The content being of <q>outer</q> width means that this text is flush with an outer column ",
+                        "on desktop and tablet (mobile is always just one full-width column)."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This text is in line with this block's <q>Full/Outer</q> heading and it's footer content."
+                    ]
+                }
+            ],
+            "footer": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This footer content is not very informative though demonstrative."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "full-inner",
+        "profile": "full--inner",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "Full/Inner"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid background colour to show that the background is <q>full</q> width. ",
+                        "The content being also of <q>inner</q> width means that this text along with this block's ",
+                        "heading and footer content are all indented further into an inner-column within the page flow."
+                    ]
+                }
+            ],
+            "footer": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This is some text within the footer of this <q>full--inner</q> profile block."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "outer-outer",
+        "profile": "outer--outer",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "social",
+        "content": {
+            "header": [
+                "Outer/Outer"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid background colour to show that the background is <q>outer</q> width. ",
+                        "The content being of <q>outer</q> width as well means that this text is flush with the same ",
+                        "outer column on desktop and tablet (mobile is always just one outer-width column)."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This text is in line with this block's <q>Outer/Outer</q> heading and it's footer content."
+                    ]
+                }
+            ],
+            "footer": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This footer content is not very informative though demonstrative."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "outer-inner",
+        "profile": "outer--inner",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "Outer/Inner"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid background colour to show that the background is <q>full</q> width. ",
+                        "The content being also of <q>inner</q> width means that this text along with this block's ",
+                        "heading and footer content are all indented further into an inner-column within the page flow."
+                    ]
+                }
+            ],
+            "footer": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This is some text within the footer of this <q>outer--inner</q> profile block."
+                    ]
+                }
+            ]
+        }
+    }
+
+]

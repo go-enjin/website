@@ -1,0 +1,267 @@
+{
+  "type": "page",
+  "title": "Inline Blocks",
+  "description": "An introduction to Inline Blocks"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Inline Blocks"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction",    "text": ["Introduction"] },
+                { "type": "a", "href": "#header-blocks",    "text": ["Header Blocks"] },
+                { "type": "a", "href": "#notice-blocks",    "text": ["Notice Blocks"] },
+                { "type": "a", "href": "#toc-blocks",       "text": ["Table of Contents Blocks"] },
+                { "type": "a", "href": "#link-list-blocks", "text": ["Link-List Blocks"] },
+                { "type": "a", "href": "#image-blocks",     "text": ["Image Blocks"] },
+                { "type": "a", "href": "#icon-blocks",      "text": ["Icon Blocks"] },
+                { "type": "a", "href": "#card-blocks",      "text": ["Card Blocks"] },
+                { "type": "a", "href": "#content-blocks",   "text": ["Content Blocks"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This page presents a brief introduction for each of the inline enjin blocks."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "header-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/header",
+        "link-text": "Learn about header blocks",
+        "content": {
+            "header": [
+                "Header Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Header blocks are used to present page and content headings with optional navigational menus",
+                        "and footers. This page for example starts with a header block that has a navigational menu",
+                        "with links to all the different inline block descriptions on this page."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "notice-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/notice",
+        "link-text": "Learn about notice blocks",
+        "content": {
+            "header": [
+                "Notice Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Notice blocks are used to present notifications within the normal page flow. A simple example",
+                        "would be a notice of site maintenance or other important information that is contextually",
+                        "outside the page flow."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "toc-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/toc",
+        "link-text": "Learn about table of contents blocks",
+        "content": {
+            "header": [
+                "Table of Contents Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Table of Contents blocks are relatively self-explanatory, they present a list of links to the",
+                        "various sections of the page content."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "link-list-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/link-list",
+        "link-text": "Learn about link-list blocks",
+        "content": {
+            "header": [
+                "Link List Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Link-List blocks are relatively simple lists of links, for example: a listing of downloadable",
+                        "files."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "image-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/image",
+        "link-text": "Learn about image blocks",
+        "content": {
+            "header": [
+                "Image Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Like content blocks, image blocks are very commonly used. Image blocks display configured",
+                        "images with an array of aesthetic possibilities such as aspect-ratio constraints, positioning",
+                        "and so on."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "icon-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/icon",
+        "link-text": "Learn about icon blocks",
+        "content": {
+            "header": [
+                "Icon Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Icon blocks present either font-awesome icons or custom CSS composing graphical content."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "card-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/card",
+        "link-text": "Learn about card blocks",
+        "content": {
+            "header": [
+                "Card Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Card blocks present summary content, typically with an accompanying image and linking to the",
+                        "actual content the block is summarizing. For example, the slides of a carousel block are card",
+                        "blocks."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "content-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline/content",
+        "link-text": "Learn about content blocks",
+        "content": {
+            "header": [
+                "Content Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Content blocks are used to present general content and are likely the most common of all the",
+                        "various enjin blocks."
+                    ]
+                }
+            ]
+        }
+    }
+]

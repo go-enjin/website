@@ -1,0 +1,122 @@
+{
+  "type": "page",
+  "title": "Icon Block",
+  "description": "A demonstration of the Icon Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Icon Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",    "text": ["Introduction"] },
+                    { "type": "a", "href": "#font-awesome",    "text": ["Font Awesome"] },
+                    { "type": "a", "href": "#scrolling-mouse", "text": ["Scroll Mouse"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Icons are like image blocks with the exception that instead of literal picture data being",
+                            "presented, these are custom bits of pure-CSS or font-awesome icons."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Below this block is an icon with the font-awesome logo and a caption."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "icon",
+            "tag": "font-awesome",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "icon": {
+                    "href": "https://fontawesome.com",
+                    "align": "center",
+                    "target": "_blank",
+                    "class": "fa-solid",
+                    "name": "fa-font-awesome",
+                    "caption": "Go-Enjin uses Font Awesome"
+                }
+            }
+        },
+
+        {
+            "type": "icon",
+            "tag": "scroll-mouse",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "icon": {
+                    "href": "#custom-icons",
+                    "align": "center",
+                    "class": "icon",
+                    "name": "icon--scrolling-mouse",
+                    "caption": "Scroll Down"
+                }
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "custom-icons",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Custom Icons"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Custom icons can be animated or not depending on what the icon artist decided. The above",
+                            "is a simple scrolling mouse indicator icon."
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+]

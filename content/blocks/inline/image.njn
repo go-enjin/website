@@ -1,0 +1,261 @@
+{
+  "type": "page",
+  "title": "Image Block",
+  "description": "A demonstration of the Image Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Image Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                    { "type": "a", "href": "#example-image", "text": ["Example Image"] },
+                    { "type": "a", "href": "#image-constraints", "text": ["Image Constraints"] },
+                    { "type": "a", "href": "#image-fittings", "text": ["Image Fittings"] },
+                    { "type": "a", "href": "#image-positions", "text": ["Image Positions"] },
+                    { "type": "a", "href": "#image-sizes", "text": ["Image Sizes"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The Image enjin block has a seemingly simple task: display the image that the editor has",
+                            "chosen for the end-users to appreciate and maybe even learn something new from."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "There's a lot of complexity behind this task ranging from cross-browser supports to the",
+                            "wildly large array of screen sizes used by modern users."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The image block provides a number of features beyond the simple display this image",
+                            "requirement."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The image block is backed primarily by the <code>&lt;picture&gt;</code> HTML tag (rather",
+                            "than just the normal <code>&lt;img&gt;</code> tag) which delivers a clean way for editors",
+                            "to specify which version of their image needs to be displayed at whatever their",
+                            "media-query needs are."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "example-image",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Example Image"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    },
+                    "sources": [
+                        {
+                            "type": "source",
+                            "srcset": "/media/bg-door-art.jpg",
+                            "media": "(max-width: 1024px)"
+                        }
+                    ]
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Image blocks have just the picture as their primary content, however there is still the",
+                            "header and footer aspects which can be used to provide context around the image being",
+                            "presented."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "For demonstration purposes, this image block is configured to show two different images:"
+                        ]
+                    },
+                    {
+                        "type": "ul",
+                        "list": [
+                            "Greater than 1024 pixels wide: a painting of a bonsai tree",
+                            "Less than 1024 pixels wide: a garage door with a samurai theme"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "image-constraints",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "link-href": "/blocks/inline/image/constraints",
+            "link-text": "View image constraints",
+            "content": {
+                "header": [
+                    "Image Constraints"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Image blocks can be configured for one of two constraints: <q>width</q> and <q>height</q>."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Use the link below to see a demonstration of the two different image block constraints."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "image-fittings",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "link-href": "/blocks/inline/image/fittings",
+            "link-text": "View image fittings",
+            "content": {
+                "header": [
+                    "Image Fittings"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Image blocks can have their images be fitted within their viewport: <q>contain</q>,",
+                            "<q>cover</q>, <q>fill</q>, <q>none</q> and <q>scale-down</q>."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Use the link below to see a demonstration of the two different image block fittings."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "image-positions",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "link-href": "/blocks/inline/image/positions",
+            "link-text": "View image positions",
+            "content": {
+                "header": [
+                    "Image Positions"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Image blocks can be configured for one of the following positions: <q>center</q>,",
+                            "<q>top</q>, <q>top-left</q>, <q>left</q>, <q>bottom-left</q>, <q>bottom</q>,",
+                            "<q>bottom-right</q>, <q>right</q> and <q>top-right</q>."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Use the link below to see a demonstration of the two different image block positions."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "image-sizes",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "link-href": "/blocks/inline/image/sizes",
+            "link-text": "View image sizes",
+            "content": {
+                "header": [
+                    "Image Sizes"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Image blocks can be configured for a range of viewport sizes (in the height dimension):",
+                            "<q>sliver</q>, <q>thin</q>, <q>banner</q>, <q>normal</q>, <q>tall</q>, <q>huge</q> and",
+                            "<q>actual</q>."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Use the link below to see a demonstration of the two different image block sizes."
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+]

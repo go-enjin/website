@@ -1,0 +1,382 @@
+{
+  "type": "page",
+  "title": "Image Block Positions",
+  "description": "A demonstration of Image Block positions"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Image Block Positions"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                    { "type": "a", "href": "#image-position-center", "text": ["Center"] },
+                    { "type": "a", "href": "#image-position-top", "text": ["Top"] },
+                    { "type": "a", "href": "#image-position-top-left", "text": ["Top-Left"] },
+                    { "type": "a", "href": "#image-position-left", "text": ["Left"] },
+                    { "type": "a", "href": "#image-position-bottom-left", "text": ["Bottom-Left"] },
+                    { "type": "a", "href": "#image-position-bottom", "text": ["Bottom"] },
+                    { "type": "a", "href": "#image-position-bottom-right", "text": ["Bottom-Right"] },
+                    { "type": "a", "href": "#image-position-right", "text": ["Right"] },
+                    { "type": "a", "href": "#image-position-top-right", "text": ["Top-Right"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "All image blocks have the capacity to alter how the image itself is fit to it's",
+                            "constraining viewport and dimension (height or width)."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This page highlights on just the <var>data-image-fit</var> attribute and all it's possible",
+                            "values, each demonstrated with the same image to show a contrast as the effects can be",
+                            "subtle."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-center",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "center",
+            "content": {
+                "header": [
+                    "Center"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set nothing (as this is the default fitting), or set either: the",
+                            "<var>data-image-position</var> attribute to <q>center</q>, or include the word",
+                            "<q>center</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-top",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "top",
+            "content": {
+                "header": [
+                    "Top"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>top</q>, or",
+                            "include the word <q>top</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-top-left",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "top-left",
+            "content": {
+                "header": [
+                    "Top-Left"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>top-left</q>, or",
+                            "include the word <q>top-left</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-left",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "left",
+            "content": {
+                "header": [
+                    "Left"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>left</q>, or",
+                            "include the word <q>left</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-bottom-left",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "bottom-left",
+            "content": {
+                "header": [
+                    "Bottom-Left"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>bottom-left</q>, or",
+                            "include the word <q>bottom-left</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-bottom",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "bottom",
+            "content": {
+                "header": [
+                    "Bottom"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>bottom</q>, or",
+                            "include the word <q>bottom</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-bottom-right",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "bottom-right",
+            "content": {
+                "header": [
+                    "Bottom-Right"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>bottom-right</q>, or",
+                            "include the word <q>bottom-right</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-right",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "right",
+            "content": {
+                "header": [
+                    "Right"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>right</q>, or",
+                            "include the word <q>right</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-position-top-right",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "position": "top-right",
+            "content": {
+                "header": [
+                    "Top-Right"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-position</var> attribute to <q>top-right</q>, or",
+                            "include the word <q>top-right</q> in the shorthand <var>data-image</var> space",
+                            "separated attribute."
+                        ]
+                    }
+                ]
+            }
+        }
+
+]

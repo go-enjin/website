@@ -1,0 +1,51 @@
++++
+title = "404 - Not Found"
+description = "Page not found"
+url = "/404"
+layout = "full-view"
+format = "html"
++++
+<section
+        class="block"
+        id="main-header"
+        data-block-tag="main-header"
+        data-block-type="header"
+        data-block-profile="outer--inner"
+        data-block-padding="top"
+        data-block-margins="bottom"
+        data-block-jump-top="true"
+        data-block-jump-link="true"
+        data-header-reset=""
+        data-header-level="1"
+        data-header-count="1">
+    <div class="content">
+        <h1>404 - Not Found</h1>
+        <a class="jump-link" href="#main-header" data-ss1664822568="1">
+            <span class="sr-only">permalink</span>
+        </a>
+    </div>
+    <a class="jump-top" href="#top" data-ss1664822568="1">top</a>
+</section>
+<article
+        class="block"
+        id="not-found"
+        data-block-tag="not-found"
+        data-block-type="content"
+        data-block-profile="outer--inner"
+        data-block-padding="both"
+        data-block-margins="both"
+        data-block-jump-top="true"
+        data-block-jump-link="true">
+    <div class="content">
+        <header>
+            <h2>{{ .Request.Path }}</h2>
+            <a class="jump-link" href="#not-found" data-ss1664822568="1">
+                <span class="sr-only">permalink</span>
+            </a>
+        </header>
+        <section>
+            <p>The page requested was not found.</p>
+        </section>
+        <a class="jump-top" href="#top" data-ss1664822568="1">top</a>
+    </div>
+</article>

@@ -1,0 +1,91 @@
+{
+  "type": "page",
+  "title": "Examples",
+  "description": "An introduction to Semantic Theme examples"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Styling"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#parallax", "text": ["Parallax"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This section of the site is dedicated to interesting examples of content within Go-Enjin."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "parallax",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/examples/parallax",
+        "link-text": "View parallax example",
+        "content": {
+            "header": [
+                "Parallax"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "In the world of website design, there is the term <q>parallax</q> that shows up from time to ",
+                        "time and each time the term can actually mean something different."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Within the Semantic Enjin theming system, the term parallax is used to refer to a specific ",
+                        "aesthetic for displaying enjin block background image content. Basically the background for ",
+                        "a given block is <q>fixed</q> in position to the page while the block content can be ",
+                        "scrolled freely."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Use the link below to see a demonstration."
+                    ]
+                }
+            ]
+        }
+    }
+
+]

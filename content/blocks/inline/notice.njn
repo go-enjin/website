@@ -1,0 +1,220 @@
+{
+  "type": "page",
+  "title": "Notice Block",
+  "description": "A demonstration of the Notice Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Notice Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",  "text": ["Introduction"] },
+                    { "type": "a", "href": "#all-the-types", "text": ["All the types"] }
+                ]
+            }
+        },
+
+        {
+            "type": "notice",
+            "tag": "read-this-first",
+            "profile": "full--inner",
+            "padding": "none",
+            "margins": "both",
+            "link-href": "#",
+            "link-text": "Does nothing",
+            "notice-type": "info",
+            "content": {
+                "summary": [
+                    "Read this first!"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Notices, unlink other enjin blocks, do not have headers, they have summaries. You just",
+                            "clicked on the summary."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This notice includes hidden details not mentioned in the summary and so is presented with",
+                            "an expanding indicator and when clicked by the end-user, the additional details are",
+                            "revealed."
+                        ]
+                    }
+                ],
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "As with all blocks, even Notice blocks can have footers."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The Notice block is a simple notification for the end-user. These are typically",
+                            "informational content that does not necessarily have any relevance to the given page",
+                            "they're presented on."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Some typical-world examples of Notices would be things like site maintenance",
+                            "notifications, warnings, and error messages."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "notice",
+            "tag": "expanded-by-default",
+            "profile": "full--inner",
+            "padding": "none",
+            "margins": "both",
+            "notice-type": "info",
+            "open": "true",
+            "dismiss": "true",
+            "content": {
+                "summary": [
+                    "Expanded by default"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Content editors can specify that the full details are presented immediately and that the",
+                            "notice can be dismissed from the page."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "notice",
+            "tag": "no-details-all-summary",
+            "profile": "full--inner",
+            "padding": "none",
+            "margins": "both",
+            "notice-type": "info",
+            "content": {
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "If there are no additional details provided, the summary is not presented as a visual",
+                            "(false) heading and instead is presented with a smaller font, allowing for more content.",
+                            "This is visually reflected by the expander icon changing to an information icon."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "all-the-types",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "All the types..."
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Below is one of every type of notice available to content editors:"
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "notice",
+            "tag": "example-info-notice",
+            "profile": "full--inner",
+            "padding": "none",
+            "margins": "both",
+            "notice-type": "info",
+            "content": {
+                "section": [
+                    {
+                        "type": "p",
+                        "text": ["Example <q>info</q> notice"]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "notice",
+            "tag": "example-warn-notice",
+            "profile": "full--inner",
+            "padding": "none",
+            "margins": "both",
+            "notice-type": "warn",
+            "content": {
+                "section": [
+                    {
+                        "type": "p",
+                        "text": ["Example <q>warn</q> notice"]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "notice",
+            "tag": "example-error-notice",
+            "profile": "full--inner",
+            "padding": "none",
+            "margins": "both",
+            "notice-type": "error",
+            "content": {
+                "section": [
+                    {
+                        "type": "p",
+                        "text": ["Example <q>error</q> notice"]
+                    }
+                ]
+            }
+        }
+
+]

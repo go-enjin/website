@@ -1,0 +1,1007 @@
+{
+  "type": "page",
+  "title": "Inline Fields",
+  "description": "An introduction to Inline Fields"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Inline Fields"
+            ],
+            "nav": [
+                { "type": "a", "href": "#overview", "text": ["Overview"] },
+                { "type": "a", "href": "#inline-fields", "text": ["Inline Fields"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "overview",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Overview"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Inline fields are the most basic types of fields available. They are composed of HTML tags",
+                        "of course and what makes them <q>inline</q> is the content that is allowed within these tags."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "The HTML standards allow for things like anchor tags to contain divs for example. Within",
+                        "Go-Enjin however, this is not allowed from a content-editor standpoint (with exceptions for",
+                        "specific situations like custom-content blocks)."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Go-Enjin allows for multiple types of page content. For example, a page can be composed of",
+                         "markdown, org-mode or raw HTML content. These however have nothing to do with Enjin Blocks",
+                         "or Enjin Fields in any way. They're simply features available to developers using Go-Enjin",
+                         "and that don't want to use the Semantic Enjin systems."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This site is dedicated to just the Semantic Enjin systems and theming specifically. So, in",
+                        "these cases, the content of any given page is actually a JSON structure that supplies the",
+                        "literal field content for a listing of one or more Enjin Blocks."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This page demonstrates the basic user-visible fields that Go-Enjin content editors are able",
+                        "to work with when supplying content to the individual Enjin Blocks added to the page. The",
+                        "content block you're reading from right now is composed of paragraph fields for example."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "inline-fields",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Inline Fields"
+            ],
+            "section": [
+                {
+                    "type": "table",
+                    "caption": "The following table details the inline fields supported:",
+                    "options": {
+                        "sticky": {
+                            "head": "true",
+                            "data": "true"
+                        }
+                    },
+                    "head": [
+                        { "type": "th", "text": ["tag"] },
+                        { "type": "th", "text": ["name"] },
+                        { "type": "th", "text": ["sample"] },
+                        { "type": "th", "text": ["html"] }
+                    ],
+                    "body": [
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["a"] },
+                                { "type": "td", "text": ["anchor link"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "a",
+                                                    "href": "#",
+                                                    "text": ["Same-tab anchor link"]
+                                                },
+                                                { "type": "br" },
+                                                {
+                                                    "type": "a",
+                                                    "href": "#",
+                                                    "target": "_blank",
+                                                    "text": ["New-tab anchor link"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<a {attributes}>{inline-content}</a>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["abbr"] },
+                                { "type": "td", "text": ["abbreviation"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "abbr",
+                                                    "attributes": {
+                                                        "title": "Cascading Style Sheet"
+                                                    },
+                                                    "text": ["CSS"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<abbr {attributes}>{inline-content}</abbr>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["b"] },
+                                { "type": "td", "text": ["bold"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "b",
+                                                    "text": ["bolded text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<b>{inline-content}</b>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["cite"] },
+                                { "type": "td", "text": ["citation"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "cite",
+                                                    "text": [
+                                                        {
+                                                            "type": "a",
+                                                            "href": "https://en.wikipedia.org/wiki/Alan_Watts",
+                                                            "target": "_blank",
+                                                            "text": ["Alan Watts"]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<cite>{inline-content}</cite>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["del"] },
+                                { "type": "td", "text": ["indicate deleted text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "del",
+                                                    "text": ["deleted text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<del>{inline-content}</del>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["em"] },
+                                { "type": "td", "text": ["emphasis"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "em",
+                                                    "text": ["emphasized text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<em>{inline-content}</em>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["fa-icon"] },
+                                { "type": "td", "text": ["font awesome icon"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "fa-icon",
+                                                    "class": "fa-solid",
+                                                    "id": "fa-font-awesome"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<i class='{fa-class} {fa-ident}'></i>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["figure"] },
+                                { "type": "td", "text": ["figure"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "figure",
+                                                    "caption": "The Go-Enjin logo",
+                                                    "text": [
+                                                        {
+                                                            "type": "img",
+                                                            "src": "/media/logo-000.png",
+                                                            "alt": "Go-Enjin logo"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<figure>\n{self-contained-content}\n<figcaption>{inline-content}</figcaption>\n</figure>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["hr"] },
+                                { "type": "td", "text": ["thematic break"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "hr"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<hr />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["i"] },
+                                { "type": "td", "text": ["italics"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "i",
+                                                    "text": ["italicized text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<i>{inline-content}</i>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["img"] },
+                                { "type": "td", "text": ["image"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "img",
+                                                    "attributes": {
+                                                        "width": "34"
+                                                    },
+                                                    "src": "/media/logo-000.png",
+                                                    "alt": "Go-Enjin logo"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<img {attributes}/>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["ins"] },
+                                { "type": "td", "text": ["indicate inserted text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "ins",
+                                                    "text": ["inserted text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<ins>{inline-content}</ins>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["kbd"] },
+                                { "type": "td", "text": ["keyboard input"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "kbd",
+                                                    "text": ["ctrl"]
+                                                },
+                                                " + ",
+                                                {
+                                                    "type": "kbd",
+                                                    "text": ["shift"]
+                                                },
+                                                " + ",
+                                                {
+                                                    "type": "kbd",
+                                                    "text": ["r"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<kbd>{inline-content}</kbd>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["mark"] },
+                                { "type": "td", "text": ["mark text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "mark",
+                                                    "text": ["marked text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<mark>{inline-content}</mark>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["meter"] },
+                                { "type": "td", "text": ["meter"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "meter",
+                                                    "min": "0",
+                                                    "max": "100",
+                                                    "value": "90",
+                                                    "text": ["90 percent"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<meter {attributes}>{text}</meter>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["picture"] },
+                                { "type": "td", "text": ["picture"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "p",
+                                                    "text": [
+                                                        "A mascot image is presented at browser widths greater than",
+                                                        "768px and anything smaller will see a logo."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "picture",
+                                                    "default": {
+                                                        "type": "img",
+                                                        "src": "/media/logo-000.png",
+                                                        "width": "100"
+                                                    },
+                                                    "sources": [
+                                                        {
+                                                            "type": "source",
+                                                            "srcset": "/media/mascot.png",
+                                                            "media": "(min-width: 678px)"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<picture>\n\t<source {attributes} /> ...\n\t<img {attributes} />\n</picture>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["progress"] },
+                                { "type": "td", "text": ["progress bar"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "progress",
+                                                    "min": "0",
+                                                    "max": "100",
+                                                    "value": "90",
+                                                    "text": ["90 percent"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<progress {attributes}>{text}</progress>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["q"] },
+                                { "type": "td", "text": ["inline quotation"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "q",
+                                                    "text": ["quoted text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<q>{inline-content}</q>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["s"] },
+                                { "type": "td", "text": ["strike-through text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "s",
+                                                    "text": ["stricken text"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<s>{inline-content}</s>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["samp"] },
+                                { "type": "td", "text": ["sample output"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": ["This text is a sample of computer output."]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<samp>{inline-content}</samp>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["small"] },
+                                { "type": "td", "text": ["side comment text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "small",
+                                                    "text": ["This text is smaller than normal."]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<small>{inline-content}</small>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["strong"] },
+                                { "type": "td", "text": ["strong importance"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "text": ["This text is stronger than normal."]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<strong>{inline-content}</strong>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["sub"] },
+                                { "type": "td", "text": ["subscript"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                "C",
+                                                { "type": "sub", "text": ["8"] },
+                                                "H",
+                                                { "type": "sub", "text": ["10"] },
+                                                "N",
+                                                { "type": "sub", "text": ["4"] },
+                                                "O",
+                                                { "type": "sub", "text": ["2"] }
+                                            ]
+                                        }
+
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<sub>{inline-content}</sub>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["sup"] },
+                                { "type": "td", "text": ["superscript"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "var",
+                                                    "text": [
+                                                        "a",
+                                                        { "type": "sup", "text": ["2"] }
+                                                    ]
+                                                },
+                                                " + ",
+                                                {
+                                                    "type": "var",
+                                                    "text": [
+                                                        "b",
+                                                        { "type": "sup", "text": ["2"] }
+                                                    ]
+                                                },
+                                                " = ",
+                                                {
+                                                    "type": "var",
+                                                    "text": [
+                                                        "c",
+                                                        { "type": "sup", "text": ["2"] }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<sup>{inline-content}</sup>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["u"] },
+                                { "type": "td", "text": ["underline"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "u",
+                                                    "text": ["This text is underlined."]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<u>{inline-content}</u>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["var"] },
+                                { "type": "td", "text": ["variable"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "var",
+                                                    "text": ["name"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<var>{inline-content}</var>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        }
+    }
+]

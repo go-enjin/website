@@ -1,0 +1,1145 @@
+{
+  "type": "page",
+  "title": "Carousel Block",
+  "description": "A demonstration of the Carousel Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Carousel Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",  "text": ["Introduction"] },
+                    { "type": "a", "href": "#carousel",      "text": ["Carousel"] },
+                    { "type": "a", "href": "#slider",        "text": ["Slider"] },
+                    { "type": "a", "href": "#many-carousel", "text": ["Many"] },
+                    { "type": "a", "href": "#card-carousel", "text": ["Card"] },
+                    { "type": "a", "href": "#more-carousel", "text": ["More"] },
+                    { "type": "a", "href": "#less-carousel", "text": ["Less"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Carousel blocks are a wonderful way to present",
+                            "content relating to other parts of the site or",
+                            "even off-site content."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "carousel",
+            "tag": "carousel",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "bookends": 1,
+            "nav-ctrl-type": "icon",
+            "content": {
+                "header": [
+                    "Carousel"
+                ],
+                "section": [
+
+                    {
+                        "type": "card",
+                        "tag": "first-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["First Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "First card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "second-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "link-target": "_blank",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Second Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Second card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "third-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg"
+                                }
+                            },
+                            "header": ["Third Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Third card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "last-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-field.jpg"
+                                }
+                            },
+                            "header": ["Last Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Last card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The above carousel is configured to have one",
+                            "<q>bookend</q>, or partial card, in view when on",
+                            "tablet or desktop. For mobile, the bookends are",
+                            "dropped and carousels always display their cards",
+                            "at 100% of the space available."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "carousel",
+            "tag": "slider",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "link-href": "#",
+            "link-target": "_blank",
+            "link-text": "Does nothing",
+            "content": {
+                "header": [
+                    "Slider"
+                ],
+                "section": [
+
+                    {
+                        "type": "card",
+                        "tag": "first-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["First Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "First card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "second-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "link-target": "_blank",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Second Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Second card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "third-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg"
+                                }
+                            },
+                            "header": ["Third Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Third card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "last-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-field.jpg"
+                                }
+                            },
+                            "header": ["Last Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Last card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "This block features a carousel, complete with a",
+                            "title, this caption/copytext and one or more",
+                            "cards in the gallery, each of which has their",
+                            "own title and copytext and can be individually",
+                            "linked as well."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This block in particular has four cards, each",
+                            "with their own background image set. Of note is",
+                            "that there are no <q>bookends</q>, or partial",
+                            "cards in view, each card consumes 100% of the",
+                            "space available."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The entire block can also have a link set, like",
+                            "all other blocks, and the below example",
+                            "demonstrates what this looks like."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "carousel",
+            "tag": "many-carousel",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "bookends": 2,
+            "nav-ctrl-type": "icon",
+            "nav-ctrl-style": "chevron-circle",
+            "card-gap": "standard",
+            "content": {
+                "header": [
+                    "Many"
+                ],
+                "section": [
+
+                    {
+                        "type": "card",
+                        "tag": "first-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["First Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "First card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "second-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "link-target": "_blank",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Second Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Second card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "third-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg"
+                                }
+                            },
+                            "header": ["Third Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Third card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "fourth-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["Fourth Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Fourth card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "fifth-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Fifth Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Fifth card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "sixth-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg"
+                                }
+                            },
+                            "header": ["Sixth Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Sixth card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "seventh-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["Seventh Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Seventh card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "last-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-field.jpg"
+                                }
+                            },
+                            "header": ["Last Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Last card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The above carousel has many features enabled, has",
+                            "more than a few cards on display and is",
+                            "configured for two <q>bookends</q> (the first",
+                            "bookend is a partial and the second bookend is",
+                            "fully visible and off-center)."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "There is also a <q>standard</q> gap between each",
+                            "card. Aside from the <q>default</q> of no-gap,",
+                            "there is also a <q>double</q> gap option. These",
+                            "are set with the",
+                            "<var>data-carousel-card-gap</var> block attribute."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This carousel is configured with the following",
+                            "extra <q>nav-ctrl</q> settings:"
+                        ]
+                    },
+
+                    {
+                        "type": "dl",
+                        "text": [
+
+                            { "type": "dt", "text": "<var>data-carousel-nav-ctrl-type</var>" },
+                            {
+                                "type": "dd",
+                                "text": [
+                                    {
+                                        "type": "p",
+                                        "text": [
+                                            "This controls the previous/next",
+                                            "navigation overlays. There are",
+                                            "two possible values: <q>data</q>",
+                                            "and <q>icon</q>."
+                                        ]
+                                    },
+                                    {
+                                        "type": "ul",
+                                        "list": [
+                                            [
+                                                "<q>data</q>: the default is a pair of inline-data (SVG) images that",
+                                                "are included with the Semantic Theme. These can be overridden using",
+                                                "the CSS <var>:root</var> variables:",
+                                                "<var>--block--carousel--previous--image</var> and",
+                                                "<var>--block--carousel--next--image</var>."
+                                            ],
+                                            [
+                                                "<q>icon</q>: this type specifies the use of wonderful ",
+                                                {
+                                                    "type": "a",
+                                                    "href": "https://font-awesome.com",
+                                                    "text": "font-awesome"
+                                                },
+                                                " icons integrated within the Semantic Theme. The specific icon pair",
+                                                "to use is regulated by the <var>data-carousel-nav-ctrl-style</var>",
+                                                "block attribute."
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            },
+
+                            { "type": "dt", "text": "<var>data-carousel-nav-ctrl-style</var>" },
+                            {
+                                "type": "dd",
+                                "text": [
+                                    {
+                                        "type": "p",
+                                        "text": [
+                                            "When <var>data-carousel-nav-ctrl-type</var> is set to it's default",
+                                            "<q>data</q>, this block attribute is essentially ignored. When",
+                                            "<var>data-carousel-nav-ctrl-type</var> is set to <q>icon</q>, this",
+                                            "attribute can be set to one of the following:"
+                                        ]
+                                    },
+                                    {
+                                        "type": "ul",
+                                        "list": [
+                                            [
+                                                "<q>chevron</q>: ",
+                                                { "type": "fa-icon", "id": "fa-chevron-left"},
+                                                " ",
+                                                { "type": "fa-icon", "id": "fa-chevron-right"},
+                                                " (default)"
+                                            ],
+                                            [
+                                                "<q>arrow</q>: ",
+                                                { "type": "fa-icon", "id": "fa-arrow-left"},
+                                                " ",
+                                                { "type": "fa-icon", "id": "fa-arrow-right"}
+                                            ],
+                                            [
+                                                "<q>caret</q>: ",
+                                                { "type": "fa-icon", "id": "fa-caret-left"},
+                                                " ",
+                                                { "type": "fa-icon", "id": "fa-caret-right"}
+                                            ],
+                                            [
+                                                "<q>chevron-circle</q>: ",
+                                                { "type": "fa-icon", "id": "fa-chevron-circle-left"},
+                                                " ",
+                                                { "type": "fa-icon", "id": "fa-chevron-circle-right"}
+                                            ],
+                                            [
+                                                "<q>arrow-circle</q>: ",
+                                                { "type": "fa-icon", "id": "fa-arrow-circle-left"},
+                                                " ",
+                                                { "type": "fa-icon", "id": "fa-arrow-circle-right"}
+                                            ]
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "carousel",
+            "tag": "card-carousel",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "bookends": 2,
+            "nav-ctrl-type": "icon",
+            "content": {
+                "header": [
+                    "Card"
+                ],
+                "section": [
+
+                    {
+                        "type": "card",
+                        "tag": "first-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["First Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "First card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "second-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "link-target": "_blank",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Second Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Second card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "third-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg"
+                                }
+                            },
+                            "header": ["Third Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Third card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "last-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-field.jpg"
+                                }
+                            },
+                            "header": ["Last Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Last card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "This carousel is demonstrating the graceful",
+                            "fallback of bookends. The block is configured for",
+                            "two bookends yet has only four cards on display",
+                            "when five are required for a two-bookend",
+                            "configuration. In cases such as these the",
+                            "carousel falls back to displaying what it can:",
+                            "one bookend on each side."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "carousel",
+            "tag": "more-carousel",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "bookends": 2,
+            "nav-ctrl-type": "icon",
+            "content": {
+                "header": [
+                    "More"
+                ],
+                "section": [
+
+                    {
+                        "type": "card",
+                        "tag": "first-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["First Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "First card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "second-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "link-target": "_blank",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Second Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Second card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "third-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-door-art.jpg"
+                                }
+                            },
+                            "header": ["Third Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Third card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "fourth-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["Fourth Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Fourth card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "last-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-field.jpg"
+                                }
+                            },
+                            "header": ["Last Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Last card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Sometimes the examples on this site are not",
+                            "demonstrating features and instead are",
+                            "demonstrating programmatic corner cases. This is",
+                            "one such instance."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This block has exactly the minimum of five cards",
+                            "on display for it's configured two bookends."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "carousel",
+            "tag": "less-carousel",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "bookends": 2,
+            "nav-ctrl-type": "icon",
+            "content": {
+                "header": [
+                    "Less"
+                ],
+                "section": [
+
+                    {
+                        "type": "card",
+                        "tag": "first-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg"
+                                }
+                            },
+                            "header": ["First Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "First card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "second-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "link-href": "#",
+                        "link-target": "_blank",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-ceil.jpg"
+                                }
+                            },
+                            "header": ["Second Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Second card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "card",
+                        "tag": "last-card",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "content": {
+                            "background": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-field.jpg"
+                                }
+                            },
+                            "header": ["Last Card"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Last card copytext."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Like the prior carousel block, this one is",
+                            "demonstrating another corner case: only three",
+                            "cards with two bookends configured, which means",
+                            "that no bookends should be visible at all."
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+
+]

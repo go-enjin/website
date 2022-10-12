@@ -1,0 +1,303 @@
+{
+  "type": "page",
+  "title": "Image Block Sizes",
+  "description": "A demonstration of Image Block sizes"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Image Block Sizes"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                    { "type": "a", "href": "#image-size-sliver", "text": ["Sliver"] },
+                    { "type": "a", "href": "#image-size-thin", "text": ["Thin"] },
+                    { "type": "a", "href": "#image-size-banner", "text": ["Banner"] },
+                    { "type": "a", "href": "#image-size-normal", "text": ["Normal"] },
+                    { "type": "a", "href": "#image-size-tall", "text": ["Tall"] },
+                    { "type": "a", "href": "#image-size-huge", "text": ["Huge"] },
+                    { "type": "a", "href": "#image-size-actual", "text": ["Actual"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Image blocks can be configured for many different sizes. These are demonstrated on a",
+                            "separate page because the full array of sizes takes up a lot of page space."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This page focuses entirely on the different values for the <var>data-image-size</var>",
+                            "attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-sliver",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "sliver",
+            "content": {
+                "header": [
+                    "Sliver"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>sliver</q>, or include the",
+                            "word <q>sliver</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-thin",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "thin",
+            "content": {
+                "header": [
+                    "Thin"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>thin</q>, or include the",
+                            "word <q>thin</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-banner",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "banner",
+            "content": {
+                "header": [
+                    "Banner"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>banner</q>, or include the",
+                            "word <q>banner</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-normal",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "normal",
+            "content": {
+                "header": [
+                    "Normal"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>normal</q>, or include the",
+                            "word <q>normal</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-tall",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "tall",
+            "content": {
+                "header": [
+                    "tall"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>tall</q>, or include the",
+                            "word <q>tall</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-huge",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "huge",
+            "content": {
+                "header": [
+                    "huge"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>huge</q>, or include the",
+                            "word <q>huge</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-size-actual",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "constraint": "height",
+            "size": "actual",
+            "content": {
+                "header": [
+                    "actual"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-size</var> attribute to <q>actual</q>, or include the",
+                            "word <q>actual</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+]

@@ -1,0 +1,274 @@
+{
+  "type": "page",
+  "title": "Enjin Fields",
+  "description": "An introduction to Enjin Fields"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Enjin Fields"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#inline-fields", "text": ["Inline Fields"] },
+                { "type": "a", "href": "#container-fields", "text": ["Container Fields"] },
+                { "type": "a", "href": "#form-fields", "text": ["Form Fields"] },
+                { "type": "a", "href": "#page-glossary", "text": ["Page Glossary"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Enjin blocks are composed of Enjin Fields. There are several classifications of Enjin Fields,",
+                        "inline fields are things like span, italics or emphasis tags. Container fields are things ",
+                        "like paragraph and code tags."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This page simply provides a glossary of terms and links to the different classifications of",
+                        "Enjin Fields."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "inline-fields",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/fields/inline",
+        "link-text": "Learn about inline fields",
+        "content": {
+            "header": [
+                "Inline Fields"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Inline fields are the most basic type of content representation. Essentially these are HTML",
+                        "tags that should only contain plain text and/or other inline fields."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "<u>For example, we can have a whole sentence underlined with a few <i>words</i> also in <i>italics</i></u>.",
+                        "Yet these are not considered to be Enjin Container Fields."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "container-fields",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/fields/container",
+        "link-text": "Learn about container fields",
+        "content": {
+            "header": [
+                "Container Fields"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Container fields are like inline-fields except that they're allowed to have more variable",
+                        "types of content within their HTML tags and typically aren't sources of content in-and-of",
+                        "themselves. A good example are table fields while a murky example is the paragraph field."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "form-fields",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/fields/form",
+        "link-text": "Learn about form fields",
+        "content": {
+            "header": [
+                "Form Fields"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Form fields are not normally presented as end-user visible content. However, it's useful to",
+                        "see what these things look like within the Semantic Enjin Theme."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "page-glossary",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Page Glossary"
+            ],
+            "section": [
+                {
+                    "type": "dl",
+                    "text": [
+
+                        {
+                            "type": "dt",
+                            "text": [
+                                {
+                                    "type": "dfn",
+                                    "text": [
+                                        "attributes"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dd",
+                            "text": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Space separated key/value pairs in the format of ",
+                                        "<strong>key='value'</strong>. For example, a decorated class link to the",
+                                        "landing page:"
+                                    ]
+                                },
+                                {
+                                    "type": "pre",
+                                    "text": [
+                                        "<a class='decorated' href='/'>home</a>"
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "dt",
+                            "text": [
+                                {
+                                    "type": "dfn",
+                                    "text": [
+                                        "inline-content"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dd",
+                            "text": [
+                                "Content that is composed only of plain text and/or inline fields."
+                            ]
+                        },
+
+                        {
+                            "type": "dt",
+                            "text": [
+                                {
+                                    "type": "dfn",
+                                    "text": [
+                                        "content"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dd",
+                            "text": [
+                                "Content that is composed of inline and/or container fields."
+                            ]
+                        },
+
+                        {
+                            "type": "dt",
+                            "text": [
+                                {
+                                    "type": "dfn",
+                                    "text": [
+                                        "self-contained-content"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dd",
+                            "text": [
+                                "A singular element of self-contained content, such as an image."
+                            ]
+                        },
+
+                        {
+                            "type": "dt",
+                            "text": [
+                                {
+                                    "type": "dfn",
+                                    "text": [
+                                        "prepared-content"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "dd",
+                            "text": [
+                                "Content that is Go-Enjin has somehow modified, such as with the decorated code field",
+                                "which has what would normally be multiple lines of plain text pre-processed into an",
+                                "ordered-list with each line of code in its own list-item."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

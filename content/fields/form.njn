@@ -1,0 +1,904 @@
+{
+  "type": "page",
+  "title": "Form Fields",
+  "description": "An introduction to Form Fields"
+}
+[
+
+    {   "tag": "main-header",
+        "type": "header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Form Fields"
+            ],
+            "nav": [
+                { "type": "a", "href": "#overview", "text": ["Overview"] },
+                { "type": "a", "href": "#form-fields", "text": ["Form Fields"] }
+            ]
+        }
+    },
+
+    {   "tag": "overview",
+        "type": "content",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Overview"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Form fields are not normally presented to normal site visitors and are primarily used in the",
+                        "administrative and content editing parts of the site."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "These fields are being presented simply to demonstrate the cosmetic styling of each field",
+                        "as supported by Go-Enjin."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {   "tag": "form-fields",
+        "type": "content",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Form Fields"
+            ],
+            "section": [
+                {
+                    "type": "table",
+                    "caption": "The following table details the form fields supported:",
+                    "options": {
+                        "sticky": {
+                            "head": "true",
+                            "data": "true"
+                        }
+                    },
+                    "head": [
+                        { "type": "th", "text": ["tag"] },
+                        { "type": "th", "text": ["name"] },
+                        { "type": "th", "text": ["sample"] },
+                        { "type": "th", "text": ["html"] }
+                    ],
+                    "body": [
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["button"] },
+                                { "type": "td", "text": ["button"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "button",
+                                                    "text": ["default button"]
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "attributes": {"type": "submit"},
+                                                    "text": ["submit button"]
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "attributes": {"type": "reset"},
+                                                    "text": ["reset button"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<button {attributes}>\n\t{inline-content}\n</button>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["fieldset"] },
+                                { "type": "td", "text": ["fieldset"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "fieldset",
+                                                    "legend": ["form fields"],
+                                                    "fields": [
+                                                        {
+                                                            "type": "button",
+                                                            "text": ["example"]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<fieldset {attributes}>\n\t<legend>{inline-content}</legend>\n\t{form-fields}\n</fieldset>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input button"] },
+                                { "type": "td", "text": ["input of type button"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "button",
+                                                    "value": "button"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='button' value='{text}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input checkbox"] },
+                                { "type": "td", "text": ["input of type checkbox"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "checkbox",
+                                                    "checked": "true"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='checkbox' checked/>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input color"] },
+                                { "type": "td", "text": ["input of type color"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "color",
+                                                    "value": "#1e90ff"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='color' value='{colour}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input date"] },
+                                { "type": "td", "text": ["input of type date"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "date",
+                                                    "value": "2006-01-02"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='date' value='{date}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input datetime-local"] },
+                                { "type": "td", "text": ["input of type datetime-local"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "datetime-local",
+                                                    "value": "2006-01-02 15:04"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input\n\ttype='datetime-local'\n\tvalue='{date time}'\n/>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input email"] },
+                                { "type": "td", "text": ["input of type email"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "email",
+                                                    "value": "noreply@example.com"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "pre",
+                                                    "text": ["<input type='email' value='{address}' />"]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input file"] },
+                                { "type": "td", "text": ["input of type file"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "file"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='file' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input image"] },
+                                { "type": "td", "text": ["input of type image"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "image",
+                                                    "attributes": {
+                                                        "src": "/media/logo-000.png",
+                                                        "width": "25",
+                                                        "alt": "input image with src set"
+                                                    }
+                                                },
+                                                { "type": "br" },
+                                                {
+                                                    "type": "input",
+                                                    "input": "image",
+                                                    "attributes": {
+                                                        "alt": "input image without src set"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='image' src='{url}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input number"] },
+                                { "type": "td", "text": ["input of type number"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "number",
+                                                    "value": "10"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='number' value='{text}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input password"] },
+                                { "type": "td", "text": ["input of type password"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "password",
+                                                    "value": "12345"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='password' value='{text}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input radio"] },
+                                { "type": "td", "text": ["input of type radio"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "radio",
+                                                    "name": "example-radio-group"
+                                                },
+                                                {
+                                                    "type": "input",
+                                                    "input": "radio",
+                                                    "name": "example-radio-group",
+                                                    "checked": "true"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='radio' name='{text}' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input range"] },
+                                { "type": "td", "text": ["input of type range"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "range"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='range' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input reset"] },
+                                { "type": "td", "text": ["input of type reset"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "reset"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='reset' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input search"] },
+                                { "type": "td", "text": ["input of type search"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "search",
+                                                    "placeholder": "Search...",
+                                                    "value": "stuff"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='search' {attributes} />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input submit"] },
+                                { "type": "td", "text": ["input of type submit"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "submit"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='submit' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input tel"] },
+                                { "type": "td", "text": ["input of type tel"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "tel",
+                                                    "value": "+1-234-567-8901"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='tel' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input text"] },
+                                { "type": "td", "text": ["input of type text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "text"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='text' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input time"] },
+                                { "type": "td", "text": ["input of type time"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "time",
+                                                    "value": "15:04"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='time' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input url"] },
+                                { "type": "td", "text": ["input of type url"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "input",
+                                                    "input": "url",
+                                                    "value": "https://github.com/go-enjin"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='url' />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["input disabled"] },
+                                { "type": "td", "text": ["disabled input"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "p",
+                                                    "text": ["One of each disabled input type:"]
+                                                },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "button", "value": "button" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "checkbox" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "color", "value": "#1e90ff" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "date", "value": "2006-01-02" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "datetime-local", "value": "2006-01-02 15:04" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "email", "value": "noreply@example.com" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "file", "value": "" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "number", "value": "" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "password", "value": "12345" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "radio", "name": "example-disabled-radio-group" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "radio", "name": "example-disabled-radio-group", "checked": "true" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "range", "value": "90" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "reset", "value": "" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "search", "value": "" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "submit", "value": "" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "tel", "value": "+1-234-567-8901" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "text", "value": "" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "time", "value": "15:04" },
+                                                { "type": "br" }, { "type": "input", "disabled": "true", "input": "url", "value": "https://github.com/go-enjin" }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<input type='{type}' disabled />"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["select"] },
+                                { "type": "td", "text": ["select"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "select",
+                                                    "placeholder": "-- please select --",
+                                                    "options": [
+                                                        {
+                                                            "type": "optgroup",
+                                                            "label": "First Group",
+                                                            "options": [
+                                                                { "type": "option", "value": "1", "text": ["first option"] },
+                                                                { "type": "option", "value": "2", "text": ["second option"] }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "optgroup",
+                                                            "label": "Another Group",
+                                                            "options": [
+                                                                { "type": "option", "value": "3", "text": ["another option"] },
+                                                                { "type": "option", "value": "4", "text": ["last option"] }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                { "type": "br" },
+                                                {
+                                                    "type": "select",
+                                                    "options": [
+                                                        { "type": "option", "value": "1", "text": ["number one"] },
+                                                        { "type": "option", "value": "2", "text": ["number two"] },
+                                                        { "type": "option", "value": "3", "text": ["number three"] },
+                                                        { "type": "option", "value": "4", "text": ["number four"] }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "pre",
+                                            "text": ["<select>\n\t<option>{text}</option>\n\t...\n\t<optgroup>\n\t\t<option>{text}</option>\n\t\t...\n\t</optgroup>\n</select>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        }
+    }
+]

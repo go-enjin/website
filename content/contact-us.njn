@@ -1,0 +1,49 @@
+{
+  "type": "page",
+  "title": "Contact Us",
+  "description": "How to contact the Go-Enjin project"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Contact Us"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "At this time, the Go-Enjin project is running dark and as such, there is no formal way ",
+                        "to contact us."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- The Go-Enjin website team"
+                    ]
+                }
+            ]
+        }
+    }
+]

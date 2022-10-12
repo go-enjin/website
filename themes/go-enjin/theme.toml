@@ -1,0 +1,210 @@
+name = "Go-Enjin"
+parent = "semantic-enjin"
+license = "Apache 2.0"
+licenselink = "https://go-enjin.github.io/LICENSE"
+description = "The Go-Enjin website theme."
+homepage = "https://go-enjin.github.io/"
+
+[author]
+    name = "The Go-Enjin Team"
+    homepage = "https://go-enjin.github.io"
+
+
+#[semantic.style]
+#    color.working = "#ff901e"
+
+# --theme--working--*
+[semantic.style.theme.working]
+    fg = "var(--color--meditate)"
+    bg = "var(--color--working)"
+    accent.fg = "var(--accent--fg)"
+    accent.bg = "var(--accent--bg)"
+    highlight.fg = "var(--highlight--fg)"
+    highlight.bg = "var(--highlight--bg)"
+    alternate.fg = "var(--alternate--fg)"
+    alternate.bg = "var(--alternate--bg)"
+    overlay.dark.fg = "var(--overlay--dark--fg)"
+    overlay.dark.bg = "rgba(30, 144, 255, 0.77)"
+    overlay.light.fg = "var(--overlay--light--fg)"
+    overlay.light.bg = "rgba(30, 144, 255, 0.34)"
+    border = "5px solid var(--color--meditate)"
+
+# --theme--recover--*
+[semantic.style.theme.recover]
+    fg = "var(--color--meditate)"
+    bg = "var(--color--recover)"
+    accent.fg = "var(--accent--fg)"
+    accent.bg = "var(--accent--bg)"
+    highlight.fg = "var(--highlight--fg)"
+    highlight.bg = "var(--highlight--bg)"
+    alternate.fg = "var(--alternate--fg)"
+    alternate.bg = "var(--alternate--bg)"
+    overlay.dark.fg = "var(--color--meditate)"
+    overlay.dark.bg = "rgba(112, 128, 144, 0.77)"
+    overlay.light.fg = "var(--color--meditate)"
+    overlay.light.bg = "rgba(112, 128, 144, 0.34)"
+    border = "5px solid var(--color--meditate)"
+
+# --theme--resting--*
+[semantic.style.theme.resting]
+    fg = "var(--color--dark)"
+    bg = "var(--color--resting)"
+    accent.fg = "var(--accent--fg)"
+    accent.bg = "var(--accent--bg)"
+    highlight.fg = "var(--highlight--fg)"
+    highlight.bg = "var(--highlight--bg)"
+    alternate.fg = "var(--alternate--fg)"
+    alternate.bg = "var(--alternate--bg)"
+    overlay.dark.fg = "var(--color--dark)"
+    overlay.dark.bg = "rgba(211, 211, 211, 0.77)"
+    overlay.light.fg = "var(--color--dark)"
+    overlay.light.bg = "rgba(211, 211, 211, 0.34)"
+    border = "5px solid var(--color--meditate)"
+
+# --theme--social--*
+[semantic.style.theme.social]
+    fg = "var(--color--dark)"
+    bg = "var(--color--social)"
+    accent.fg = "var(--accent--fg)"
+    accent.bg = "var(--accent--bg)"
+    highlight.fg = "var(--highlight--fg)"
+    highlight.bg = "var(--highlight--bg)"
+    alternate.fg = "var(--alternate--fg)"
+    alternate.bg = "var(--alternate--bg)"
+    overlay.dark.fg = "var(--overlay--dark--fg)"
+    overlay.dark.bg = "var(--overlay--dark--bg)"
+    overlay.light.fg = "var(--overlay--light--fg)"
+    overlay.light.bg = "var(--overlay--light--bg)"
+    border = "5px solid var(--theme--social--overlay--light--bg)"
+
+# --theme--active--*
+[semantic.style.theme.active]
+    fg = "var(--color--dark)"
+    bg = "var(--color--active)"
+    accent.fg = "var(--accent--fg)"
+    accent.bg = "var(--accent--bg)"
+    highlight.fg = "var(--highlight--fg)"
+    highlight.bg = "var(--highlight--bg)"
+    alternate.fg = "var(--alternate--fg)"
+    alternate.bg = "var(--alternate--bg)"
+    overlay.dark.fg = "var(--overlay--dark--fg)"
+    overlay.dark.bg = "var(--overlay--dark--bg)"
+    overlay.light.fg = "var(--overlay--light--fg)"
+    overlay.light.bg = "var(--overlay--light--bg)"
+    border = "5px solid var(--theme--active--overlay--light--bg)"
+
+#:
+#: Block Themes (data-block-theme)
+#:
+
+# [data-block-theme="primary"] { --style--* }
+[semantic.block.theme.primary]
+    fg = "var(--theme--primary--fg)"
+    bg = "var(--theme--primary--bg)"
+    border = "var(--theme--primary--border)"
+    accent.fg = "var(--theme--primary--accent--fg)"
+    accent.bg = "var(--theme--primary--accent--bg)"
+    highlight.fg = "var(--theme--primary--highlight--fg)"
+    highlight.bg = "var(--theme--primary--highlight--bg)"
+    alternate.fg = "var(--theme--primary--alternate--fg)"
+    alternate.bg = "var(--theme--primary--alternate--bg)"
+    overlay.light.fg = "var(--theme--primary--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--primary--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--primary--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--primary--overlay--dark--bg)"
+
+# [data-block-theme="secondary"] { --style--* }
+[semantic.block.theme.secondary]
+    fg = "var(--theme--secondary--fg)"
+    bg = "var(--theme--secondary--bg)"
+    border = "var(--theme--secondary--border)"
+    accent.fg = "var(--theme--secondary--accent--fg)"
+    accent.bg = "var(--theme--secondary--accent--bg)"
+    highlight.fg = "var(--theme--secondary--highlight--fg)"
+    highlight.bg = "var(--theme--secondary--highlight--bg)"
+    alternate.fg = "var(--theme--secondary--alternate--fg)"
+    alternate.bg = "var(--theme--secondary--alternate--bg)"
+    overlay.light.fg = "var(--theme--secondary--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--secondary--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--secondary--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--secondary--overlay--dark--bg)"
+
+# [data-block-theme="working"] { --style--* }
+[semantic.block.theme.working]
+    fg = "var(--theme--working--fg)"
+    bg = "var(--theme--working--bg)"
+    border = "var(--theme--working--border)"
+    accent.fg = "var(--theme--working--accent--fg)"
+    accent.bg = "var(--theme--working--accent--bg)"
+    highlight.fg = "var(--theme--working--highlight--fg)"
+    highlight.bg = "var(--theme--working--highlight--bg)"
+    alternate.fg = "var(--theme--working--alternate--fg)"
+    alternate.bg = "var(--theme--working--alternate--bg)"
+    overlay.light.fg = "var(--theme--working--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--working--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--working--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--working--overlay--dark--bg)"
+
+# [data-block-theme="recover"] { --style--* }
+[semantic.block.theme.recover]
+    fg = "var(--theme--recover--fg)"
+    bg = "var(--theme--recover--bg)"
+    border = "var(--theme--recover--border)"
+    accent.fg = "var(--theme--recover--accent--fg)"
+    accent.bg = "var(--theme--recover--accent--bg)"
+    highlight.fg = "var(--theme--recover--highlight--fg)"
+    highlight.bg = "var(--theme--recover--highlight--bg)"
+    alternate.fg = "var(--theme--recover--alternate--fg)"
+    alternate.bg = "var(--theme--recover--alternate--bg)"
+    overlay.light.fg = "var(--theme--recover--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--recover--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--recover--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--recover--overlay--dark--bg)"
+
+# [data-block-theme="resting"] { --style--* }
+[semantic.block.theme.resting]
+    fg = "var(--theme--resting--fg)"
+    bg = "var(--theme--resting--bg)"
+    border = "var(--theme--resting--border)"
+    accent.fg = "var(--theme--resting--accent--fg)"
+    accent.bg = "var(--theme--resting--accent--bg)"
+    highlight.fg = "var(--theme--resting--highlight--fg)"
+    highlight.bg = "var(--theme--resting--highlight--bg)"
+    alternate.fg = "var(--theme--resting--alternate--fg)"
+    alternate.bg = "var(--theme--resting--alternate--bg)"
+    overlay.light.fg = "var(--theme--resting--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--resting--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--resting--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--resting--overlay--dark--bg)"
+
+# [data-block-theme="social"] { --style--* }
+[semantic.block.theme.social]
+    fg = "var(--theme--social--fg)"
+    bg = "var(--theme--social--bg)"
+    border = "var(--theme--social--border)"
+    accent.fg = "var(--theme--social--accent--fg)"
+    accent.bg = "var(--theme--social--accent--bg)"
+    highlight.fg = "var(--theme--social--highlight--fg)"
+    highlight.bg = "var(--theme--social--highlight--bg)"
+    alternate.fg = "var(--theme--social--alternate--fg)"
+    alternate.bg = "var(--theme--social--alternate--bg)"
+    overlay.light.fg = "var(--theme--social--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--social--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--social--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--social--overlay--dark--bg)"
+
+# [data-block-theme="active"] { --style--* }
+[semantic.block.theme.active]
+    fg = "var(--theme--active--fg)"
+    bg = "var(--theme--active--bg)"
+    border = "var(--theme--active--border)"
+    accent.fg = "var(--theme--active--accent--fg)"
+    accent.bg = "var(--theme--active--accent--bg)"
+    highlight.fg = "var(--theme--active--highlight--fg)"
+    highlight.bg = "var(--theme--active--highlight--bg)"
+    alternate.fg = "var(--theme--active--alternate--fg)"
+    alternate.bg = "var(--theme--active--alternate--bg)"
+    overlay.light.fg = "var(--theme--active--overlay--light--fg)"
+    overlay.light.bg = "var(--theme--active--overlay--light--bg)"
+    overlay.dark.fg = "var(--theme--active--overlay--dark--fg)"
+    overlay.dark.bg = "var(--theme--active--overlay--dark--bg)"

@@ -1,0 +1,213 @@
+{
+  "type": "page",
+  "title": "Header Block",
+  "description": "A demonstration of the Header Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Header Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",       "text": ["Introduction"] },
+                    { "type": "a", "href": "#heading-levels",     "text": ["Heading Levels"] },
+                    { "type": "a", "href": "#in-page-navigation", "text": ["In-Page Navigation"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The Header enjin block is typically the first block on any page and present title-level",
+                            "semantic content."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "All enjin blocks can have their own relative header, section and footer content. The",
+                            "Header block provides additional features to the basic block structure which focus on the",
+                            "presentation of page-title level semantic content."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "header",
+            "tag": "about-headers",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "content": {
+                "header": [
+                    "About Headers"
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "heading-levels",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Heading Levels"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                           "Header blocks are the only enjin block which can have an <code>&lt;h1&gt;</code> tag. All",
+                           "semantic enjin based pages can have one and only one level-1 header tags because",
+                           "semantically speaking, this is the document's primary title and it does not make sense to",
+                           "have more than one primary title on a given page because screen readers are an important",
+                           "target of support for the semantic enjin theming system."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "Within the Semantic Enjin systems, content editors are presented with the ability to",
+                            "configure headers (and footers) for each enjin block they add to a page. There's no",
+                            "capacity presented where an editor can indicate the header priority because the priority",
+                            "is dictated by the general document outline or layout of the content and that layout is",
+                            "dictated by the page-level metadata and the order (and nesting) of enjin blocks on the",
+                            "page."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "For example: this page starts with a standard header block and because it's both the",
+                            "first block on the page and it's a header block, it's header section gets an",
+                            "<code>&lt;h1&gt;</code> tag."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The next block is a content block and because it's in the top level of the page block",
+                            "list, it gets an <code>&lt;h2&gt;</code> tag."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The next block after that is a second header block and because it's in the top level of",
+                            "the page block list and not the first, it too gets an <code>&lt;h2&gt;</code> tag."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This is where the semantics show up, the following block after the second header block",
+                            "is a normal content block, however there is the preceeding header block which tells the",
+                            "general document outline to increment to the next level of headings and thus this content",
+                            "block has an <code>&lt;h3&gt;</code> tag."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "header",
+            "tag": "header-navigation",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "heading-level": -1,
+            "content": {
+                "header": [
+                    "Header Navigation"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",   "text": "Introduction" },
+                    { "type": "a", "href": "#heading-levels", "text": "Heading Levels" }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "in-page-navigation",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "In-Page Navigation"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                           "All header blocks have an additional feature, that of an in-page navigation list, normally",
+                            "rendered as a horizontal bar of links to different parts of the same page. These links",
+                            "cannot be to other parts of the site, nor can they be to any other domain either."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "That may seem limiting, however, it is in fact a semantically correct approach because",
+                            "this particular link placement is for the convenience of navigating up or down from the",
+                            "current place on what is likely a long an informative document worthy of being stored for",
+                            "historical context by ",
+                            { "type": "a", "href": "https://archive.org", "text": "archive.org" },
+                            "."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The best way to link to off-or-same site content is to use the ",
+                            { "type": "a", "href": "/blocks/inline/link-list", "text": "Link-List" },
+                            " block which allows for just about any form of link including files for download like",
+                            "PDFs."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "The header block preceding this content block has in-page-nav links, as does the first",
+                            "header block on this page. Editors of course can choose which blocks are presented in any",
+                            "given header block's in-page-nav list."
+                        ]
+                    }
+                ]
+            }
+        }
+
+]

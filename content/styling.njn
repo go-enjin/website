@@ -1,0 +1,164 @@
+{
+  "type": "page",
+  "title": "Styling",
+  "description": "An introduction to Semantic Theme styling"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Styling"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#padding", "text": ["Padding"] },
+                { "type": "a", "href": "#margins", "text": ["Margins"] },
+                { "type": "a", "href": "#profile", "text": ["Profile"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The Semantic Theme enables content editors to present content with additional visual ",
+                        "aesthetics applied and without compromising accessibility."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Each block is stacked within a page context (list of blocks used by the theme templating). ",
+                        "For example, this page has one <q>main</q> context and if there were a sidebar block placed ",
+                        "on the page, there would be a <q>sidebar</q> context within the <q>main</q> context."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Editors have the ability to control the individual blocks and how they're visually ",
+                        "presented alongside their contextual neighbours through the use of some common block ",
+                        "attributes. This section of the site demonstrates the use of these common attributes."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "padding",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/styling/padding",
+        "link-text": "View block padding",
+        "content": {
+            "header": [
+                "Padding"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The <var>data-block-padding</var> attribute regulates the top and bottom padding between ",
+                        "the inner content section of the block and it's block boundary."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Use the link below to see a demonstration of all the different block padding configurations."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "margins",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/styling/margins",
+        "link-text": "View block margins",
+        "content": {
+            "header": [
+                "Margins"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The <var>data-block-margins</var> attribute regulates the top and bottom margins separating ",
+                        "the blocks within their context."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Use the link below to see a demonstration of all the different block margins configurations."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "profile",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/styling/profile",
+        "link-text": "View block profile",
+        "content": {
+            "header": [
+                "Profile"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The <var>data-block-profile</var> attribute regulates how the overall block contains it's ",
+                        "inner content and background coverage of the available space."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Use the link below to see a demonstration of all the different block profile configurations."
+                    ]
+                }
+            ]
+        }
+    }
+]

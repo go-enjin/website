@@ -1,0 +1,513 @@
+{
+  "type": "page",
+  "title": "Sidebar Block",
+  "description": "A demonstration of the Sidebar Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Sidebar Block"
+                ]
+            }
+        },
+
+        {
+            "type": "toc",
+            "tag": "main-toc",
+            "profile": "outer--inner",
+            "padding": "none",
+            "margins": "none"
+        },
+
+        {
+            "tag": "example-sidebar",
+            "type": "sidebar",
+            "profile": "full--outer",
+            "padding": "none",
+            "margins": "bottom",
+            "side": "right",
+            "sticky": "true",
+            "stack": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+
+                "aside": [
+                    {
+                        "tag": "aside-content",
+                        "type": "content",
+                        "profile": "full--full",
+                        "link-href": "#",
+                        "link-text": "Open in new tab",
+                        "link-target": "_blank",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": ["Aside Content"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This content block is within the ",
+                                        "sidebar's aside context. All the ",
+                                        "normal block settings apply."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "tag": "aside-link-list",
+                        "type": "link-list",
+                        "profile": "full--full",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": [
+                                "Aside Link-List"
+                            ],
+                            "section": [
+                                {
+                                    "type": "a",
+                                    "decorated": "true",
+                                    "href": "#",
+                                    "text": [
+                                       { "type": "fa-icon", "class": "fa-solid", "id": "fa-download" },
+                                       " does nothing"
+                                    ]
+                                },
+                                {
+                                    "type": "a",
+                                    "decorated": "true",
+                                    "href": "#",
+                                    "text": [
+                                       { "type": "fa-icon", "class": "fa-solid", "id": "fa-download" },
+                                       " also does nothing"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ],
+
+                "blocks": [
+
+                    {
+                        "type": "content",
+                        "tag": "introduction",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": [
+                                "Introduction"
+                            ],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Sidebar blocks are a flexible",
+                                        "container block in that they do not",
+                                        "provide content directly and instead",
+                                        "organize other blocks embedded within",
+                                        "the sidebar contexts."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Every sidebar block as two contexts,",
+                                        "or lists of blocks. The first is of",
+                                        "course the main content area and the",
+                                        "second is the aside blocks (which are",
+                                        "like normal blocks, just smaller and",
+                                        "their tag structure is slightly",
+                                        "different)."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "While any type of block can be used",
+                                        "in the main context, the aside",
+                                        "context allows for inline or finite",
+                                        "blocks, like the ones used in ",
+                                        {
+                                            "type": "a",
+                                            "href": "/blocks/container/pair",
+                                            "text": "Pair"
+                                        },
+                                        " blocks."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "image",
+                        "tag": "example-image",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "size": "banner",
+                        "content": {
+                            "picture": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg",
+                                    "alt": "an example image"
+                                },
+                                "sources": [
+                                    {
+                                        "type": "source",
+                                        "srcset": "/media/bg-door-art.jpg",
+                                        "media": "(max-width: 1024px)"
+                                    }
+                                ]
+                            },
+                            "footer": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "An example image within the main",
+                                        "context of a sidebar block."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "content",
+                        "tag": "sticky-and-stack-info",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": [
+                                "Sticky and Stack Info"
+                            ],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This content block forces the length of the sidebar block context to be long ",
+                                        "enough to demonstrate the <var>data-sidebar-sticky</var> attribute, which ",
+                                        "makes the aside context sticky to the top of the page."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "For mobile resolutions, the aside blocks are stacked before the normal blocks",
+                                        "by default. Specifying <q>bottom</q> for the <var>data-sidebar-stack</var>",
+                                        "block attribute will cause the aside context to be stacked under the main",
+                                        "context. This sidebar is configured for <q>bottom</q> stacking while the next",
+                                        "sidebar is set to the default."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ]
+            }
+        },
+
+        {
+            "type": "header",
+            "tag": "another-sidebar-example",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Another Sidebar Example"
+                ]
+            }
+        },
+
+        {
+            "tag": "another-sidebar-example",
+            "type": "sidebar",
+            "profile": "full--outer",
+            "padding": "none",
+            "margins": "none",
+            "side": "left",
+            "jump-top": "true",
+            "jump-link": "true",
+            "side": "left",
+            "content": {
+
+                "aside": [
+
+                    {
+                        "type": "notice",
+                        "tag": "notice-this",
+                        "profile": "full--inner",
+                        "padding": "none",
+                        "margins": "both",
+                        "link-href": "#another-sidebar-example",
+                        "link-text": "Does nothing",
+                        "notice-type": "info",
+                        "content": {
+                            "summary": [
+                                "Notice this!"
+                            ],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": ["Notices, like other inline blocks, can be placed within containers."]
+                                }
+                            ],
+                            "footer": [
+                                {
+                                    "type": "p",
+                                    "text": ["As with all blocks, even Notice blocks can have footers."]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "tag": "more-aside-content",
+                        "type": "content",
+                        "profile": "full--full",
+                        "link-href": "/blocks/container/sidebar",
+                        "link-text": "Reload this page",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": ["More Aside Content"],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This aside context has a collapsed notice above and a banner sized image below."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "The banner image is configured to have no top margins/padding and this block ",
+                                        "is configured to have no bottom margins or padding. This means there is no ",
+                                        "space between the content of this block and the banner image below."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "image",
+                        "tag": "sidebar-image",
+                        "profile": "full-full",
+                        "padding": "bottom",
+                        "margins": "bottom",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "size": "thin",
+                        "content": {
+                            "picture": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg",
+                                    "alt": "an example image"
+                                },
+                                "sources": [
+                                    {
+                                        "type": "source",
+                                        "srcset": "/media/bg-door-art.jpg",
+                                        "media": "(max-width: 1024px)"
+                                    }
+                                ]
+                            },
+                            "footer": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This is an image block and more specifically, this is the image block footer."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ],
+
+                "blocks": [
+                    {
+                        "type": "content",
+                        "tag": "information",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": [
+                                "Information"
+                            ],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This example of the sidebar features the aside blocks on the left instead of ",
+                                        "the right for desktop and stacked on top in mobile."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "The aside blocks are also subject to the heading levels policies and so, all ",
+                                        "the aside blocks in this sidebar example are <code>&lt;h3&gt;</code> tags."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Aside blocks with headings are not included in the table of contents and more ",
+                                        "specifically, the heading tags used within the aside context are in fact ",
+                                        "<code>&lt;div&gt;</code>s with one of the six heading classes, ",
+                                        "<code>.h1</code> through ",
+                                        { "type": "code", "text": ".h6" },
+                                        "."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "image",
+                        "tag": "another-example-image",
+                        "profile": "outer--inner",
+                        "padding": "none",
+                        "margins": "none",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "size": "banner",
+                        "content": {
+                            "picture": {
+                                "type": "picture",
+                                "default": {
+                                    "type": "img",
+                                    "src": "/media/bg-bonsai.jpg",
+                                    "alt": "an example image"
+                                },
+                                "sources": [
+                                    {
+                                        "type": "source",
+                                        "srcset": "/media/bg-door-art.jpg",
+                                        "media": "(max-width: 1024px)"
+                                    }
+                                ]
+                            },
+                            "footer": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "Another example image within a sidebar."
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+
+                    {
+                        "type": "content",
+                        "tag": "fixed-aside-context",
+                        "profile": "outer--inner",
+                        "padding": "both",
+                        "margins": "both",
+                        "jump-top": "true",
+                        "jump-link": "true",
+                        "content": {
+                            "header": [
+                                "Fixed Aside Context"
+                            ],
+                            "section": [
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This content block forces the length of the page to be long enough to ",
+                                        "demonstrate that this sidebar block is configured without the ",
+                                        "<var>data-sidebar-sticky</var> attribute set to <q>true</q>."
+                                    ]
+                                },
+                                {
+                                    "type": "p",
+                                    "text": [
+                                        "This sidebar's aside context is positioned relative in the page flow."
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+
+                ]
+            }
+        },
+
+        {
+            "type": "header",
+            "tag": "closing-remarks",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "heading-level": -1,
+            "content": {
+                "header": [
+                    "Closing Remarks"
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "fixed-aside-context",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "More about heading levels"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The closing remarks heading has decremented the page heading level, which makes this ",
+                            "content block's heading an <code>h3</code> tag and the closing remarks an ",
+                            "<code>h2</code>."
+                        ]
+                    }
+                ]
+            }
+        }
+]

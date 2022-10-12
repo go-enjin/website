@@ -1,0 +1,173 @@
+{
+  "type": "page",
+  "title": "Margins",
+  "description": "An introduction to Semantic Theme block margins"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Margins"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#margins-none", "text": ["None"] },
+                { "type": "a", "href": "#margins-top", "text": ["Top"] },
+                { "type": "a", "href": "#margins-bottom", "text": ["Bottom"] },
+                { "type": "a", "href": "#margins-both", "text": ["Both"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The <var>data-block-margins</var> attribute regulates the outer gap between any two blocks ",
+                        "within a context. The possible values for this attribute are as follows:"
+                    ]
+                },
+                {
+                    "type": "dl",
+                    "text": [
+                        { "type": "dt", "text": ["none"] },
+                        { "type": "dd", "text": ["apply no margins to either the top or bottom"] },
+                        { "type": "dt", "text": ["top"] },
+                        { "type": "dd", "text": ["apply margins to just the top"] },
+                        { "type": "dt", "text": ["bottom"] },
+                        { "type": "dd", "text": ["apply margins to just the bottom"] },
+                        { "type": "dt", "text": ["both"] },
+                        { "type": "dd", "text": ["apply margins to both the top and bottom (default)"] }
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This block is configured with the default setting of <q>both</q>. To further highlight these ",
+                        "settings on this page, the rest of the blocks present will alternate background colours, ",
+                        "like rows in a table, so that the boundary of one block and it's neighbours are readily ",
+                        "apparent."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "margins-none",
+        "profile": "outer--inner",
+        "margins": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "None"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block margins attribute is set to ",
+                        "<q>none</q>. The content of this block should be snug to it's contextual neighbours."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "margins-top",
+        "profile": "outer--inner",
+        "margins": "top",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "social",
+        "content": {
+            "header": [
+                "Top"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block margins attribute is set to ",
+                        "<q>top</q>. The content of this block should have a gap between it's neighbouring block ",
+                        "above and be flush with the block below."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "margins-bottom",
+        "profile": "outer--inner",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "Bottom"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block margins attribute is set to ",
+                        "<q>bottom</q>. The content of this block should have be snug to the block above and have a ",
+                        "nice gap between the next block below."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "margins-both",
+        "profile": "outer--inner",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "social",
+        "content": {
+            "header": [
+                "Both"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block margins attribute is set to ",
+                        "<q>both</q>. The content of this block should have a nice gap above and below this content."
+                    ]
+                }
+            ]
+        }
+    }
+]

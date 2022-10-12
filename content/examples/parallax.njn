@@ -1,0 +1,263 @@
+{
+  "type": "page",
+  "title": "Parallax",
+  "description": "An introduction to Semantic Theme parallax backgrounds"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "block-background": "parallax",
+        "parallax-image": "/media/bg-bonsai.jpg",
+        "parallax-theme": "dark",
+        "parallax-size": "full",
+        "content": {
+            "header": [
+                "Parallax"
+            ],
+            "nav": [
+                { "type": "a", "href": "#parallax-block", "text": ["Parallax Block"] },
+                { "type": "a", "href": "#parallax-carousel", "text": ["Parallax Carousel"] }
+            ]
+        }
+    },
+
+    {
+        "type": "icon",
+        "tag": "scroll-to-parallax-block",
+        "profile": "full--inner",
+        "padding": "none",
+        "margins": "none",
+        "theme": "secondary",
+        "content": {
+            "icon": {
+                "style": "light",
+                "float": "up",
+                "href": "#parallax-block",
+                "align": "center",
+                "class": "icon",
+                "name": "icon--scrolling-mouse",
+                "caption": "Scroll Down"
+            }
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "parallax-block",
+        "profile": "full--inner",
+        "padding": "both",
+        "margins": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "#",
+        "link-text": "Does nothing",
+        "block-background": "parallax",
+        "parallax-image": "/media/bg-bonsai.jpg",
+        "parallax-theme": "dark",
+        "parallax-size": "full",
+        "content": {
+            "header": [
+                "Parallax Block"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ",
+                        "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ",
+                        "laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in ",
+                        "voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ",
+                        "cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "icon",
+        "tag": "scroll-to-parallax-carousel",
+        "profile": "full--inner",
+        "padding": "both",
+        "margins": "none",
+        "theme": "secondary",
+        "content": {
+            "icon": {
+                "style": "light",
+                "float": "up",
+                "href": "#parallax-carousel",
+                "align": "center",
+                "class": "icon",
+                "name": "icon--scrolling-mouse",
+                "caption": "Scroll Down"
+            }
+        }
+    },
+
+    {
+        "type": "notice",
+        "tag": "check-this-out",
+        "profile": "full--inner",
+        "padding": "none",
+        "margins": "none",
+        "link-href": "#",
+        "link-text": "Does nothing",
+        "notice-type": "info",
+        "dismiss": "true",
+        "content": {
+            "summary": [
+                "Check this out!"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+                        "ut labore et dolore magna aliqua."
+                    ]
+                }
+            ]
+        }
+    },
+
+
+    {
+        "type": "carousel",
+        "tag": "parallax-carousel",
+        "profile": "full--full",
+        "padding": "both",
+        "margins": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "bookends": 1,
+        "nav-ctrl-type": "icon",
+        "block-background": "parallax",
+        "parallax-image": "/media/bg-bonsai.jpg",
+        "parallax-theme": "dark",
+        "parallax-size": "full",
+        "content": {
+            "header": [
+                "Carousel"
+            ],
+            "section": [
+
+                {
+                    "type": "card",
+                    "tag": "first-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "link-href": "#",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-bonsai.jpg"
+                            }
+                        },
+                        "header": ["First Card"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "First card copytext."
+                                ]
+                            }
+                        ]
+                    }
+                },
+
+                {
+                    "type": "card",
+                    "tag": "second-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "link-href": "#",
+                    "link-target": "_blank",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-ceil.jpg"
+                            }
+                        },
+                        "header": ["Second Card"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "Second card copytext."
+                                ]
+                            }
+                        ]
+                    }
+                },
+
+                {
+                    "type": "card",
+                    "tag": "third-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-door-art.jpg"
+                            }
+                        },
+                        "header": ["Third Card"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "Third card copytext."
+                                ]
+                            }
+                        ]
+                    }
+                },
+
+                {
+                    "type": "card",
+                    "tag": "last-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-field.jpg"
+                            }
+                        },
+                        "header": ["Last Card"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "Last card copytext."
+                                ]
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        }
+    }
+
+
+]

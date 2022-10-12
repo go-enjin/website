@@ -1,0 +1,145 @@
+{
+  "type": "page",
+  "title": "Link-List Block",
+  "description": "A demonstration of the Link-List Enjin block"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Link-List Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                    { "type": "a", "href": "#downloads",    "text": ["Downloads"]    },
+                    { "type": "a", "href": "#off-site",     "text": ["Off-Site"]     }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The Link-List block is really just that, a list of",
+                            "links. As with all blocks, theres a header and",
+                            "footer that can be configured along with the actual",
+                            "list of URLs, their labels and other metadata to",
+                            "help with the formal presentation of linked",
+                            "content."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "link-list",
+            "tag": "downloads",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Downloads"
+                ],
+                "section": [
+                    {
+                        "type": "a",
+                        "decorated": "true",
+                        "href": "#",
+                        "text": [
+                           { "type": "fa-icon", "class": "fa-solid", "id": "fa-download" },
+                           " does nothing"
+                        ]
+                    },
+                    {
+                        "type": "a",
+                        "decorated": "true",
+                        "href": "#",
+                        "text": [
+                           { "type": "fa-icon", "class": "fa-solid", "id": "fa-download" },
+                           " also does nothing"
+                        ]
+                    }
+                ],
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "This link-list block includes a footer, which you're",
+                            "reading right now."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "link-list",
+            "tag": "off-site",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Off-Site"
+                ],
+                "section": [
+                    {
+                        "type": "a",
+                        "decorated": "true",
+                        "target": "_blank",
+                        "href": "https://fontawesome.com",
+                        "text": [
+                            { "type": "fa-icon", "class": "fa-solid", "id": "fa-font-awesome" },
+                            " Visit Font-Awesome!"
+                        ]
+                    },
+                    {
+                        "type": "a",
+                        "decorated": "true",
+                        "target": "_blank",
+                        "href": "https://github.com/go-enjin",
+                        "text": [
+                            { "type": "fa-icon", "class": "fa-solid", "id": "fa-globe" },
+                            " Visit Go-Enjin on Github"
+                        ]
+                    }
+                ],
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "This link-list block includes a footer, which you're",
+                            "reading right now."
+                        ]
+                    }
+                ]
+            }
+        }
+]

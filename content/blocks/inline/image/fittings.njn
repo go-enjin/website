@@ -1,0 +1,229 @@
+{
+  "type": "page",
+  "title": "Image Block Fittings",
+  "description": "A demonstration of Image Block fittings"
+}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Image Block Fittings"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                    { "type": "a", "href": "#image-fit-cover", "text": ["Cover"] },
+                    { "type": "a", "href": "#image-fit-fill", "text": ["Fill"] },
+                    { "type": "a", "href": "#image-fit-contain", "text": ["Contain"] },
+                    { "type": "a", "href": "#image-fit-none", "text": ["None"] },
+                    { "type": "a", "href": "#image-fit-scale-down", "text": ["Scale-Down"] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "All image blocks have the capacity to alter how the image itself is fit to it's",
+                            "constraining viewport and dimension (height or width)."
+                        ]
+                    },
+                    {
+                        "type": "p",
+                        "text": [
+                            "This page highlights on just the <var>data-image-fit</var> attribute and all it's possible",
+                            "values, each demonstrated with the same image to show a contrast as the effects can be",
+                            "subtle."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-fit-cover",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "cover",
+            "content": {
+                "header": [
+                    "Cover"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set nothing (as this is the default fitting), or set either: the",
+                            "<var>data-image-fit</var> attribute to <q>cover</q>, or include the word <q>cover</q>",
+                            "in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-fit-fill",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "fill",
+            "content": {
+                "header": [
+                    "Fill"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-fit</var> attribute to <q>fill</q>, or include the word",
+                            "<q>fill</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-fit-contain",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "contain",
+            "content": {
+                "header": [
+                    "Contain"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-fit</var> attribute to <q>contain</q>, or include the",
+                            "word <q>contain</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-fit-none",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "none",
+            "content": {
+                "header": [
+                    "None"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-fit</var> attribute to <q>none</q>, or include the word",
+                            "<q>none</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "image",
+            "tag": "image-fit-scale-down",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "fitting": "scale-down",
+            "content": {
+                "header": [
+                    "Scale-Down"
+                ],
+                "picture": {
+                    "type": "picture",
+                    "default": {
+                        "type": "img",
+                        "src": "/media/bg-bonsai.jpg",
+                        "alt": "an example image"
+                    }
+                },
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Set either: the <var>data-image-fit</var> attribute to <q>scale-down</q>, or include the",
+                            "word <q>scale-down</q> in the shorthand <var>data-image</var> space separated attribute."
+                        ]
+                    }
+                ]
+            }
+        }
+
+]

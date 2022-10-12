@@ -1,0 +1,64 @@
+{
+  "type": "page",
+  "title": "Welcome",
+  "description": "A site dedicated to documenting and demonstrating the Go-Enjin project.",
+  "url": "/"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Welcome"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This website is dedicated to demonstrating the Semantic Enjin theme and documenting the",
+                        "concept of Enjin blocks."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Go-Enjin is a Golang based HTTP service engine based on a features concept. One of the Enjin",
+                        "features is of course a theming (or otherwise HTML templating) system with an official theme",
+                        "supporting all the features available."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This is that theme, rendered by a Go-Enjin service."
+                    ]
+                }
+            ]
+        }
+    }
+]

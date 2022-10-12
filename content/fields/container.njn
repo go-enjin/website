@@ -1,0 +1,438 @@
+{
+  "type": "page",
+  "title": "Container Fields",
+  "description": "An introduction to Container Fields"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Container Fields"
+            ],
+            "nav": [
+                { "type": "a", "href": "#overview", "text": ["Overview"] },
+                { "type": "a", "href": "#container-fields", "text": ["Container Fields"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "overview",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Overview"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Container fields are just like the inline-fields with the exception that they are more like",
+                        "wrappers around content rather than finite content providers themselves."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "container-fields",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Container Fields"
+            ],
+            "section": [
+                {
+                    "type": "table",
+                    "caption": "The following table details the container fields supported:",
+                    "options": {
+                        "sticky": {
+                            "head": "true",
+                            "data": "true"
+                        }
+                    },
+                    "head": [
+                        { "type": "th", "text": ["tag"] },
+                        { "type": "th", "text": ["name"] },
+                        { "type": "th", "text": ["sample, html"] }
+                    ],
+                    "body": [
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["blockquote"] },
+                                { "type": "td", "text": ["blockquote"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "blockquote",
+                                                    "caption": "An author, <cite>Go-Enjin</cite>",
+                                                    "text": [
+                                                        {
+                                                            "type": "p",
+                                                            "text": [
+                                                                "All paragraphs within a blockquote have quotes added."
+                                                            ]
+                                                        },
+                                                        "This text should not be quoted, yet still within the",
+                                                        "block-quoted content. With a caption given, a ",
+                                                        "<var>figcaption</var> immediately follows the blockquote",
+                                                        "with additional styles applied to visually compose the quote",
+                                                        "and the caption together."
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<blockquote>{inline-content}</blockquote>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["code"] },
+                                { "type": "td", "text": ["code fragment"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+
+                                                {
+                                                    "type": "p",
+                                                    "text": [
+                                                        "This paragraph contains a code fragment:",
+                                                        "<code>Example()</code>, which is inline with this text. The",
+                                                        "following is also a code fragment and because it is not",
+                                                        "within a paragraph, it will preserve the spacing as if it,",
+                                                        "were wrapped in a <var>pre</var> tag."
+                                                    ]
+                                                },
+
+                                                {
+                                                    "type": "code",
+                                                    "code": [
+                                                        "// Example is just an example Go function",
+                                                        "func Example() {",
+                                                        "  // this demonstrates a multi-line code field",
+                                                        "  // Semantic Enjin treats this as multi-line",
+                                                        "  // because it is not within a paragraph tag",
+                                                        "}"
+                                                    ]
+                                                },
+
+                                                {
+                                                    "type": "p",
+                                                    "text": [
+                                                        "The following is a <q>decorated</q> code field. Code fields",
+                                                        "typically have no fields in their content, just plain text.",
+                                                        "For these decorated code fields, Go-Enjin automatically",
+                                                        "splits the text on new-lines and wraps the entire list of",
+                                                        "lines of code as an ordered-list with each line it's own",
+                                                        "list-item. This is done to provide more interactivity",
+                                                        "such as highlight the hovered-over line and of course have",
+                                                        "the line numbers displayed beside."
+                                                    ]
+                                                },
+
+                                                {
+                                                    "type": "code",
+                                                    "decorated": "true",
+                                                    "code": [
+                                                        "// DecoratedExample is another Go function",
+                                                        "func DecoratedExample() {",
+                                                        "  // this demonstrates a multi-line code field",
+                                                        "  // which Go-Enjin prepared with each line wrapped in it's own list-item",
+                                                        "  // which allows Semantic Enjin to style with line numbers",
+                                                        "}"
+                                                    ]
+                                                }
+
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<code>{text}</code>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["dl"] },
+                                { "type": "td", "text": ["description listing"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "dl",
+                                                    "text": [
+                                                        {
+                                                            "type": "dt",
+                                                            "text": [
+                                                                {
+                                                                    "type": "dl",
+                                                                    "text": ["dl"]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "dd",
+                                                            "text": [
+                                                                "<q>dl</q> is the description list element which",
+                                                                "contains one or more description terms (dt) with",
+                                                                "their corresponding description details (dd)."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "dt",
+                                                            "text": [
+                                                                {
+                                                                    "type": "dfn",
+                                                                    "text": ["dt"]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "dd",
+                                                            "text": [
+                                                                "<q>dt</q> is one description term described within",
+                                                                "the description list."
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "dt",
+                                                            "text": [
+                                                                {
+                                                                    "type": "dfn",
+                                                                    "text": ["dd"]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "dd",
+                                                            "text": [
+                                                                "<q>dt</q> is one description detail describing",
+                                                                "the preceding description term."
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<dl>\n\t<dt>{inline-content}</dt>\n\t<dd>{inline-content]</dd>\n\t...\n</dl>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["table"] },
+                                { "type": "td", "text": ["table"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "p",
+                                                    "text": [
+                                                       "A table is used to present all of these container fields."
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<table {attributes}>\n\t<thead>...</thead>\n\t<tbody>...</tbody>\n\t<tfoot>...</tfoot>\n</table>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["ol"] },
+                                { "type": "td", "text": ["ordered list"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "ol",
+                                                    "list": [
+                                                        {
+                                                            "type": "span",
+                                                            "text": ["the first item"]
+                                                        },
+                                                        "the second item"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<ol {attributes}>\n\t<li>...</li>\n\t...\n</ol>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["p"] },
+                                { "type": "td", "text": ["paragraph"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "p",
+                                                    "text": [
+                                                        "This is paragraph content. It can only contain inline fields.",
+                                                        "The text within can be long and will line-wrap nicely. Lorem",
+                                                        "ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                                                        "eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "p",
+                                                    "text": [
+                                                        "A second paragraph will have a top-margin set."
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<p {attributes}>{inline-content}</p>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["pre"] },
+                                { "type": "td", "text": ["preformatted text"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "pre",
+                                                    "text": [
+                                                        "This content\n  has a staircase\n    effect due to the\n      preformatted empty space"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<pre {attributes}>{text}</pre>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+
+                        {
+                            "type": "tr",
+                            "data": [
+                                { "type": "td", "text": ["ul"] },
+                                { "type": "td", "text": ["unordered list"] },
+                                {
+                                    "type": "td",
+                                    "text": [
+                                        {
+                                            "type": "samp",
+                                            "text": [
+                                                {
+                                                    "type": "ul",
+                                                    "list": [
+                                                        "one item",
+                                                        {
+                                                            "type": "span",
+                                                            "text": ["another item"]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        { "type": "hr" },
+                                        {
+                                            "type": "pre",
+                                            "text": ["<ul {attributes}>\n\t<li>...</li>\n\t...\n</ul>"]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
+        }
+    }
+]

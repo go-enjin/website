@@ -1,0 +1,84 @@
+[
+  {
+		"text": "Go-Enjin links",
+		"href": "https://github.com/go-enjin",
+		"attributes": {
+			"target": "_blank"
+		},
+		"sub-menu": [
+			{
+				"text": "BE (B-Enjin)",
+				"href": "https://github.com/go-enjin/be",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "enjenv (Enjin Environment)",
+				"href": "https://github.com/go-enjin/enjenv",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "Examples",
+				"href": "https://github.com/go-enjin/examples",
+				"attributes": {
+					"target": "_blank"
+				}
+			}
+		]
+	},
+	{
+		"text": "Other links",
+		"sub-menu": [
+			{
+				"text": "Font-Awesome",
+				"href": "https://font-awesome.com",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "Go Language",
+				"href": "https://go.dev",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "ngrok",
+				"href": "https://ngrok.com",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "Heroku",
+				"href": "https://heroku.com",
+				"attributes": {
+					"target": "_blank"
+				}
+			}
+		]
+	},
+	{
+		"text": "More links",
+		"sub-menu": [
+			{
+				"text": "Jira Cloud Platform",
+				"href": "https://developer.atlassian.com/cloud/jira/platform/",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "Github",
+				"href": "https://github.com",
+				"attributes": {
+					"target": "_blank"
+				}
+			}
+		]
+	}
+]

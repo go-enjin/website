@@ -1,0 +1,14 @@
++++
+title = "Org-Mode Page Format"
+description = "An introduction to org-mode content"
++++
+#+TITLE: Org-Mode Page Format
+#+OPTIONS: toc:nil
+
+* Heading
+Lines that start with an asterisk (*) are headings
+** Sub-heading
+Each additional asterisk (*) increases the depth by one level
+* TODO Any heading can be turned into a TODO item
+** TODO this item needs addressing at some point
+** DONE this item was completed already

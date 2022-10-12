@@ -1,0 +1,175 @@
+{
+  "type": "page",
+  "title": "Padding",
+  "description": "An introduction to Semantic Theme block padding"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Padding"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#padding-none", "text": ["None"] },
+                { "type": "a", "href": "#padding-top", "text": ["Top"] },
+                { "type": "a", "href": "#padding-bottom", "text": ["Bottom"] },
+                { "type": "a", "href": "#padding-both", "text": ["Both"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The <var>data-block-padding</var> attribute regulates the inner gap between the actual ",
+                        "content and outer boundary of the block's available space. The possible values for this ",
+                        "attribute are as follows:"
+                    ]
+                },
+                {
+                    "type": "dl",
+                    "text": [
+                        { "type": "dt", "text": ["none"] },
+                        { "type": "dd", "text": ["apply no padding to either the top or bottom"] },
+                        { "type": "dt", "text": ["top"] },
+                        { "type": "dd", "text": ["apply padding to just the top"] },
+                        { "type": "dt", "text": ["bottom"] },
+                        { "type": "dd", "text": ["apply padding to just the bottom"] },
+                        { "type": "dt", "text": ["both"] },
+                        { "type": "dd", "text": ["apply padding to both the top and bottom (default)"] }
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This block is configured with the default setting of <q>both</q>. To further highlight these ",
+                        "settings on this page, the rest of the blocks present will alternate background colours, ",
+                        "like rows in a table, so that the boundary of one block and it's neighbours are readily ",
+                        "apparent."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "padding-none",
+        "profile": "outer--inner",
+        "padding": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "None"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block padding attribute is set to ",
+                        "<q>none</q>. The content of this block should be snug to the top and bottom boundaries of ",
+                        "this block's available space."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "padding-top",
+        "profile": "outer--inner",
+        "padding": "top",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "social",
+        "content": {
+            "header": [
+                "Top"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block padding attribute is set to ",
+                        "<q>top</q>. The content of this block should have a gap above and snug to the bottom below ",
+                        "this content."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "padding-bottom",
+        "profile": "outer--inner",
+        "padding": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "active",
+        "content": {
+            "header": [
+                "Bottom"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block padding attribute is set to ",
+                        "<q>bottom</q>. The content of this block should be snug to the top and have a nice gap below ",
+                        "this content."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "padding-both",
+        "profile": "outer--inner",
+        "padding": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "theme": "social",
+        "content": {
+            "header": [
+                "Both"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This block has a solid colour background and it's block padding attribute is set to ",
+                        "<q>both</q>. The content of this block should have a nice gap above and below this content."
+                    ]
+                }
+            ]
+        }
+    }
+]

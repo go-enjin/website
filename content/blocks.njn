@@ -1,0 +1,107 @@
+{
+  "type": "page",
+  "title": "Enjin Blocks",
+  "description": "An introduction to Enjin Blocks"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Enjin Blocks"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#inline-blocks", "text": ["Inline Blocks"] },
+                { "type": "a", "href": "#container-blocks", "text": ["Container Blocks"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Enjin blocks are pre-defined groups of enjin fields and metadata, rendered with specialized",
+                        "styling. For example, this block that you're reading now is a <q>content</q> block, with",
+                        "a content header and section specified. This paragraph is an enjin field within the content",
+                        "section."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "inline-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/inline",
+        "link-text": "Learn about inline blocks",
+        "content": {
+            "header": [
+                "Inline Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Inline blocks are enjin blocks that are composed of only enjin fields for content. Similarly",
+                        "to the inline fields versus the container fields."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "container-blocks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/blocks/container",
+        "link-text": "Learn about container blocks",
+        "content": {
+            "header": [
+                "Container Blocks"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Container blocks are enjin blocks that are composed of other enjin blocks and provide higher",
+                        "levels of page content organization, such as the ",
+                        { "type": "a", "href": "/blocks/sidebar", "text": "sidebar" },
+                        " block."
+                    ]
+                }
+            ]
+        }
+    }
+]
