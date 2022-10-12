@@ -21,21 +21,8 @@ APP_SUMMARY ?= Go-Enjin Website
 
 DENY_DURATION ?= 60
 
-BUILD_TAGS = embeds,htmlify,minify,semanticEnjinTheme
-DEV_BUILD_TAGS = locals,htmlify,minify,semanticEnjinTheme
+BUILD_TAGS = embeds,htmlify,semanticEnjinTheme
+DEV_BUILD_TAGS = locals,htmlify,semanticEnjinTheme
 EXTRA_PKGS =
 
 include ./Enjin.mk
-
-semantic-enjin-theme:
-	@echo "Compiling Semantic-Enjin SCSS"
-	@gassc \
-		themes/semantic-enjin/src/scss/semantic-enjin.scss > \
-		themes/semantic-enjin/static/css/semantic-enjin.css
-	@sha256sum themes/semantic-enjin/static/css/semantic-enjin.css
-
-build-dev-run:
-	@( make build dev 2>&1 ) | ./_scripts/colourize.pl
-
-build-rel-run:
-	@( make release run 2>&1 ) | ./_scripts/colourize.pl
