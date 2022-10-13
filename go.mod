@@ -2,7 +2,7 @@ module github.com/go-enjin/website
 
 go 1.18
 
-require github.com/go-enjin/be v0.0.0-20221013153013-266813983c5e
+require github.com/go-enjin/be v0.0.0-20221013173918-e4341787e238
 
 require (
 	github.com/BurntSushi/toml v1.2.0 // indirect
@@ -77,7 +77,7 @@ require (
 	github.com/yosssi/gohtml v0.0.0-20201013000340-ee4748c638f4 // indirect
 	golang.org/x/crypto v0.0.0-20221012134737-56aed061732a // indirect
 	golang.org/x/net v0.0.0-20221012135044-0b7e1fb9d458 // indirect
-	golang.org/x/sys v0.0.0-20221010170243-090e33056c14 // indirect
+	golang.org/x/sys v0.0.0-20221013171732-95e765b1cc43 // indirect
 	golang.org/x/term v0.0.0-20220919170432-7a66f970e087 // indirect
 	golang.org/x/text v0.3.8 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
