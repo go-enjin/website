@@ -47,8 +47,8 @@ github.com/go-curses/term v1.2.2-gocurses.1 h1:wUi7qtaZQO9q7+YpX8nGBDoFJd7aWZeo2
 github.com/go-curses/term v1.2.2-gocurses.1/go.mod h1:ZuwRe9U+iLY2qTuhzg/kg0Pc9bZdfcJCtfHrjGvZtVA=
 github.com/go-curses/terminfo v1.0.0 h1:vU1G+oYsvSwmywZe6ZsoRQ8a8XDrzlM3rPeejUmpzc4=
 github.com/go-curses/terminfo v1.0.0/go.mod h1:3cAGarEfP6wdhHYmUI2xAx14cu+cfIIQYXehy2q/zUg=
-github.com/go-enjin/be v0.0.0-20221013021713-9cee2d1f29e2 h1:Ofy8ILzu1Vh+Wscpz//GBlT5uug0V5AW6xeDvGd1+eQ=
-github.com/go-enjin/be v0.0.0-20221013021713-9cee2d1f29e2/go.mod h1:O+Pt4MDvUswciqJqrQfDqhI/W+1o2hjd1Qrf6aLrbpk=
+github.com/go-enjin/be v0.0.0-20221013153013-266813983c5e h1:xMA4ZBTLDf0meiKl/IU8aTEpF72xmheTd1VU3dA4SHE=
+github.com/go-enjin/be v0.0.0-20221013153013-266813983c5e/go.mod h1:O+Pt4MDvUswciqJqrQfDqhI/W+1o2hjd1Qrf6aLrbpk=
 github.com/go-kit/log v0.1.0/go.mod h1:zbhenjAZHb184qTLMA9ZjW7ThYL0H2mk7Q6pNt4vbaY=
 github.com/go-logfmt/logfmt v0.5.0/go.mod h1:wCYkCAKZfumFQihp8CzCvQ3paCTfi41vtzG1KdI/P7A=
 github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=
