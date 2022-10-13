@@ -22,6 +22,7 @@ import (
 	"github.com/go-enjin/be/features/log/papertrail"
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/formats"
+	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
 	"github.com/go-enjin/be/pkg/log"
 	"github.com/go-enjin/be/pkg/theme"
@@ -54,6 +55,7 @@ func main() {
 		AddFeature(fMenu).
 		AddFeature(fContent).
 		AddFeature(fPublic).
+		AddFeature(proxy.New().Make()).
 		AddFeature(papertrail.Make()).
 		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
