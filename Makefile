@@ -21,8 +21,8 @@ APP_SUMMARY ?= Go-Enjin Website
 
 DENY_DURATION ?= 60
 
-BUILD_TAGS = embeds,htmlify,semanticEnjinTheme
-DEV_BUILD_TAGS = locals,htmlify,semanticEnjinTheme
+BUILD_TAGS = embeds,papertrail,htmlify,semanticEnjinTheme
+DEV_BUILD_TAGS = locals,papertrail,htmlify,semanticEnjinTheme
 EXTRA_PKGS =
 
 include ./Enjin.mk
