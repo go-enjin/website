@@ -2,7 +2,7 @@ module github.com/go-enjin/website
 
 go 1.18
 
-require github.com/go-enjin/be v0.0.0-20221012214013-de2d7c374bbf
+require github.com/go-enjin/be v0.0.0-20221013021713-9cee2d1f29e2
 
 require (
 	github.com/BurntSushi/toml v1.2.0 // indirect
