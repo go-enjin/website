@@ -20,11 +20,23 @@ import (
 	"github.com/go-enjin/be/features/fs/locals/content"
 	"github.com/go-enjin/be/features/fs/locals/menu"
 	"github.com/go-enjin/be/features/fs/locals/public"
+	"github.com/go-enjin/be/pkg/log"
+	"github.com/go-enjin/be/pkg/theme"
 )
 
 func init() {
+	// locals environment, early startup debug logging
+	log.Config.LogLevel = log.LevelDebug
+	log.Config.Apply()
+
 	fContent = content.New().MountPath("/", "content").Make()
 	fPublic = public.New().MountPath("/", "public").Make()
 	fMenu = menu.New().MountPath("menus", "menus").Make()
+	if t, err := theme.NewLocal("themes/go-enjin"); err != nil {
+		log.FatalF("error loading local theme: %v", err)
+	} else {
+		goEnjinTheme = t
+		log.DebugF("loaded local theme: %v", t.Name)
+	}
 	hotReload = true
 }

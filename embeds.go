@@ -22,6 +22,8 @@ import (
 	"github.com/go-enjin/be/features/fs/embeds/content"
 	"github.com/go-enjin/be/features/fs/embeds/menu"
 	"github.com/go-enjin/be/features/fs/embeds/public"
+	"github.com/go-enjin/be/pkg/log"
+	"github.com/go-enjin/be/pkg/theme"
 )
 
 //go:embed content/**
@@ -33,9 +35,18 @@ var publicFs embed.FS
 //go:embed menus/**
 var menuFs embed.FS
 
+//go:embed themes/**
+var themeFs embed.FS
+
 func init() {
 	fContent = content.New().MountPathFs("/", "content", contentFs).Make()
 	fPublic = public.New().MountPathFs("/", "public", publicFs).Make()
 	fMenu = menu.New().MountPathFs("menus", "menus", menuFs).Make()
+	if t, err := theme.NewEmbed("themes/go-enjin", themeFs); err != nil {
+		log.FatalF("error loading embedded theme: %v", err)
+	} else {
+		goEnjinTheme = t
+		log.DebugF("loaded embed theme: %v", t.Name)
+	}
 	hotReload = false
 }

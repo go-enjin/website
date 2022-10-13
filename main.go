@@ -24,26 +24,20 @@ import (
 	"github.com/go-enjin/be/features/pages/formats"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
-	"github.com/go-enjin/be/pkg/log"
 	"github.com/go-enjin/be/pkg/theme"
 )
 
 var fContent feature.Feature
 var fPublic feature.Feature
 var fMenu feature.Feature
+var goEnjinTheme *theme.Theme
 var hotReload bool
-
-func init() {
-	// log.Config.LogLevel = log.LevelTrace
-	log.Config.LogLevel = log.LevelDebug
-	log.Config.Apply()
-}
 
 func main() {
 	enjin := be.New().
 		AddFeature(formats.New().Defaults().Make()).
 		AddTheme(theme.SemanticEnjinTheme()).
-		AddThemes("themes").
+		AddTheme(goEnjinTheme).
 		SetTheme("go-enjin").
 		Set("CopyrightName", "Go-Enjin").
 		Set("CopyrightNotice", "© 2022 All rights reserved").
