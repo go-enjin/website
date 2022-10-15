@@ -8,7 +8,10 @@ description = "An introduction to org-mode content"
 * Heading
 Lines that start with an asterisk (*) are headings
 ** Sub-heading
-Each additional asterisk (*) increases the depth by one level
+Each additional asterisk (*) increases the depth by one level.
+This text includes a footnote[fn:1]
 * TODO Any heading can be turned into a TODO item
 ** TODO this item needs addressing at some point
 ** DONE this item was completed already
+
+[fn:1] and this is the footnote
