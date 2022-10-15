@@ -26,8 +26,8 @@ import (
 
 func init() {
 	// locals environment, early startup debug logging
-	log.Config.LogLevel = log.LevelDebug
-	log.Config.Apply()
+	// log.Config.LogLevel = log.LevelDebug
+	// log.Config.Apply()
 
 	fContent = content.New().MountPath("/", "content").Make()
 	fPublic = public.New().MountPath("/", "public").Make()
