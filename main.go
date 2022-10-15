@@ -26,6 +26,8 @@ import (
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
 	"github.com/go-enjin/be/pkg/theme"
+
+	semantic "github.com/go-enjin/semantic-enjin-theme"
 )
 
 var fContent feature.Feature
@@ -37,7 +39,7 @@ var hotReload bool
 func main() {
 	enjin := be.New().
 		AddFeature(formats.New().Defaults().Make()).
-		AddTheme(theme.SemanticEnjinTheme()).
+		AddTheme(semantic.SemanticEnjinTheme()).
 		AddTheme(goEnjinTheme).
 		SetTheme("go-enjin").
 		Set("CopyrightName", "Go-Enjin").
