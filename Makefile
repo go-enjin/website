@@ -21,9 +21,17 @@ APP_SUMMARY ?= Go-Enjin Website
 
 DENY_DURATION ?= 60
 
-BUILD_TAGS = embeds,page_search,header_proxy,papertrail,htmlify,semanticEnjinTheme
-DEV_BUILD_TAGS = locals,page_search,header_proxy,papertrail,htmlify,semanticEnjinTheme
+COMMON_TAGS = page_search,header_proxy,papertrail,htmlify,semanticEnjinTheme,excludeDefaultTheme
+BUILD_TAGS = embeds,$(COMMON_TAGS)
+DEV_BUILD_TAGS = locals,$(COMMON_TAGS)
 EXTRA_PKGS =
+
+# Custom go.mod locals
+GOPKG_KEYS = SET
+
+# Semantic Enjin Theme
+SET_GO_PACKAGE = github.com/go-enjin/semantic-enjin-theme
+SET_LOCAL_PATH = ../semantic-enjin-theme
 
 include ./Enjin.mk
 
