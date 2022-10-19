@@ -99,10 +99,10 @@ github.com/go-curses/term v1.2.2-gocurses.1 h1:wUi7qtaZQO9q7+YpX8nGBDoFJd7aWZeo2
 github.com/go-curses/term v1.2.2-gocurses.1/go.mod h1:ZuwRe9U+iLY2qTuhzg/kg0Pc9bZdfcJCtfHrjGvZtVA=
 github.com/go-curses/terminfo v1.0.0 h1:vU1G+oYsvSwmywZe6ZsoRQ8a8XDrzlM3rPeejUmpzc4=
 github.com/go-curses/terminfo v1.0.0/go.mod h1:3cAGarEfP6wdhHYmUI2xAx14cu+cfIIQYXehy2q/zUg=
-github.com/go-enjin/be v0.0.0-20221019033217-a1400176e256 h1:umO85PouHoJbgOSbyuH/XnxbWG2+okNH4umW77Xh170=
-github.com/go-enjin/be v0.0.0-20221019033217-a1400176e256/go.mod h1:rQlMug6N4fKykck8wPOwRdG/aM6z4EieMweu6OI5sZU=
-github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019030835-494974ceefd7 h1:zU3u9RaM5fmyRXq9/xOwlg07yReNY8s46UZ7XWFJybU=
-github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019030835-494974ceefd7/go.mod h1:w5kOfWPnXpdZGtNdGu2ttA/tOOtOwC5OdI1//mynY6o=
+github.com/go-enjin/be v0.0.0-20221019183905-c1361f693e21 h1:80+AhEfw53UTYKgph6bPqlcNbJbocaeGdlBcq6zTnfk=
+github.com/go-enjin/be v0.0.0-20221019183905-c1361f693e21/go.mod h1:rQlMug6N4fKykck8wPOwRdG/aM6z4EieMweu6OI5sZU=
+github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019184139-fb223776dbec h1:SzMDl5UUIE/AaX2gWqDEPghcgjOsaYDTMUEwVDSAxQM=
+github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019184139-fb223776dbec/go.mod h1:0IGUMSxwfEjYz9YRHDDj9q3Wako8kMezc4qEmgWGpu4=
 github.com/go-kit/log v0.1.0/go.mod h1:zbhenjAZHb184qTLMA9ZjW7ThYL0H2mk7Q6pNt4vbaY=
 github.com/go-logfmt/logfmt v0.5.0/go.mod h1:wCYkCAKZfumFQihp8CzCvQ3paCTfi41vtzG1KdI/P7A=
 github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=
