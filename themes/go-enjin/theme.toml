@@ -10,11 +10,21 @@ homepage = "https://go-enjin.github.io/"
     homepage = "https://go-enjin.github.io"
 
 
-[semantic.site.menu]
-    mobile.style = "side"
-    desktop.style = "menu"
+[semantic.site]
+    menu.mobile.style = "side"
+    menu.desktop.style = "menu"
+    page.font-stylesheets = [
+        "https://fonts.googleapis.com/css2?display=swap&amp;family=Source%20Sans%20Pro&amp;family=Source%20Serif%20Pro"
+    ]
+    page.stylesheets = [
+        "/css/go-enjin.css"
+    ]
 
-#[semantic.style]
+[semantic.style]
+    page.heading.font-family = "'Source Sans Pro', sans-serif"
+    page.content.font-family = "'Source Serif Pro', serif"
+    page.monospace.font-family = "monospace"
+    page.dropcap.font-family = "'Source Sans Pro', sans-serif"
 #    color.working = "#ff901e"
 
 # --theme--material--*
