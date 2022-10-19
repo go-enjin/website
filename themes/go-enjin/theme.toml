@@ -10,8 +10,28 @@ homepage = "https://go-enjin.github.io/"
     homepage = "https://go-enjin.github.io"
 
 
+[semantic.site.menu]
+    mobile.style = "side"
+    desktop.style = "menu"
+
 #[semantic.style]
 #    color.working = "#ff901e"
+
+# --theme--material--*
+[semantic.style.theme.material]
+    fg = "var(--color--meditate)"
+    bg = "var(--color--material)"
+    accent.fg = "var(--accent--fg)"
+    accent.bg = "var(--accent--bg)"
+    highlight.fg = "var(--highlight--fg)"
+    highlight.bg = "var(--highlight--bg)"
+    alternate.fg = "var(--alternate--fg)"
+    alternate.bg = "var(--alternate--bg)"
+    overlay.dark.fg = "var(--overlay--dark--fg)"
+    overlay.dark.bg = "rgba(30, 144, 255, 0.77)"
+    overlay.light.fg = "var(--overlay--light--fg)"
+    overlay.light.bg = "rgba(30, 144, 255, 0.34)"
+    border = "5px solid var(--color--meditate)"
 
 # --theme--working--*
 [semantic.style.theme.working]
