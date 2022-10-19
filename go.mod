@@ -3,7 +3,7 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221019030150-afa90683ffaa
+	github.com/go-enjin/be v0.0.0-20221019033217-a1400176e256
 	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019030835-494974ceefd7
 )
 
