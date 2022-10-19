@@ -32,11 +32,15 @@ func init() {
 	fContent = content.New().MountPath("/", "content").Make()
 	fPublic = public.New().MountPath("/", "public").Make()
 	fMenu = menu.New().MountPath("menus", "menus").Make()
-	if t, err := theme.NewLocal("themes/go-enjin"); err != nil {
+	hotReload = true
+}
+
+func goEnjinTheme() (t *theme.Theme) {
+	var err error
+	if t, err = theme.NewLocal("themes/go-enjin"); err != nil {
 		log.FatalF("error loading local theme: %v", err)
 	} else {
-		goEnjinTheme = t
 		log.DebugF("loaded local theme: %v", t.Name)
 	}
-	hotReload = true
+	return
 }

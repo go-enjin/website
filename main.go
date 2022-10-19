@@ -18,6 +18,8 @@ import (
 	"fmt"
 	"os"
 
+	semantic "github.com/go-enjin/semantic-enjin-theme"
+
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/features/log/papertrail"
 	"github.com/go-enjin/be/features/outputs/htmlify"
@@ -25,22 +27,18 @@ import (
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
-	"github.com/go-enjin/be/pkg/theme"
-
-	semantic "github.com/go-enjin/semantic-enjin-theme"
 )
 
 var fContent feature.Feature
 var fPublic feature.Feature
 var fMenu feature.Feature
-var goEnjinTheme *theme.Theme
 var hotReload bool
 
 func main() {
 	enjin := be.New().
 		AddFeature(formats.New().Defaults().Make()).
 		AddTheme(semantic.SemanticEnjinTheme()).
-		AddTheme(goEnjinTheme).
+		AddTheme(goEnjinTheme()).
 		SetTheme("go-enjin").
 		Set("CopyrightName", "Go-Enjin").
 		Set("CopyrightNotice", "© 2022 All rights reserved").

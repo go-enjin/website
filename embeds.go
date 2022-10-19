@@ -42,11 +42,15 @@ func init() {
 	fContent = content.New().MountPathFs("/", "content", contentFs).Make()
 	fPublic = public.New().MountPathFs("/", "public", publicFs).Make()
 	fMenu = menu.New().MountPathFs("menus", "menus", menuFs).Make()
-	if t, err := theme.NewEmbed("themes/go-enjin", themeFs); err != nil {
-		log.FatalF("error loading embedded theme: %v", err)
+	hotReload = false
+}
+
+func goEnjinTheme() (t *theme.Theme) {
+	var err error
+	if t, err = theme.NewEmbed("themes/go-enjin", themeFs); err != nil {
+		log.FatalF("error loading embed theme: %v", err)
 	} else {
-		goEnjinTheme = t
 		log.DebugF("loaded embed theme: %v", t.Name)
 	}
-	hotReload = false
+	return
 }
