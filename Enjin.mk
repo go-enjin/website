@@ -17,7 +17,7 @@
 #: uncomment to echo instead of execute
 #CMD=echo
 
-ENJIN_MK_VERSION = v0.1.3
+ENJIN_MK_VERSION = v0.1.4
 
 SHELL = /bin/bash
 
@@ -133,7 +133,7 @@ $(shell if [ "${RELEASE_BUILD}" == "true" ]; then \
 		fi; \
 	elif [ "${DEV_BUILD_TAGS}" != "" ]; then \
 		echo "-tags ${DEV_BUILD_TAGS}"; \
-  	fi)
+	fi)
 endef
 
 define _build_label =
@@ -174,7 +174,7 @@ ${CMD} ${ENJENV_EXE} go-unlocal "$(1)"
 endef
 
 define _make_extra_pkgs =
-$(if ${GOPKG_KEYS},$(foreach key,${GOPKG_KEYS},$($(key)_GO_PACKAGE)),)
+$(if ${GOPKG_KEYS},$(foreach key,${GOPKG_KEYS},$($(key)_GO_PACKAGE)@latest),)
 endef
 
 define _make_extra_locals =
@@ -439,12 +439,12 @@ unlocal: _golang
 	@$(call _make_extra_unlocals)
 	@$(call _make_go_unlocal,${GO_ENJIN_PKG})
 
-be-update: PKG_LIST = ${GO_ENJIN_PKG} $(call _make_extra_pkgs)
+be-update: PKG_LIST = ${GO_ENJIN_PKG}@latest $(call _make_extra_pkgs)
 be-update: _golang
 	@$(call _validate_extra_pkgs)
-	@echo "# go get -u ${PKG_LIST}"
+	@echo "# go get ${PKG_LIST}"
 	@source "${ENJENV_PATH}/activate" \
-		&& ${CMD} GOPROXY=direct go get -u \
+		&& ${CMD} GOPROXY=direct go get \
 			$(call _build_tags) \
 			${PKG_LIST}
 
