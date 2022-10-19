@@ -7,6 +7,13 @@
 		},
 		"sub-menu": [
 			{
+				"text": "Examples",
+				"href": "https://github.com/go-enjin/examples",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
 				"text": "BE (B-Enjin)",
 				"href": "https://github.com/go-enjin/be",
 				"attributes": {
@@ -19,13 +26,6 @@
 				"attributes": {
 					"target": "_blank"
 				}
-			},
-			{
-				"text": "Examples",
-				"href": "https://github.com/go-enjin/examples",
-				"attributes": {
-					"target": "_blank"
-				}
 			}
 		]
 	},
@@ -33,8 +33,15 @@
 		"text": "Other links",
 		"sub-menu": [
 			{
-				"text": "Font-Awesome",
-				"href": "https://font-awesome.com",
+				"text": "ngrok",
+				"href": "https://ngrok.com",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "Bleve Search",
+				"href": "https://blevesearch.com",
 				"attributes": {
 					"target": "_blank"
 				}
@@ -45,20 +52,6 @@
 				"attributes": {
 					"target": "_blank"
 				}
-			},
-			{
-				"text": "ngrok",
-				"href": "https://ngrok.com",
-				"attributes": {
-					"target": "_blank"
-				}
-			},
-			{
-				"text": "Heroku",
-				"href": "https://heroku.com",
-				"attributes": {
-					"target": "_blank"
-				}
 			}
 		]
 	},
@@ -66,15 +59,22 @@
 		"text": "More links",
 		"sub-menu": [
 			{
-				"text": "Jira Cloud Platform",
-				"href": "https://developer.atlassian.com/cloud/jira/platform/",
+				"text": "Heroku",
+				"href": "https://heroku.com",
 				"attributes": {
 					"target": "_blank"
 				}
 			},
 			{
-				"text": "Github",
-				"href": "https://github.com",
+				"text": "Font-Awesome",
+				"href": "https://font-awesome.com",
+				"attributes": {
+					"target": "_blank"
+				}
+			},
+			{
+				"text": "Jira Cloud Platform",
+				"href": "https://developer.atlassian.com/cloud/jira/platform/",
 				"attributes": {
 					"target": "_blank"
 				}
