@@ -7,21 +7,21 @@
 		},
 		"sub-menu": [
 			{
-				"text": "Examples",
-				"href": "https://github.com/go-enjin/examples",
+				"text": "Website",
+				"href": "https://github.com/go-enjin/website",
 				"attributes": {
 					"target": "_blank"
 				}
 			},
 			{
-				"text": "BE (B-Enjin)",
+				"text": "Enjin (be)",
 				"href": "https://github.com/go-enjin/be",
 				"attributes": {
 					"target": "_blank"
 				}
 			},
 			{
-				"text": "enjenv (Enjin Environment)",
+				"text": "Environment (enjenv)",
 				"href": "https://github.com/go-enjin/enjenv",
 				"attributes": {
 					"target": "_blank"
