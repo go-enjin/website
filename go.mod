@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-enjin/be v0.0.0-20221019183905-c1361f693e21
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019184139-fb223776dbec
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019204048-98f08969c14c
 )
 
 require (

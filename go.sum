@@ -103,6 +103,8 @@ github.com/go-enjin/be v0.0.0-20221019183905-c1361f693e21 h1:80+AhEfw53UTYKgph6b
 github.com/go-enjin/be v0.0.0-20221019183905-c1361f693e21/go.mod h1:rQlMug6N4fKykck8wPOwRdG/aM6z4EieMweu6OI5sZU=
 github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019184139-fb223776dbec h1:SzMDl5UUIE/AaX2gWqDEPghcgjOsaYDTMUEwVDSAxQM=
 github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019184139-fb223776dbec/go.mod h1:0IGUMSxwfEjYz9YRHDDj9q3Wako8kMezc4qEmgWGpu4=
+github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019204048-98f08969c14c h1:n2ZyVivhd+i6psdJiBWpoCTvc/ZgscxEoBqDa80r2IY=
+github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019204048-98f08969c14c/go.mod h1:0IGUMSxwfEjYz9YRHDDj9q3Wako8kMezc4qEmgWGpu4=
 github.com/go-kit/log v0.1.0/go.mod h1:zbhenjAZHb184qTLMA9ZjW7ThYL0H2mk7Q6pNt4vbaY=
 github.com/go-logfmt/logfmt v0.5.0/go.mod h1:wCYkCAKZfumFQihp8CzCvQ3paCTfi41vtzG1KdI/P7A=
 github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=
