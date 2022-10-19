@@ -33,7 +33,7 @@
         <section>
             <form name="site-search" method="get" action="{{ .SiteSearchPath }}">
                 <input type="hidden" name="nonce" value="{{ Nonce "site-search-form" }}" />
-                <input type="text" name="query" placeholder="search terms +must should -not ..." value="{{ .SiteSearchQuery | asHTML }}" autofocus/>
+                <input type="search" name="query" placeholder="search terms +must should -not ..." value="{{ .SiteSearchQuery | asHTML }}" autofocus/>
                 <button type="submit" value="submit">
                     <i class="fas fa-search"></i>
                     <span class="sr-only">Search</span>
