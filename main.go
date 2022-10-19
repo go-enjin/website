@@ -44,6 +44,7 @@ func main() {
 		Set("CopyrightNotice", "© 2022 All rights reserved").
 		Set("SiteTag", "Go-Enjin").
 		Set("SiteName", "Go-Enjin").
+		Set("SiteTagLine", "Done is the enjin of more.").
 		// Set("SiteLoadingEffect", "true").
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
