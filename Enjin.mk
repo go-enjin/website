@@ -39,7 +39,6 @@ BUILD_TAGS ?=
 DEV_BUILD_TAGS ?= ${BUILD_TAGS}
 GOPKG_KEYS ?=
 
-
 CLEAN      ?= ${APP_NAME}
 DIST_CLEAN ?=
 
@@ -129,7 +128,7 @@ endef
 define _build_tags =
 $(shell if [ "${RELEASE_BUILD}" == "true" ]; then \
 		if [ "${BUILD_TAGS}" != "" ]; then \
-	  		echo "-tags ${BUILD_TAGS}"; \
+			echo "-tags ${BUILD_TAGS}"; \
 		fi; \
 	elif [ "${DEV_BUILD_TAGS}" != "" ]; then \
 		echo "-tags ${DEV_BUILD_TAGS}"; \
