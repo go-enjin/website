@@ -17,7 +17,7 @@
 #: uncomment to echo instead of execute
 #CMD=echo
 
-ENJIN_MK_VERSION = v0.1.5
+ENJIN_MK_VERSION = v0.1.6
 
 SHELL = /bin/bash
 
@@ -545,11 +545,15 @@ yarn-%:
 	@$(call _yarn_run_script,${TAG},${OP})
 endif
 
+HEROKU_GIT_REMOTE ?= heroku
+HEROKU_SRC_BRANCH ?= trunk
+HEROKU_DST_BRANCH ?= main
+
 heroku-push:
-	@git push heroku trunk:main
+	@${CMD} git push ${HEROKU_GIT_REMOTE} ${HEROKU_SRC_BRANCH}:${HEROKU_DST_BRANCH}
 
 heroku-logs:
-	@heroku logs --tail
+	@${CMD} heroku logs --tail
 
 # this requires Term::ANSIColor, will error if not present,
 # use `make build dev` instead
