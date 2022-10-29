@@ -43,23 +43,31 @@ func main() {
 		AddTheme(semantic.SemanticEnjinTheme()).
 		AddTheme(goEnjinTheme()).
 		SetTheme("go-enjin").
-		Set("CopyrightName", "Go-Enjin").
-		Set("CopyrightNotice", "© 2022 All rights reserved").
-		Set("SiteTag", "Go-Enjin").
-		Set("SiteName", "Go-Enjin").
-		Set("SiteTagLine", "Done is the enjin of more.").
-		// Set("SiteLoadingEffect", "true").
+		SiteTag("go-enjin").
+		SiteName("Go-Enjin").
+		SiteTagLine("Done is the enjin of more.").
+		SiteCopyrightName("Go-Enjin").
+		SiteCopyrightNotice("© 2022 All rights reserved").
+		SiteLanguageMode("path").
+		SiteDefaultLanguage(language.English).
+		// SiteDefaultLanguage(language.Japanese).
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
+		// Set("SiteLoadingEffect", "true").
+		AddHtmlHeadTag("meta", map[string]string{
+			"name":    "robots",
+			"content": "none",
+		}).
 		AddFeature(fMenu).
-		AddFeature(fContent).
 		AddFeature(fPublic).
 		AddFeature(fLocales).
+		AddFeature(fContent).
 		AddFeature(search.New().Make()).
-		AddFeature(proxy.New().Make()).
+		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(papertrail.Make()).
 		AddFeature(fMinifyHtmlify).
 		SetStatusPage(404, "/404").
+		SetStatusPage(500, "/500").
 		HotReload(hotReload).
 		Build()
 	if err := enjin.Run(os.Args); err != nil {
