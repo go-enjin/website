@@ -18,6 +18,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/go-enjin/golang-org-x-text/language"
+
 	semantic "github.com/go-enjin/semantic-enjin-theme"
 
 	"github.com/go-enjin/be"
@@ -29,6 +31,7 @@ import (
 )
 
 var fMinifyHtmlify feature.Feature
+var fLocales feature.Feature
 var fContent feature.Feature
 var fPublic feature.Feature
 var fMenu feature.Feature
@@ -51,6 +54,7 @@ func main() {
 		AddFeature(fMenu).
 		AddFeature(fContent).
 		AddFeature(fPublic).
+		AddFeature(fLocales).
 		AddFeature(search.New().Make()).
 		AddFeature(proxy.New().Make()).
 		AddFeature(papertrail.Make()).
