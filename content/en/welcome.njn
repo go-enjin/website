@@ -1,0 +1,111 @@
+{
+  "type": "page",
+  "title": "Welcome",
+  "description": "The official Go-Enjin website, demonstrating the Go-Enjin project and Semantic Enjin Theme",
+  "url": "/"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-top": "false",
+        "jump-link": "false",
+        "content": {
+            "header": [
+                "Welcome"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The Go-Enjin website is built, of course, using the Go-Enjin project and you can browse the ",
+                        "source code of go-enjin.org at the ",
+                        {
+                            "type": "a",
+                            "href": "https://github.com/go-enjin/website",
+                            "text": "official website repository",
+                            "target": "_blank"
+                        },
+                        "."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "The Go-Enjin project is a ",
+                        {
+                            "type": "a",
+                            "href": "https://go.dev",
+                            "target": "_blank",
+                            "text": [
+	                            {
+		                            "type": "abbr",
+		                            "text": ["Golang"],
+		                            "attributes": {
+		                                "title": "Go programming language"
+		                            }
+		                        }
+                            ]
+                        },
+                        " website service engine based on a features concept. One of these Enjin ",
+                        "features is a theming system with an official theme supporting all the features ",
+                        "available."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This website uses a child-theme of the actual ",
+                        {
+                            "type": "a",
+                            "href": "https://github.com/go-enjin/semantic-enjin-theme",
+                            "text": "Semantic Enjin Theme"
+                        },
+                        " which enables cosmetic changes as well as translations of theme template text. ",
+                        "For example, the branding (name and tag-line) for the site is translated in a variable ",
+                        "way and enjin site builders are expected to add these sorts of translations manually. Doing ",
+                        "this with the child-theme is one of a few possible ways to add custom text translations to ",
+                        "a Go-Enjin based site."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Documentation (like unit testing) for all the Go-Enjin projects is simply not addressed ",
+                        "yet. The team decided to prioritize limited resources on building a viable ",
+                        "\"proof of concept\" that demonstrates all of the initial enjin features first. This ",
+                        "website and general theming thereof are the \"proofs of enjin concepts\"."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- The Go-Enjin team"
+                    ]
+                }
+            ]
+        }
+    }
+]

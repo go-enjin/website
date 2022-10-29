@@ -1,7 +1,7 @@
 {
   "type": "page",
-  "title": "Privacy Policy",
-  "description": "The Go-Enjin website privacy policy page"
+  "title": "Contact Us",
+  "description": "How to contact the Go-Enjin project"
 }
 [
 
@@ -15,7 +15,7 @@
         "jump-link": "true",
         "content": {
             "header": [
-                "Privacy Policy"
+                "Contact Us"
             ]
         }
     },
@@ -33,14 +33,19 @@
                 {
                     "type": "p",
                     "text": [
-                        "This website does not collect any personal information and all webserver traffic logs are ",
-                        "for security and debugging purposes only."
+                        "To contact us, please use the ",
+                        {
+                            "type": "a",
+                            "href": "mailto:go.enjin.org@gmail.com",
+                            "text": "go.enjin.org@gmail.com"
+                        },
+                        " address."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "-- The Go-Enjin website team"
+                        "-- The Go-Enjin team"
                     ]
                 }
             ]

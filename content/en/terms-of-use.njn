@@ -50,6 +50,13 @@
                 {
                     "type": "p",
                     "text": [
+                        "All media and content are property of the Go-Enjin project and are not permitted for any ",
+                        "use other than demonstrating Go-Enjin and the Semantic Enjin Theme."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
                         "-- The Go-Enjin website team"
                     ]
                 }

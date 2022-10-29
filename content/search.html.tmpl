@@ -16,7 +16,7 @@
          data-header-count="1">
     <div class="content">
         <h1>
-            <a href="{{ .SiteSearchPath }}">Site Search</a>
+            <a href="{{ .SiteSearchPath }}">{{ _ "Site Search" }}</a>
         </h1>
     </div>
 </section>
@@ -33,7 +33,7 @@
         <section>
             <form name="site-search" method="get" action="{{ .SiteSearchPath }}">
                 <input type="hidden" name="nonce" value="{{ Nonce "site-search-form" }}" />
-                <input type="search" name="query" placeholder="search terms +must should -not ..." value="{{ .SiteSearchQuery | asHTML }}" autofocus/>
+                <input type="search" name="query" placeholder="{{ _ "search terms +must should -not ..." }}" value="{{ .SiteSearchQuery | asHTML }}" autofocus/>
                 <button type="submit" value="submit">
                     <i class="fas fa-search"></i>
                     <span class="sr-only">Search</span>
