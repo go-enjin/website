@@ -22,6 +22,7 @@ import (
 	"github.com/go-enjin/be/features/fs/embeds/content"
 	"github.com/go-enjin/be/features/fs/embeds/menu"
 	"github.com/go-enjin/be/features/fs/embeds/public"
+	"github.com/go-enjin/be/features/outputs/minify"
 	"github.com/go-enjin/be/pkg/log"
 	"github.com/go-enjin/be/pkg/theme"
 )
@@ -39,6 +40,7 @@ var menuFs embed.FS
 var themeFs embed.FS
 
 func init() {
+	fMinifyHtmlify = minify.New().AddMimeType("text/html").Make()
 	fContent = content.New().MountPathFs("/", "content", contentFs).Make()
 	fPublic = public.New().MountPathFs("/", "public", publicFs).Make()
 	fMenu = menu.New().MountPathFs("menus", "menus", menuFs).Make()

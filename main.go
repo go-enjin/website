@@ -22,13 +22,13 @@ import (
 
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/features/log/papertrail"
-	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/formats"
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
 )
 
+var fMinifyHtmlify feature.Feature
 var fContent feature.Feature
 var fPublic feature.Feature
 var fMenu feature.Feature
@@ -54,7 +54,7 @@ func main() {
 		AddFeature(search.New().Make()).
 		AddFeature(proxy.New().Make()).
 		AddFeature(papertrail.Make()).
-		AddFeature(htmlify.New().Make()).
+		AddFeature(fMinifyHtmlify).
 		SetStatusPage(404, "/404").
 		HotReload(hotReload).
 		Build()
