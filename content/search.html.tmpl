@@ -16,32 +16,35 @@
          data-header-count="1">
     <div class="content">
         <h1>
-            <a href="{{ .SiteSearchPath }}">{{ _ "Site Search" }}</a>
+            <a href="{{ __ .SiteSearchPath }}">{{ _ "Site Search" }} ({{ .Request.Language }})</a>
         </h1>
     </div>
 </section>
 
-<article class="block"
-         id="site-search-form"
-         data-block-tag="site-search-form"
-         data-block-type="content"
-         data-block-theme="working"
-         data-block-profile="outer--inner"
-         data-block-padding="none"
-         data-block-margins="bottom">
-    <div class="content">
-        <section>
-            <form name="site-search" method="get" action="{{ .SiteSearchPath }}">
-                <input type="hidden" name="nonce" value="{{ Nonce "site-search-form" }}" />
-                <input type="search" name="query" placeholder="{{ _ "search terms +must should -not ..." }}" value="{{ .SiteSearchQuery | asHTML }}" autofocus/>
-                <button type="submit" value="submit">
-                    <i class="fas fa-search"></i>
-                    <span class="sr-only">Search</span>
-                </button>
-            </form>
-        </section>
-    </div>
-</article>
+<form name="site-search" method="get" action="{{ __ .SiteSearchPath }}">
+    <article class="block"
+             id="site-search-form"
+             data-block-tag="site-search-form"
+             data-block-type="content"
+             data-block-theme="working"
+             data-block-profile="outer--inner"
+             data-block-padding="none"
+             data-block-margins="bottom">
+        <div class="content">
+            <section>
+                <div class="site-search-form-fields">
+                    <input type="hidden" name="nonce" value="{{ Nonce "site-search-form" }}" />
+                    <input type="search" name="query" placeholder="{{ _ "search terms +must should -not ..." }}" value="{{ .SiteSearchQuery | asHTML }}" autofocus/>
+                    <button type="submit" value="submit">
+                        <i class="fas fa-search"></i>
+                        <span class="sr-only">{{ _ "Search" }}</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </article>
+</form>
+
 <article class="block"
          id="site-search-details"
          data-block-tag="site-search-details"
@@ -52,31 +55,17 @@
     <div class="content">
         {{- if .SiteSearchResults -}}
         <header>
-            <h2>Results</h2>
+            <h2>{{ _ "Results" }}</h2>
         </header>
         {{- end -}}
         <section>
             {{- if .SiteSearchResults -}}
-            <p>
-                {{ if ge .SiteSearchPages 1 }}
-                Showing
-                    {{ if gt (len .SiteSearchResults.Hits) 1 }}
-                        {{ add (mul .SiteSearchPage .SiteSearchSize) 1 -}}
-                        -
-                        {{- add (len .SiteSearchResults.Hits) (mul .SiteSearchPage .SiteSearchSize) }}
-                    {{ else }}
-                        result {{ add 1 (mul .SiteSearchPage .SiteSearchSize) }}
-                    {{ end }}
-                of
-                {{ end }}
-                {{ .SiteSearchResults.Total }} result{{ if gt .SiteSearchResults.Total 1 }}s{{ end }} found
-                {{- if ge .SiteSearchPages 1 -}},
-                on page {{ add .SiteSearchPage 1 }} of {{ add .SiteSearchPages 1 }},
-                {{- end }}
-                for search: <mark>{{ .SiteSearchQuery | asHTML }}</mark>.
-            </p>
+            <div style="display:flex;justify-content: space-between;">
+                <span style="text-align:left;">{{ .SiteSearchResultSummary }}<br /><mark>{{ .SiteSearchQuery }}</mark></span>
+                <span style="text-align:right;">{{ .SiteSearchHitsSummary }}<br />{{ .SiteSearchPageSummary }}</span>
+            </div>
             {{- else if .SiteSearchError -}}
-            <p>Invalid query: {{ .SiteSearchError }}</p>
+            <p>{{ _ "Search error" }}: {{ .SiteSearchError }}</p>
             {{- end -}}
             <ol class="search-results" start="{{ add 1 (mul .SiteSearchPage .SiteSearchSize) }}">
                 {{- range $idx, $hit := .SiteSearchResults.Hits }}
@@ -100,7 +89,7 @@
                 {{- end }}
             </ol>
         </section>
-        <a class="jump-top" href="#top">top</a>
+        <a class="jump-top" href="#top">{{ _ "top" }}</a>
     </div>
 </article>
 
@@ -117,27 +106,30 @@
         <footer>
             <div class="search-pagination">
                 {{ if gt .SiteSearchPage 0 }}
-                <a title="Go to the first page" href="/search/{{ .SiteSearchQuery | asHTML }}">
+                <a title="Go to the first page" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}">
                     <i class="fa-solid fa-angles-left"></i>
-                    <span class="sr-only">first</span>
+                    <span class="sr-only">{{ _ "first" }}</span>
                 </a>
-                <a title="Go back one page" href="/search/{{ .SiteSearchQuery | asHTML }}/{{ .SiteSearchSize }}/{{ sub .SiteSearchPage 1 }}">
+                <a title="Go back one page" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ sub .SiteSearchPage 1 }}">
                     <i class="fa-solid fa-angle-left"></i>
-                    <span class="sr-only">back</span>
+                    <span class="sr-only">{{ _ "back" }}</span>
                 </a>
                 {{ else }}
                 <div><i class="fa-solid fa-angles-left"></i></div>
                 <div><i class="fa-solid fa-angle-left"></i></div>
                 {{ end }}
-                <div class="search-pagination-info">{{ add .SiteSearchPage 1 }} of {{ add .SiteSearchPages 1 }}</div>
+                <div class="search-pagination-info">
+                    <span class="search-pagination-info--pages">{{ .SiteSearchPageSummary }}</span>
+                    <span class="search-pagination-info--hits">({{ .SiteSearchHitsSummary }})</span>
+                </div>
                 {{ if lt .SiteSearchPage .SiteSearchPages }}
-                <a title="Go to the next page" href="/search/{{ .SiteSearchQuery | asHTML }}/{{ .SiteSearchSize }}/{{ add .SiteSearchPage 1 }}">
+                <a title="Go to the next page" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ add .SiteSearchPage 1 }}">
                     <i class="fa-solid fa-angle-right"></i>
-                    <span class="sr-only">next</span>
+                    <span class="sr-only">{{ _ "next" }}</span>
                 </a>
-                <a title="Go to the last page" href="/search/{{ .SiteSearchQuery | asHTML }}/{{ .SiteSearchSize }}/{{ .SiteSearchPages }}">
+                <a title="Go to the last page" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ .SiteSearchPages }}">
                     <i class="fa-solid fa-angles-right"></i>
-                    <span class="sr-only">last</span>
+                    <span class="sr-only">{{ _ "last" }}</span>
                 </a>
                 {{ else }}
                 <div><i class="fa-solid fa-angle-right"></i></div>
