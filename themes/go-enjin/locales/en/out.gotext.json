@@ -1,0 +1,26 @@
+{
+    "language": "en",
+    "messages": [
+        {
+            "id": "Go-Enjin",
+            "key": "Go-Enjin",
+            "message": "Go-Enjin",
+            "translation": "Go-Enjin",
+            "translatorComment": "Copied from template."
+        },
+        {
+            "id": "Done is the enjin of more.",
+            "key": "Done is the enjin of more.",
+            "message": "Done is the enjin of more.",
+            "translation": "Done is the enjin of more.",
+            "translatorComment": "Copied from template."
+        },
+        {
+            "id": "© 2022 All rights reserved",
+            "key": "© 2022 All rights reserved",
+            "message": "© 2022 All rights reserved",
+            "translation": "© 2022 All rights reserved",
+            "translatorComment": "Copied from template."
+        }
+    ]
+}
