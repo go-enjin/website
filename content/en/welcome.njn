@@ -1,7 +1,7 @@
 {
   "type": "page",
   "title": "Welcome",
-  "description": "The official Go-Enjin website, demonstrating the Go-Enjin project and Semantic Enjin Theme",
+  "description": "The official Go-Enjin website",
   "url": "/"
 }
 [
@@ -38,15 +38,65 @@
             ],
             "section": [
                 {
+                    "type": "dl",
+                    "text": [
+                        { "type": "dt", "text": "enjin <small>en·jin (noun)</small>" },
+                        {
+                            "type": "dd",
+                            "text": [
+                                ": a strange form of ",
+                                {
+                                    "type": "a",
+                                    "href": "https://www.merriam-webster.com/dictionary/engine",
+                                    "text": "engine"
+                                },
+                                " for building websites and microservices",
+                                { "type": "br" },
+                                ": an instance of an Enjin service"
+                            ]
+                        },
+                        { "type": "dt", "text": "Enjin <small>en·jin (proper noun)</small>" },
+                        {
+                            "type": "dd",
+                            "text": [
+                                ": referring to the Go-Enjin project, or",
+                                { "type": "br" },
+                                ": specifically referring to the Go-Enjin ",
+                                { "type": "a", "href": "https://github.com/go-enjin/be", "text": "be" },
+                                " codebase"
+                            ]
+                        },
+                        { "type": "dt", "text": "Go-Enjin <small>go en·jin (proper noun)</small>" },
+                        {
+                            "type": "dd",
+                            "text": [
+                                ": an organization of open source software projects, written primarily in the Go ",
+                                "programming language, focused on building enjins"
+                            ]
+                        }
+                    ]
+                },
+                {
                     "type": "p",
                     "text": [
-                        "The Go-Enjin website is built, of course, using the Go-Enjin project and you can browse the ",
-                        "source code of go-enjin.org at the ",
+                        "The Enjin way of doing things is to enable developers a flexible website (or microservice) ",
+                        "development workflow, designed around the concepts of developer-focused features where each ",
+                        "feature follows the general UNIX philosophy of \"do one thing and do that thing well\"."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Features are things like ways for providing content, menus and other stuff to the theming ",
+                        "system for rendering. Other features are the various forms of content supported, such as: ",
+                        "markdown and org-mode. Features are selectively included by developers in their ",
+                        "<code>main.go</code> in order to provide the website content desired. For the curious, ",
+                        "browse this ",
                         {
                             "type": "a",
-                            "href": "https://github.com/go-enjin/website",
-                            "text": "official website repository",
-                            "target": "_blank"
+                             "target": "_blank",
+                              "href": "https://github.com/go-enjin/website",
+                               "text": "website's codebase"
                         },
                         "."
                     ]
@@ -54,49 +104,39 @@
                 {
                     "type": "p",
                     "text": [
-                        "The Go-Enjin project is a ",
+                        "This website is an example of a running enjin using the Semantic Enjin Theme. ",
+                        "Most of the pages on the English version of this site are focused on demonstrating different ",
+                        "aspects of the theme, such as blocks and page layouts. ",
+                        "Go-Enjin supports the internationalization (translation) of content and to illustrate this ",
+                        "go-enjin.org has been translated into Japanese. Use the top navigation menu for desktop ",
+                        "browsers, or the open side menu for mobile browsers, to switch site languages."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "The Go-Enjin project (and team) love and follow \"The Cult of Done Manifesto\" and have ",
+                        "shamelessly co-opted the tag-line \"done is the enjin of more\", which is the last item on ",
+                        "the manifesto list, just with a different engine in mind. For more information on the cult ",
+                        "of done, see: ",
                         {
                             "type": "a",
-                            "href": "https://go.dev",
                             "target": "_blank",
-                            "text": [
-	                            {
-		                            "type": "abbr",
-		                            "text": ["Golang"],
-		                            "attributes": {
-		                                "title": "Go programming language"
-		                            }
-		                        }
-                            ]
+                            "href": "https://medium.com/@bre/the-cult-of-done-manifesto-724ca1c2ff13",
+                            "text": "The Cult of Done Manifesto, by Bre Pettis"
                         },
-                        " website service engine based on a features concept. One of these Enjin ",
-                        "features is a theming system with an official theme supporting all the features ",
-                        "available."
+                        "."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "This website uses a child-theme of the actual ",
-                        {
-                            "type": "a",
-                            "href": "https://github.com/go-enjin/semantic-enjin-theme",
-                            "text": "Semantic Enjin Theme"
-                        },
-                        " which enables cosmetic changes as well as translations of theme template text. ",
-                        "For example, the branding (name and tag-line) for the site is translated in a variable ",
-                        "way and enjin site builders are expected to add these sorts of translations manually. Doing ",
-                        "this with the child-theme is one of a few possible ways to add custom text translations to ",
-                        "a Go-Enjin based site."
-                    ]
-                },
-                {
-                    "type": "p",
-                    "text": [
-                        "Documentation (like unit testing) for all the Go-Enjin projects is simply not addressed ",
-                        "yet. The team decided to prioritize limited resources on building a viable ",
-                        "\"proof of concept\" that demonstrates all of the initial enjin features first. This ",
-                        "website and general theming thereof are the \"proofs of enjin concepts\"."
+                        "Documentation (like unit testing) for all of the Go-Enjin projects are simply not addressed ",
+                        "yet. The team decided to prioritize getting a viable proof-of-concept done ",
+                        "that demonstrates as many of the initial enjin features possible before starting the ",
+                        "never-ending process of documenting and testing all the things, remember: documentation and ",
+                        "unit testing are not events, they are on-going processes on the path to getting bigger ",
+                        "things done."
                     ]
                 },
                 {
