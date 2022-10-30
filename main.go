@@ -18,6 +18,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/golang-org-x-text/language"
 
 	semantic "github.com/go-enjin/semantic-enjin-theme"
@@ -48,9 +49,15 @@ func main() {
 		SiteTagLine("Done is the enjin of more.").
 		SiteCopyrightName("Go-Enjin").
 		SiteCopyrightNotice("© 2022 All rights reserved").
-		SiteLanguageMode("path").
 		SiteDefaultLanguage(language.English).
 		// SiteDefaultLanguage(language.Japanese).
+		// SiteLanguageMode(lang.NewQueryMode().SetQueryParameter("lang").Make()).
+		SiteLanguageMode(lang.NewPathMode().Make()).
+		// SiteLanguageMode(lang.NewDomainMode().
+		// 	Set(language.English, "http://en.localhost:3335").
+		// 	Set(language.Japanese, "http://ja.localhost:3335").
+		// 	Make(),
+		// ).
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
 		// Set("SiteLoadingEffect", "true").
