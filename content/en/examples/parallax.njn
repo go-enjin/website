@@ -11,8 +11,6 @@
         "profile": "outer--inner",
         "padding": "top",
         "margins": "none",
-        "jump-top": "true",
-        "jump-link": "true",
         "block-background": "parallax",
         "parallax-image": "/media/bg-bonsai.jpg",
         "parallax-theme": "dark",

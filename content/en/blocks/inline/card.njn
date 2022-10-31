@@ -11,8 +11,6 @@
             "profile": "outer--inner",
             "padding": "top",
             "margins": "bottom",
-            "jump-top": "true",
-            "jump-link": "true",
             "content": {
                 "header": [
                     "Card Block"

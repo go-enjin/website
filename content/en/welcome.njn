@@ -12,8 +12,6 @@
         "profile": "outer--inner",
         "padding": "top",
         "margins": "bottom",
-        "jump-top": "false",
-        "jump-link": "false",
         "content": {
             "header": [
                 "Welcome"
