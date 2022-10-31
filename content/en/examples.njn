@@ -15,7 +15,7 @@
         "jump-link": "true",
         "content": {
             "header": [
-                "Styling"
+                "Examples"
             ],
             "nav": [
                 { "type": "a", "href": "#introduction", "text": ["Introduction"] },
