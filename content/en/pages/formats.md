@@ -21,4 +21,4 @@ Learn more about the [Org-Mode](/pages/formats/org-mode) format.
 
 ## Enjin
 
-Learn more about the [Enjin](/pages/formats/njn) format.
+Learn more about the [Enjin](/pages/formats/enjin) format.

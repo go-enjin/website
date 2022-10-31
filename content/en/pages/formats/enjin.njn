@@ -34,26 +34,26 @@
                 {
                     "type": "p",
                     "text": [
-                        "The Enjin page format focuses on a semantics focused",
-                        "format where page content is defined in a series of",
-                        "Enjin Blocks, of which this block of text you're",
-                        "reading now is contained within a <q>content</q>",
+                        "The Enjin page format focuses on a semantics focused ",
+                        "format where page content is defined in a series of ",
+                        "Enjin Blocks, of which this block of text you're ",
+                        "reading now is contained within a <q>content</q> ",
                         "block."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "Content blocks accept a wide array of container and",
-                        "inline fields which organize and present the content",
-                        "in ways that are conducive to screen readers while",
+                        "Content blocks accept a wide array of container and ",
+                        "inline fields which organize and present the content ",
+                        "in ways that are conducive to screen readers while ",
                         "also maintaining an aesthetically pleasing theme."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "This site primarily focuses on demonstrating the",
+                        "This site primarily focuses on demonstrating the ",
                         "default Go-Enjin theming system."
                     ]
                 }
