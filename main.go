@@ -44,7 +44,7 @@ func main() {
 		AddTheme(semantic.SemanticEnjinTheme()).
 		AddTheme(goEnjinTheme()).
 		SetTheme("go-enjin").
-		SiteTag("go-enjin").
+		SiteTag("BE").
 		SiteName("Go-Enjin").
 		SiteTagLine("Done is the enjin of more.").
 		SiteCopyrightName("Go-Enjin").
@@ -58,6 +58,11 @@ func main() {
 		// 	Set(language.Japanese, "http://ja.localhost:3335").
 		// 	Make(),
 		// ).
+		SiteLanguageDisplayNames(map[language.Tag]string{
+			language.English: "EN",
+		}).
+		Set("SiteTitleReversed", true).
+		Set("SiteTitleSeparator", " | ").
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
 		// Set("SiteLoadingEffect", "true").
