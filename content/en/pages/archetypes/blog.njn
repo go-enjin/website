@@ -1,0 +1,53 @@
+{
+    "type": "page",
+    "archetype": "blog",
+    "blog-author": "The Go-Enjin Team",
+    "title": "First post!",
+    "description": "The first blog post on go-enjin.org",
+    "permalink": "e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "First Post!"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This post is actually just like any other page within Go-Enjin. The only difference is that ",
+                        "the <code>archetypes</code> page property has been set to <q>blog</q>."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Go-Enjin uses the archetype property to lookup alternate templates to use to present the ",
+                        "content. For example on go-enjin.org: the blog archetype template includes the page's ",
+                        "created and last modified properties, as well as a custom <code>author</code> property."
+                    ]
+                }
+            ]
+        }
+    }
+
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Request.Language }}">
+{{ template "partials/head.tmpl" . }}
+<body
+        {{- if .Type }} data-page-type="{{ .Type }}"{{ end -}}
+        {{- if .Layout }} data-page-layout="{{ .Layout }}"{{ end -}}
+        {{- if .Format }} data-page-format="{{ .Format }}"{{ end -}}
+        {{- if .Archetype }} data-page-archetype="{{ .Archetype }}"{{ end -}}
+>
+{{ template "partials/header.tmpl" . }}
+<main>
+    <div id="top"></div>
+    {{ .Content }}
+    <aside class="blog">
+        {{ if .BlogAuthor }}
+            <span class="author">{{ _ "Author: %s" .BlogAuthor }}</span>
+        {{ else }}
+            <span class="author">{{ _ "Author: %s" (_ "Anonymous") }}</span>
+        {{ end }}
+        {{ if or .Created .Updated }}
+            <div class="datestamps">
+                {{ if and .Created .Updated }}
+                    <span class="created">{{ _ "Created: %s" (.Created.Format "2006-01-02") }}</span>
+                    {{ if not (cmpDateFmt "20060102" .Created .Updated) }}
+                        &nbsp;
+                        <span class="updated">{{ _ "Updated: %s" (.Updated.Format "2006-01-02") }}</span>
+                    {{ end }}
+                {{ else if .Created }}
+                    <span class="created">{{ _ "Created: %s" (.Created.Format "2006-01-02") }}</span>
+                {{ else if .Updated }}
+                    <span class="updated">{{ _ "Updated: %s" (.Updated.Format "2006-01-02") }}</span>
+                {{ end }}
+            </div>
+        {{ end }}
+        {{ if and .SitePermalinks .Permalink }}
+            <a class="permalink" href="{{ _permalink .Permalink }}">{{ _ "Permanent Link" }}</a>
+        {{ end }}
+    </aside>
+</main>
+{{ template "partials/footer.tmpl" . }}
+</body>
+</html>

@@ -15,3 +15,40 @@
 /* This file is demonstrating child-theme custom stylesheets.
  * This stylesheet is loaded after the parent-theme semantic-enjin.css
  */
+
+body[data-page-archetype="blog"] > main > aside.blog {
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*z-index: var(--z--page--overlay);*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--page--column);
+
+    margin: var(--main--block--margins) auto;
+    padding: 0 var(--main--block--margins);
+
+    border-radius: 5px;
+    color: var(--overlay--dark--bg);
+    /*border: 1px solid var(--overlay--light--bg);*/
+    /*background: var(--overlay--light--bg);*/
+    /*box-shadow: 0 0 5px var(--primary--fg);*/
+
+}
+
+body[data-page-archetype="blog"] > main > aside.blog a:hover,
+body[data-page-archetype="blog"] > main > aside.blog a:focus,
+body[data-page-archetype="blog"] > main > aside.blog a:active,
+body[data-page-archetype="blog"] > main > aside.blog a:visited,
+body[data-page-archetype="blog"] > main > aside.blog a {
+    color: var(--overlay--dark--bg);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    body[data-page-archetype="blog"] > main > aside.blog {
+        flex-direction: column;
+    }
+}

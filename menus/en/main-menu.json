@@ -102,6 +102,13 @@
 							{"text": "Full-View", "href": "/pages/layouts/full-view"},
 							{"text": "Full-Screen", "href": "/pages/layouts/full-screen"}
 						]
+					},
+					{
+						"text": "Archetypes",
+						"href": "/pages/archetypes",
+						"sub-menu": [
+							{"text": "Blog", "href": "/pages/archetypes/blog"}
+						]
 					}
 				]
 			}

@@ -38,6 +38,7 @@ var publicFs embed.FS
 var menuFs embed.FS
 
 //go:embed themes/**
+//go:embed themes/*/layouts/_default/*
 var themeFs embed.FS
 
 //go:embed locales/*

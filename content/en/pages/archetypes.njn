@@ -1,0 +1,60 @@
+{
+    "type": "page",
+    "title": "Archetypes",
+    "description": "An introduction to Go-Enjin page archetypes"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "Archetypes"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-text": "View an example blog page",
+        "link-href": "/pages/archetypes/blog",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Page archetypes in Go-Enjin are a way of composing content with a customized layout and ",
+                        "can include custom page properties. "
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "For instance, every page technically has <q>created</q> and <q>updated</q> properties though ",
+                        "none of the normal page layouts display this extra information. For a blog site though, that ",
+                        "extra page data is necessary and even requires a new page property: <q>blog-author</q>."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "This website's <code>go-enjin</code> child theme includes a support for an example blog ",
+                        "archetype. Use the link below to see a page that includes the author's name and datestamps ",
+                        "at the bottom of the page."
+                    ]
+                }
+            ]
+        }
+    }
+
+]
