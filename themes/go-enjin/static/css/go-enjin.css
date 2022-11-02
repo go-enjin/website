@@ -22,20 +22,18 @@ body[data-page-archetype="blog"] > main > aside.blog {
     /*z-index: var(--z--page--overlay);*/
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
     max-width: var(--page--column);
+    width: var(--main--block--profile--oi--width);
 
-    margin: var(--main--block--margins) auto;
-    padding: 0 var(--main--block--margins);
+    margin: var(--main--block--margins) var(--main--block--profile--oi--margin-left);
+    padding: 0 var(--main--block--profile--oi--padding-right) 0 var(--main--block--profile--oi--padding-left);
 
-    border-radius: 5px;
-    color: var(--overlay--dark--bg);
-    /*border: 1px solid var(--overlay--light--bg);*/
-    /*background: var(--overlay--light--bg);*/
-    /*box-shadow: 0 0 5px var(--primary--fg);*/
-
+    color: var(--overlay--light--bg);
 }
 
 body[data-page-archetype="blog"] > main > aside.blog a:hover,
@@ -43,8 +41,8 @@ body[data-page-archetype="blog"] > main > aside.blog a:focus,
 body[data-page-archetype="blog"] > main > aside.blog a:active,
 body[data-page-archetype="blog"] > main > aside.blog a:visited,
 body[data-page-archetype="blog"] > main > aside.blog a {
-    color: var(--overlay--dark--bg);
-    text-decoration: underline;
+    color: var(--overlay--light--bg);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
