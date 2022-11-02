@@ -32,7 +32,7 @@
                 {{ end }}
             </div>
         {{ end }}
-        {{ if and .SitePermalinks .Permalink }}
+        {{ if and .SitePermalinkable .Permalinked }}
             <a class="permalink" href="{{ _permalink .Permalink }}">{{ _ "Permanent Link" }}</a>
         {{ end }}
     </aside>
