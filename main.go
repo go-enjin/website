@@ -18,6 +18,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/golang-org-x-text/language"
 
@@ -70,6 +71,7 @@ func main() {
 			"name":    "robots",
 			"content": "none",
 		}).
+		AddFeature(permalink.New().Make()).
 		AddFeature(fMenu).
 		AddFeature(fPublic).
 		AddFeature(fLocales).
