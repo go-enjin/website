@@ -66,11 +66,37 @@
             "fuzzy": true
         },
         {
-            "id": "No results found for:",
-            "key": "No results found for:",
-            "message": "No results found for:",
-            "translation": "No results found for:",
+            "id": "No results found",
+            "key": "No results found",
+            "message": "No results found",
+            "translation": "No results found",
             "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "1 result found",
+            "key": "1 result found",
+            "message": "1 result found",
+            "translation": "1 result found",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "{Total} results found",
+            "key": "%d results found",
+            "message": "{Total} results found",
+            "translation": "{Total} results found",
+            "translatorComment": "Copied from source.",
+            "placeholders": [
+                {
+                    "id": "Total",
+                    "string": "%[1]d",
+                    "type": "uint64",
+                    "underlyingType": "uint64",
+                    "argNum": 1,
+                    "expr": "results.Total"
+                }
+            ],
             "fuzzy": true
         },
         {
@@ -126,24 +152,6 @@
             "fuzzy": true
         },
         {
-            "id": "{Total} result found for:",
-            "key": "%d result found for:",
-            "message": "{Total} result found for:",
-            "translation": "{Total} result found for:",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Total",
-                    "string": "%[1]d",
-                    "type": "uint64",
-                    "underlyingType": "uint64",
-                    "argNum": 1,
-                    "expr": "results.Total"
-                }
-            ],
-            "fuzzy": true
-        },
-        {
             "id": "Showing {IdStart}-{IdEnd} of {Total}",
             "key": "Showing %d-%d of %d",
             "message": "Showing {IdStart}-{IdEnd} of {Total}",
@@ -172,24 +180,6 @@
                     "type": "uint64",
                     "underlyingType": "uint64",
                     "argNum": 3,
-                    "expr": "results.Total"
-                }
-            ],
-            "fuzzy": true
-        },
-        {
-            "id": "{Total} results found for:",
-            "key": "%d results found for:",
-            "message": "{Total} results found for:",
-            "translation": "{Total} results found for:",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Total",
-                    "string": "%[1]d",
-                    "type": "uint64",
-                    "underlyingType": "uint64",
-                    "argNum": 1,
                     "expr": "results.Total"
                 }
             ],
