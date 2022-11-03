@@ -34,3 +34,31 @@ SET_GO_PACKAGE = github.com/go-enjin/semantic-enjin-theme
 SET_LOCAL_PATH = ../semantic-enjin-theme
 
 include ./Enjin.mk
+
+LANGUAGES = en,ja
+LOCALES_CATALOG ?= /dev/null
+
+gen-theme-locales:
+	@echo "# generating go-enjin theme locales"
+	@${CMD} enjenv be-update-locales \
+		-lang=${LANGUAGES} \
+		-out=./themes/go-enjin/locales \
+		./themes/go-enjin/layouts \
+		./content
+
+gen-locales: BE_PKG_LIST=$(shell enjenv be-pkg-list)
+gen-locales: gen-theme-locales
+	@echo "# generating locales"
+	@${CMD} \
+		GOFLAGS="-tags=all" \
+		gotext -srclang=en update \
+			-lang=${LANGUAGES} \
+			-out=${LOCALES_CATALOG} \
+				${BE_PKG_LIST} \
+				github.com/go-enjin/website
+	@if [ -d locales ]; then \
+		find locales -type f -name "*.gotext.json" -print0 | xargs -n 1 -0 sha256sum; \
+	else \
+		echo "# error: locales directory not found" 1>&2; \
+		false; \
+	fi
