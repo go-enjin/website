@@ -3,8 +3,9 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221019183905-c1361f693e21
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221019204048-98f08969c14c
+	github.com/go-enjin/be v0.0.0-20221103222100-e264de6571ac
+	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221103211047-5cf280ee4e74
 )
 
 require (
@@ -33,7 +34,6 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/creack/pty v1.1.18 // indirect
 	github.com/felixge/httpsnoop v1.0.3 // indirect
-	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/fvbommel/sortorder v1.0.2 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.1 // indirect
 	github.com/gdamore/encoding v1.0.0 // indirect
@@ -44,6 +44,7 @@ require (
 	github.com/go-curses/ctk v0.5.3 // indirect
 	github.com/go-curses/term v1.2.2-gocurses.1 // indirect
 	github.com/go-curses/terminfo v1.0.0 // indirect
+	github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/go-playground/validator/v10 v10.11.1 // indirect
@@ -74,6 +75,7 @@ require (
 	github.com/leekchan/gtf v0.0.0-20190214083521-5fba33c5b00b // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
+	github.com/maruel/natural v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mattn/go-runewidth v0.0.14 // indirect
@@ -92,6 +94,7 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/signalsciences/ac v1.2.0 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
+	github.com/tdewolff/minify/v2 v2.12.0 // indirect
 	github.com/tdewolff/parse/v2 v2.6.4 // indirect
 	github.com/tg123/go-htpasswd v1.2.0 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
@@ -105,7 +108,7 @@ require (
 	golang.org/x/net v0.0.0-20221014081412-f15817d10f9b // indirect
 	golang.org/x/sys v0.0.0-20221013171732-95e765b1cc43 // indirect
 	golang.org/x/term v0.0.0-20220919170432-7a66f970e087 // indirect
-	golang.org/x/text v0.3.8 // indirect
+	golang.org/x/text v0.4.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
