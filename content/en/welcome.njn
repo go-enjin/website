@@ -50,17 +50,15 @@
                                 },
                                 " for building websites and microservices",
                                 { "type": "br" },
-                                ": an instance of an Enjin service"
+                                ": an instance of an Enjin service, such as this website"
                             ]
                         },
                         { "type": "dt", "text": "Enjin <small>en·jin (proper noun)</small>" },
                         {
                             "type": "dd",
                             "text": [
-                                ": referring to the Go-Enjin project, or",
-                                { "type": "br" },
-                                ": specifically referring to the Go-Enjin ",
-                                { "type": "a", "href": "https://github.com/go-enjin/be", "text": "be" },
+                                ": referring to the ",
+                                { "type": "a", "href": "https://github.com/go-enjin/be", "text": "Enjin" },
                                 " codebase"
                             ]
                         },

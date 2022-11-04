@@ -55,6 +55,29 @@
                 }
             ]
         }
+    },
+
+    {
+        "type": "content",
+        "tag": "page-redirections",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-text": "This link redirects to the blog example",
+        "link-href": "/this-is-a-page-redirect-to-the-blog-example",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "All page types can specify a list of URL paths that redirect to that page. The blog page ",
+                        "example has one redirection set, use the link below to test it out."
+                    ]
+                }
+            ]
+        }
     }
 
 ]

@@ -4,7 +4,10 @@
     "blog-author": "The Go-Enjin Team",
     "title": "First post!",
     "description": "The first blog post on go-enjin.org",
-    "permalink": "e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7"
+    "permalink": "e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7",
+    "redirect": [
+        "/this-is-a-page-redirect-to-the-blog-example"
+    ]
 }
 [
 
@@ -44,6 +47,54 @@
                         "Go-Enjin uses the archetype property to lookup alternate templates to use to present the ",
                         "content. For example on go-enjin.org: the blog archetype template includes the page's ",
                         "created and last modified properties, as well as a custom <code>author</code> property."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "page-permalinks",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Permanent Links (permalinks)"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This blog page has a permalink set. Permalinks are a way of being able to print or otherwise ",
+                        "distribute a given link and regardless of the page's content, title or even URL path ",
+                        "changing - the permalink is permanently valid (well, at least until the page is deleted)."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "The list of links below are all valid because of the permalink enjin feature."
+                    ]
+                },
+                {
+                    "type": "ul",
+                    "list": [
+                        { "type": "a", "href": "/pages/archetypes/blog-9c7e27ec75", "text": "/pages/archetypes/blog-9c7e27ec75 (actual permalink)" },
+                        { "type": "a", "href": "/wrong/categories/blog-9c7e27ec75", "text": "/wrong/categories/blog-9c7e27ec75 (wrong categories)" },
+                        { "type": "a", "href": "/e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7", "text": "/e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7 (long-form permalink)" },
+                        { "type": "a", "href": "/9c7e27ec75", "text": "/9c7e27ec75 (short-form permalink)" }
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "As you may have noticed, as long as there's the dash and random bits at the end of any url, ",
+                        "or just the random bits (long or short form), the link will always redirect to the ",
+                        "current page's actual permalink URL path."
                     ]
                 }
             ]
