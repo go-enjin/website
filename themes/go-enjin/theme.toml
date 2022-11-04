@@ -1,13 +1,13 @@
 name = "Go-Enjin"
 parent = "semantic-enjin"
 license = "Apache 2.0"
-licenselink = "https://go-enjin.github.io/LICENSE"
+licenselink = "https://go-enjin.org/license"
 description = "The Go-Enjin website theme."
-homepage = "https://go-enjin.github.io/"
+homepage = "https://go-enjin.org/"
 
 [author]
     name = "The Go-Enjin Team"
-    homepage = "https://go-enjin.github.io"
+    homepage = "https://go-enjin.org/"
 
 
 [semantic.site]
