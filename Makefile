@@ -21,9 +21,9 @@ APP_SUMMARY ?= Go-Enjin Website
 
 DENY_DURATION ?= 60
 
-COMMON_TAGS = page_search,header_proxy,papertrail,semanticEnjinTheme,excludeDefaultTheme
-BUILD_TAGS = embeds,minify,$(COMMON_TAGS)
-DEV_BUILD_TAGS = locals,htmlify,$(COMMON_TAGS)
+COMMON_TAGS = htmlify,page_search,header_proxy,papertrail,semanticEnjinTheme,excludeDefaultTheme
+BUILD_TAGS = embeds,$(COMMON_TAGS)
+DEV_BUILD_TAGS = locals,$(COMMON_TAGS)
 EXTRA_PKGS =
 
 # Custom go.mod locals

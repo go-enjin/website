@@ -21,7 +21,6 @@ import (
 	"github.com/go-enjin/be/features/fs/locals/locales"
 	"github.com/go-enjin/be/features/fs/locals/menu"
 	"github.com/go-enjin/be/features/fs/locals/public"
-	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/pkg/log"
 	"github.com/go-enjin/be/pkg/theme"
 )
@@ -31,7 +30,6 @@ func init() {
 	// log.Config.LogLevel = log.LevelDebug
 	// log.Config.Apply()
 
-	fMinifyHtmlify = htmlify.New().Make()
 	fLocales = locales.New().Include("locales").Make()
 	fContent = content.New().MountPath("/", "content").Make()
 	fPublic = public.New().MountPath("/", "public").Make()

@@ -18,6 +18,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/golang-org-x-text/language"
@@ -32,7 +33,6 @@ import (
 	"github.com/go-enjin/be/pkg/feature"
 )
 
-var fMinifyHtmlify feature.Feature
 var fLocales feature.Feature
 var fContent feature.Feature
 var fPublic feature.Feature
@@ -79,7 +79,7 @@ func main() {
 		AddFeature(search.New().Make()).
 		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(papertrail.Make()).
-		AddFeature(fMinifyHtmlify).
+		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
 		HotReload(hotReload).
