@@ -1,0 +1,143 @@
+{
+  "type": "page",
+  "title": "ようこそ",
+  "description": "Go-Enjinのオフィシャルサイト",
+  "url": "/"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "ようこそ"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Enjinの紹介"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Enjinの紹介"
+            ],
+            "section": [
+                {
+                    "type": "dl",
+                    "text": [
+                        { "type": "dt", "text": "enjin <small>en·jin (noun)</small>" },
+                        {
+                            "type": "dd",
+                            "text": [
+                                ":ウェブサイトやマイクロサービス ",
+                                " を構築するためのちょっと風変わりな形式の ",
+                                {
+                                    "type": "a",
+                                    "href": "https://e-words.jp/w/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3.html/engine",
+                                    "text": "エンジン"
+                                },
+                                { "type": "br" },
+                                ": このウェブサイトなどのようなEnjinサービスのインスタンス"
+                            ]
+                        },
+                        { "type": "dt", "text": "Enjin <small>en·jin (proper noun)</small>" },
+                        {
+                            "type": "dd",
+                            "text": [
+                                ": 具体的に",
+                                { "type": "a", "href": "https://github.com/go-enjin/be", "text": "Enjin" },
+                                "のコードベースを指しています。"
+                            ]
+                        },
+                        { "type": "dt", "text": "Go-Enjin <small>go en·jin (proper noun)</small>" },
+                        {
+                            "type": "dd",
+                            "text": [
+                                ": このプロジェクトは主にGoプログラミング言語で書かれたオープンソースソフトウェアプロジェクトの構成で、",
+                                "複数のenjinの構築に焦点を当てています"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "開発のワークフローは、デベロッパーに特化したフィーチャーを各コンセプトに組み込み、それぞれの ",
+                        "フィーチャーは一般的なUNIXの「1つのことを行い、その1つのことをうまく行う」という哲学に従ってデザインされています。"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "フィーチャーとは、レンダリングのためにコンテンツ、メニュー、その他のものをTheming systemに提供する方法のようなものです。",
+                        "フィーチャーは、markdownやorg-modenなど、さまざまな形式のコンテンツもサポートし、 ",
+                        "そしてフィーチャーは、必要なWebサイトのコンテンツを提供するために、デベロッパーの望みや、好みに合わせて選択されウェブサイトのコンテンツを含むことができます。 ",
+                        " <code>main.go</code>  興味がある方は, ",
+                        {
+                            "type": "a",
+                             "target": "_blank",
+                              "href": "https://github.com/go-enjin/website",
+                               "text": "ここから"
+                        },
+                        "ここから詳細を確認できます。"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "このウェブサイトはセマンティックEnjin Themeを使用した例になります。",
+                        "このサイトの英語版のほとんどのページは、ブロックやページレイアウトなど、 ",
+                        "themingのさまざまな側面を示すことに焦点を当てています。 ",
+                        "Go-Enjinはコンテンツの国際化(翻訳)をサポートし、",
+                        "go-enjin.orgは英語と日本語に訳されています. デスクトップのブラウザはトップページの上部のナビゲーションメニューから ",
+                        " もしくはスマートフォンからはブラウザのサイドメニューを開き、サイトの言語を切り替えが可能です。"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Go-Enjinプロジェクト（そしてそのチーム）は「やり遂げる」人のマニフェストに感銘を受け、その精神に影響を受けています。 ",
+                        "そしてタグラインを「「やり遂げる」ことは、さらに「やり遂げる」ためのenjinとなる(done is the enjin of more)」としました",
+                        "マニフェストの中では動力となる「engine」であることを覚えていてください。さらに詳しく「やり遂げる」人のマニフェストby Bre Pettisを知りたい方は ",
+                        " ここから : ",
+                        {
+                            "type": "a",
+                            "target": "_blank",
+                            "href": "https://lifehacking.jp/2009/03/manifesto-of-done/",
+                            "text": "「やり遂げる」人のマニフェストby Bre Pettis"
+                        },
+                        "."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Go-Enjinプロジェクトに関するドキュメンテーション（Unitテストなど）は まだここには取り上げていません。 ",
+                        "私たちは実行可能な概念検証を優先して行なっており、",
+                        "終わりのないドキュメンテーションのプロセスやテストを行う前に可能な限り初期のenjinのフィーチャーを実証しています。 ",
+                        "ユニットテストするということは、数回の事象ではなく、より大きなことを成し遂げるための継続的なプロセスです。」"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- Go-Enjinチーム一同"
+                    ]
+                }
+            ]
+        }
+    }
+]

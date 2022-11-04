@@ -1,0 +1,63 @@
+{
+  "type": "page",
+  "title": "利用規約",
+  "description": "Go-Enjinウェブサイトにおける利用規約について"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "利用規約"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "このウェブサイトは、Go-Enjinプロジェクト、特にセマンティックEnjin Themeのデモンストレーションです。そのため、詳細のページ以外に、実際の利用規約は実際にはありません。 ",
+                         {
+                            "type": "footnote",
+                            "text": "Go-Enjinに関するライセンス",
+                            "note": [
+                                "(ja) see the ",
+                                {"type": "a", "href": "/license", "text": "Go-Enjin に関するライセンス"},
+                                "詳細のページ"
+                            ]
+                         },
+                        "使用条件"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "すべてのメディアとコンテンツはGo-Enjinプロジェクトの所有物であり、Go-EnjinとSemantic Enjin Themeの ",
+                        "デモンストレーション以外の使用は許可しておりません。"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- Go-Enjinチーム一同"
+                    ]
+                }
+            ]
+        }
+    }
+]

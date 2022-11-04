@@ -1,0 +1,20 @@
+[
+	{
+		"text": "凡例",
+		"href": "/examples",
+		"sub-menu": [
+			{
+				"text": "パララックス",
+				"href": "/examples/parallax"
+			},
+			{
+				"text": "サブメニュー",
+				"sub-menu": [
+					{
+						"text": "何もしない"
+					}
+				]
+			}
+		]
+	}
+]

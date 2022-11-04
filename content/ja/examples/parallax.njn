@@ -1,0 +1,265 @@
+{
+  "type": "page",
+  "title": "パララックス",
+  "description": "このページはセマンテックThemeの１つであるパララックス背景についての紹介です"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "none",
+        "block-background": "parallax",
+        "parallax-image": "/media/bg-bonsai.jpg",
+        "parallax-theme": "dark",
+        "parallax-size": "full",
+        "content": {
+            "header": [
+                "パララックス"
+            ],
+            "nav": [
+                { "type": "a", "href": "#parallax-block", "text": ["パララックス・ブロック"] },
+                { "type": "a", "href": "#parallax-carousel", "text": ["パララックス・カルーセル"] }
+            ]
+        }
+    },
+
+    {
+        "type": "icon",
+        "tag": "scroll-to-parallax-block",
+        "profile": "full--inner",
+        "padding": "none",
+        "margins": "none",
+        "theme": "secondary",
+        "content": {
+            "icon": {
+                "style": "light",
+                "float": "up",
+                "href": "#parallax-block",
+                "align": "center",
+                "class": "icon",
+                "name": "icon--scrolling-mouse",
+                "caption": "スクロールダウン"
+            }
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "parallax-block",
+        "profile": "full--inner",
+        "padding": "both",
+        "margins": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "#",
+        "link-text": "何もしない",
+        "block-background": "parallax",
+        "parallax-image": "/media/bg-bonsai.jpg",
+        "parallax-theme": "dark",
+        "parallax-size": "full",
+        "content": {
+            "header": [
+                "パララックス・ブロック"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "ロレムイプソム、「しかし私は、喜びを非難して苦痛を賞賛するという誤ったこの考えがすべてどのようにして誕生したかをあなたに説明しなければならないから、私はあなたにその体系を完璧に説明し、真実を求める偉大な探究家、人間の喜びを築く建築家の実践的な教えを詳しく説明しよう。だれも喜びそのものを、それが喜びであるという理由で拒んだり、嫌ったり、避けたりはしない。しかし、どのようにして喜びを理性的に追求するかを知らない人たちは非常に苦痛な結末に直面する。同様に、苦痛そのものを、それが苦痛であるという理由で愛したり、探したり、手に入れることを望んだりする者もいない。」",
+			{
+				"type": "a",
+				"href": "https://ja.wikipedia.org/wiki/Lorem_ipsum",
+				"text": "ロレムイプソムの日本語訳はwikipediaより引用"
+			}
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "icon",
+        "tag": "scroll-to-parallax-carousel",
+        "profile": "full--inner",
+        "padding": "both",
+        "margins": "none",
+        "theme": "secondary",
+        "content": {
+            "icon": {
+                "style": "light",
+                "float": "up",
+                "href": "#parallax-carousel",
+                "align": "center",
+                "class": "icon",
+                "name": "icon--scrolling-mouse",
+                "caption": "スクロールダウン"
+            }
+        }
+    },
+
+    {
+        "type": "notice",
+        "tag": "check-this-out",
+        "profile": "full--inner",
+        "padding": "none",
+        "margins": "none",
+        "link-href": "#",
+        "link-text": "何もしない",
+        "notice-type": "info",
+        "dismiss": "true",
+        "content": {
+            "summary": [
+                "要チェック！"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "ロレムイプソム、「しかし私は、喜びを非難して苦痛を賞賛するという誤ったこの考えがすべてどのようにして誕生したかをあなたに説明しなければならないから」",
+			{
+				"type": "a",
+				"href": "https://ja.wikipedia.org/wiki/Lorem_ipsum",
+				"text": "ロレムイプソムの日本語訳はwikipediaより引用"
+			}
+                    ]
+                }
+            ]
+        }
+    },
+
+
+    {
+        "type": "carousel",
+        "tag": "parallax-carousel",
+        "profile": "full--full",
+        "padding": "both",
+        "margins": "none",
+        "jump-top": "true",
+        "jump-link": "true",
+        "bookends": 1,
+        "nav-ctrl-type": "icon",
+        "block-background": "parallax",
+        "parallax-image": "/media/bg-bonsai.jpg",
+        "parallax-theme": "dark",
+        "parallax-size": "full",
+        "content": {
+            "header": [
+                "カルーセル"
+            ],
+            "section": [
+
+                {
+                    "type": "card",
+                    "tag": "first-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "link-href": "#",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-bonsai.jpg"
+                            }
+                        },
+                        "header": ["最初のカード"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "最初のカードのコンテンツ"
+                                ]
+                            }
+                        ]
+                    }
+                },
+
+                {
+                    "type": "card",
+                    "tag": "second-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "link-href": "#",
+                    "link-target": "_blank",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-ceil.jpg"
+                            }
+                        },
+                        "header": ["２枚目のカード"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "２枚目のカードのコンテンツ"
+                                ]
+                            }
+                        ]
+                    }
+                },
+
+                {
+                    "type": "card",
+                    "tag": "third-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-door-art.jpg"
+                            }
+                        },
+                        "header": ["３枚目のカード"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "３枚目のカードのコンテンツ"
+                                ]
+                            }
+                        ]
+                    }
+                },
+
+                {
+                    "type": "card",
+                    "tag": "last-card",
+                    "profile": "outer--inner",
+                    "padding": "none",
+                    "margins": "none",
+                    "content": {
+                        "background": {
+                            "type": "picture",
+                            "default": {
+                                "type": "img",
+                                "src": "/media/bg-field.jpg"
+                            }
+                        },
+                        "header": ["最後のカード"],
+                        "section": [
+                            {
+                                "type": "p",
+                                "text": [
+                                    "最後のカードのコンテンツ"
+                                ]
+                            }
+                        ]
+                    }
+                }
+
+            ]
+        }
+    }
+
+]

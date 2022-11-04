@@ -1,0 +1,80 @@
+{
+  "type": "page",
+  "title": "例",
+  "description": "セマンテックthemeの例についての紹介です"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "例"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["はじめに"] },
+                { "type": "a", "href": "#parallax", "text": ["パララックス"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "はじめに"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "ここではGo-Enjin内の興味深いコンテンツの例について専門に説明します。"
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "parallax",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-href": "/ja/examples/parallax",
+        "link-text": "パララックスの例を見る",
+        "content": {
+            "header": [
+                "パララックス"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "セマンティックEnjin Theming System内の、パララックスという用語は、enjinブロックの背景画像コンテンツを表示するための特定の審美的に示すために使用されます。",
+                        "要するに、特定のブロックの背景は<q>固定された</q> ページの位置にあり、ブロックコンテンツは自由にスクロールできます。 "
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "下記のリンクからデモを見ることができます。"
+                    ]
+                }
+            ]
+        }
+    }
+
+]

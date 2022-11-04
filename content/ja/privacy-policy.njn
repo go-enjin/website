@@ -1,0 +1,47 @@
+{
+  "type": "page",
+  "title": "プライバシーポリシー",
+  "description": "Go-Enjinのプライバシーポリシーについて"
+}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "プライバシーポリシー"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "このウェブサイトは個人情報を収集せず、すべてのウェブサーバーへの ",
+                        "トラフィックログはセキュリティとデバッグの目的でのみ7日間保持されます。"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- The Go-Enjinチーム一同"
+                    ]
+                }
+            ]
+        }
+    }
+]
