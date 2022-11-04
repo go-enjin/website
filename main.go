@@ -20,6 +20,7 @@ import (
 
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
+	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/golang-org-x-text/language"
 
@@ -67,10 +68,10 @@ func main() {
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
 		// Set("SiteLoadingEffect", "true").
-		AddHtmlHeadTag("meta", map[string]string{
-			"name":    "robots",
-			"content": "none",
-		}).
+		// AddFeature(robots.New().SiteRobotsMetaTag("none").Make()).
+		AddFeature(robots.New().AddRule(
+			robots.NewRuleGroup("*").AddAllowed("/").Make(),
+		).Make()).
 		AddFeature(permalink.New().Make()).
 		AddFeature(fMenu).
 		AddFeature(fPublic).
