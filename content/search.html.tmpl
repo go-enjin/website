@@ -61,7 +61,7 @@
         <section>
             {{- if .SiteSearchResults -}}
             <div style="display:flex;justify-content: space-between;">
-                <span style="text-align:left;">{{ .SiteSearchResultSummary }}<br /><mark>{{ .SiteSearchQuery }}</mark></span>
+                <span style="text-align:left;">{{ .SiteSearchResultSummary }}<br /><mark>{{ .SiteSearchQuery | asHTML }}</mark></span>
                 <span style="text-align:right;">{{ .SiteSearchHitsSummary }}<br />{{ .SiteSearchPageSummary }}</span>
             </div>
             {{- else if .SiteSearchError -}}
