@@ -1,0 +1,48 @@
+{{{
+  "type": "page",
+  "title": "Robots (none)",
+  "description": "Example page with a robots head-meta-tag configured",
+  "robots": "none"
+}}}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "Robots (none)"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This page has a robots meta tag (see below) setting configured and should not be followed or ",
+                        "indexed by search engines."
+                    ]
+                },
+                {
+                    "type": "code",
+                    "text": [
+                        "<meta name=\"robots\" content=\"none\"/>"
+                    ]
+                }
+            ]
+        }
+    }
+]

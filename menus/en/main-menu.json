@@ -123,6 +123,10 @@
 				"href": "/examples/parallax"
 			},
 			{
+				"text": "Robots (none)",
+				"href": "/examples/robots-none"
+			},
+			{
 				"text": "Sub-Menu",
 				"sub-menu": [
 					{
