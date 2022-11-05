@@ -1,9 +1,9 @@
-{
+{{{
   "type": "page",
   "title": "Welcome",
   "description": "The official Go-Enjin website",
   "url": "/"
-}
+}}}
 [
 
     {

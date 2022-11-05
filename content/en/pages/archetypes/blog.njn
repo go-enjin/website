@@ -1,4 +1,4 @@
-{
+{{{
     "type": "page",
     "archetype": "blog",
     "blog-author": "The Go-Enjin Team",
@@ -8,7 +8,7 @@
     "redirect": [
         "/this-is-a-page-redirect-to-the-blog-example"
     ]
-}
+}}}
 [
 
     {
