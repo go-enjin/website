@@ -21,6 +21,8 @@ import (
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/features/pages/robots"
+	"github.com/go-enjin/be/features/pages/search"
+	"github.com/go-enjin/be/features/pages/sitemap"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/golang-org-x-text/language"
 
@@ -29,7 +31,6 @@ import (
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/features/log/papertrail"
 	"github.com/go-enjin/be/features/pages/formats"
-	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
 )
@@ -68,18 +69,22 @@ func main() {
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
 		// Set("SiteLoadingEffect", "true").
-		// AddFeature(robots.New().SiteRobotsMetaTag("none").Make()).
-		AddFeature(robots.New().AddRule(
-			robots.NewRuleGroup("*").AddAllowed("/").Make(),
-		).Make()).
+		AddFeature(papertrail.Make()).
+		AddFeature(sitemap.New().Make()).
+		AddFeature(robots.New().
+			// SiteRobotsHeader("noindex").
+			// SiteRobotsMetaTag("none").
+			AddSitemap("/sitemap.xml").
+			AddRuleGroup(robots.NewRuleGroup().
+				AddUserAgent("*").AddAllowed("/").Make(),
+			).Make()).
+		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(permalink.New().Make()).
+		AddFeature(search.New().Make()).
 		AddFeature(fMenu).
 		AddFeature(fPublic).
 		AddFeature(fLocales).
 		AddFeature(fContent).
-		AddFeature(search.New().Make()).
-		AddFeature(proxy.New().Enable().Make()).
-		AddFeature(papertrail.Make()).
 		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
