@@ -18,12 +18,15 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/urfave/cli/v2"
+
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/pages/sitemap"
 	"github.com/go-enjin/be/pkg/lang"
+	"github.com/go-enjin/be/pkg/theme"
 	"github.com/go-enjin/golang-org-x-text/language"
 
 	semantic "github.com/go-enjin/semantic-enjin-theme"
@@ -35,45 +38,61 @@ import (
 	"github.com/go-enjin/be/pkg/feature"
 )
 
-var fLocales feature.Feature
-var fContent feature.Feature
-var fPublic feature.Feature
-var fMenu feature.Feature
-var hotReload bool
+var (
+	wwwLocales feature.Feature
+	wwwContent feature.Feature
+	wwwPublic  feature.Feature
+	wwwMenu    feature.Feature
 
-func main() {
-	enjin := be.New().
+	enjaLocales feature.Feature
+	enjaContent feature.Feature
+	enjaPublic  feature.Feature
+	enjaMenu    feature.Feature
+
+	hotReload bool
+
+	enjaEnDomain string
+	enjaJaDomain string
+)
+
+func init() {
+	if v, ok := os.LookupEnv("BE_ENJA_EN_DOMAIN"); ok {
+		enjaEnDomain = v
+	} else {
+		enjaEnDomain = "http://en.go-enjin.localhost:3334"
+	}
+	if v, ok := os.LookupEnv("BE_ENJA_JA_DOMAIN"); ok {
+		enjaJaDomain = v
+	} else {
+		enjaJaDomain = "http://ja.go-enjin.localhost:3334"
+	}
+}
+
+func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
+	eb.SiteName("Go-Enjin").
+		SiteTagLine("Done is the enjin of more.").
+		SiteCopyrightName("Go-Enjin").
+		SiteCopyrightNotice("© 2022 All rights reserved").
 		AddFeature(formats.New().Defaults().Make()).
 		AddTheme(semantic.SemanticEnjinTheme()).
 		AddTheme(goEnjinTheme()).
 		SetTheme("go-enjin").
-		SiteTag("BE").
-		SiteName("Go-Enjin").
-		SiteTagLine("Done is the enjin of more.").
-		SiteCopyrightName("Go-Enjin").
-		SiteCopyrightNotice("© 2022 All rights reserved").
-		SiteDefaultLanguage(language.English).
-		// SiteDefaultLanguage(language.Japanese).
-		// SiteLanguageMode(lang.NewQueryMode().SetQueryParameter("lang").Make()).
-		SiteLanguageMode(lang.NewPathMode().Make()).
-		// SiteLanguageMode(lang.NewDomainMode().
-		// 	Set(language.English, "http://en.localhost:3335").
-		// 	Set(language.Japanese, "http://ja.localhost:3335").
-		// 	Make(),
-		// ).
 		SiteLanguageDisplayNames(map[language.Tag]string{
 			language.English: "EN",
 		}).
 		Set("SiteTitleReversed", true).
 		Set("SiteTitleSeparator", " | ").
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
-		Set("SiteLogoAlt", "Go-Enjin logo").
-		// Set("SiteLoadingEffect", "true").
+		Set("SiteLogoAlt", "Go-Enjin logo")
+	// Set("SiteLoadingEffect", "true").
+	return eb
+}
+
+func features(eb feature.Builder) feature.Builder {
+	return eb.
 		AddFeature(papertrail.Make()).
 		AddFeature(sitemap.New().Make()).
 		AddFeature(robots.New().
-			// SiteRobotsHeader("noindex").
-			// SiteRobotsMetaTag("none").
 			AddSitemap("/sitemap.xml").
 			AddRuleGroup(robots.NewRuleGroup().
 				AddUserAgent("*").AddAllowed("/").Make(),
@@ -81,15 +100,60 @@ func main() {
 		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(permalink.New().Make()).
 		AddFeature(search.New().Make()).
-		AddFeature(fMenu).
-		AddFeature(fPublic).
-		AddFeature(fLocales).
-		AddFeature(fContent).
 		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
-		HotReload(hotReload).
+		HotReload(hotReload)
+}
+
+func main() {
+	www, enja := be.New(), be.New()
+
+	setup(www).SiteTag("WWW").
+		SiteDefaultLanguage(language.English).
+		SiteLanguageMode(lang.NewPathMode().Make())
+	features(www).
+		AddFeature(wwwMenu).
+		AddFeature(wwwPublic).
+		AddFeature(wwwContent).
+		AddFeature(wwwLocales)
+
+	setup(enja).SiteTag("ENJA").
+		SiteDefaultLanguage(language.English).
+		SiteLanguageMode(lang.NewDomainMode().
+			Set(language.English, enjaEnDomain).
+			Set(language.Japanese, enjaJaDomain).
+			Make(),
+		).
+		AddFlags(
+			&cli.StringFlag{
+				Name:    "enja-en-domain",
+				EnvVars: enja.MakeEnvKeys("ENJA_EN_DOMAIN"),
+			},
+			&cli.StringFlag{
+				Name:    "enja-ja-domain",
+				EnvVars: enja.MakeEnvKeys("ENJA_JA_DOMAIN"),
+			},
+		)
+	features(enja).
+		AddFeature(enjaMenu).
+		AddFeature(enjaPublic).
+		AddFeature(enjaContent).
+		AddFeature(enjaLocales)
+
+	enjin := be.New().
+		IncludeEnjin(www, enja).
+		SiteTag("MAIN").
+		SiteName("main").
+		AddTheme(theme.DefaultTheme()).
+		SiteDefaultLanguage(language.English).
+		SiteSupportedLanguages(language.English).
+		AddPageFromString("/404.tmpl", `404 - {{ _ "Not Found" }}`).
+		AddPageFromString("/500.tmpl", `500 - {{ _ "Internal Server Error" }}`).
+		SetStatusPage(404, "/404").
+		SetStatusPage(500, "/500").
 		Build()
+
 	if err := enjin.Run(os.Args); err != nil {
 		_, _ = fmt.Fprintf(os.Stderr, "%v\n", err)
 		os.Exit(1)

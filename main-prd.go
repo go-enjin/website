@@ -27,14 +27,20 @@ import (
 	"github.com/go-enjin/be/pkg/theme"
 )
 
-//go:embed content/**
-var contentFs embed.FS
+//go:embed content/www/**
+var contentFsWWW embed.FS
+
+//go:embed content/enja/**
+var contentFsENJA embed.FS
 
 //go:embed public/**
 var publicFs embed.FS
 
-//go:embed menus/**
-var menuFs embed.FS
+//go:embed menus/www/**
+var menuFsWWW embed.FS
+
+//go:embed menus/enja/**
+var menuFsENJA embed.FS
 
 //go:embed themes/**
 //go:embed themes/*/layouts/_default/*
@@ -44,10 +50,16 @@ var themeFs embed.FS
 var localesFs embed.FS
 
 func init() {
-	fLocales = locales.New().Include("locales", localesFs).Make()
-	fContent = content.New().MountPathFs("/", "content", contentFs).Make()
-	fPublic = public.New().MountPathFs("/", "public", publicFs).Make()
-	fMenu = menu.New().MountPathFs("menus", "menus", menuFs).Make()
+	wwwMenu = menu.New().MountPathFs("menus", "menus", menuFsWWW).Make()
+	wwwPublic = public.New().MountPathFs("/", "public", publicFs).Make()
+	wwwContent = content.New().MountPathFs("/", "content", contentFsWWW).Make()
+	wwwLocales = locales.New().Include("locales", localesFs).Make()
+
+	enjaMenu = menu.New().MountPathFs("menus", "menus", menuFsENJA).Make()
+	enjaPublic = public.New().MountPathFs("/", "public", publicFs).Make()
+	enjaContent = content.New().MountPathFs("/", "content", contentFsENJA).Make()
+	enjaLocales = locales.New().Include("locales", localesFs).Make()
+
 	hotReload = false
 }
 

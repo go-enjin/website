@@ -30,10 +30,16 @@ func init() {
 	// log.Config.LogLevel = log.LevelDebug
 	// log.Config.Apply()
 
-	fLocales = locales.New().Include("locales").Make()
-	fContent = content.New().MountPath("/", "content").Make()
-	fPublic = public.New().MountPath("/", "public").Make()
-	fMenu = menu.New().MountPath("menus", "menus").Make()
+	wwwMenu = menu.New().MountPath("menus", "menus/www").Make()
+	wwwPublic = public.New().MountPath("/", "public").Make()
+	wwwContent = content.New().MountPath("/", "content/www").Make()
+	wwwLocales = locales.New().Include("locales").Make()
+
+	enjaMenu = menu.New().MountPath("menus", "menus/enja").Make()
+	enjaPublic = public.New().MountPath("/", "public").Make()
+	enjaContent = content.New().MountPath("/", "content/enja").Make()
+	enjaLocales = locales.New().Include("locales").Make()
+
 	hotReload = true
 }
 
