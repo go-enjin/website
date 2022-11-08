@@ -3,9 +3,10 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221106213152-7661cba02d30
+	github.com/go-enjin/be v0.0.0-20221108201303-c1f09c5dabac
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221106213528-f1d6b7301a67
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221108201416-47b0441dcfe9
+	github.com/urfave/cli/v2 v2.19.2
 )
 
 require (
@@ -41,6 +42,7 @@ require (
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.8.1 // indirect
 	github.com/go-chi/chi/v5 v5.0.7 // indirect
+	github.com/go-chi/hostrouter v0.2.0 // indirect
 	github.com/go-curses/cdk v0.5.12 // indirect
 	github.com/go-curses/ctk v0.5.3 // indirect
 	github.com/go-curses/term v1.2.2-gocurses.1 // indirect
@@ -98,7 +100,6 @@ require (
 	github.com/tdewolff/parse/v2 v2.6.4 // indirect
 	github.com/tg123/go-htpasswd v1.2.0 // indirect
 	github.com/ugorji/go/codec v1.2.7 // indirect
-	github.com/urfave/cli/v2 v2.19.2 // indirect
 	github.com/x-cray/logrus-prefixed-formatter v0.5.2 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 	github.com/yookoala/realpath v1.0.0 // indirect
