@@ -1,0 +1,52 @@
+{{{
+  "type": "page",
+  "title": "お問い合わせ",
+  "description": "Go-Enjinプロジェクトに関するお問い合わせ"
+}}}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "お問い合わせ"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "お問い合わせには",
+                        {
+                            "type": "a",
+                            "href": "mailto:go.enjin.org@gmail.com",
+                            "text": "go.enjin.org@gmail.com"
+                        },
+                        " をお使いください。"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- Go-Enjinチーム一同より"
+                    ]
+                }
+            ]
+        }
+    }
+]

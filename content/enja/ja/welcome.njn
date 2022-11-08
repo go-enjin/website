@@ -1,0 +1,54 @@
+{{{
+  "type": "page",
+  "title": "ようこそ",
+  "description": "Go-Enjinのオフィシャルサイト",
+  "url": "/"
+}}}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "ようこそ"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Enjinの紹介"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Enjinの紹介"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This version of go-enjin.org demonstrates using sub-domains instead of paths for translating ",
+                        "pages, menus and so on. Nothing much else to see here."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "-- Go-Enjinチーム一同"
+                    ]
+                }
+            ]
+        }
+    }
+]
