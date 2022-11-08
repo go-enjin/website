@@ -45,6 +45,14 @@
                 {
                     "type": "p",
                     "text": [
+                        "Please visit ",
+                        { "type": "a", "href": "https://go-enjin.org", "text": "the main website" },
+                        " for more information."
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
                         "-- Go-Enjinチーム一同"
                     ]
                 }
