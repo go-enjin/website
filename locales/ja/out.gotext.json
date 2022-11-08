@@ -155,7 +155,7 @@
             "id": "Showing {IdStart}-{IdEnd} of {Total}",
             "key": "Showing %d-%d of %d",
             "message": "Showing {IdStart}-{IdEnd} of {Total}",
-            "translation": "{Total}の{IdStart}-{IdEnd} を表示",
+            "translation": "{Total}件中の{IdStart}-{IdEnd} を表示",
             "translatorComment": "Copied from source.",
             "placeholders": [
                 {
