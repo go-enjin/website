@@ -50,14 +50,14 @@ var themeFs embed.FS
 var localesFs embed.FS
 
 func init() {
-	wwwMenu = menu.New().MountPathFs("menus", "menus", menuFsWWW).Make()
+	wwwMenu = menu.New().MountPathFs("menus", "menus/www", menuFsWWW).Make()
 	wwwPublic = public.New().MountPathFs("/", "public", publicFs).Make()
-	wwwContent = content.New().MountPathFs("/", "content", contentFsWWW).Make()
+	wwwContent = content.New().MountPathFs("/", "content/www", contentFsWWW).Make()
 	wwwLocales = locales.New().Include("locales", localesFs).Make()
 
-	enjaMenu = menu.New().MountPathFs("menus", "menus", menuFsENJA).Make()
+	enjaMenu = menu.New().MountPathFs("menus", "menus/enja", menuFsENJA).Make()
 	enjaPublic = public.New().MountPathFs("/", "public", publicFs).Make()
-	enjaContent = content.New().MountPathFs("/", "content", contentFsENJA).Make()
+	enjaContent = content.New().MountPathFs("/", "content/enja", contentFsENJA).Make()
 	enjaLocales = locales.New().Include("locales", localesFs).Make()
 
 	hotReload = false
