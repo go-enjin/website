@@ -38,16 +38,16 @@
                 {
                     "type": "p",
                     "text": [
-                        "This version of go-enjin.org demonstrates using sub-domains instead of paths for translating ",
-                        "pages, menus and so on. Nothing much else to see here."
+                        "現バージョンのgo-enjin.org は、ページやメニューなどを翻訳するためにURLパスの代わりにサブドメインを使用する方法を示しています。 ",
+                        "ここで他に見るものはありません。"
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "Please visit ",
-                        { "type": "a", "href": "https://go-enjin.org", "text": "the main website" },
-                        " for more information."
+                        "より詳しい情報は",
+                        { "type": "a", "href": "https://go-enjin.org", "text": "メインのウェブサイトを" },
+                        " ご覧ください。"
                     ]
                 },
                 {
