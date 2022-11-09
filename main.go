@@ -68,6 +68,15 @@ func init() {
 	}
 }
 
+const (
+	main500tmpl = `500 - {{ _ "Internal Server Error" }}`
+	main404tmpl = `404 - {{ _ "Not Found" }}`
+	main204tmpl = `+++
+url = "/"
++++
+204 - {{ _ "No Content" }}`
+)
+
 func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 	eb.SiteName("Go-Enjin").
 		SiteTagLine("Done is the enjin of more.").
@@ -148,8 +157,9 @@ func main() {
 		AddTheme(theme.DefaultTheme()).
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
-		AddPageFromString("/404.tmpl", `404 - {{ _ "Not Found" }}`).
-		AddPageFromString("/500.tmpl", `500 - {{ _ "Internal Server Error" }}`).
+		AddPageFromString("/", main204tmpl).
+		AddPageFromString("/404.tmpl", main404tmpl).
+		AddPageFromString("/500.tmpl", main500tmpl).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
 		Build()
