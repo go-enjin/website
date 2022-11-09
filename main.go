@@ -69,10 +69,17 @@ func init() {
 }
 
 const (
-	main500tmpl = `500 - {{ _ "Internal Server Error" }}`
-	main404tmpl = `404 - {{ _ "Not Found" }}`
+	main500tmpl = `+++
+format = "html.tmpl"
++++
+500 - {{ _ "Internal Server Error" }}`
+	main404tmpl = `+++
+format = "html.tmpl"
++++
+404 - {{ _ "Not Found" }}`
 	main204tmpl = `+++
 url = "/"
+format = "html.tmpl"
 +++
 204 - {{ _ "No Content" }}`
 )
