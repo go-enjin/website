@@ -162,6 +162,7 @@ func main() {
 		SiteTag("MAIN").
 		SiteName("main").
 		AddTheme(theme.DefaultTheme()).
+		SetTheme("default").
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
 		AddPageFromString("/", main204tmpl).
