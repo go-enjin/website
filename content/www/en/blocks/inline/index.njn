@@ -1,0 +1,82 @@
+{{{
+  "type": "page",
+  "title": "Index Block",
+  "description": "A demonstration of the Index Enjin block"
+}}}
+[
+
+        {
+            "type": "header",
+            "tag": "main-header",
+            "profile": "outer--inner",
+            "padding": "top",
+            "margins": "bottom",
+            "content": {
+                "header": [
+                    "Index Block"
+                ],
+                "nav": [
+                    { "type": "a", "href": "#introduction",         "text": ["Introduction"] },
+                    { "type": "a", "href": "#block-and-blog-pages", "text": ["Block and blog pages..."] }
+                ]
+            }
+        },
+
+        {
+            "type": "content",
+            "tag": "introduction",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "content": {
+                "header": [
+                    "Introduction"
+                ],
+                "section": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Index blocks are a versatile solution to displaying a selection of pages, such as with a ",
+                            "category page linking to the pages within the category. An obvious example is that of a ",
+                            "blog site's homepage listing recent posts. An index block placed within the homepage ",
+                            "would provide this listing."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "index",
+            "tag": "block-and-blog-pages",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "link-href": "#",
+            "link-text": "Does nothing",
+            "index-views": "link-list,profile",
+            "index-sort-dir": "ASC",
+            "index-order-by": "Title",
+            "index-max-results": 10,
+            "index-query": "((.Url == m!^/blocks!) AND (.Title != m!(?i)image!)) OR (.Archetype == \"blog\")",
+            "content": {
+                "header": [
+                    "Block and blog pages..."
+                ],
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "Index blocks support both headers and footers. This is the footer."
+                        ]
+                    }
+                ]
+            }
+        }
+
+
+]

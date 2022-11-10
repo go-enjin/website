@@ -31,6 +31,7 @@
 						"sub-menu": [
 							{"text": "Header", "href": "/blocks/inline/header"},
 							{"text": "Notice", "href": "/blocks/inline/notice"},
+							{"text": "Content", "href": "/blocks/inline/content"},
 							{"text": "Table of Contents", "href": "/blocks/inline/toc"},
 							{"text": "Link-List", "href": "/blocks/inline/link-list"},
 							{
@@ -45,7 +46,7 @@
 							},
 							{"text": "Icon", "href": "/blocks/inline/icon"},
 							{"text": "Card", "href": "/blocks/inline/card"},
-							{"text": "Content", "href": "/blocks/inline/content"}
+							{"text": "Index", "href": "/blocks/inline/index"}
 						]
 					},
 					{
