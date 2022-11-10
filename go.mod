@@ -3,9 +3,9 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221109161040-9c3220a7a370
+	github.com/go-enjin/be v0.0.0-20221110215001-a4b6f5d2cdfe
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221108201416-47b0441dcfe9
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221110215109-cf7784411ad2
 	github.com/urfave/cli/v2 v2.19.2
 )
 
@@ -13,6 +13,7 @@ require (
 	github.com/BurntSushi/toml v1.2.0 // indirect
 	github.com/GehirnInc/crypt v0.0.0-20200316065508-bb7000b8a962 // indirect
 	github.com/RoaringBitmap/roaring v1.2.1 // indirect
+	github.com/alecthomas/participle/v2 v2.0.0-beta.5 // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
 	github.com/bits-and-blooms/bitset v1.3.3 // indirect
