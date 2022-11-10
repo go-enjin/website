@@ -7,7 +7,9 @@
     "permalink": "e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7",
     "redirect": [
         "/this-is-a-page-redirect-to-the-blog-example"
-    ]
+    ],
+    "thumbnail-url": "/media/mascot.png",
+    "thumbnail-alt": "thumbnail image of the Go-Enjin mascot"
 }}}
 [
 
