@@ -20,6 +20,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	"github.com/go-enjin/be/features/pages/formats/html"
 	auth "github.com/go-enjin/be/features/restrict/basic-auth"
 
 	"github.com/go-enjin/be/features/outputs/htmlify"
@@ -71,17 +72,10 @@ func init() {
 }
 
 const (
-	main500tmpl = `+++
-format = "html.tmpl"
-+++
-500 - {{ _ "Internal Server Error" }}`
-	main404tmpl = `+++
-format = "html.tmpl"
-+++
-404 - {{ _ "Not Found" }}`
+	main500tmpl = `500 - Internal Server Error`
+	main404tmpl = `404 - Not Found`
 	main204tmpl = `+++
 url = "/"
-format = "html.tmpl"
 +++
 204 - {{ _ "No Content" }}`
 )
@@ -166,13 +160,14 @@ func main() {
 		IncludeEnjin(www, enja).
 		SiteTag("MAIN").
 		SiteName("main").
+		AddFeature(formats.New().AddFormat(html.New().Make()).Make()).
 		AddTheme(theme.DefaultTheme()).
 		SetTheme("default").
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
-		AddPageFromString("/", main204tmpl).
-		AddPageFromString("/404.tmpl", main404tmpl).
-		AddPageFromString("/500.tmpl", main500tmpl).
+		AddPageFromString("204.html.tmpl", main204tmpl).
+		AddPageFromString("404.tmpl", main404tmpl).
+		AddPageFromString("500.tmpl", main500tmpl).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
 		Build()
