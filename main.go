@@ -20,6 +20,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	auth "github.com/go-enjin/be/features/restrict/basic-auth"
+
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/features/pages/robots"
@@ -106,6 +108,7 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 
 func features(eb feature.Builder) feature.Builder {
 	return eb.
+		AddFeature(auth.New().EnableEnv(true).Make()).
 		AddFeature(papertrail.Make()).
 		AddFeature(sitemap.New().Make()).
 		AddFeature(robots.New().
@@ -144,10 +147,12 @@ func main() {
 		AddFlags(
 			&cli.StringFlag{
 				Name:    "enja-en-domain",
+				Usage:   "enja site EN domain name (only env works)",
 				EnvVars: enja.MakeEnvKeys("ENJA_EN_DOMAIN"),
 			},
 			&cli.StringFlag{
 				Name:    "enja-ja-domain",
+				Usage:   "enja site JA domain name (only env works)",
 				EnvVars: enja.MakeEnvKeys("ENJA_JA_DOMAIN"),
 			},
 		)
