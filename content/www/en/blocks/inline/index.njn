@@ -61,8 +61,34 @@
             "index-views": "link-list,profile",
             "index-sort-dir": "ASC",
             "index-order-by": "Title",
-            "index-max-results": 10,
-            "index-query": "((.Url == m!^/blocks!) AND (.Title != m!(?i)image!)) OR (.Archetype == \"blog\")",
+            "index-max-results": 100,
+            "index-num-per-page": 10,
+            "index-pagination": "more",
+            "index-query": "(.Url == m!^/blocks!) OR (.Archetype == \"blog\")",
+            "index-filters": [
+                [
+                    {
+                        "key": "not-image-blocks",
+                        "label": "Not Image Blocks",
+                        "query": ".Title != m!(?i)image!"
+                    },
+                    {
+                        "key": "inline-blocks-only",
+                        "label": "Inline Blocks Only",
+                        "query": ".Url == m!^/blocks/inline/!"
+                    },
+                    {
+                        "key": "container-blocks-only",
+                        "label": "Container Blocks Only",
+                        "query": ".Url == m!^/blocks/container/!"
+                    }
+                ],
+                {
+                    "key": "blog-only",
+                    "label": "Blogs Only",
+                    "query": ".Archetype == \"blog\""
+                }
+            ],
             "content": {
                 "header": [
                     "Block and blog pages..."
