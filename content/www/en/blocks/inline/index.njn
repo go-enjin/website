@@ -62,9 +62,9 @@
             "index-sort-dir": "ASC",
             "index-order-by": "Title",
             "index-max-results": 100,
-            "index-num-per-page": 10,
+            "index-num-per-page": 5,
             "index-pagination": "more",
-            "index-query": "(.Url == m!^/blocks!) OR (.Archetype == \"blog\")",
+            "index-query": "(.Language == \"en\") AND ((.Url == m!^/blocks!) OR (.Archetype == \"blog\"))",
             "index-filters": [
                 [
                     {
@@ -98,6 +98,66 @@
                         "type": "p",
                         "text": [
                             "Index blocks support both headers and footers. This is the footer."
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "index",
+            "tag": "all-pages",
+            "profile": "outer--inner",
+            "padding": "both",
+            "margins": "both",
+            "jump-top": "true",
+            "jump-link": "true",
+            "index-views": "profile,link-list",
+            "index-sort-dir": "DSC",
+            "index-order-by": "Title",
+            "index-max-results": 100,
+            "index-num-per-page": 3,
+            "index-pagination": "page",
+            "index-query": ".Type == \"page\"",
+            "index-filters": [
+                [
+                    {
+                        "key": "examples",
+                        "label": "Examples",
+                        "query": ".Url == m!^/examples/!"
+                    },
+                    {
+                        "key": "theming",
+                        "label": "Theming",
+                        "query": ".Url == m!^/(fields|blocks|styling|pages)/!"
+                    },
+                    {
+                        "key": "other",
+                        "label": "Other",
+                        "query": ".Url != m!^/(examples|fields|blocks|styling|pages)/!"
+                    }
+                ]
+            ],
+            "content": {
+                "header": [
+                    "All pages..."
+                ],
+                "footer": [
+                    {
+                        "type": "p",
+                        "text": [
+                            "The above index block has a number of differences from the first one on this page."
+                        ]
+                    },
+                    {
+                        "type": "ul",
+                        "list": [
+                            "all pages are included (regardless of language)",
+                            "the default view is Profile instead of Link List",
+                            "the pages are sorted by title descending",
+                            "full pagination controls (instead of the incremental more-button mode)",
+                            "different filters are configured",
+                            "three rows per page instead of five (default is ten)"
                         ]
                     }
                 ]
