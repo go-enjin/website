@@ -114,10 +114,10 @@ github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a
 github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a/go.mod h1:hId0+St26leJQkTRaFYATZHMGja4wrv0hzf5SwKs3hA=
 github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27 h1:aDbd1N1mD8V225rsaYCd7kbt7WFVaDCWwVPpEZscAs0=
 github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27/go.mod h1:drs2gdlsfKSimrkS5j//UTGEMEWcLyX9M3frtW/dP+k=
-github.com/go-enjin/semantic-enjin-theme v0.0.0-20221113211858-11a6ebfa207b h1:DQ2QgnZH6uy8mO1SuVFB77q0GSEi0p511UBaiLqjeK0=
-github.com/go-enjin/semantic-enjin-theme v0.0.0-20221113211858-11a6ebfa207b/go.mod h1:V34uwosHWcsrEfr+rHVhJ/23ngRFNFPtCSoJswtuzNY=
 github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114165528-98bba0f8fd52 h1:1KUKer0taxqoiq5G9eixANqh8HCopHiVkQAKIb0aqi8=
 github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114165528-98bba0f8fd52/go.mod h1:V34uwosHWcsrEfr+rHVhJ/23ngRFNFPtCSoJswtuzNY=
+github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114172531-cc58255116ac h1:FsQ9PVUgbfBEn4OzunQhKKzoNfonpSP31oZdIXfxSV0=
+github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114172531-cc58255116ac/go.mod h1:V34uwosHWcsrEfr+rHVhJ/23ngRFNFPtCSoJswtuzNY=
 github.com/go-kit/log v0.1.0/go.mod h1:zbhenjAZHb184qTLMA9ZjW7ThYL0H2mk7Q6pNt4vbaY=
 github.com/go-logfmt/logfmt v0.5.0/go.mod h1:wCYkCAKZfumFQihp8CzCvQ3paCTfi41vtzG1KdI/P7A=
 github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=

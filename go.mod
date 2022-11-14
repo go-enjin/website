@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/go-enjin/be v0.0.0-20221113205851-b6ed6130c372
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114165528-98bba0f8fd52
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114172531-cc58255116ac
 	github.com/urfave/cli/v2 v2.19.2
 )
 
