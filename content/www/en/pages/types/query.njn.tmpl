@@ -1,0 +1,94 @@
+{{{
+    "type": "query",
+    "title": "Query Page Type",
+    "description": "An example of Go-Enjin query page types",
+    "things": [
+        "this is one thing",
+        "this is another thing",
+        "this is something else",
+        "lorem ipsum is not translatable"
+    ],
+    "query": {
+        "blocks": "(.Language == \"en\") AND (.Url == m!^/blocks/!) ORDER BY .Title DSC"
+    }
+}}}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "Page Query Type"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The following list is generated with just the custom page context variables."
+                    ]
+                },
+                {
+                    "type": "ul",
+                    "list": [
+                        {{ range $idx,$thing := .Things }}
+                            {{- if ne $idx 0 }},{{ end }}
+                            "{{ $thing }}"
+                        {{- end }}
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Introduction"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The following list is generated with the page <code>.QueryResults</code>."
+                    ]
+                },
+                {
+                    "type": "ul",
+                    "list": [
+                        {{ range $key,$pages := .QueryResults }}
+                            {{ range $idx,$page := $pages }}
+                        {{ if gt $idx 0 }},{{ end }}{ "type": "a", "href": "{{ __ $page.Language $page.Url }}", "text": "{{ $page.Title }}" }
+                            {{ end }}
+                        {{ end }}
+                    ]
+                }
+            ]
+        }
+    }
+]

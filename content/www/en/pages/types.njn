@@ -1,0 +1,119 @@
+{{{
+    "type": "page",
+    "title": "Page Types",
+    "description": "An introduction to Go-Enjin page types"
+}}}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "Page Types"
+            ],
+            "nav": [
+                { "type": "a", "href": "#introduction", "text": ["Introduction"] },
+                { "type": "a", "href": "#query-rss-feed", "text": ["Query RSS Feed"] },
+                { "type": "a", "href": "#query-page", "text": ["Query Page"] }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [ "Introduction" ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Page types in Go-Enjin are a fundamental way of identifying <q>standard</q> content and ",
+                        "there are really only three page types at this time:"
+                    ]
+                },
+                {
+                    "type": "ul",
+                    "list": [
+                        { "type": "span", "text": [ "<q>page</q> - the common, normal, base page type"] },
+                        { "type": "span", "text": [ "<q>query</q> - enables using PageQL to build normal page content"] },
+                        "anything else"
+                    ]
+                },
+                {
+                    "type": "p",
+                    "text": [
+                        "Content editors will likely only ever use the first two mentioned, however, the search pages ",
+                        "for example uses a type of <q>search</q>. This value could be literally anything other than ",
+                        "<q>page</q> and <q>query</q> and causes Go-Enjin to exclude them within the content provider ",
+                        "features."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "query-rss-feed",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-text": "View a page-query-based RSS feed",
+        "link-href": "/pages/types/query.rss",
+        "content": {
+            "header": [
+                "Query RSS Feed"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Using the <q>query</q> page type and .tmpl page format, making an RSS feed is trivial. ",
+                        "Specify the queries in the front-matter section and then sculpt a little XML in the content ",
+                        "section. All done."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "query-page",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-text": "View a page-query-based page",
+        "link-href": "/pages/types/query",
+        "content": {
+            "header": [
+                "Query Page"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Using the <q>query</q> page type and .njn.tmpl page format, generating content is trivial. ",
+                        "Specify the queries in the front-matter section and then sculpt a little JSON in the content ",
+                        "section. All done."
+                    ]
+                }
+            ]
+        }
+    }
+
+]

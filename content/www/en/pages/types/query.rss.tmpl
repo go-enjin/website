@@ -1,0 +1,35 @@
++++
+type = "query"
+searchable = "false"
+title = "Example Query Page"
+description = "An example of Go-Enjin query pages making RSS feeds"
+layout = "none"
+content-type = "application/xml"
+[query]
+    block-pages = ".Url == m!^/blocks/! ORDER BY .Created DSC"
++++
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="https://{{ .Request.Host }}{{ .Url }}" rel="self" type="application/rss+xml" />
+        <link>https://{{ .Request.Host }}/</link>
+        <title>Block and Blog RSS Feed</title>
+        <description>{{ .SiteTagLine }}</description>
+        <language>{{ .DefaultLanguage }}</language>
+        <generator>{{ .SiteName }}</generator>
+        <webMaster>go.enjin.org@gmail.com (The Go-Enjin Team)</webMaster>
+        {{- range $jdx,$page := (index $.QueryResults "BlockPages") }}
+        <item>
+            <title>{{ $page.Title }}</title>
+            <description>{{ $page.Description }}</description>
+            {{ if (index $page.Context "Permalinked") -}}
+            <link>https://{{ $.Request.Host }}{{ __ $page.Language $page.Url }}</link>
+            <guid>https://{{ $.Request.Host }}{{ index $page.Context "PermalinkUrl" }}</guid>
+            {{- else -}}
+            <guid>https://{{ $.Request.Host }}{{ __ $page.Language $page.Url }}</guid>
+            {{- end }}
+            <pubDate>{{ $page.CreatedAt.Format "02 Jan 2006 15:04:05 MST" }}</pubDate>
+        </item>
+        {{- end }}
+    </channel>
+</rss>

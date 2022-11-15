@@ -110,6 +110,14 @@
 						"sub-menu": [
 							{"text": "Blog", "href": "/pages/archetypes/blog"}
 						]
+					},
+					{
+						"text": "Types",
+						"href": "/pages/types",
+						"sub-menu": [
+							{"text": "Query RSS", "href": "/pages/types/query.rss" },
+							{"text": "Query Page", "href": "/pages/types/query" }
+						]
 					}
 				]
 			}
