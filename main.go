@@ -20,9 +20,9 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/go-enjin/be/features/pages/query"
-
 	"github.com/go-enjin/be/features/pages/formats/html"
+	"github.com/go-enjin/be/features/pages/query"
+	"github.com/go-enjin/be/features/requests/headers/proxy"
 	auth "github.com/go-enjin/be/features/restrict/basic-auth"
 
 	"github.com/go-enjin/be/features/outputs/htmlify"
@@ -39,7 +39,6 @@ import (
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/features/log/papertrail"
 	"github.com/go-enjin/be/features/pages/formats"
-	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/pkg/feature"
 )
 
@@ -87,6 +86,7 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 		SiteTagLine("Done is the enjin of more.").
 		SiteCopyrightName("Go-Enjin").
 		SiteCopyrightNotice("© 2022 All rights reserved").
+		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(formats.New().Defaults().Make()).
 		AddTheme(semantic.SemanticEnjinTheme()).
 		AddTheme(goEnjinTheme()).
@@ -112,7 +112,6 @@ func features(eb feature.Builder) feature.Builder {
 			AddRuleGroup(robots.NewRuleGroup().
 				AddUserAgent("*").AddAllowed("/").Make(),
 			).Make()).
-		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(permalink.New().Make()).
 		AddFeature(query.New().Make()).
 		AddFeature(search.New().Make()).
