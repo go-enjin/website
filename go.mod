@@ -3,9 +3,9 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221113205851-b6ed6130c372
+	github.com/go-enjin/be v0.0.0-20221115034328-11421c0d5b87
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221114172531-cc58255116ac
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221115034604-6a7c41688478
 	github.com/urfave/cli/v2 v2.19.2
 )
 
