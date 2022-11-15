@@ -20,6 +20,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	"github.com/go-enjin/be/features/pages/query"
+
 	"github.com/go-enjin/be/features/pages/formats/html"
 	auth "github.com/go-enjin/be/features/restrict/basic-auth"
 
@@ -112,6 +114,7 @@ func features(eb feature.Builder) feature.Builder {
 			).Make()).
 		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(permalink.New().Make()).
+		AddFeature(query.New().Make()).
 		AddFeature(search.New().Make()).
 		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
