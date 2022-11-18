@@ -65,6 +65,8 @@
             "index-num-per-page": 5,
             "index-pagination": "more",
             "index-query": "(.Language == \"en\") AND ((.Url == m!^/blocks!) OR (.Archetype == \"blog\"))",
+            "search-ranked": "true",
+            "search-enabled": "true",
             "index-filters": [
                 [
                     {
@@ -119,6 +121,7 @@
             "index-num-per-page": 3,
             "index-pagination": "page",
             "index-query": ".Type == \"page\"",
+            "search-enabled": "true",
             "index-filters": [
                 [
                     {
