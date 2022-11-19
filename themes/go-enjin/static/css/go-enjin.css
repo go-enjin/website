@@ -17,10 +17,6 @@
  */
 
 body[data-page-archetype="blog"] > main > aside.blog {
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*z-index: var(--z--page--overlay);*/
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
