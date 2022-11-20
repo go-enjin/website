@@ -37,7 +37,7 @@ SET_LOCAL_PATH = ../semantic-enjin-theme
 GOXT_GO_PACKAGE = github.com/go-enjin/golang-org-x-text
 GOXT_LOCAL_PATH = ../golang-org-x-text
 
-# Go-Enjin gotext package
+# Go-Enjin times package
 DJHT_GO_PACKAGE = github.com/go-enjin/github-com-djherbis-times
 DJHT_LOCAL_PATH = ../github-com-djherbis-times
 
