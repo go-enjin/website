@@ -3,14 +3,15 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221119185128-77b17fe1a918
+	github.com/go-enjin/be v0.0.0-20221119225359-4b65ae8f7eda
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
 	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221119185251-5cdd4ba26ef9
-	github.com/urfave/cli/v2 v2.19.2
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20221120040833-6fecfc0be0e0
+	github.com/urfave/cli/v2 v2.23.5
 )
 
 require (
-	github.com/BurntSushi/toml v1.2.0 // indirect
+	github.com/BurntSushi/toml v1.2.1 // indirect
 	github.com/GehirnInc/crypt v0.0.0-20200316065508-bb7000b8a962 // indirect
 	github.com/RoaringBitmap/roaring v1.2.1 // indirect
 	github.com/abbot/go-http-auth v0.4.0 // indirect
@@ -79,6 +80,7 @@ require (
 	github.com/klauspost/compress v1.15.11 // indirect
 	github.com/leekchan/gtf v0.0.0-20190214083521-5fba33c5b00b // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
+	github.com/likexian/whois v1.14.3 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/maruel/natural v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect

@@ -20,6 +20,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
+
 	"github.com/go-enjin/be/features/pages/formats/html"
 	"github.com/go-enjin/be/features/pages/query"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
@@ -115,6 +117,7 @@ func features(eb feature.Builder) feature.Builder {
 		AddFeature(permalink.New().Make()).
 		AddFeature(query.New().Make()).
 		AddFeature(search.New().Make()).
+		AddFeature(thisip.New().Make()).
 		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").

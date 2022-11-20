@@ -116,7 +116,8 @@
 						"href": "/pages/types",
 						"sub-menu": [
 							{"text": "Query RSS", "href": "/pages/types/query.rss" },
-							{"text": "Query Page", "href": "/pages/types/query" }
+							{"text": "Query Page", "href": "/pages/types/query" },
+							{"text": "ThisIp Page", "href": "/pages/types/thisip" }
 						]
 					}
 				]

@@ -18,7 +18,8 @@
             "nav": [
                 { "type": "a", "href": "#introduction", "text": ["Introduction"] },
                 { "type": "a", "href": "#query-rss-feed", "text": ["Query RSS Feed"] },
-                { "type": "a", "href": "#query-page", "text": ["Query Page"] }
+                { "type": "a", "href": "#query-page", "text": ["Query Page"] },
+                { "type": "a", "href": "#thisip-page", "text": ["ThisIP Page"] }
             ]
         }
     },
@@ -110,6 +111,33 @@
                         "Using the <q>query</q> page type and .njn.tmpl page format, generating content is trivial. ",
                         "Specify the queries in the front-matter section and then sculpt a little JSON in the content ",
                         "section. All done."
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "thisip-page",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "link-text": "View a thisip-based page",
+        "link-href": "/pages/types/thisip",
+        "content": {
+            "header": [
+                "ThisIp Page"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "This is the custom page type which powers ",
+                        { "type": "a", "href": "https://thisip.fyi", "text": "thisip.fyi's" },
+                        " main page."
                     ]
                 }
             ]
