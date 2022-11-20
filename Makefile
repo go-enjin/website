@@ -27,7 +27,7 @@ DEV_BUILD_TAGS = locals,$(COMMON_TAGS)
 EXTRA_PKGS =
 
 # Custom go.mod locals
-GOPKG_KEYS = SET GOXT DJHT
+GOPKG_KEYS = SET GOXT DJHT TIF
 
 # Semantic Enjin Theme
 SET_GO_PACKAGE = github.com/go-enjin/semantic-enjin-theme
@@ -40,6 +40,10 @@ GOXT_LOCAL_PATH = ../golang-org-x-text
 # Go-Enjin times package
 DJHT_GO_PACKAGE = github.com/go-enjin/github-com-djherbis-times
 DJHT_LOCAL_PATH = ../github-com-djherbis-times
+
+# Go-Enjin thisip package
+TIF_GO_PACKAGE = github.com/go-enjin/website-thisip-fyi
+TIF_LOCAL_PATH = ../website-thisip-fyi
 
 include ./Enjin.mk
 
