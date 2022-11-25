@@ -24,6 +24,7 @@ import (
 
 	"github.com/go-enjin/be/features/pages/formats/html"
 	"github.com/go-enjin/be/features/pages/query"
+	"github.com/go-enjin/be/features/pages/query/pql"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	auth "github.com/go-enjin/be/features/restrict/basic-auth"
 
@@ -31,6 +32,7 @@ import (
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
+	"github.com/go-enjin/be/features/pages/search/fts"
 	"github.com/go-enjin/be/features/pages/sitemap"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/be/pkg/theme"
@@ -115,7 +117,9 @@ func features(eb feature.Builder) feature.Builder {
 				AddUserAgent("*").AddAllowed("/").Make(),
 			).Make()).
 		AddFeature(permalink.New().Make()).
+		AddFeature(pql.New().Make()).
 		AddFeature(query.New().Make()).
+		AddFeature(fts.New().Make()).
 		AddFeature(search.New().Make()).
 		AddFeature(thisip.New().Make()).
 		AddFeature(htmlify.New().Make()).
