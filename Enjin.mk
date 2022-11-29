@@ -17,7 +17,7 @@
 #: uncomment to echo instead of execute
 #CMD=echo
 
-ENJIN_MK_VERSION = v0.1.8
+ENJIN_MK_VERSION = v0.1.9
 
 SHELL = /bin/bash
 
@@ -483,7 +483,6 @@ else
 	@echo "$(call _build_label): ${VERSION}, ${RELEASE}"
 	@${CMD} \
 		$(call _env_build_vars) \
-		time -- \
 		${ENJENV_EXE} golang build \
 			$(call _build_args) \
 			-- -v $(call _build_tags)
