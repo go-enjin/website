@@ -59,12 +59,9 @@
             "link-href": "#",
             "link-text": "Does nothing",
             "index-views": "link-list,profile",
-            "index-sort-dir": "ASC",
-            "index-order-by": "Title",
-            "index-max-results": 100,
             "index-num-per-page": 5,
             "index-pagination": "more",
-            "index-query": "(.Language == \"en\") AND ((.Url == m!^/blocks!) OR (.Archetype == \"blog\"))",
+            "index-query": "((.Language == \"en\") AND ((.Url == m!^/blocks!) OR (.Archetype == \"blog\"))) ORDER BY .Title ASC",
             "search-ranked": "true",
             "search-enabled": "true",
             "index-filters": [
@@ -72,23 +69,23 @@
                     {
                         "key": "not-image-blocks",
                         "label": "Not Image Blocks",
-                        "query": ".Title != m!(?i)image!"
+                        "query": "(.Title != m/(?i)image/)"
                     },
                     {
                         "key": "inline-blocks-only",
                         "label": "Inline Blocks Only",
-                        "query": ".Url == m!^/blocks/inline/!"
+                        "query": "(.Url == m!^/blocks/inline/!)"
                     },
                     {
                         "key": "container-blocks-only",
                         "label": "Container Blocks Only",
-                        "query": ".Url == m!^/blocks/container/!"
+                        "query": "(.Url == m!^/blocks/container/!)"
                     }
                 ],
                 {
                     "key": "blog-only",
                     "label": "Blogs Only",
-                    "query": ".Archetype == \"blog\""
+                    "query": "(.Archetype == \"blog\")"
                 }
             ],
             "content": {
@@ -120,24 +117,24 @@
             "index-max-results": 100,
             "index-num-per-page": 3,
             "index-pagination": "page",
-            "index-query": ".Type == \"page\"",
+            "index-query": "(.Type == \"page\")",
             "search-enabled": "true",
             "index-filters": [
                 [
                     {
                         "key": "examples",
                         "label": "Examples",
-                        "query": ".Url == m!^/examples/!"
+                        "query": "(.Url == m!^/examples/!)"
                     },
                     {
                         "key": "theming",
                         "label": "Theming",
-                        "query": ".Url == m!^/(fields|blocks|styling|pages)/!"
+                        "query": "(.Url == m!^/(fields|blocks|styling|pages)/!)"
                     },
                     {
                         "key": "other",
                         "label": "Other",
-                        "query": ".Url != m!^/(examples|fields|blocks|styling|pages)/!"
+                        "query": "(.Url != m!^/(examples|fields|blocks|styling|pages)/!)"
                     }
                 ]
             ],

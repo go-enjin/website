@@ -6,7 +6,7 @@ description = "An example of Go-Enjin query pages making RSS feeds"
 layout = "none"
 content-type = "application/xml"
 [query]
-    block-pages = ".Url == m!^/blocks/! ORDER BY .Created DSC"
+    block-pages = "(.Url == m!^/blocks/!) ORDER BY .Created DSC"
 +++
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
