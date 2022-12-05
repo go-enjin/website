@@ -3,10 +3,10 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20221129203007-25d9aa4ec383
+	github.com/go-enjin/be v0.0.0-20221205195257-0c8b43e4d05b
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221129203111-82ca79b9da0c
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20221120210336-8418b8f65447
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20221205195338-18bfa8497761
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20221205195554-55018a5d5dbf
 	github.com/urfave/cli/v2 v2.23.5
 )
 
