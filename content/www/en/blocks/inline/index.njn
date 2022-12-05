@@ -134,7 +134,7 @@
                     {
                         "key": "other",
                         "label": "Other",
-                        "query": "(.Url != m!^/(examples|fields|blocks|styling|pages)/!)"
+                        "query": "(.Url != m~^/(examples|fields|blocks|styling|pages)/~)"
                     }
                 ]
             ],
