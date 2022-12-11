@@ -22,17 +22,17 @@ import (
 
 	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
 
+	"github.com/go-enjin/be/features/defaults/pql"
 	"github.com/go-enjin/be/features/pages/formats/html"
 	"github.com/go-enjin/be/features/pages/query"
-	"github.com/go-enjin/be/features/pages/query/pql"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	auth "github.com/go-enjin/be/features/restrict/basic-auth"
 
+	"github.com/go-enjin/be/features/defaults/fts"
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
-	"github.com/go-enjin/be/features/pages/search/fts"
 	"github.com/go-enjin/be/features/pages/sitemap"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/be/pkg/theme"
@@ -41,6 +41,7 @@ import (
 	semantic "github.com/go-enjin/semantic-enjin-theme"
 
 	"github.com/go-enjin/be"
+	"github.com/go-enjin/be/features/defaults/pgc"
 	"github.com/go-enjin/be/features/log/papertrail"
 	"github.com/go-enjin/be/features/pages/formats"
 	"github.com/go-enjin/be/pkg/feature"
@@ -90,6 +91,7 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 		SiteTagLine("Done is the enjin of more.").
 		SiteCopyrightName("Go-Enjin").
 		SiteCopyrightNotice("© 2022 All rights reserved").
+		AddFeature(pgc.New().Make()).
 		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(formats.New().Defaults().Make()).
 		AddTheme(semantic.SemanticEnjinTheme()).
