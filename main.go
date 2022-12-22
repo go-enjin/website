@@ -20,15 +20,15 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	"github.com/go-enjin/be/features/pages/indexing/bleve-fts"
+	"github.com/go-enjin/be/features/pages/indexing/stock-pql"
 	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
 
-	"github.com/go-enjin/be/features/defaults/pql"
 	"github.com/go-enjin/be/features/pages/formats/html"
 	"github.com/go-enjin/be/features/pages/query"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
-	auth "github.com/go-enjin/be/features/restrict/basic-auth"
+	"github.com/go-enjin/be/features/restrict/basic-auth"
 
-	"github.com/go-enjin/be/features/defaults/fts"
 	"github.com/go-enjin/be/features/outputs/htmlify"
 	"github.com/go-enjin/be/features/pages/permalink"
 	"github.com/go-enjin/be/features/pages/robots"
@@ -41,8 +41,8 @@ import (
 	semantic "github.com/go-enjin/semantic-enjin-theme"
 
 	"github.com/go-enjin/be"
-	"github.com/go-enjin/be/features/defaults/pgc"
 	"github.com/go-enjin/be/features/log/papertrail"
+	"github.com/go-enjin/be/features/pages/caching/stock-pgc"
 	"github.com/go-enjin/be/features/pages/formats"
 	"github.com/go-enjin/be/pkg/feature"
 )

@@ -24,7 +24,7 @@ APP_SUMMARY ?= Go-Enjin Website
 
 DENY_DURATION ?= 60
 
-COMMON_TAGS = htmlify,page_sitemap,page_query,page_robots,page_search,header_proxy,papertrail,basic_auth
+COMMON_TAGS = htmlify,bleve_fts,stock_pgc,stock_pql,page_sitemap,page_query,page_robots,page_search,header_proxy,papertrail,basic_auth
 BUILD_TAGS = embeds,$(COMMON_TAGS)
 DEV_BUILD_TAGS = locals,$(COMMON_TAGS)
 EXTRA_PKGS =
