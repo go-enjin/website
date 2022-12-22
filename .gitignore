@@ -1,3 +1,4 @@
 /.enjenv
 /be-website
 /.idea
+.env
