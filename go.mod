@@ -3,10 +3,10 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20230101215921-07c048f1e292
+	github.com/go-enjin/be v0.0.0-20230118213948-43074a90f14f
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
 	github.com/go-enjin/semantic-enjin-theme v0.0.0-20230101220040-3b362710245c
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20230101220128-0a92460d1e75
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20230118214413-11964ec9b95a
 	github.com/urfave/cli/v2 v2.23.5
 )
 
@@ -106,6 +106,7 @@ require (
 	github.com/ugorji/go/codec v1.2.7 // indirect
 	github.com/x-cray/logrus-prefixed-formatter v0.5.2 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
+	github.com/yookoala/gofast v0.7.0 // indirect
 	github.com/yookoala/realpath v1.0.0 // indirect
 	github.com/yosssi/gohtml v0.0.0-20201013000340-ee4748c638f4 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
@@ -114,6 +115,7 @@ require (
 	golang.org/x/sys v0.0.0-20221013171732-95e765b1cc43 // indirect
 	golang.org/x/term v0.0.0-20220919170432-7a66f970e087 // indirect
 	golang.org/x/text v0.4.0 // indirect
+	golang.org/x/tools v0.1.12 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
