@@ -3,22 +3,22 @@ module github.com/go-enjin/website
 go 1.18
 
 require (
-	github.com/go-enjin/be v0.0.0-20230202001255-bb925bfcce8b
+	github.com/go-enjin/be v0.0.0-20230202203032-d6578a153b4c
 	github.com/go-enjin/golang-org-x-text v0.0.0-20221026190533-d0e9c4fd3b27
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20230202001408-8da7742ce68d
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20230202001828-1c3cbceb5de4
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20230202203228-9ee7879d3ec6
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20230202203443-971add5a61e2
 	github.com/urfave/cli/v2 v2.24.2
 )
 
 require (
 	github.com/BurntSushi/toml v1.2.1 // indirect
 	github.com/GehirnInc/crypt v0.0.0-20200316065508-bb7000b8a962 // indirect
-	github.com/RoaringBitmap/roaring v1.2.1 // indirect
+	github.com/RoaringBitmap/roaring v0.9.4 // indirect
 	github.com/abbot/go-http-auth v0.4.0 // indirect
-	github.com/alecthomas/participle/v2 v2.0.0-beta.5.0.20221205101428-1f05da7649a8 // indirect
+	github.com/alecthomas/participle/v2 v2.0.0-beta.1 // indirect
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/aymerick/douceur v0.2.0 // indirect
-	github.com/bits-and-blooms/bitset v1.3.3 // indirect
+	github.com/bits-and-blooms/bitset v1.2.0 // indirect
 	github.com/blevesearch/bleve/v2 v2.3.4 // indirect
 	github.com/blevesearch/bleve_index_api v1.0.3 // indirect
 	github.com/blevesearch/geo v0.1.15 // indirect
@@ -29,7 +29,7 @@ require (
 	github.com/blevesearch/segment v0.9.0 // indirect
 	github.com/blevesearch/snowballstem v0.9.0 // indirect
 	github.com/blevesearch/upsidedown_store_api v1.0.1 // indirect
-	github.com/blevesearch/vellum v1.0.9 // indirect
+	github.com/blevesearch/vellum v1.0.8 // indirect
 	github.com/blevesearch/zapx/v11 v11.3.5 // indirect
 	github.com/blevesearch/zapx/v12 v12.3.5 // indirect
 	github.com/blevesearch/zapx/v13 v13.3.5 // indirect
@@ -38,7 +38,6 @@ require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/creack/pty v1.1.18 // indirect
 	github.com/felixge/httpsnoop v1.0.3 // indirect
-	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/fvbommel/sortorder v1.0.2 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.1 // indirect
 	github.com/gdamore/encoding v1.0.0 // indirect
@@ -59,8 +58,8 @@ require (
 	github.com/gofrs/uuid v4.3.0+incompatible // indirect
 	github.com/golang/geo v0.0.0-20210211234256-740aa86cb551 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/golang/snappy v0.0.4 // indirect
-	github.com/gomarkdown/markdown v0.0.0-20221013030248-663e2500819c // indirect
+	github.com/golang/snappy v0.0.1 // indirect
+	github.com/gomarkdown/markdown v0.0.0-20220905174103-7b278df48cfb // indirect
 	github.com/gopherjs/gopherjs v1.17.2 // indirect
 	github.com/gorilla/css v1.0.0 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
@@ -88,7 +87,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.14 // indirect
 	github.com/mattn/go-sqlite3 v1.14.15 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
-	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
+	github.com/microcosm-cc/bluemonday v1.0.20 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/mschoch/smat v0.2.0 // indirect
@@ -109,12 +108,12 @@ require (
 	github.com/yookoala/gofast v0.7.0 // indirect
 	github.com/yookoala/realpath v1.0.0 // indirect
 	github.com/yosssi/gohtml v0.0.0-20201013000340-ee4748c638f4 // indirect
-	go.etcd.io/bbolt v1.3.6 // indirect
+	go.etcd.io/bbolt v1.3.5 // indirect
 	golang.org/x/crypto v0.0.0-20221012134737-56aed061732a // indirect
 	golang.org/x/net v0.0.0-20221014081412-f15817d10f9b // indirect
 	golang.org/x/sys v0.0.0-20221013171732-95e765b1cc43 // indirect
 	golang.org/x/term v0.0.0-20220919170432-7a66f970e087 // indirect
-	golang.org/x/text v0.4.0 // indirect
+	golang.org/x/text v0.3.8 // indirect
 	golang.org/x/tools v0.1.12 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
