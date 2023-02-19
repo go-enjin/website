@@ -24,7 +24,6 @@ import (
 	"github.com/go-enjin/be/features/pages/indexing/stock-pql"
 	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
 
-	"github.com/go-enjin/be/features/pages/formats/html"
 	"github.com/go-enjin/be/features/pages/query"
 	"github.com/go-enjin/be/features/requests/headers/proxy"
 	"github.com/go-enjin/be/features/restrict/basic-auth"
@@ -78,8 +77,8 @@ func init() {
 }
 
 const (
-	main500tmpl = `500 - Internal Server Error`
-	main404tmpl = `404 - Not Found`
+	main500tmpl = `500 - {{ _ "Internal Server Error" }}`
+	main404tmpl = `404 - {{ _ "Not Found" }}`
 	main204tmpl = `+++
 url = "/"
 +++
@@ -171,12 +170,11 @@ func main() {
 		IncludeEnjin(www, enja).
 		SiteTag("MAIN").
 		SiteName("main").
-		AddFeature(formats.New().AddFormat(html.New().Make()).Make()).
 		AddTheme(theme.DefaultTheme()).
 		SetTheme("default").
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
-		AddPageFromString("204.html.tmpl", main204tmpl).
+		AddPageFromString("204.tmpl", main204tmpl).
 		AddPageFromString("404.tmpl", main404tmpl).
 		AddPageFromString("500.tmpl", main500tmpl).
 		SetStatusPage(404, "/404").
