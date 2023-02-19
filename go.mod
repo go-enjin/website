@@ -6,7 +6,7 @@ require (
 	github.com/go-enjin/be v0.0.0-20230219212728-0eada5880a1d
 	github.com/go-enjin/golang-org-x-text v0.0.0-20230219204830-4f2b7b481f16
 	github.com/go-enjin/semantic-enjin-theme v0.0.0-20230219213155-87745cb247ad
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20230219213255-d265d2103606
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20230219183801-b304f7e6d129
 	github.com/urfave/cli/v2 v2.24.2
 )
 
