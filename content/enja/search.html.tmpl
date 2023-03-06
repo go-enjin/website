@@ -107,11 +107,11 @@ sitemap-ignored = "true"
         <footer>
             <div class="search-pagination">
                 {{ if gt .SiteSearchPage 0 }}
-                <a title="{{ _ "Go to the first page" }}" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}">
+                <a title="{{ _ "Go to the first page" }}" href="{{ .SiteSearchPath }}/:{{ .SiteSearchQuery | escapeUrlPath }}">
                     <i class="fa-solid fa-angles-left"></i>
                     <span class="sr-only">{{ _ "Go to the first page" }}</span>
                 </a>
-                <a title="{{ _ "Go to the previous page" }}" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ sub .SiteSearchPage 1 }}">
+                <a title="{{ _ "Go to the previous page" }}" href="{{ .SiteSearchPath }}/:{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ sub .SiteSearchPage 1 }}">
                     <i class="fa-solid fa-angle-left"></i>
                     <span class="sr-only">{{ _ "Go to the previous page" }}</span>
                 </a>
@@ -123,12 +123,12 @@ sitemap-ignored = "true"
                     <span class="search-pagination-info--pages">{{ .SiteSearchPageSummary }}</span>
                     <span class="search-pagination-info--hits">({{ .SiteSearchHitsSummary }})</span>
                 </div>
-                {{ if lt .SiteSearchPage .SiteSearchPages }}
-                <a title="{{ _ "Go to the next page" }}" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ add .SiteSearchPage 1 }}">
+                {{ if lt .SiteSearchPage (sub .SiteSearchPages 1) }}
+                <a title="{{ _ "Go to the next page" }}" href="{{ .SiteSearchPath }}/:{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ add .SiteSearchPage 1 }}">
                     <i class="fa-solid fa-angle-right"></i>
                     <span class="sr-only">{{ _ "Go to the next page" }}</span>
                 </a>
-                <a title="{{ _ "Go to the last page" }}" href="{{ .SiteSearchPath }}/{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ .SiteSearchPages }}">
+                <a title="{{ _ "Go to the last page" }}" href="{{ .SiteSearchPath }}/:{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ .SiteSearchPages }}">
                     <i class="fa-solid fa-angles-right"></i>
                     <span class="sr-only">{{ _ "Go to the last page" }}</span>
                 </a>

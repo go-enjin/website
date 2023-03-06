@@ -123,7 +123,7 @@ sitemap-ignored = "true"
                     <span class="search-pagination-info--pages">{{ .SiteSearchPageSummary }}</span>
                     <span class="search-pagination-info--hits">({{ .SiteSearchHitsSummary }})</span>
                 </div>
-                {{ if lt .SiteSearchPage .SiteSearchPages }}
+                {{ if lt .SiteSearchPage (sub .SiteSearchPages 1) }}
                 <a title="{{ _ "Go to the next page" }}" href="{{ .SiteSearchPath }}/:{{ .SiteSearchQuery | escapeUrlPath }}/{{ .SiteSearchSize }}/{{ add .SiteSearchPage 1 }}">
                     <i class="fa-solid fa-angle-right"></i>
                     <span class="sr-only">{{ _ "Go to the next page" }}</span>
