@@ -1,12 +1,12 @@
 module github.com/go-enjin/website
 
-go 1.18
+go 1.20
 
 require (
-	github.com/go-enjin/be v0.0.0-20230305033309-be485cff3d1c
+	github.com/go-enjin/be v0.0.0-20230306185847-fc7be4685066
 	github.com/go-enjin/golang-org-x-text v0.0.0-20230219204830-4f2b7b481f16
-	github.com/go-enjin/semantic-enjin-theme v0.0.0-20230306025245-3ca32bf5b27f
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20230306025647-2492d95d6e1e
+	github.com/go-enjin/semantic-enjin-theme v0.0.0-20230306185931-91deab90d751
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20230306190055-f28ba8daefe7
 	github.com/urfave/cli/v2 v2.14.1
 )
 
