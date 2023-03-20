@@ -59,17 +59,11 @@ var (
 
 	hotReload bool
 
-	wwwDomain    string
 	enjaEnDomain string
 	enjaJaDomain string
 )
 
 func init() {
-	if v, ok := os.LookupEnv("BE_WWW_DOMAIN"); ok {
-		wwwDomain = v
-	} else {
-		wwwDomain = "http://localhost:3334"
-	}
 	if v, ok := os.LookupEnv("BE_ENJA_EN_DOMAIN"); ok {
 		enjaEnDomain = v
 	} else {
@@ -140,14 +134,8 @@ func main() {
 
 	setup(www).SiteTag("WWW").
 		SiteDefaultLanguage(language.English).
-		SiteLanguageMode(lang.NewPathMode().Make()).
-		AddFlags(
-			&cli.StringFlag{
-				Name:    "www-domain",
-				Usage:   "www site domain name (only env works)",
-				EnvVars: www.MakeEnvKeys("WWW_DOMAIN"),
-			},
-		)
+		SiteLanguageMode(lang.NewPathMode().Make())
+
 	features(www).
 		AddFeature(wwwMenu).
 		AddFeature(wwwPublic).
