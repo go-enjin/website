@@ -99,8 +99,8 @@ github.com/go-enjin/golang-org-x-text v0.0.0-20230219204830-4f2b7b481f16 h1:zTYp
 github.com/go-enjin/golang-org-x-text v0.0.0-20230219204830-4f2b7b481f16/go.mod h1:drs2gdlsfKSimrkS5j//UTGEMEWcLyX9M3frtW/dP+k=
 github.com/go-enjin/semantic-enjin-theme v0.0.0-20230320204847-8610bb501d12 h1:FVBbZhf/b9+MXbs+k53VhKQDNq7vNNimnpmS81y0Qxc=
 github.com/go-enjin/semantic-enjin-theme v0.0.0-20230320204847-8610bb501d12/go.mod h1:W2KD1LnaWpGKpqji+85C6jdiIWPOx2wSa4CHwGMLIqg=
-github.com/go-enjin/website-thisip-fyi v0.0.0-20230320204943-f0b1a727e948 h1:Z09FIZofjD2OMbDIO1JTZDW+JDDvaPA2dDfOGwWJ+aY=
-github.com/go-enjin/website-thisip-fyi v0.0.0-20230320204943-f0b1a727e948/go.mod h1:YZkNlLrstJupuUW64tNvf0ZWAi7PhnxoIrTumCYkNEA=
+github.com/go-enjin/website-thisip-fyi v0.0.0-20230327211543-7ab3bbb0f0e9 h1:i3+92gzyq0Ke/N6+tVUbyZ6oMjgNqDI5oELFK7ASaNU=
+github.com/go-enjin/website-thisip-fyi v0.0.0-20230327211543-7ab3bbb0f0e9/go.mod h1:YZkNlLrstJupuUW64tNvf0ZWAi7PhnxoIrTumCYkNEA=
 github.com/go-kit/log v0.1.0/go.mod h1:zbhenjAZHb184qTLMA9ZjW7ThYL0H2mk7Q6pNt4vbaY=
 github.com/go-logfmt/logfmt v0.5.0/go.mod h1:wCYkCAKZfumFQihp8CzCvQ3paCTfi41vtzG1KdI/P7A=
 github.com/go-playground/assert/v2 v2.0.1 h1:MsBgLAaY856+nPRTKrp3/OZK38U/wa0CcBYNjji3q3A=
