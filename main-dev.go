@@ -1,4 +1,4 @@
-//go:build locals || !embeds
+//go:build !production
 
 // Copyright (c) 2022  The Go-Enjin Authors
 //
@@ -17,12 +17,13 @@
 package main
 
 import (
-	"github.com/go-enjin/be/features/fs/locals/content"
-	"github.com/go-enjin/be/features/fs/locals/locales"
-	"github.com/go-enjin/be/features/fs/locals/menu"
-	"github.com/go-enjin/be/features/fs/locals/public"
-	"github.com/go-enjin/be/pkg/log"
-	"github.com/go-enjin/be/pkg/theme"
+	semantic "github.com/go-enjin/semantic-enjin-theme"
+
+	"github.com/go-enjin/be/features/fs/content"
+	"github.com/go-enjin/be/features/fs/locale"
+	"github.com/go-enjin/be/features/fs/menu"
+	"github.com/go-enjin/be/features/fs/public"
+	"github.com/go-enjin/be/features/fs/themes"
 )
 
 func init() {
@@ -30,25 +31,44 @@ func init() {
 	// log.Config.LogLevel = log.LevelDebug
 	// log.Config.Apply()
 
-	wwwMenu = menu.New().MountPath("menus", "menus/www").Make()
-	wwwPublic = public.New().MountPath("/", "public").Make()
-	wwwContent = content.New().MountPath("/", "content/www").Make()
-	wwwLocales = locales.New().Include("locales").Make()
+	wwwMenu = menu.New().
+		MountLocalPath("/", "menus/www").
+		Make()
+	wwwPublic = public.New().
+		MountLocalPath("/", "public").
+		Make()
+	wwwContent = content.New().
+		AddToIndexProviders("pages-pql-www").
+		AddToSearchProviders("bleve-fts-www").
+		SetKeyValueCache(gFsContentKvsFeatureWWW, gFsContentKvsCacheWWW).
+		MountLocalPath("/", "content/www").
+		Make()
+	wwwLocales = locale.New().
+		MountLocalPath("/", "locales").
+		Make()
 
-	enjaMenu = menu.New().MountPath("menus", "menus/enja").Make()
-	enjaPublic = public.New().MountPath("/", "public").Make()
-	enjaContent = content.New().MountPath("/", "content/enja").Make()
-	enjaLocales = locales.New().Include("locales").Make()
+	enjaMenu = menu.New().
+		MountLocalPath("/", "menus/enja").
+		Make()
+	enjaPublic = public.New().
+		SetCacheControl("no-store").
+		MountLocalPath("/", "public").
+		Make()
+	enjaContent = content.New().
+		AddToIndexProviders("pages-pql-enja").
+		AddToSearchProviders("bleve-fts-enja").
+		SetKeyValueCache(gFsContentKvsFeatureENJA, gFsContentKvsCacheENJA).
+		MountLocalPath("/", "content/enja").
+		Make()
+	enjaLocales = locale.New().
+		MountLocalPath("/", "locales").
+		Make()
+
+	fThemes = themes.New().
+		AddTheme(semantic.Theme()).
+		LocalTheme("themes/go-enjin").
+		SetTheme("go-enjin").
+		Make()
 
 	hotReload = true
-}
-
-func goEnjinTheme() (t *theme.Theme) {
-	var err error
-	if t, err = theme.NewLocal("themes/go-enjin"); err != nil {
-		log.FatalF("error loading local theme: %v", err)
-	} else {
-		log.DebugF("loaded local theme: %v", t.Name)
-	}
-	return
 }

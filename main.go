@@ -20,30 +20,29 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/go-enjin/be/features/pages/indexing/bleve-fts"
-	"github.com/go-enjin/be/features/pages/indexing/stock-pql"
-	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
+	defaultTheme "github.com/go-enjin/default-enjin-theme"
 
-	"github.com/go-enjin/be/features/pages/query"
-	"github.com/go-enjin/be/features/requests/headers/proxy"
-	"github.com/go-enjin/be/features/restrict/basic-auth"
+	"github.com/go-enjin/be/drivers/fts/bleve"
+	"github.com/go-enjin/be/features/pages/pql"
+	"github.com/go-enjin/golang-org-x-text/language"
 
+	"github.com/go-enjin/be"
+	"github.com/go-enjin/be/drivers/kvs/gocache"
+	"github.com/go-enjin/be/features/log/papertrail"
 	"github.com/go-enjin/be/features/outputs/htmlify"
+	"github.com/go-enjin/be/features/pages/formats"
 	"github.com/go-enjin/be/features/pages/permalink"
+	"github.com/go-enjin/be/features/pages/query"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/pages/sitemap"
-	"github.com/go-enjin/be/pkg/lang"
-	"github.com/go-enjin/be/pkg/theme"
-	"github.com/go-enjin/golang-org-x-text/language"
-
-	semantic "github.com/go-enjin/semantic-enjin-theme"
-
-	"github.com/go-enjin/be"
-	"github.com/go-enjin/be/features/log/papertrail"
-	"github.com/go-enjin/be/features/pages/caching/stock-pgc"
-	"github.com/go-enjin/be/features/pages/formats"
+	"github.com/go-enjin/be/features/requests/headers/proxy"
+	"github.com/go-enjin/be/features/user/auth/basic"
+	"github.com/go-enjin/be/features/user/base/htenv"
 	"github.com/go-enjin/be/pkg/feature"
+	"github.com/go-enjin/be/pkg/lang"
+
+	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
 )
 
 var (
@@ -57,6 +56,12 @@ var (
 	enjaPublic  feature.Feature
 	enjaMenu    feature.Feature
 
+	fThemes             feature.Feature
+	fCachePagesPqlWWW   feature.Feature
+	fCacheFsContentWWW  feature.Feature
+	fCachePagesPqlENJA  feature.Feature
+	fCacheFsContentENJA feature.Feature
+
 	hotReload bool
 
 	enjaEnDomain string
@@ -64,6 +69,12 @@ var (
 )
 
 func init() {
+	fCachePagesPqlWWW = gocache.NewTagged(gPagesPqlKvsFeatureWWW).AddMemoryCache(gPagesPqlKvsCacheWWW).Make()
+	fCacheFsContentWWW = gocache.NewTagged(gFsContentKvsFeatureWWW).AddMemoryCache(gFsContentKvsCacheWWW).Make()
+
+	fCachePagesPqlENJA = gocache.NewTagged(gPagesPqlKvsFeatureENJA).AddMemoryCache(gPagesPqlKvsCacheENJA).Make()
+	fCacheFsContentENJA = gocache.NewTagged(gFsContentKvsFeatureENJA).AddMemoryCache(gFsContentKvsCacheENJA).Make()
+
 	if v, ok := os.LookupEnv("BE_ENJA_EN_DOMAIN"); ok {
 		enjaEnDomain = v
 	} else {
@@ -76,26 +87,13 @@ func init() {
 	}
 }
 
-const (
-	main500tmpl = `500 - {{ _ "Internal Server Error" }}`
-	main404tmpl = `404 - {{ _ "Not Found" }}`
-	main204tmpl = `+++
-url = "/"
-+++
-204 - {{ _ "No Content" }}`
-)
-
 func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 	eb.SiteName("Go-Enjin").
 		SiteTagLine("Done is the enjin of more.").
 		SiteCopyrightName("Go-Enjin").
 		SiteCopyrightNotice("© 2022 All rights reserved").
-		AddFeature(pgc.New().Make()).
-		AddFeature(proxy.New().Enable().Make()).
 		AddFeature(formats.New().Defaults().Make()).
-		AddTheme(semantic.SemanticEnjinTheme()).
-		AddTheme(goEnjinTheme()).
-		SetTheme("go-enjin").
+		AddFeature(fThemes).
 		SiteLanguageDisplayNames(map[language.Tag]string{
 			language.English: "EN",
 		}).
@@ -103,27 +101,29 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 		Set("SiteTitleSeparator", " | ").
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo")
-	// Set("SiteLoadingEffect", "true").
 	return eb
 }
 
 func features(eb feature.Builder) feature.Builder {
 	return eb.
-		AddFeature(auth.New().EnableEnv(true).Make()).
 		AddFeature(papertrail.Make()).
 		AddFeature(sitemap.New().Make()).
+		AddFeature(htmlify.New().Make()).
+		AddFeature(proxy.New().Enable().Make()).
+		AddFeature(htenv.NewTagged("htenv").Make()).
+		AddFeature(basic.New().
+			AddUserbase("htenv", "htenv", "htenv").
+			Ignore(`^/favicon.ico$`).
+			Make()).
 		AddFeature(robots.New().
 			AddSitemap("/sitemap.xml").
 			AddRuleGroup(robots.NewRuleGroup().
 				AddUserAgent("*").AddAllowed("/").Make(),
 			).Make()).
 		AddFeature(permalink.New().Make()).
-		AddFeature(pql.New().Make()).
 		AddFeature(query.New().Make()).
-		AddFeature(fts.New().Make()).
 		AddFeature(search.New().Make()).
 		AddFeature(thisip.New().Make()).
-		AddFeature(htmlify.New().Make()).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
 		HotReload(hotReload)
@@ -134,7 +134,13 @@ func main() {
 
 	setup(www).SiteTag("WWW").
 		SiteDefaultLanguage(language.English).
-		SiteLanguageMode(lang.NewPathMode().Make())
+		SiteLanguageMode(lang.NewPathMode().Make()).
+		AddFeature(bleve.NewTagged("bleve-fts-www").Make()).
+		AddFeature(fCachePagesPqlWWW).
+		AddFeature(fCacheFsContentWWW).
+		AddFeature(pql.NewTagged("pages-pql-www").
+			SetKeyValueCache(gPagesPqlKvsFeatureWWW, gPagesPqlKvsCacheWWW).
+			Make())
 
 	features(www).
 		AddFeature(wwwMenu).
@@ -149,16 +155,24 @@ func main() {
 			Set(language.Japanese, enjaJaDomain).
 			Make(),
 		).
+		AddFeature(bleve.NewTagged("bleve-fts-enja").Make()).
+		AddFeature(fCachePagesPqlENJA).
+		AddFeature(fCacheFsContentENJA).
+		AddFeature(pql.NewTagged("pages-pql-enja").
+			SetKeyValueCache(gPagesPqlKvsFeatureENJA, gPagesPqlKvsCacheENJA).
+			Make()).
 		AddFlags(
 			&cli.StringFlag{
-				Name:    "enja-en-domain",
-				Usage:   "enja site EN domain name (only env works)",
-				EnvVars: enja.MakeEnvKeys("ENJA_EN_DOMAIN"),
+				Name:     "enja-en-domain",
+				Category: "locale domains",
+				Usage:    "enja site EN domain name (only env works)",
+				EnvVars:  enja.MakeEnvKeys("ENJA_EN_DOMAIN"),
 			},
 			&cli.StringFlag{
-				Name:    "enja-ja-domain",
-				Usage:   "enja site JA domain name (only env works)",
-				EnvVars: enja.MakeEnvKeys("ENJA_JA_DOMAIN"),
+				Name:     "enja-ja-domain",
+				Category: "locale domains",
+				Usage:    "enja site JA domain name (only env works)",
+				EnvVars:  enja.MakeEnvKeys("ENJA_JA_DOMAIN"),
 			},
 		)
 	features(enja).
@@ -171,8 +185,8 @@ func main() {
 		IncludeEnjin(www, enja).
 		SiteTag("MAIN").
 		SiteName("main").
-		AddTheme(theme.DefaultTheme()).
-		SetTheme("default").
+		AddTheme(defaultTheme.Theme()).
+		SetTheme(defaultTheme.Name).
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
 		AddPageFromString("204.tmpl", main204tmpl).
@@ -187,3 +201,24 @@ func main() {
 		os.Exit(1)
 	}
 }
+
+const (
+	gFsContentKvsFeatureWWW = "fs-content-kvs-feature-www"
+	gFsContentKvsCacheWWW   = "fs-content-kvs-cache-www"
+
+	gPagesPqlKvsFeatureWWW = "pages-pql-kvs-feature-www"
+	gPagesPqlKvsCacheWWW   = "pages-pql-kvs-cache-www"
+
+	gFsContentKvsFeatureENJA = "fs-content-kvs-feature-enja"
+	gFsContentKvsCacheENJA   = "fs-content-kvs-cache-enja"
+
+	gPagesPqlKvsFeatureENJA = "pages-pql-kvs-feature-enja"
+	gPagesPqlKvsCacheENJA   = "pages-pql-kvs-cache-enja"
+
+	main500tmpl = `500 - {{ _ "Internal Server Error" }}`
+	main404tmpl = `404 - {{ _ "Not Found" }}`
+	main204tmpl = `+++
+url = "/"
++++
+204 - {{ _ "No Content" }}`
+)
