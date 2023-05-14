@@ -38,10 +38,10 @@ func init() {
 		MountLocalPath("/", "public").
 		Make()
 	wwwContent = content.New().
+		MountLocalPath("/", "content/www").
 		AddToIndexProviders("pages-pql-www").
 		AddToSearchProviders("bleve-fts-www").
 		SetKeyValueCache(gFsContentKvsFeatureWWW, gFsContentKvsCacheWWW).
-		MountLocalPath("/", "content/www").
 		Make()
 	wwwLocales = locale.New().
 		MountLocalPath("/", "locales").
@@ -51,14 +51,13 @@ func init() {
 		MountLocalPath("/", "menus/enja").
 		Make()
 	enjaPublic = public.New().
-		SetCacheControl("no-store").
 		MountLocalPath("/", "public").
 		Make()
 	enjaContent = content.New().
+		MountLocalPath("/", "content/enja").
 		AddToIndexProviders("pages-pql-enja").
 		AddToSearchProviders("bleve-fts-enja").
 		SetKeyValueCache(gFsContentKvsFeatureENJA, gFsContentKvsCacheENJA).
-		MountLocalPath("/", "content/enja").
 		Make()
 	enjaLocales = locale.New().
 		MountLocalPath("/", "locales").

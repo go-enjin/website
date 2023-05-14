@@ -25,6 +25,7 @@ import (
 	"github.com/go-enjin/be/features/fs/locale"
 	"github.com/go-enjin/be/features/fs/menu"
 	"github.com/go-enjin/be/features/fs/public"
+	"github.com/go-enjin/be/features/fs/themes"
 )
 
 //go:embed content/www/**
@@ -51,33 +52,39 @@ var localesFs embed.FS
 
 func init() {
 	wwwMenu = menu.New().
-		MountEmbedPath("/", "menus", menuFsWWW).
+		MountEmbedPath("/", "menus/www", menuFsWWW).
 		Make()
 	wwwPublic = public.New().
 		MountEmbedPath("/", "public", publicFs).
 		Make()
-	wwwPublic = content.New().
-		MountEmbedPath("/", "content", contentFsWWW).
-		AddToIndexProviders("pages-pql").
+	wwwContent = content.New().
+		MountEmbedPath("/", "content/www", contentFsWWW).
+		AddToIndexProviders("pages-pql-www").
+		AddToSearchProviders("bleve-fts-www").
 		SetKeyValueCache(gFsContentKvsFeatureWWW, gFsContentKvsCacheWWW).
 		Make()
-	wwwLocales = locale.New().Include("locales", localesFs).Make()
+	wwwLocales = locale.New().
+		MountEmbedPath("/", "locales", localesFs).
+		Make()
 
 	enjaMenu = menu.New().
-		MountEmbedPath("/", "menus", menuFsWWW).
+		MountEmbedPath("/", "menus/enja", menuFsENJA).
 		Make()
 	enjaPublic = public.New().
 		MountEmbedPath("/", "public", publicFs).
 		Make()
 	enjaContent = content.New().
-		MountEmbedPath("/", "content", contentFsWWW).
-		AddToIndexProviders("pages-pql").
-		SetKeyValueCache(gFsContentKvsFeatureWWW, gFsContentKvsCacheWWW).
+		MountEmbedPath("/", "content/enja", contentFsENJA).
+		AddToIndexProviders("pages-pql-enja").
+		AddToSearchProviders("bleve-fts-enja").
+		SetKeyValueCache(gFsContentKvsFeatureENJA, gFsContentKvsCacheENJA).
 		Make()
-	enjaLocales = locale.New().Include("locales", localesFs).Make()
+	enjaLocales = locale.New().
+		MountEmbedPath("/", "locales", localesFs).
+		Make()
 
-	fThemes = beFsTheme.New().
-		AddTheme(semantic.SemanticEnjinTheme()).
+	fThemes = themes.New().
+		AddTheme(semantic.Theme()).
 		EmbedTheme("themes/go-enjin", themeFs).
 		SetTheme("go-enjin").
 		Make()
