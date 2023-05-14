@@ -41,11 +41,11 @@ BUILD_TAGS     = production embeds $(COMMON_TAGS)
 DEV_BUILD_TAGS = locals $(COMMON_TAGS)
 
 # Custom go.mod locals
-GOPKG_KEYS = BET SET GOXT DJHT TIF
+GOPKG_KEYS = DET SET GOXT DJHT TIF
 
 # Basic Enjin Theme
-BET_GO_PACKAGE = github.com/go-enjin/basic-enjin-theme
-BET_LOCAL_PATH = ../basic-enjin-theme
+DET_GO_PACKAGE = github.com/go-enjin/default-enjin-theme
+DET_LOCAL_PATH = ../default-enjin-theme
 
 # Semantic Enjin Theme
 SET_GO_PACKAGE = github.com/go-enjin/semantic-enjin-theme
