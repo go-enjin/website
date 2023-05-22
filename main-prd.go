@@ -61,7 +61,6 @@ func init() {
 		MountEmbedPath("/", "content/www", contentFsWWW).
 		AddToIndexProviders("pages-pql-www").
 		AddToSearchProviders("bleve-fts-www").
-		SetKeyValueCache(gFsContentKvsFeatureWWW, gFsContentKvsCacheWWW).
 		Make()
 	wwwLocales = locale.New().
 		MountEmbedPath("/", "locales", localesFs).
@@ -77,7 +76,6 @@ func init() {
 		MountEmbedPath("/", "content/enja", contentFsENJA).
 		AddToIndexProviders("pages-pql-enja").
 		AddToSearchProviders("bleve-fts-enja").
-		SetKeyValueCache(gFsContentKvsFeatureENJA, gFsContentKvsCacheENJA).
 		Make()
 	enjaLocales = locale.New().
 		MountEmbedPath("/", "locales", localesFs).

@@ -24,6 +24,7 @@ import (
 
 	"github.com/go-enjin/be/drivers/fts/bleve"
 	"github.com/go-enjin/be/features/pages/pql"
+	"github.com/go-enjin/be/pkg/userbase"
 	"github.com/go-enjin/golang-org-x-text/language"
 
 	"github.com/go-enjin/be"
@@ -56,11 +57,9 @@ var (
 	enjaPublic  feature.Feature
 	enjaMenu    feature.Feature
 
-	fThemes             feature.Feature
-	fCachePagesPqlWWW   feature.Feature
-	fCacheFsContentWWW  feature.Feature
-	fCachePagesPqlENJA  feature.Feature
-	fCacheFsContentENJA feature.Feature
+	fThemes            feature.Feature
+	fCachePagesPqlWWW  feature.Feature
+	fCachePagesPqlENJA feature.Feature
 
 	hotReload bool
 
@@ -70,10 +69,7 @@ var (
 
 func init() {
 	fCachePagesPqlWWW = gocache.NewTagged(gPagesPqlKvsFeatureWWW).AddMemoryCache(gPagesPqlKvsCacheWWW).Make()
-	fCacheFsContentWWW = gocache.NewTagged(gFsContentKvsFeatureWWW).AddMemoryCache(gFsContentKvsCacheWWW).Make()
-
 	fCachePagesPqlENJA = gocache.NewTagged(gPagesPqlKvsFeatureENJA).AddMemoryCache(gPagesPqlKvsCacheENJA).Make()
-	fCacheFsContentENJA = gocache.NewTagged(gFsContentKvsFeatureENJA).AddMemoryCache(gFsContentKvsCacheENJA).Make()
 
 	if v, ok := os.LookupEnv("BE_ENJA_EN_DOMAIN"); ok {
 		enjaEnDomain = v
@@ -124,6 +120,7 @@ func features(eb feature.Builder) feature.Builder {
 		AddFeature(query.New().Make()).
 		AddFeature(search.New().Make()).
 		AddFeature(thisip.New().Make()).
+		SetPublicAccess(gPublicActions...).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
 		HotReload(hotReload)
@@ -137,7 +134,6 @@ func main() {
 		SiteLanguageMode(lang.NewPathMode().Make()).
 		AddFeature(bleve.NewTagged("bleve-fts-www").Make()).
 		AddFeature(fCachePagesPqlWWW).
-		AddFeature(fCacheFsContentWWW).
 		AddFeature(pql.NewTagged("pages-pql-www").
 			SetKeyValueCache(gPagesPqlKvsFeatureWWW, gPagesPqlKvsCacheWWW).
 			Make())
@@ -157,7 +153,6 @@ func main() {
 		).
 		AddFeature(bleve.NewTagged("bleve-fts-enja").Make()).
 		AddFeature(fCachePagesPqlENJA).
-		AddFeature(fCacheFsContentENJA).
 		AddFeature(pql.NewTagged("pages-pql-enja").
 			SetKeyValueCache(gPagesPqlKvsFeatureENJA, gPagesPqlKvsCacheENJA).
 			Make()).
@@ -194,6 +189,7 @@ func main() {
 		AddPageFromString("500.tmpl", main500tmpl).
 		SetStatusPage(404, "/404").
 		SetStatusPage(500, "/500").
+		SetPublicAccess(gPublicActions...).
 		Build()
 
 	if err := enjin.Run(os.Args); err != nil {
@@ -202,15 +198,16 @@ func main() {
 	}
 }
 
-const (
-	gFsContentKvsFeatureWWW = "fs-content-kvs-feature-www"
-	gFsContentKvsCacheWWW   = "fs-content-kvs-cache-www"
+var (
+	gPublicActions = userbase.Actions{
+		userbase.NewAction("fs-content", "view", "page"),
+		userbase.NewAction("enjin", "view", "page"),
+	}
+)
 
+const (
 	gPagesPqlKvsFeatureWWW = "pages-pql-kvs-feature-www"
 	gPagesPqlKvsCacheWWW   = "pages-pql-kvs-cache-www"
-
-	gFsContentKvsFeatureENJA = "fs-content-kvs-feature-enja"
-	gFsContentKvsCacheENJA   = "fs-content-kvs-cache-enja"
 
 	gPagesPqlKvsFeatureENJA = "pages-pql-kvs-feature-enja"
 	gPagesPqlKvsCacheENJA   = "pages-pql-kvs-cache-enja"
@@ -219,6 +216,7 @@ const (
 	main404tmpl = `404 - {{ _ "Not Found" }}`
 	main204tmpl = `+++
 url = "/"
+layout = "none"
 +++
 204 - {{ _ "No Content" }}`
 )
