@@ -3,11 +3,11 @@ module github.com/go-enjin/website
 go 1.20
 
 require (
-	github.com/go-enjin/be v0.2.1
-	github.com/go-enjin/default-enjin-theme v0.2.1
+	github.com/go-enjin/be v0.2.10
+	github.com/go-enjin/default-enjin-theme v0.2.10
 	github.com/go-enjin/golang-org-x-text v0.0.0-20230219204830-4f2b7b481f16
-	github.com/go-enjin/semantic-enjin-theme v0.2.1
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20230522195857-4c15ae457bf5
+	github.com/go-enjin/semantic-enjin-theme v0.2.10
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20230710224216-90b9ee28c814
 	github.com/urfave/cli/v2 v2.14.1
 )
 
@@ -109,7 +109,7 @@ require (
 	github.com/yookoala/realpath v1.0.0 // indirect
 	github.com/yosssi/gohtml v0.0.0-20201013000340-ee4748c638f4 // indirect
 	go.etcd.io/bbolt v1.3.7 // indirect
-	golang.org/x/crypto v0.6.0 // indirect
+	golang.org/x/crypto v0.8.0 // indirect
 	golang.org/x/exp v0.0.0-20221126150942-6ab00d035af9 // indirect
 	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/sync v0.1.0 // indirect
@@ -123,7 +123,7 @@ require (
 	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/datatypes v1.2.0 // indirect
-	gorm.io/driver/mysql v1.5.0 // indirect
-	gorm.io/gorm v1.25.0 // indirect
+	gorm.io/driver/mysql v1.5.1 // indirect
+	gorm.io/gorm v1.25.2 // indirect
 	k8s.io/apimachinery v0.25.3 // indirect
 )
