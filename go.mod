@@ -125,5 +125,3 @@ require (
 	gorm.io/driver/mysql v1.5.1 // indirect
 	gorm.io/gorm v1.25.2 // indirect
 )
-
-replace github.com/go-enjin/golang-org-x-text => ../golang-org-x-text
