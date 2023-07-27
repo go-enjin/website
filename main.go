@@ -22,10 +22,11 @@ import (
 
 	defaultTheme "github.com/go-enjin/default-enjin-theme"
 
+	"github.com/go-enjin/golang-org-x-text/language"
+
 	"github.com/go-enjin/be/drivers/fts/bleve"
 	"github.com/go-enjin/be/features/pages/pql"
 	"github.com/go-enjin/be/pkg/userbase"
-	"github.com/go-enjin/golang-org-x-text/language"
 
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/drivers/kvs/gocache"
@@ -88,15 +89,15 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 		SiteTagLine("Done is the enjin of more.").
 		SiteCopyrightName("Go-Enjin").
 		SiteCopyrightNotice("© 2022 All rights reserved").
-		AddFeature(formats.New().Defaults().Make()).
-		AddFeature(fThemes).
 		SiteLanguageDisplayNames(map[language.Tag]string{
 			language.English: "EN",
 		}).
 		Set("SiteTitleReversed", true).
 		Set("SiteTitleSeparator", " | ").
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
-		Set("SiteLogoAlt", "Go-Enjin logo")
+		Set("SiteLogoAlt", "Go-Enjin logo").
+		AddFeature(formats.New().Defaults().Make()).
+		AddFeature(fThemes)
 	return eb
 }
 
