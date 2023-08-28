@@ -23,19 +23,20 @@ APP_SUMMARY ?= Go-Enjin Website
 
 DENY_DURATION ?= 60
 
-COMMON_TAGS += htmlify
-COMMON_TAGS += papertrail
-COMMON_TAGS += header_proxy
-COMMON_TAGS += basic_auth
 COMMON_TAGS += driver_kvs_gocache memory
+COMMON_TAGS += driver_fs_embed
+COMMON_TAGS += driver_fts_bleve
+COMMON_TAGS += user_auth_basic
+COMMON_TAGS += user_base_htenv
+COMMON_TAGS += papertrail
 COMMON_TAGS += page_pql
 COMMON_TAGS += page_robots
-COMMON_TAGS += driver_fs_embed
-COMMON_TAGS += fs_theme fs_menu fs_content fs_public fs_locale
-COMMON_TAGS += driver_fts_bleve
 COMMON_TAGS += page_sitemap
-COMMON_TAGS += page_query
 COMMON_TAGS += page_search
+COMMON_TAGS += ngrokio
+COMMON_TAGS += fs_theme fs_menu fs_content fs_public fs_locale
+
+ADD_TAGS_DEFAULTS := true
 
 BUILD_TAGS     = production embeds $(COMMON_TAGS)
 DEV_BUILD_TAGS = locals $(COMMON_TAGS)
@@ -43,7 +44,7 @@ DEV_BUILD_TAGS = locals $(COMMON_TAGS)
 # Custom go.mod locals
 GOPKG_KEYS = DET SET DJHT TIF
 
-# Basic Enjin Theme
+# Default Enjin Theme
 DET_GO_PACKAGE = github.com/go-enjin/default-enjin-theme
 DET_LOCAL_PATH = ../default-enjin-theme
 
