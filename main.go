@@ -24,25 +24,18 @@ import (
 
 	"github.com/go-enjin/golang-org-x-text/language"
 
-	"github.com/go-enjin/be/drivers/fts/bleve"
-	"github.com/go-enjin/be/features/pages/pql"
-	"github.com/go-enjin/be/pkg/userbase"
-
 	"github.com/go-enjin/be"
+	"github.com/go-enjin/be/drivers/fts/bleve"
 	"github.com/go-enjin/be/drivers/kvs/gocache"
-	"github.com/go-enjin/be/features/log/papertrail"
-	"github.com/go-enjin/be/features/outputs/htmlify"
-	"github.com/go-enjin/be/features/pages/formats"
-	"github.com/go-enjin/be/features/pages/permalink"
-	"github.com/go-enjin/be/features/pages/query"
+	"github.com/go-enjin/be/features/fs/themes"
+	"github.com/go-enjin/be/features/pages/pql"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/pages/sitemap"
-	"github.com/go-enjin/be/features/requests/headers/proxy"
-	"github.com/go-enjin/be/features/user/auth/basic"
-	"github.com/go-enjin/be/features/user/base/htenv"
 	"github.com/go-enjin/be/pkg/feature"
 	"github.com/go-enjin/be/pkg/lang"
+	"github.com/go-enjin/be/presets/defaults"
+	"github.com/go-enjin/be/presets/essentials"
 
 	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
 )
@@ -96,29 +89,19 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 		Set("SiteTitleSeparator", " | ").
 		Set("SiteLogoUrl", "/media/go-enjin-logo.png").
 		Set("SiteLogoAlt", "Go-Enjin logo").
-		AddFeature(formats.New().Defaults().Make()).
 		AddFeature(fThemes)
 	return eb
 }
 
 func features(eb feature.Builder) feature.Builder {
 	return eb.
-		AddFeature(papertrail.Make()).
+		AddPreset(defaults.New().Make()).
 		AddFeature(sitemap.New().Make()).
-		AddFeature(htmlify.New().Make()).
-		AddFeature(proxy.New().Enable().Make()).
-		AddFeature(htenv.NewTagged("htenv").Make()).
-		AddFeature(basic.New().
-			AddUserbase("htenv", "htenv", "htenv").
-			Ignore(`^/favicon.ico$`).
-			Make()).
 		AddFeature(robots.New().
 			AddSitemap("/sitemap.xml").
 			AddRuleGroup(robots.NewRuleGroup().
 				AddUserAgent("*").AddAllowed("/").Make(),
 			).Make()).
-		AddFeature(permalink.New().Make()).
-		AddFeature(query.New().Make()).
 		AddFeature(search.New().Make()).
 		AddFeature(thisip.New().Make()).
 		SetPublicAccess(gPublicActions...).
@@ -138,7 +121,6 @@ func main() {
 		AddFeature(pql.NewTagged("pages-pql-www").
 			SetKeyValueCache(gPagesPqlKvsFeatureWWW, gPagesPqlKvsCacheWWW).
 			Make())
-
 	features(www).
 		AddFeature(wwwMenu).
 		AddFeature(wwwPublic).
@@ -181,10 +163,13 @@ func main() {
 		IncludeEnjin(www, enja).
 		SiteTag("MAIN").
 		SiteName("main").
-		AddTheme(defaultTheme.Theme()).
-		SetTheme(defaultTheme.Name).
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
+		AddPreset(essentials.New().Make()).
+		AddFeature(themes.New().
+			Include(defaultTheme.Theme()).
+			SetTheme(defaultTheme.Name).
+			Make()).
 		AddPageFromString("204.tmpl", main204tmpl).
 		AddPageFromString("404.tmpl", main404tmpl).
 		AddPageFromString("500.tmpl", main500tmpl).
@@ -200,9 +185,9 @@ func main() {
 }
 
 var (
-	gPublicActions = userbase.Actions{
-		userbase.NewAction("fs-content", "view", "page"),
-		userbase.NewAction("enjin", "view", "page"),
+	gPublicActions = feature.Actions{
+		feature.NewAction("fs-content", "view", "page"),
+		feature.NewAction("enjin", "view", "page"),
 	}
 )
 

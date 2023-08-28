@@ -62,7 +62,7 @@ func init() {
 		Make()
 
 	fThemes = themes.New().
-		AddTheme(semantic.Theme()).
+		Include(semantic.Theme()).
 		LocalTheme("themes/go-enjin").
 		SetTheme("go-enjin").
 		Make()
