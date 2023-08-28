@@ -85,10 +85,10 @@
                 {
                     "type": "ul",
                     "list": [
-                        { "type": "a", "href": "/pages/archetypes/blog-9c7e27ec75", "text": "/pages/archetypes/blog-9c7e27ec75 (actual permalink)" },
-                        { "type": "a", "href": "/wrong/categories/blog-9c7e27ec75", "text": "/wrong/categories/blog-9c7e27ec75 (wrong categories)" },
+                        { "type": "a", "href": "/pages/archetypes/blog-22cba41ed8", "text": "/pages/archetypes/blog-22cba41ed8 (actual permalink)" },
+                        { "type": "a", "href": "/wrong/categories/blog-22cba41ed8", "text": "/wrong/categories/blog-22cba41ed8 (wrong categories)" },
                         { "type": "a", "href": "/e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7", "text": "/e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7 (long-form permalink)" },
-                        { "type": "a", "href": "/9c7e27ec75", "text": "/9c7e27ec75 (short-form permalink)" }
+                        { "type": "a", "href": "/22cba41ed8", "text": "/22cba41ed8 (short-form permalink)" }
                     ]
                 },
                 {
