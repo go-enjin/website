@@ -21,6 +21,7 @@ import (
 
 	semantic "github.com/go-enjin/semantic-enjin-theme"
 
+	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/features/fs/content"
 	"github.com/go-enjin/be/features/fs/locale"
 	"github.com/go-enjin/be/features/fs/menu"
@@ -43,11 +44,10 @@ var menuFsWWW embed.FS
 //go:embed menus/enja/**
 var menuFsENJA embed.FS
 
-//go:embed themes/**
-//go:embed themes/*/layouts/_default/*
+//go:embed themes/go-enjin/**
 var themeFs embed.FS
 
-//go:embed locales/*
+//go:embed locales/**
 var localesFs embed.FS
 
 func init() {
@@ -81,11 +81,12 @@ func init() {
 		MountEmbedPath("/", "locales", localesFs).
 		Make()
 
-	fThemes = themes.New().
+	siteThemes = themes.New().
 		Include(semantic.Theme()).
-		EmbedTheme("themes/go-enjin", themeFs).
+		EmbedThemes("themes", themeFs).
 		SetTheme("go-enjin").
 		Make()
+	siteLocales = be.MakeEmbedLocales()
 
 	hotReload = false
 }
