@@ -2,187 +2,27 @@
     "language": "en",
     "messages": [
         {
-            "id": "No Content",
-            "key": "No Content",
-            "message": "No Content",
-            "translation": "No Content",
+            "id": "Go-Enjin",
+            "key": "Go-Enjin",
+            "message": "Go-Enjin",
+            "translation": "Go-Enjin",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "Unauthorized",
-            "key": "Unauthorized",
-            "message": "Unauthorized",
-            "translation": "Unauthorized",
+            "id": "Done is the enjin of more.",
+            "key": "Done is the enjin of more.",
+            "message": "Done is the enjin of more.",
+            "translation": "Done is the enjin of more.",
             "translatorComment": "Copied from source.",
             "fuzzy": true
         },
         {
-            "id": "Forbidden",
-            "key": "Forbidden",
-            "message": "Forbidden",
-            "translation": "Forbidden",
+            "id": "All rights reserved",
+            "key": "All rights reserved",
+            "message": "All rights reserved",
+            "translation": "All rights reserved",
             "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "Not Found",
-            "key": "Not Found",
-            "message": "Not Found",
-            "translation": "Not Found",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "Method Not Allowed",
-            "key": "Method Not Allowed",
-            "message": "Method Not Allowed",
-            "translation": "Method Not Allowed",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "Internal Server Error",
-            "key": "Internal Server Error",
-            "message": "Internal Server Error",
-            "translation": "Internal Server Error",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "search form expired",
-            "key": "search form expired",
-            "message": "search form expired",
-            "translation": "search form expired",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "search form error",
-            "key": "search form error",
-            "message": "search form error",
-            "translation": "search form error",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "No results found",
-            "key": "No results found",
-            "message": "No results found",
-            "translation": "No results found",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "1 result found",
-            "key": "1 result found",
-            "message": "1 result found",
-            "translation": "1 result found",
-            "translatorComment": "Copied from source.",
-            "fuzzy": true
-        },
-        {
-            "id": "{Total} results found",
-            "key": "%d results found",
-            "message": "{Total} results found",
-            "translation": "{Total} results found",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Total",
-                    "string": "%[1]d",
-                    "type": "uint64",
-                    "underlyingType": "uint64",
-                    "argNum": 1,
-                    "expr": "results.Total"
-                }
-            ],
-            "fuzzy": true
-        },
-        {
-            "id": "Page {Pg__1} of {Pages__1}",
-            "key": "Page %d of %d",
-            "message": "Page {Pg__1} of {Pages__1}",
-            "translation": "Page {Pg__1} of {Pages__1}",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "Pg__1",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "pg + 1"
-                },
-                {
-                    "id": "Pages__1",
-                    "string": "%[2]d",
-                    "type": "uint64",
-                    "underlyingType": "uint64",
-                    "argNum": 2,
-                    "expr": "pages + 1"
-                }
-            ],
-            "fuzzy": true
-        },
-        {
-            "id": "Showing #{IdStart} of {Total}",
-            "key": "Showing #%d of %d",
-            "message": "Showing #{IdStart} of {Total}",
-            "translation": "Showing #{IdStart} of {Total}",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "IdStart",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "idStart"
-                },
-                {
-                    "id": "Total",
-                    "string": "%[2]d",
-                    "type": "uint64",
-                    "underlyingType": "uint64",
-                    "argNum": 2,
-                    "expr": "results.Total"
-                }
-            ],
-            "fuzzy": true
-        },
-        {
-            "id": "Showing {IdStart}-{IdEnd} of {Total}",
-            "key": "Showing %d-%d of %d",
-            "message": "Showing {IdStart}-{IdEnd} of {Total}",
-            "translation": "Showing {IdStart}-{IdEnd} of {Total}",
-            "translatorComment": "Copied from source.",
-            "placeholders": [
-                {
-                    "id": "IdStart",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "idStart"
-                },
-                {
-                    "id": "IdEnd",
-                    "string": "%[2]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 2,
-                    "expr": "idEnd"
-                },
-                {
-                    "id": "Total",
-                    "string": "%[3]d",
-                    "type": "uint64",
-                    "underlyingType": "uint64",
-                    "argNum": 3,
-                    "expr": "results.Total"
-                }
-            ],
             "fuzzy": true
         }
     ]
