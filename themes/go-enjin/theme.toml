@@ -9,12 +9,31 @@ homepage = "https://go-enjin.org/"
     name = "The Go-Enjin Team"
     homepage = "https://go-enjin.org/"
 
+[supports]
+[supports.archetypes.blog]
+[supports.archetypes.blog.blog-author]
+    key = "blog-author"
+    tab = "page"
+    label = "The name of the author of this blog entry"
+    format = "string"
+    category = "blog"
+    input = "text"
+    weight = 10
+[supports.archetypes.blog.blog-author-email]
+    key = "blog-author-email"
+    tab = "page"
+    label = "The blog author's email address"
+    format = "email"
+    category = "blog"
+    input = "text"
+    weight = 11
+
 
 [semantic.site]
     menu.mobile.style = "side"
     menu.desktop.style = "menu"
     page.font-stylesheets = [
-        "https://fonts.googleapis.com/css2?display=swap&amp;family=Source%20Sans%20Pro&amp;family=Source%20Serif%20Pro"
+        "https://fonts.googleapis.com/css2?display=swap&family=Source%20Sans%20Pro&family=Source%20Serif%20Pro"
     ]
     page.stylesheets = [
         "/css/go-enjin.css"
