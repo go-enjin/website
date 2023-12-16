@@ -1,159 +1,101 @@
 {
-	"language": "ja",
-	"messages": [
-		{
-			"id": "Anonymous",
-			"key": "Anonymous",
-			"message": "Anonymous",
-			"translation": "匿名",
-			"translatorComment": "[from: blog-single.tmpl]"
-		},
-		{
-			"id": "Author: %s",
-			"key": "Author: %s",
-			"message": "Author: %s",
-			"translation": "作者: %s ",
-			"translatorComment": "creator of this blog post [from: blog-single.tmpl]"
-		},
-		{
-			"id": "Created: %s",
-			"key": "Created: %s",
-			"message": "Created: %s",
-			"translation": "作成された: %s",
-			"translatorComment": "date that this page was created [from: blog-single.tmpl]"
-		},
-		{
-			"id": "Go to the first page",
-			"key": "Go to the first page",
-			"message": "Go to the first page",
-			"translation": "最初のページに",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go to the last page",
-			"key": "Go to the last page",
-			"message": "Go to the last page",
-			"translation": "最後のページに",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go to the next page",
-			"key": "Go to the next page",
-			"message": "Go to the next page",
-			"translation": "次のページに",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go to the previous page",
-			"key": "Go to the previous page",
-			"message": "Go to the previous page",
-			"translation": "前のページに",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Internal Server Error",
-			"key": "Internal Server Error",
-			"message": "Internal Server Error",
-			"translation": "サーバ内部のエラー",
-			"translatorComment": "[from: 500.html.tmpl]"
-		},
-		{
-			"id": "Not Found",
-			"key": "Not Found",
-			"message": "Not Found",
-			"translation": "存在しない",
-			"translatorComment": "[from: 404.html.tmpl]"
-		},
-		{
-			"id": "Permanent Link",
-			"key": "Permanent Link",
-			"message": "Permanent Link",
-			"translation": "永久リンク",
-			"translatorComment": "permanent link to this page [from: blog-single.tmpl]"
-		},
-		{
-			"id": "Results",
-			"key": "Results",
-			"message": "Results",
-			"translation": "結果",
-			"translatorComment": "search page results heading [from: search.html.tmpl]"
-		},
-		{
-			"id": "Search",
-			"key": "Search",
-			"message": "Search",
-			"translation": "検索",
-			"translatorComment": "screen reader only [from: search.html.tmpl]"
-		},
-		{
-			"id": "Search error: %s",
-			"key": "Search error: %s",
-			"message": "Search error: %s",
-			"translation": "%s: 検索エラー",
-			"translatorComment": "search error happened [from: search.html.tmpl]"
-		},
-		{
-			"id": "Site Search",
-			"key": "Site Search",
-			"message": "Site Search",
-			"translation": "サイト内検索",
-			"translatorComment": "title heading of search page [from: search.html.tmpl]"
-		},
-		{
-			"id": "Sorry! The server has encountered an internal error.",
-			"key": "Sorry! The server has encountered an internal error.",
-			"message": "Sorry! The server has encountered an internal error.",
-			"translation": "残念ながら、内部エラーが発生しました",
-			"translatorComment": "[from: 500.html.tmpl]"
-		},
-		{
-			"id": "The page requested was not found.",
-			"key": "The page requested was not found.",
-			"message": "The page requested was not found.",
-			"translation": "リクエストされたページが見つかりません",
-			"translatorComment": "[from: 404.html.tmpl]"
-		},
-		{
-			"id": "Updated: %s",
-			"key": "Updated: %s",
-			"message": "Updated: %s",
-			"translation": "更新された: %s",
-			"translatorComment": "date that this page was last updated [from: blog-single.tmpl]"
-		},
-		{
-			"id": "search terms +must should -not ...",
-			"key": "search terms +must should -not ...",
-			"message": "search terms +must should -not ...",
-			"translation": "検索時 +は必須用語 -は含まれてはならない用語 ... ",
-			"translatorComment": "search field placeholder text [from: search.html.tmpl]"
-		},
-		{
-			"id": "top",
-			"key": "top",
-			"message": "top",
-			"translation": "トップ",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go-Enjin",
-			"key": "Go-Enjin",
-			"message": "Go-Enjin",
-			"translation": "Go-Enjin",
-			"translatorComment": "enjin site name, copyright name"
-		},
-		{
-			"id": "Done is the enjin of more.",
-			"key": "Done is the enjin of more.",
-			"message": "Done is the enjin of more.",
-			"translation": "「やり遂げる」ことは、さらに「やり遂げる」ためのEnjinとなる",
-			"translatorComment": "enjin site tag-line"
-		},
-		{
-			"id": "© 2022 All rights reserved",
-			"key": "© 2022 All rights reserved",
-			"message": "© 2022 All rights reserved",
-			"translation": "© 2022 All rights reserved",
-			"translatorComment": "enjin site copyright notice"
-		}
-	]
+    "language": "ja",
+    "messages": [
+        {
+            "id": "top",
+            "key": "top",
+            "message": "top",
+            "translation": "top",
+            "translatorComment": "[from: themes/go-enjin/layouts/defaults/blog-single.md.tmpl]",
+            "fuzzy": true
+        },
+        {
+            "id": "Author: {BlogAuthor}",
+            "key": "Author: %[1]s",
+            "message": "Author: %[1]s",
+            "translation": "作者: %[1]s",
+            "translatorComment": "/* creator of this blog post */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "BlogAuthor",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": ".BlogAuthor"
+                }
+            ],
+            "fuzzy": true
+        },
+        {
+            "id": "Anonymous",
+            "key": "Anonymous",
+            "message": "Anonymous",
+            "translation": "無記名",
+            "translatorComment": "[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "fuzzy": true
+        },
+        {
+            "id": "Created: {Txt1}",
+            "key": "Created: %[1]s",
+            "message": "Created: %[1]s",
+            "translation": "作成日: %[1]s",
+            "translatorComment": "/* date that this page was created */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "Txt1",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "("
+                }
+            ],
+            "fuzzy": true
+        },
+        {
+            "id": "Updated: {Txt1}",
+            "key": "Updated: %[1]s",
+            "message": "Updated: %[1]s",
+            "translation": "更新日: %[1]s",
+            "translatorComment": "/* date that this page was last updated */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "Txt1",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "("
+                }
+            ],
+            "fuzzy": true
+        },
+        {
+            "id": "Permanent Link",
+            "key": "Permanent Link",
+            "message": "Permanent Link",
+            "translation": "パーマネントリンク",
+            "translatorComment": "/* permanent link to this page */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "fuzzy": true
+        },
+        {
+            "id": "{WordCount} words",
+            "key": "%[1]d words",
+            "message": "%[1]d words",
+            "translation": "%[1]d 語",
+            "translatorComment": "[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "WordCount",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": ".WordCount"
+                }
+            ],
+            "fuzzy": true
+        }
+    ]
 }

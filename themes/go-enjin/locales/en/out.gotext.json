@@ -1,159 +1,101 @@
 {
-	"language": "en",
-	"messages": [
-		{
-			"id": "Anonymous",
-			"key": "Anonymous",
-			"message": "Anonymous",
-			"translation": "Anonymous",
-			"translatorComment": "[from: blog-single.tmpl]"
-		},
-		{
-			"id": "Author: %s",
-			"key": "Author: %s",
-			"message": "Author: %s",
-			"translation": "Author: %s",
-			"translatorComment": "creator of this blog post [from: blog-single.tmpl]"
-		},
-		{
-			"id": "Created: %s",
-			"key": "Created: %s",
-			"message": "Created: %s",
-			"translation": "Created: %s",
-			"translatorComment": "date that this page was created [from: blog-single.tmpl]"
-		},
-		{
-			"id": "Go to the first page",
-			"key": "Go to the first page",
-			"message": "Go to the first page",
-			"translation": "Go to the first page",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go to the last page",
-			"key": "Go to the last page",
-			"message": "Go to the last page",
-			"translation": "Go to the last page",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go to the next page",
-			"key": "Go to the next page",
-			"message": "Go to the next page",
-			"translation": "Go to the next page",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go to the previous page",
-			"key": "Go to the previous page",
-			"message": "Go to the previous page",
-			"translation": "Go to the previous page",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Internal Server Error",
-			"key": "Internal Server Error",
-			"message": "Internal Server Error",
-			"translation": "Internal Server Error",
-			"translatorComment": "[from: 500.html.tmpl]"
-		},
-		{
-			"id": "Not Found",
-			"key": "Not Found",
-			"message": "Not Found",
-			"translation": "Not Found",
-			"translatorComment": "[from: 404.html.tmpl]"
-		},
-		{
-			"id": "Permanent Link",
-			"key": "Permanent Link",
-			"message": "Permanent Link",
-			"translation": "Permanent Link",
-			"translatorComment": "permanent link to this page [from: blog-single.tmpl]"
-		},
-		{
-			"id": "Results",
-			"key": "Results",
-			"message": "Results",
-			"translation": "Results",
-			"translatorComment": "search page results heading [from: search.html.tmpl]"
-		},
-		{
-			"id": "Search",
-			"key": "Search",
-			"message": "Search",
-			"translation": "Search",
-			"translatorComment": "screen reader only [from: search.html.tmpl]"
-		},
-		{
-			"id": "Search error: %s",
-			"key": "Search error: %s",
-			"message": "Search error: %s",
-			"translation": "Search error: %s",
-			"translatorComment": "search error happened [from: search.html.tmpl]"
-		},
-		{
-			"id": "Site Search",
-			"key": "Site Search",
-			"message": "Site Search",
-			"translation": "Site Search",
-			"translatorComment": "title heading of search page [from: search.html.tmpl]"
-		},
-		{
-			"id": "Sorry! The server has encountered an internal error.",
-			"key": "Sorry! The server has encountered an internal error.",
-			"message": "Sorry! The server has encountered an internal error.",
-			"translation": "Sorry! The server has encountered an internal error.",
-			"translatorComment": "[from: 500.html.tmpl]"
-		},
-		{
-			"id": "The page requested was not found.",
-			"key": "The page requested was not found.",
-			"message": "The page requested was not found.",
-			"translation": "The page requested was not found.",
-			"translatorComment": "[from: 404.html.tmpl]"
-		},
-		{
-			"id": "Updated: %s",
-			"key": "Updated: %s",
-			"message": "Updated: %s",
-			"translation": "Updated: %s",
-			"translatorComment": "date that this page was last updated [from: blog-single.tmpl]"
-		},
-		{
-			"id": "search terms +must should -not ...",
-			"key": "search terms +must should -not ...",
-			"message": "search terms +must should -not ...",
-			"translation": "search terms +must should -not ...",
-			"translatorComment": "search field placeholder text [from: search.html.tmpl]"
-		},
-		{
-			"id": "top",
-			"key": "top",
-			"message": "top",
-			"translation": "top",
-			"translatorComment": "[from: search.html.tmpl]"
-		},
-		{
-			"id": "Go-Enjin",
-			"key": "Go-Enjin",
-			"message": "Go-Enjin",
-			"translation": "Go-Enjin",
-			"translatorComment": "enjin site name, copyright name"
-		},
-		{
-			"id": "Done is the enjin of more.",
-			"key": "Done is the enjin of more.",
-			"message": "Done is the enjin of more.",
-			"translation": "Done is the enjin of more.",
-			"translatorComment": "enjin site tag-line"
-		},
-		{
-			"id": "© 2022 All rights reserved",
-			"key": "© 2022 All rights reserved",
-			"message": "© 2022 All rights reserved",
-			"translation": "© 2022 All rights reserved",
-			"translatorComment": "enjin site copyright notice"
-		}
-	]
+    "language": "en",
+    "messages": [
+        {
+            "id": "top",
+            "key": "top",
+            "message": "top",
+            "translation": "top",
+            "translatorComment": "[from: themes/go-enjin/layouts/defaults/blog-single.md.tmpl]",
+            "fuzzy": true
+        },
+        {
+            "id": "Author: {BlogAuthor}",
+            "key": "Author: %[1]s",
+            "message": "Author: %[1]s",
+            "translation": "Author: %[1]s",
+            "translatorComment": "/* creator of this blog post */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "BlogAuthor",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": ".BlogAuthor"
+                }
+            ],
+            "fuzzy": true
+        },
+        {
+            "id": "Anonymous",
+            "key": "Anonymous",
+            "message": "Anonymous",
+            "translation": "Anonymous",
+            "translatorComment": "[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "fuzzy": true
+        },
+        {
+            "id": "Created: {Txt1}",
+            "key": "Created: %[1]s",
+            "message": "Created: %[1]s",
+            "translation": "Created: %[1]s",
+            "translatorComment": "/* date that this page was created */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "Txt1",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "("
+                }
+            ],
+            "fuzzy": true
+        },
+        {
+            "id": "Updated: {Txt1}",
+            "key": "Updated: %[1]s",
+            "message": "Updated: %[1]s",
+            "translation": "Updated: %[1]s",
+            "translatorComment": "/* date that this page was last updated */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "Txt1",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "("
+                }
+            ],
+            "fuzzy": true
+        },
+        {
+            "id": "Permanent Link",
+            "key": "Permanent Link",
+            "message": "Permanent Link",
+            "translation": "Permanent Link",
+            "translatorComment": "/* permanent link to this page */\n[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "fuzzy": true
+        },
+        {
+            "id": "{WordCount} words",
+            "key": "%[1]d words",
+            "message": "%[1]d words",
+            "translation": "%[1]d words",
+            "translatorComment": "[from: themes/go-enjin/layouts/partials/blog--aside.tmpl]",
+            "placeholders": [
+                {
+                    "id": "WordCount",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": ".WordCount"
+                }
+            ],
+            "fuzzy": true
+        }
+    ]
 }
