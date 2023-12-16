@@ -1,10 +1,14 @@
 [
 	{
 		"text": "Semantic Theme",
+		"image": "/media/bg-bonsai.jpg",
+		"img-alt": "a bonsai tree painted on a garage door",
 		"sub-menu": [
 			{
 				"text": "Fields",
 				"href": "/fields",
+				"image": "/media/mascot.png",
+				"img-alt": "the Go-Enjin mascot",
 				"sub-menu": [
 					{
 						"text": "Inline",
@@ -20,7 +24,6 @@
 					}
 				]
 			},
-
 			{
 				"text": "Blocks",
 				"href": "/blocks",
@@ -29,38 +32,82 @@
 						"text": "Inline Blocks",
 						"href": "/blocks/inline",
 						"sub-menu": [
-							{"text": "Header", "href": "/blocks/inline/header"},
-							{"text": "Notice", "href": "/blocks/inline/notice"},
-							{"text": "Content", "href": "/blocks/inline/content"},
-							{"text": "Table of Contents", "href": "/blocks/inline/toc"},
-							{"text": "Link-List", "href": "/blocks/inline/link-list"},
+							{
+								"text": "Header",
+								"href": "/blocks/inline/header"
+							},
+							{
+								"text": "Notice",
+								"href": "/blocks/inline/notice"
+							},
+							{
+								"text": "Content",
+								"href": "/blocks/inline/content"
+							},
+							{
+								"text": "Table of Contents",
+								"href": "/blocks/inline/toc"
+							},
+							{
+								"text": "Link-List",
+								"href": "/blocks/inline/link-list"
+							},
 							{
 								"text": "Image",
 								"href": "/blocks/inline/image",
 								"sub-menu": [
-									{"text": "Constraints", "href": "/blocks/inline/image/constraints"},
-									{"text": "Fittings", "href": "/blocks/inline/image/fittings"},
-									{"text": "Positions", "href": "/blocks/inline/image/positions"},
-									{"text": "Sizes", "href": "/blocks/inline/image/sizes"}
+									{
+										"text": "Constraints",
+										"href": "/blocks/inline/image/constraints"
+									},
+									{
+										"text": "Fittings",
+										"href": "/blocks/inline/image/fittings"
+									},
+									{
+										"text": "Positions",
+										"href": "/blocks/inline/image/positions"
+									},
+									{
+										"text": "Sizes",
+										"href": "/blocks/inline/image/sizes"
+									}
 								]
 							},
-							{"text": "Icon", "href": "/blocks/inline/icon"},
-							{"text": "Card", "href": "/blocks/inline/card"},
-							{"text": "Index", "href": "/blocks/inline/index"}
+							{
+								"text": "Icon",
+								"href": "/blocks/inline/icon"
+							},
+							{
+								"text": "Card",
+								"href": "/blocks/inline/card"
+							},
+							{
+								"text": "Index",
+								"href": "/blocks/inline/index"
+							}
 						]
 					},
 					{
 						"text": "Container Blocks",
 						"href": "/blocks/container",
 						"sub-menu": [
-							{"text": "Carousel", "href": "/blocks/container/carousel"},
-							{"text": "Pair", "href": "/blocks/container/pair"},
-							{"text": "Sidebar", "href": "/blocks/container/sidebar"}
+							{
+								"text": "Carousel",
+								"href": "/blocks/container/carousel"
+							},
+							{
+								"text": "Pair",
+								"href": "/blocks/container/pair"
+							},
+							{
+								"text": "Sidebar",
+								"href": "/blocks/container/sidebar"
+							}
 						]
 					}
 				]
 			},
-
 			{
 				"text": "Styling",
 				"href": "/styling",
@@ -79,7 +126,6 @@
 					}
 				]
 			},
-
 			{
 				"text": "Pages",
 				"href": "/pages",
@@ -88,36 +134,72 @@
 						"text": "Formats",
 						"href": "/pages/formats",
 						"sub-menu": [
-							{"text": "Enjin", "href": "/pages/formats/enjin"},
-							{"text": "Markdown", "href": "/pages/formats/markdown"},
-							{"text": "Org-Mode", "href": "/pages/formats/org-mode"},
-							{"text": "HTML", "href": "/pages/formats/html"}
+							{
+								"text": "Enjin",
+								"href": "/pages/formats/enjin"
+							},
+							{
+								"text": "Markdown",
+								"href": "/pages/formats/markdown"
+							},
+							{
+								"text": "Org-Mode",
+								"href": "/pages/formats/org-mode"
+							},
+							{
+								"text": "HTML",
+								"href": "/pages/formats/html"
+							}
 						]
 					},
 					{
 						"text": "Layouts",
 						"href": "/pages/layouts",
 						"sub-menu": [
-							{"text": "Default", "href": "/pages/layouts/default"},
-							{"text": "Full-Page", "href": "/pages/layouts/full-page"},
-							{"text": "Full-View", "href": "/pages/layouts/full-view"},
-							{"text": "Full-Screen", "href": "/pages/layouts/full-screen"}
+							{
+								"text": "Default",
+								"href": "/pages/layouts/default"
+							},
+							{
+								"text": "Full-Page",
+								"href": "/pages/layouts/full-page"
+							},
+							{
+								"text": "Full-View",
+								"href": "/pages/layouts/full-view"
+							},
+							{
+								"text": "Full-Screen",
+								"href": "/pages/layouts/full-screen"
+							}
 						]
 					},
 					{
 						"text": "Archetypes",
 						"href": "/pages/archetypes",
 						"sub-menu": [
-							{"text": "Blog", "href": "/pages/archetypes/blog"}
+							{
+								"text": "Blog",
+								"href": "/pages/archetypes/blog"
+							}
 						]
 					},
 					{
 						"text": "Types",
 						"href": "/pages/types",
 						"sub-menu": [
-							{"text": "Query RSS", "href": "/pages/types/query.rss" },
-							{"text": "Query Page", "href": "/pages/types/query" },
-							{"text": "ThisIp Page", "href": "/pages/types/thisip" }
+							{
+								"text": "Query RSS",
+								"href": "/pages/types/query.rss"
+							},
+							{
+								"text": "Query Page",
+								"href": "/pages/types/query"
+							},
+							{
+								"text": "ThisIp Page",
+								"href": "/pages/types/thisip"
+							}
 						]
 					}
 				]

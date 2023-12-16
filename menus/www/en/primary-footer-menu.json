@@ -1,31 +1,23 @@
 [
-  {
+	{
 		"text": "Go-Enjin links",
 		"href": "https://github.com/go-enjin",
-		"attributes": {
-			"target": "_blank"
-		},
+		"target": "_blank",
 		"sub-menu": [
 			{
 				"text": "Website",
 				"href": "https://github.com/go-enjin/website",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			},
 			{
 				"text": "Enjin (be)",
 				"href": "https://github.com/go-enjin/be",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			},
 			{
 				"text": "Environment (enjenv)",
 				"href": "https://github.com/go-enjin/enjenv",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			}
 		]
 	},
@@ -35,23 +27,17 @@
 			{
 				"text": "ngrok",
 				"href": "https://ngrok.com",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			},
 			{
 				"text": "Bleve Search",
 				"href": "https://blevesearch.com",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			},
 			{
 				"text": "Go Language",
 				"href": "https://go.dev",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			}
 		]
 	},
@@ -61,23 +47,27 @@
 			{
 				"text": "Heroku",
 				"href": "https://heroku.com",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			},
 			{
 				"text": "Font-Awesome",
 				"href": "https://font-awesome.com",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
 			},
 			{
 				"text": "Jira Cloud Platform",
 				"href": "https://developer.atlassian.com/cloud/jira/platform/",
-				"attributes": {
-					"target": "_blank"
-				}
+				"target": "_blank"
+			}
+		]
+	},
+	{
+		"text": "Attributions",
+		"sub-menu": [
+			{
+				"text": "Gopherize.me",
+				"href": "https://gopherize.me",
+				"target": "_blank"
 			}
 		]
 	}
