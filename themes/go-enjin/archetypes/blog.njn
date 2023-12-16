@@ -1,0 +1,48 @@
+{{{
+"type": "page",
+"archetype": "blog",
+"title": "New entry",
+"description": "New entry needs a better description!",
+"created": "{{ fmtDateTime (todayAt 10 00) }}",
+"updated": "{{ fmtDateTime (todayAt 10 00) }}",
+"permalink": "{{ newPermalink }}"
+}}}
+[
+
+    {
+        "type": "header",
+        "tag": "main-header",
+        "profile": "outer--inner",
+        "padding": "top",
+        "margins": "bottom",
+        "content": {
+            "header": [
+                "New Entry"
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "introduction",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Sub-headings work like this"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "Boilerplate goes here."
+                    ]
+                }
+            ]
+        }
+    }
+
+]
