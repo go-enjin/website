@@ -1,16 +1,28 @@
 {{{
-    "type": "query",
-    "title": "Query Page Type",
-    "description": "An example of Go-Enjin query page types",
-    "things": [
-        "this is one thing",
-        "this is another thing",
-        "this is something else",
-        "lorem ipsum is not translatable"
-    ],
-    "query": {
-        "blocks": "((.Language == \"en\") AND (.Url == m!^/blocks/!)) ORDER BY .Title DSC"
-    }
+
+  "created": null,
+  "description": "An example of Go-Enjin query page types",
+  "layout": "defaults",
+  "permalink": null,
+  "query": {
+    "-pages": "((.Language == \"en\") AND (.Url == m!^/pages/!)) ORDER BY .Title DSC",
+    "blocks": "((.Language == \"en\") AND (.Url == m!^/blocks/!)) ORDER BY .Title DSC"
+  },
+  "sitemap-change-freq": "never",
+  "sitemap-ignored": false,
+  "sitemap-priority": 0.5,
+  "things": [
+    "this is one thing",
+    "this is another thing",
+    "this is something else",
+    "lorem ipsum is not translatable"
+  ],
+  "thumbnail-alt": null,
+  "thumbnail-url": null,
+  "title": "Query Page Type",
+  "type": "query",
+  "updated": null
+
 }}}
 [
 
@@ -61,7 +73,7 @@
 
     {
         "type": "content",
-        "tag": "introduction",
+        "tag": "blocks",
         "profile": "outer--inner",
         "padding": "both",
         "margins": "both",
@@ -69,23 +81,52 @@
         "jump-link": "true",
         "content": {
             "header": [
-                "Introduction"
+                "Blocks"
             ],
             "section": [
                 {
                     "type": "p",
                     "text": [
-                        "The following list is generated with the page <code>.QueryResults</code>."
+                        "The following list is generated with the page <code>.QueryResults.Blocks</code>."
                     ]
                 },
                 {
                     "type": "ul",
                     "list": [
-                        {{ range $key,$pages := .QueryResults }}
-                            {{ range $idx,$page := $pages }}
+                            {{ range $idx,$page := .QueryResults.Blocks }}
                         {{ if gt $idx 0 }},{{ end }}{ "type": "a", "href": "{{ __ $page.Language $page.Url }}", "text": "{{ $page.Title }}" }
                             {{ end }}
-                        {{ end }}
+                    ]
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "content",
+        "tag": "pages",
+        "profile": "outer--inner",
+        "padding": "both",
+        "margins": "both",
+        "jump-top": "true",
+        "jump-link": "true",
+        "content": {
+            "header": [
+                "Pages"
+            ],
+            "section": [
+                {
+                    "type": "p",
+                    "text": [
+                        "The following list is generated with the page <code>.QueryResults.Pages</code>."
+                    ]
+                },
+                {
+                    "type": "ul",
+                    "list": [
+                            {{ range $idx,$page := .QueryResults.Pages }}
+                        {{ if gt $idx 0 }},{{ end }}{ "type": "a", "href": "{{ __ $page.Language $page.Url }}", "text": "{{ $page.Title }}" }
+                            {{ end }}
                     ]
                 }
             ]

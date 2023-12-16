@@ -1,7 +1,20 @@
 {{{
-  "type": "page",
+
+  "created": null,
+  "description": "A demonstration of the Content Enjin block",
+  "layout": "defaults",
+  "no-page-indexing": false,
+  "no-search-indexing": false,
+  "permalink": null,
+  "sitemap-change-freq": "never",
+  "sitemap-ignored": false,
+  "sitemap-priority": 0.5,
+  "thumbnail-alt": null,
+  "thumbnail-url": null,
   "title": "Content Block",
-  "description": "A demonstration of the Content Enjin block"
+  "type": "page",
+  "updated": null
+
 }}}
 [
 
@@ -38,24 +51,24 @@
                     {
                         "type": "p",
                         "text": [
-                            "The content block is probably the single most",
-                            "used enjin block. It can present any content",
-                            "within it's main section along with a tidy header",
+                            "The content block is probably the single most ",
+                            "used enjin block. It can present any content ",
+                            "within it's main section along with a tidy header ",
                             "and footer."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "Well, okay, not just any content. Editors are not",
-                            "allowed to add <code>&lt;h*&gt;</code> tags",
-                            "specifically for example. They can include a",
-                            "<code>&lt;header&gt;</code> tag in the source",
-                            "content which Go-Enjin will render with the",
-                            "correct heading priority for the current block's",
-                            "header nesting level. Typically, in a normal page",
-                            "layout, these would result in",
-                            "<code>&lt;h3&gt;</code> tags to start."
+                            "Well, okay, not just any content. Editors are not ",
+                            "allowed to add <code>h*</code> tags ",
+                            "specifically for example. They can include a ",
+                            "<code>header</code> tag in the source ",
+                            "content which Go-Enjin will render with the ",
+                            "correct heading priority for the current block's ",
+                            "header nesting level. Typically, in a normal page ",
+                            "layout, these would result in ",
+                            "<code>h3</code> tags to start."
                         ]
                     }
                 ],
@@ -63,8 +76,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "This block also includes a footer, which you're",
-                            "reading right now. This footer can contain any",
+                            "This block also includes a footer, which you're ",
+                            "reading right now. This footer can contain any ",
                             "sort of content, just like the main section."
                         ]
                     }
@@ -90,10 +103,10 @@
                     {
                         "type": "p",
                         "text": [
-                            "This content block demonstrates all the various",
-                            "contextual features available to all content",
-                            "blocks, starting with the",
-                            "<q>All the features...</q>","heading which was",
+                            "This content block demonstrates all the various ",
+                            "contextual features available to all content ",
+                            "blocks, starting with the ",
+                            "<q>All the features...</q>","heading which was ",
                             "explored in the ",
                             { "type": "a", "href": "/blocks/inline/header", "text": "Header" },
                             " block page."
@@ -102,11 +115,11 @@
                     {
                         "type": "p",
                         "text": [
-                            "All block headings allow for end-users to hover",
-                            "(or tap) on the heading to reveal a permalink to",
-                            "that specific block on the current page. Clicking",
-                            "that link will of course scroll the block nicely",
-                            "into view if the page is longer than your screen",
+                            "All block headings allow for end-users to hover ",
+                            "(or tap) on the heading to reveal a permalink to ",
+                            "that specific block on the current page. Clicking ",
+                            "that link will of course scroll the block nicely ",
+                            "into view if the page is longer than your screen ",
                             "is tall."
                         ]
                     },
@@ -118,18 +131,18 @@
                                 "type": "footnote",
                                 "text": "features",
                                 "note": [
-                                    "Go-Enjin is heavily based on a concept of",
-                                    "providing developers with the ability to",
-                                    "selectively control, or replace, as many",
+                                    "Go-Enjin is heavily based on a concept of ",
+                                    "providing developers with the ability to ",
+                                    "selectively control, or replace, as many ",
                                     "of the features in the enjin being built."
                                 ]
                             },
-                            " are the footnote system and the block-link. All",
-                            "blocks have a specific link field (href and label",
-                            "text strings), like the header field, which when",
-                            "specified for any given block, will render the",
-                            "block with a decorated link in the footer. For",
-                            "this block in particular, the link below reads:",
+                            " are the footnote system and the block-link. All ",
+                            "blocks have a specific link field (href and label ",
+                            "text strings), like the header field, which when ",
+                            "specified for any given block, will render the ",
+                            "block with a decorated link in the footer. For ",
+                            "this block in particular, the link below reads: ",
                             "<q>Example Link</q>"
                         ]
                     }

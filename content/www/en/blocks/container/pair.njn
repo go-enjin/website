@@ -1,7 +1,12 @@
 {{{
-  "type": "page",
+
+  "description": "A demonstration of the Pair Enjin block",
+  "layout": "defaults",
+  "sitemap-change-freq": "never",
+  "sitemap-priority": 0.5,
   "title": "Pair Block",
-  "description": "A demonstration of the Pair Enjin block"
+  "type": "page"
+
 }}}
 [
 
@@ -39,15 +44,15 @@
                     {
                         "type": "p",
                         "text": [
-                            "Pair blocks are an interesting feature because",
-                            "they allow for two separate bits of content to be",
+                            "Pair blocks are an interesting feature because ",
+                            "they allow for two separate bits of content to be ",
                             "paired together side-by-side."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "As pair blocks are considered containers, they",
+                            "As pair blocks are considered containers, they ",
                             "can contain any inline enjin block available."
                         ]
                     }
@@ -81,9 +86,9 @@
                                 {
                                     "type": "p",
                                     "text": [
-                                        "This content block has a heading,",
-                                        "content section and footer with a",
-                                        "decorated link. The image next to",
+                                        "This content block has a heading, ",
+                                        "content section and footer with a ",
+                                        "decorated link. The image next to ",
                                         "this is of <q>tall</q> size."
                                     ]
                                 }
@@ -125,8 +130,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "The next pair block is reversed with an image",
-                            "first and then content. It also does not have a",
+                            "The next pair block is reversed with an image ",
+                            "first and then content. It also does not have a ",
                             "title, caption or link."
                         ]
                     }
@@ -157,8 +162,8 @@
                                 {
                                     "type": "p",
                                     "text": [
-                                        "This content block has no header or",
-                                        "footer and the image next to this is",
+                                        "This content block has no header or ",
+                                        "footer and the image next to this is ",
                                         "of normal or default size."
                                     ]
                                 }

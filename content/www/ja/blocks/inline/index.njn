@@ -1,7 +1,12 @@
 {{{
-  "type": "page",
-  "title": "Index Block",
-  "description": "A demonstration of the Index Enjin block"
+
+  "description": "インデックスEnjin ブロックのデモンストレーション",
+  "layout": "defaults",
+  "sitemap-change-freq": "never",
+  "sitemap-priority": 0.5,
+  "title": "インデックスブロック",
+  "type": "page"
+
 }}}
 [
 
@@ -13,11 +18,11 @@
             "margins": "bottom",
             "content": {
                 "header": [
-                    "Index Block"
+                    "インデックスブロック"
                 ],
                 "nav": [
-                    { "type": "a", "href": "#introduction",         "text": ["Introduction"] },
-                    { "type": "a", "href": "#block-and-blog-pages", "text": ["Block and blog pages..."] }
+                    { "type": "a", "href": "#introduction",         "text": ["イントロダクション"] },
+                    { "type": "a", "href": "#block-and-blog-pages", "text": ["ブロックとブログのページ..."] }
                 ]
             }
         },
@@ -32,16 +37,13 @@
             "jump-link": "true",
             "content": {
                 "header": [
-                    "Introduction"
+                    "イントロダクション"
                 ],
                 "section": [
                     {
                         "type": "p",
                         "text": [
-                            "Index blocks are a versatile solution to displaying a selection of pages, such as with a ",
-                            "category page linking to the pages within the category. An obvious example is that of a ",
-                            "blog site's homepage listing recent posts. An index block placed within the homepage ",
-                            "would provide this listing."
+                            "インデックスブロックは、カテゴリ内のページにリンクするカテゴリページなどを選択したページを表示するための汎用性の高いソリューションです。わかりやすい例として、最近の投稿を一覧表示するブログサイトのホームページの例です。ホームページ内に配置されたインデックスブロックは、このリストを提供します。"
                         ]
                     }
                 ]
@@ -57,8 +59,8 @@
             "jump-top": "true",
             "jump-link": "true",
             "link-href": "#",
-            "link-text": "Does nothing",
-            "index-views": "link-list=Link List;profile=Profile",
+            "link-text": "何もしない",
+            "index-views": "link-list=リンクリスト;profile=プロファイル",
             "index-num-per-page": 5,
             "index-pagination": "more",
             "index-query": "((.Language == \"en\") AND ((.Url == m!^/blocks!) OR (.Archetype == \"blog\"))) ORDER BY .Title ASC",
@@ -68,35 +70,35 @@
                 [
                     {
                         "key": "not-image-blocks",
-                        "label": "Not Image Blocks",
+                        "label": "イメージブロックではない",
                         "query": "(.Title != m/(?i)image/)"
                     },
                     {
                         "key": "inline-blocks-only",
-                        "label": "Inline Blocks Only",
+                        "label": "インラインブロックのみ",
                         "query": "(.Url == m!^/blocks/inline/!)"
                     },
                     {
                         "key": "container-blocks-only",
-                        "label": "Container Blocks Only",
+                        "label": "コンテイナーブッロクのみ",
                         "query": "(.Url == m!^/blocks/container/!)"
                     }
                 ],
                 {
                     "key": "blog-only",
-                    "label": "Blogs Only",
+                    "label": "ブログのみ",
                     "query": "(.Archetype == \"blog\")"
                 }
             ],
             "content": {
                 "header": [
-                    "Block and blog pages..."
+                    "ブロックとブログのページ..."
                 ],
                 "footer": [
                     {
                         "type": "p",
                         "text": [
-                            "Index blocks support both headers and footers. This is the footer."
+                            "インデックスブロックはヘッダーとフッターを共にサポートします。これがフッターです。"
                         ]
                     }
                 ]
@@ -111,7 +113,7 @@
             "margins": "both",
             "jump-top": "true",
             "jump-link": "true",
-            "index-views": "profile=Profile;link-list=Link List",
+            "index-views": "profile=プロファイル;link-list=リンクリスト",
             "index-sort-dir": "DSC",
             "index-order-by": "Title",
             "index-max-results": 100,
@@ -123,46 +125,45 @@
                 [
                     {
                         "key": "examples",
-                        "label": "Examples",
+                        "label": "例",
                         "query": "(.Url == m!^/examples/!)"
                     },
                     {
                         "key": "theming",
-                        "label": "Theming",
+                        "label": "テーマ",
                         "query": "(.Url == m!^/(fields|blocks|styling|pages)/!)"
                     },
                     {
                         "key": "other",
-                        "label": "Other",
+                        "label": "その他",
                         "query": "(.Url != m~^/(examples|fields|blocks|styling|pages)/~)"
                     }
                 ]
             ],
             "content": {
                 "header": [
-                    "All pages..."
+                    "すべてのページ..."
                 ],
                 "footer": [
                     {
                         "type": "p",
                         "text": [
-                            "The above index block has a number of differences from the first one on this page."
+                            "上記のインデックスブロックには、このページの最初のインデックスブロックといくつかの違いがあります。"
                         ]
                     },
                     {
                         "type": "ul",
                         "list": [
-                            "all pages are included (regardless of language)",
-                            "the default view is Profile instead of Link List",
-                            "the pages are sorted by title descending",
-                            "full pagination controls (instead of the incremental more-button mode)",
-                            "different filters are configured",
-                            "three rows per page instead of five (default is ten)"
+                            "すべてのページが含まれています(言語に関係なく）",
+                            "デフォルトのビューは、リンクではなくプロファイルです",
+                            "ページはタイトルの降順で並べ替えられます",
+                            "完全なページネーションコントロール(インクリメンタルモアボタンモードの代わりに)",
+                            "さまざまなフィルターが構成されています",
+                            "ページごとに 5 行ではなく 3 行 (デフォルトは 10 行)"
                         ]
                     }
                 ]
             }
         }
-
 
 ]

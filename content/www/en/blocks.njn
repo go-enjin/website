@@ -1,7 +1,20 @@
 {{{
-  "type": "page",
+
+  "created": null,
+  "description": "An introduction to Enjin Blocks",
+  "layout": "defaults",
+  "no-page-indexing": false,
+  "no-search-indexing": false,
+  "permalink": null,
+  "sitemap-change-freq": "never",
+  "sitemap-ignored": false,
+  "sitemap-priority": 0.5,
+  "thumbnail-alt": null,
+  "thumbnail-url": null,
   "title": "Enjin Blocks",
-  "description": "An introduction to Enjin Blocks"
+  "type": "page",
+  "updated": null
+
 }}}
 [
 
@@ -39,9 +52,9 @@
                 {
                     "type": "p",
                     "text": [
-                        "Enjin blocks are pre-defined groups of enjin fields and metadata, rendered with specialized",
-                        "styling. For example, this block that you're reading now is a <q>content</q> block, with",
-                        "a content header and section specified. This paragraph is an enjin field within the content",
+                        "Enjin blocks are pre-defined groups of enjin fields and metadata, rendered with specialized ",
+                        "styling. For example, this block that you're reading now is a <q>content</q> block, with ",
+                        "a content header and section specified. This paragraph is an enjin field within the content ",
                         "section."
                     ]
                 }
@@ -67,7 +80,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Inline blocks are enjin blocks that are composed of only enjin fields for content. Similarly",
+                        "Inline blocks are enjin blocks that are composed of only enjin fields for content. Similarly ",
                         "to the inline fields versus the container fields."
                     ]
                 }
@@ -93,7 +106,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Container blocks are enjin blocks that are composed of other enjin blocks and provide higher",
+                        "Container blocks are enjin blocks that are composed of other enjin blocks and provide higher ",
                         "levels of page content organization, such as the ",
                         { "type": "a", "href": "/blocks/sidebar", "text": "sidebar" },
                         " block."

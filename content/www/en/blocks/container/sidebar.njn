@@ -1,7 +1,12 @@
 {{{
-  "type": "page",
+
+  "description": "A demonstration of the Sidebar Enjin block",
+  "layout": "defaults",
+  "sitemap-change-freq": "never",
+  "sitemap-priority": 0.5,
   "title": "Sidebar Block",
-  "description": "A demonstration of the Sidebar Enjin block"
+  "type": "page"
+
 }}}
 [
 
@@ -65,7 +70,7 @@
                     },
 
                     {
-                        "tag": "aside-link-list",
+                        "tag": "aside-link-list ",
                         "type": "link-list",
                         "profile": "full--full",
                         "jump-top": "true",
@@ -81,7 +86,7 @@
                                     "href": "#",
                                     "text": [
                                        { "type": "fa-icon", "class": "fa-solid", "id": "fa-download" },
-                                       " does nothing"
+                                       "does nothing"
                                     ]
                                 },
                                 {
@@ -90,7 +95,7 @@
                                     "href": "#",
                                     "text": [
                                        { "type": "fa-icon", "class": "fa-solid", "id": "fa-download" },
-                                       " also does nothing"
+                                       "also does nothing"
                                     ]
                                 }
                             ]
@@ -116,38 +121,38 @@
                                 {
                                     "type": "p",
                                     "text": [
-                                        "Sidebar blocks are a flexible",
-                                        "container block in that they do not",
-                                        "provide content directly and instead",
-                                        "organize other blocks embedded within",
+                                        "Sidebar blocks are a flexible ",
+                                        "container block in that they do not ",
+                                        "provide content directly and instead ",
+                                        "organize other blocks embedded within ",
                                         "the sidebar contexts."
                                     ]
                                 },
                                 {
                                     "type": "p",
                                     "text": [
-                                        "Every sidebar block as two contexts,",
-                                        "or lists of blocks. The first is of",
-                                        "course the main content area and the",
-                                        "second is the aside blocks (which are",
-                                        "like normal blocks, just smaller and",
-                                        "their tag structure is slightly",
+                                        "Every sidebar block as two contexts, ",
+                                        "or lists of blocks. The first is of ",
+                                        "course the main content area and the ",
+                                        "second is the aside blocks (which are ",
+                                        "like normal blocks, just smaller and ",
+                                        "their tag structure is slightly ",
                                         "different)."
                                     ]
                                 },
                                 {
                                     "type": "p",
                                     "text": [
-                                        "While any type of block can be used",
-                                        "in the main context, the aside",
-                                        "context allows for inline or finite",
+                                        "While any type of block can be used ",
+                                        "in the main context, the aside ",
+                                        "context allows for inline or finite ",
                                         "blocks, like the ones used in ",
                                         {
                                             "type": "a",
                                             "href": "/blocks/container/pair",
                                             "text": "Pair"
                                         },
-                                        " blocks."
+                                        "blocks."
                                     ]
                                 }
                             ]
@@ -183,7 +188,7 @@
                                 {
                                     "type": "p",
                                     "text": [
-                                        "An example image within the main",
+                                        "An example image within the main ",
                                         "context of a sidebar block."
                                     ]
                                 }
@@ -215,10 +220,10 @@
                                 {
                                     "type": "p",
                                     "text": [
-                                        "For mobile resolutions, the aside blocks are stacked before the normal blocks",
-                                        "by default. Specifying <q>bottom</q> for the <var>data-sidebar-stack</var>",
-                                        "block attribute will cause the aside context to be stacked under the main",
-                                        "context. This sidebar is configured for <q>bottom</q> stacking while the next",
+                                        "For mobile resolutions, the aside blocks are stacked before the normal blocks ",
+                                        "by default. Specifying <q>bottom</q> for the <var>data-sidebar-stack</var> ",
+                                        "block attribute will cause the aside context to be stacked under the main ",
+                                        "context. This sidebar is configured for <q>bottom</q> stacking while the next ",
                                         "sidebar is set to the default."
                                     ]
                                 }
@@ -379,7 +384,7 @@
                                     "type": "p",
                                     "text": [
                                         "The aside blocks are also subject to the heading levels policies and so, all ",
-                                        "the aside blocks in this sidebar example are <code>&lt;h3&gt;</code> tags."
+                                        "the aside blocks in this sidebar example are <code><h3></code> tags."
                                     ]
                                 },
                                 {
@@ -387,7 +392,7 @@
                                     "text": [
                                         "Aside blocks with headings are not included in the table of contents and more ",
                                         "specifically, the heading tags used within the aside context are in fact ",
-                                        "<code>&lt;div&gt;</code>s with one of the six heading classes, ",
+                                        "<code><div></code>s with one of the six heading classes, ",
                                         "<code>.h1</code> through ",
                                         { "type": "code", "text": ".h6" },
                                         "."
@@ -502,7 +507,7 @@
                         "text": [
                             "The closing remarks heading has decremented the page heading level, which makes this ",
                             "content block's heading an <code>h3</code> tag and the closing remarks an ",
-                            "<code>h2</code>."
+                            " <code>h2</code>."
                         ]
                     }
                 ]

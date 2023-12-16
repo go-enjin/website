@@ -1,15 +1,23 @@
 {{{
-    "type": "page",
-    "archetype": "blog",
-    "blog-author": "The Go-Enjin Team",
-    "title": "First post!",
-    "description": "The first blog post on go-enjin.org",
-    "permalink": "e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7",
-    "redirect": [
-        "/this-is-a-page-redirect-to-the-blog-example"
-    ],
-    "thumbnail-url": "/media/mascot.png",
-    "thumbnail-alt": "thumbnail image of the Go-Enjin mascot"
+
+  "archetype": "blog",
+  "blog-author": "The Go-Enjin Team",
+  "created": null,
+  "description": "The first blog post on go-enjin.org",
+  "layout": "defaults",
+  "permalink": "e0f7ae8b-85e0-4c3f-b6c7-4c84b59bd3e7",
+  "redirect": [
+    "/this-is-a-page-redirect-to-the-blog-example"
+  ],
+  "sitemap-change-freq": "never",
+  "sitemap-ignored": false,
+  "sitemap-priority": 0.5,
+  "thumbnail-alt": "thumbnail image of the Go-Enjin mascot",
+  "thumbnail-url": "/media/mascot.png",
+  "title": "First post!",
+  "type": "page",
+  "updated": null
+
 }}}
 [
 
