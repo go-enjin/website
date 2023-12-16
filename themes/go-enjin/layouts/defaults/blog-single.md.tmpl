@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Request.Language }}">
+{{ featurePartials "head" "head" }}
+{{ template "partials/head.tmpl" . }}
+{{ featurePartials "head" "tail" }}
+<body
+        {{- if .Type }} data-page-type="{{ .Type }}"{{ end -}}
+        {{- if .Layout }} data-page-layout="{{ .Layout }}"{{ end -}}
+        {{- if .Format }} data-page-format="{{ .Format | replace ".tmpl" }}"{{ end -}}
+        {{- if .Archetype }} data-page-archetype="{{ .Archetype }}"{{ end -}}
+>
+{{ featurePartials "body" "head" }}
+{{ template "partials/header.tmpl" . }}
+<main data-layout-view="defaults/blog-single.md.tmpl">
+    <div id="top"></div>
+    {{ template "partials/notices.tmpl" . }}
+    <aside class="blog">
+        {{ template "partials/blog--aside.tmpl" . }}
+    </aside>
+    <article
+            class="block"
+            data-block-type="content"
+            data-block-tag="single-markdown-content"
+            data-block-profile="outer--inner"
+            data-block-margins="both"
+            data-block-padding="both"
+    >
+        <div class="content">
+            <section>{{ .Content }}</section>
+            <a class="jump-top" href="#top">{{ _ "top" }}</a>
+        </div>
+    </article>
+    <aside class="blog">
+        {{ template "partials/blog--aside.tmpl" . }}
+    </aside>
+</main>
+
+{{ template "partials/footer.tmpl" . }}
+{{ featurePartials "body" "tail" }}
+</body>
+</html>

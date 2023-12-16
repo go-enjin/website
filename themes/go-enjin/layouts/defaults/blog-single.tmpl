@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Request.Language }}">
+{{ template "partials/head.tmpl" . }}
+<body
+        {{- if .Type }} data-page-type="{{ .Type }}"{{ end -}}
+        {{- if .Layout }} data-page-layout="{{ .Layout }}"{{ end -}}
+        {{- if .Format }} data-page-format="{{ .Format }}"{{ end -}}
+        {{- if .Archetype }} data-page-archetype="{{ .Archetype }}"{{ end -}}
+>
+{{ template "partials/header.tmpl" . }}
+<main data-layout-view="defaults/blog-single.tmpl">
+    <div id="top"></div>
+    {{ template "partials/notices.tmpl" . }}
+    <aside class="blog">
+        {{ template "partials/blog--aside.tmpl" . }}
+    </aside>
+    {{ .Content }}
+    <aside class="blog">
+        {{ template "partials/blog--aside.tmpl" . }}
+    </aside>
+</main>
+{{ template "partials/footer.tmpl" . }}
+</body>
+</html>
