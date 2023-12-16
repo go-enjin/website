@@ -2,3 +2,4 @@
 /be-website
 /.idea
 .env
+**/*.~*
