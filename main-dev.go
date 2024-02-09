@@ -20,6 +20,8 @@ import (
 	"fmt"
 	"time"
 
+	semantic "github.com/go-enjin/semantic-enjin-theme"
+
 	"github.com/go-corelibs/env"
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/drivers/db/gorm"
@@ -31,7 +33,7 @@ import (
 	"github.com/go-enjin/be/features/fs/locale"
 	"github.com/go-enjin/be/features/fs/menu"
 	"github.com/go-enjin/be/features/fs/public"
-	"github.com/go-enjin/be/features/fs/site-users"
+	site_users "github.com/go-enjin/be/features/fs/site-users"
 	"github.com/go-enjin/be/features/fs/themes"
 	"github.com/go-enjin/be/features/site"
 	"github.com/go-enjin/be/features/site/auth"
@@ -41,7 +43,6 @@ import (
 	"github.com/go-enjin/be/features/site/auth/provider/email_backup"
 	"github.com/go-enjin/be/features/site/auth/provider/email_token"
 	"github.com/go-enjin/be/features/site/dashboard"
-	"github.com/go-enjin/be/features/site/fs-editor"
 	enjinInfo "github.com/go-enjin/be/features/site/fs-editor/enjin-info"
 	"github.com/go-enjin/be/features/site/fs-editor/locales"
 	"github.com/go-enjin/be/features/site/fs-editor/menus"
@@ -50,10 +51,9 @@ import (
 	"github.com/go-enjin/be/features/site/fs-editor/unsafe"
 	"github.com/go-enjin/be/features/site/profile"
 	"github.com/go-enjin/be/features/site/settings"
-	"github.com/go-enjin/be/features/site/user-manager"
+	user_manager "github.com/go-enjin/be/features/site/user-manager"
 	"github.com/go-enjin/be/features/user/base/ipenv"
 	"github.com/go-enjin/be/pkg/feature"
-	semantic "github.com/go-enjin/semantic-enjin-theme"
 )
 
 func init() {
@@ -189,17 +189,10 @@ func init() {
 			AddMemoryCache(gAdminKvsCache).
 			Make(),
 		gorm.NewTagged("gorm-db").
-			AddConnection("locales-rw").
 			AddConnection("www-users").
-			AddConnection("rw-pages-db").
 			Make(),
 		content.NewTagged("enja-content").
 			MountLocalPath("/", "content/enja").
-			Make(),
-		content.NewTagged("rw-pages").
-			MountGormDBPath("/", "content", "rw-pages-db").
-			AddToIndexProviders(gPagesPqlFeatureWWW).
-			AddToSearchProviders(gBleveFtsFeatureWWW).
 			Make(),
 		ipenv.New().Make(),
 		email.New().
@@ -225,7 +218,7 @@ func init() {
 					Include(
 						enjinInfo.New().Make(),
 						pages.New().
-							AddContentFileSystems(gSiteContentTag, "rw-pages", "enja-content").
+							AddContentFileSystems(gSiteContentTag, "enja-content").
 							Make(),
 						menus.New().
 							AddMenuFileSystems(menu.NewTagged("enja-menus").
@@ -287,7 +280,7 @@ func init() {
 					Include(
 						enjinInfo.NewTagged("admin-enjin-info").Make(),
 						pages.NewTagged("admin-pages").
-							AddContentFileSystems(gSiteContentTag, "rw-pages", "enja-content").
+							AddContentFileSystems(gSiteContentTag, "enja-content").
 							Make(),
 						menus.NewTagged("admin-menus").
 							AddMenuFileSystems(menu.NewTagged("admin-enja-menus").
