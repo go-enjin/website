@@ -227,8 +227,8 @@ github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a
 github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a/go.mod h1:hId0+St26leJQkTRaFYATZHMGja4wrv0hzf5SwKs3hA=
 github.com/go-enjin/semantic-enjin-theme v0.5.7 h1:NmAjTvWlC/pcADW5N5J0RfhaCTbkpHZIv727bU0aze8=
 github.com/go-enjin/semantic-enjin-theme v0.5.7/go.mod h1:p/wWjEa+Fx4gOnNvMzT5tWaD2QrR8PKmRrgiQVcUQDw=
-github.com/go-enjin/website-thisip-fyi v0.0.0-20240209163135-b6524f726125 h1:mrEsocQH71RE6lScx6K1jB0ifsRsGJvo1YkSChceWAY=
-github.com/go-enjin/website-thisip-fyi v0.0.0-20240209163135-b6524f726125/go.mod h1:SHXRrPTHbjITDXXyyH0puqgrrHhQvj8g1t449n3EPV8=
+github.com/go-enjin/website-thisip-fyi v0.0.0-20240209171154-b8b1de8f681c h1:k8pQuaicQL54UvD+OfrDyDn8vLsSeZkn3yVGciHLK7A=
+github.com/go-enjin/website-thisip-fyi v0.0.0-20240209171154-b8b1de8f681c/go.mod h1:SHXRrPTHbjITDXXyyH0puqgrrHhQvj8g1t449n3EPV8=
 github.com/go-gl/glfw v0.0.0-20190409004039-e6da0acd62b1/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20191125211704-12ad95a8df72/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20200222043503-6f7a984d4dc4/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
