@@ -61,8 +61,6 @@ func init() {
 	// log.Config.LogLevel = log.LevelDebug
 	// log.Config.Apply()
 
-	//siteListener = ngrokio.New().Make()
-
 	wwwMenu = menu.New().
 		MountLocalPath("/", "menus/www").
 		Make()

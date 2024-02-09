@@ -61,9 +61,8 @@ var (
 	enjaEditor  feature.Feature
 	enjaLocales feature.Feature
 
-	siteThemes   feature.Feature
-	siteListener feature.ServiceListener
-	siteLocales  feature.Feature
+	siteThemes  feature.Feature
+	siteLocales feature.Feature
 
 	hotReload bool
 
@@ -211,7 +210,7 @@ func main() {
 		SiteName("main").
 		SiteDefaultLanguage(language.English).
 		SiteSupportedLanguages(language.English).
-		AddPreset(essentials.New().SetListener(siteListener).Make()).
+		AddPreset(essentials.New().Make()).
 		AddFeature(themes.New().
 			Include(defaultTheme.Theme()).
 			SetTheme(defaultTheme.Name).
