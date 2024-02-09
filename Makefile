@@ -35,7 +35,6 @@ COMMON_TAGS += page_robots
 COMMON_TAGS += page_sitemap
 COMMON_TAGS += page_search
 COMMON_TAGS += page_metrics
-COMMON_TAGS += ngrokio
 COMMON_TAGS += fs_theme fs_menu fs_content fs_public fs_locale
 
 ADD_TAGS_DEFAULTS := true
@@ -46,13 +45,14 @@ DEV_BUILD_TAGS = locals editor semantic_enjin_editor fs_email driver_email_gomai
 # Custom go.mod locals
 GOPKG_KEYS += _DEFAULT_THEME
 GOPKG_KEYS += _SEMANTIC_THEME
-GOPKG_KEYS += _GOTEXT
 GOPKG_KEYS += _TIMES
 GOPKG_KEYS += TIF
 
 # Go-Enjin thisip package
 TIF_GO_PACKAGE = github.com/go-enjin/website-thisip-fyi
 TIF_LOCAL_PATH = ../website-thisip-fyi
+
+AUTO_CORELIBS_KEYS := true
 
 #
 #: Language settings
