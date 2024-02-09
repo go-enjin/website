@@ -22,28 +22,28 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/go-enjin/be/features/fs/content"
-	"github.com/go-enjin/be/features/pages/metrics"
-	"github.com/go-enjin/be/features/srv/factories/nonces"
-	"github.com/go-enjin/be/features/srv/factories/tokens"
 	defaultTheme "github.com/go-enjin/default-enjin-theme"
-	"github.com/go-enjin/golang-org-x-text/message"
 
-	"github.com/go-enjin/golang-org-x-text/language"
-
+	"github.com/go-corelibs/x-text/language"
+	"github.com/go-corelibs/x-text/message"
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/drivers/fts/bleve"
 	"github.com/go-enjin/be/drivers/kvs/gocache"
+	"github.com/go-enjin/be/features/fs/content"
 	"github.com/go-enjin/be/features/fs/themes"
+	"github.com/go-enjin/be/features/pages/metrics"
 	"github.com/go-enjin/be/features/pages/pql"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/pages/sitemap"
+	"github.com/go-enjin/be/features/srv/factories/nonces"
+	"github.com/go-enjin/be/features/srv/factories/tokens"
 	"github.com/go-enjin/be/pkg/feature"
 	"github.com/go-enjin/be/pkg/lang"
 	"github.com/go-enjin/be/presets/defaults"
 	"github.com/go-enjin/be/presets/essentials"
 
+	thisip_fyi "github.com/go-enjin/website-thisip-fyi"
 	"github.com/go-enjin/website-thisip-fyi/pkg/features/thisip"
 )
 
@@ -68,6 +68,7 @@ var (
 
 	enjaEnDomain string
 	enjaJaDomain string
+	tifyiDomain  string
 )
 
 func init() {
@@ -80,6 +81,11 @@ func init() {
 		enjaJaDomain = v
 	} else {
 		enjaJaDomain = "http://ja.localhost:3334"
+	}
+	if v, ok := os.LookupEnv("BE_THISIP_FYI_DOMAIN"); ok {
+		tifyiDomain = v
+	} else {
+		tifyiDomain = "http://thisip.localhost:3334"
 	}
 }
 
@@ -205,7 +211,7 @@ func main() {
 		AddFeature(enjaEditor)
 
 	enjin := be.New().
-		IncludeEnjin(www, enja).
+		IncludeEnjin(www, enja, thisip_fyi.New().AddDomains(tifyiDomain)).
 		SiteTag("MAIN").
 		SiteName("main").
 		SiteDefaultLanguage(language.English).
