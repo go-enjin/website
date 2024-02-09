@@ -20,6 +20,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/go-corelibs/env"
 	"github.com/go-enjin/be"
 	"github.com/go-enjin/be/drivers/db/gorm"
 	"github.com/go-enjin/be/drivers/email/fakemail"
@@ -51,7 +52,6 @@ import (
 	"github.com/go-enjin/be/features/site/settings"
 	"github.com/go-enjin/be/features/site/user-manager"
 	"github.com/go-enjin/be/features/user/base/ipenv"
-	"github.com/go-enjin/be/pkg/cli/env"
 	"github.com/go-enjin/be/pkg/feature"
 	semantic "github.com/go-enjin/semantic-enjin-theme"
 )
@@ -162,7 +162,7 @@ func init() {
 		)
 	}
 
-	emailAccount := env.Get("BE_DEV_USE_EMAIL_ACCOUNT", "fakemail")
+	emailAccount := env.String("BE_DEV_USE_EMAIL_ACCOUNT", "fakemail")
 	switch emailAccount {
 	case "fakemail":
 		wwwDevFeatures = append(wwwDevFeatures, fakemail.New().
