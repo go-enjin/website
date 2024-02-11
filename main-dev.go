@@ -20,6 +20,7 @@ import (
 	"fmt"
 	"time"
 
+	editor "github.com/go-enjin/be/features/site/fs-editor"
 	semantic "github.com/go-enjin/semantic-enjin-theme"
 
 	"github.com/go-corelibs/env"
