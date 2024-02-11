@@ -5,10 +5,10 @@ go 1.21.6
 require (
 	github.com/go-corelibs/env v1.1.1
 	github.com/go-corelibs/x-text v0.14.1
-	github.com/go-enjin/be v0.5.7
+	github.com/go-enjin/be v0.5.8
 	github.com/go-enjin/default-enjin-theme v0.5.7
 	github.com/go-enjin/semantic-enjin-theme v0.5.7
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20240209171154-b8b1de8f681c
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20240211172513-158086d988f2
 	github.com/urfave/cli/v2 v2.27.1
 )
 
