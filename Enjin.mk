@@ -17,7 +17,7 @@
 #: uncomment to echo instead of execute
 #CMD=echo
 
-ENJIN_MK_VERSION := v0.2.19
+ENJIN_MK_VERSION := v0.2.21
 
 #
 #: phony make targets
@@ -471,7 +471,8 @@ ${CMD} ${ENJENV_EXE} go-unlocal "$(1)"
 endef
 
 define _make_extra_pkgs
-$(if ${GOPKG_KEYS},$(foreach key,${GOPKG_KEYS},$($(key)_GO_PACKAGE)@$(if $($(key)_LATEST_VER),$($(key)_LATEST_VER),latest)))
+$(if ${GOPKG_KEYS},$(foreach key,${GOPKG_KEYS},$($(key)_GO_PACKAGE)@$(if $($(key)_LATEST_VER),$($(key)_LATEST_VER),latest))) \
+$(if ${_FOUND_CORELIBS},$(foreach name,${_FOUND_CORELIBS},github.com/go-corelibs/$(name)@latest))
 endef
 
 define _make_console_names
@@ -1248,8 +1249,8 @@ stop:
 							done; \
 							echo "# terminated: $${RP_TREE}"; \
 						else \
-							${CMD} kill -TERM $${RP} 2> /dev/null; \
-							echo "# terminated: $${RP}"; \
+							${CMD} kill -INT $${RP} 2> /dev/null; \
+							echo "# interrupted: $${RP}"; \
 						fi; \
 					fi; \
 				else \
@@ -1279,7 +1280,7 @@ profile.mem: build dev
 		echo "# <Enter> to load mem.pprof, <CTRL+c> to abort"; \
 		read JUNK; \
 		echo "# pprof service starting (:8080)"; \
-		bash -c 'set -m; ( go tool pprof -http=:8080 mem.pprof ) 2> /dev/null'; \
+		bash -c 'set -m; go tool pprof -http=:8080 mem.pprof'; \
 		echo ""; \
 		echo "# pprof service shutdown"; \
 	else \
@@ -1293,7 +1294,7 @@ profile.cpu: build dev
 		echo "# <Enter> to load cpu.pprof, <CTRL+c> to abort"; \
 		read JUNK; \
 		echo "# pprof service starting (:8080)"; \
-		bash -c 'set -m; ( go tool pprof -http=:8080 cpu.pprof ) 2> /dev/null'; \
+		bash -c 'set -m; go tool pprof -http=:8080 cpu.pprof'; \
 		echo ""; \
 		echo "# pprof service shutdown"; \
 	else \
