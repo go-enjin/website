@@ -5,10 +5,10 @@ go 1.21.6
 require (
 	github.com/go-corelibs/env v1.1.1
 	github.com/go-corelibs/x-text v0.14.1
-	github.com/go-enjin/be v0.5.9
-	github.com/go-enjin/default-enjin-theme v0.5.9
-	github.com/go-enjin/semantic-enjin-theme v0.5.9
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20240212213510-67c925b4018b
+	github.com/go-enjin/be v0.5.11
+	github.com/go-enjin/default-enjin-theme v0.5.11
+	github.com/go-enjin/semantic-enjin-theme v0.5.11
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20240216223435-e3d3f2769718
 	github.com/urfave/cli/v2 v2.27.1
 )
 
@@ -66,18 +66,19 @@ require (
 	github.com/go-corelibs/diff v1.1.1 // indirect
 	github.com/go-corelibs/fmtstr v1.2.0 // indirect
 	github.com/go-corelibs/globs v1.0.0 // indirect
+	github.com/go-corelibs/htmlcss v1.0.0 // indirect
 	github.com/go-corelibs/lang v0.1.0 // indirect
 	github.com/go-corelibs/maps v1.1.0 // indirect
 	github.com/go-corelibs/maths v1.0.1 // indirect
 	github.com/go-corelibs/mime v1.0.0 // indirect
-	github.com/go-corelibs/path v1.2.0 // indirect
+	github.com/go-corelibs/path v1.3.0 // indirect
 	github.com/go-corelibs/replace v1.3.2 // indirect
 	github.com/go-corelibs/shasum v1.0.0 // indirect
 	github.com/go-corelibs/slices v1.3.0 // indirect
 	github.com/go-corelibs/strcases v1.0.0 // indirect
-	github.com/go-corelibs/strings v1.1.1 // indirect
+	github.com/go-corelibs/strings v1.4.0 // indirect
 	github.com/go-corelibs/templates v1.0.0 // indirect
-	github.com/go-corelibs/values v1.0.0 // indirect
+	github.com/go-corelibs/values v1.1.0 // indirect
 	github.com/go-corelibs/words v1.0.1 // indirect
 	github.com/go-curses/cdk v0.5.22 // indirect
 	github.com/go-curses/ctk v0.5.13 // indirect
