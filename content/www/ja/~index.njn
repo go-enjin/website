@@ -37,35 +37,35 @@
                 {
                     "type": "dl",
                     "text": [
-                        { "type": "dt", "text": "enjin <small>en·jin (noun)</small>" },
+                        { "type": "dt", "text": "enjin <small>エンジン (名詞)</small>" },
                         {
                             "type": "dd",
                             "text": [
-                                ":ウェブサイトやマイクロサービス ",
-                                " を構築するためのちょっと風変わりな形式の ",
+                                "- ウェブサイトやマイクロサービス",
+                                "を構築するためのちょっと風変わりな形式の",
                                 {
                                     "type": "a",
                                     "href": "https://e-words.jp/w/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3.html/engine",
-                                    "text": "エンジン"
+                                    "text": "Enjin"
                                 },
                                 { "type": "br" },
-                                ": このウェブサイトなどのようなEnjinサービスのインスタンス"
+                                "- このウェブサイトなどのようなEnjinサービスのインスタンス"
                             ]
                         },
-                        { "type": "dt", "text": "Enjin <small>en·jin (proper noun)</small>" },
+                        { "type": "dt", "text": "Enjin <small>エンジン (固有名詞)</small>" },
                         {
                             "type": "dd",
                             "text": [
-                                ": 具体的に",
+                                "- 具体的に",
                                 { "type": "a", "href": "https://github.com/go-enjin/be", "text": "Enjin" },
                                 "のコードベースを指しています。"
                             ]
                         },
-                        { "type": "dt", "text": "Go-Enjin <small>go en·jin (proper noun)</small>" },
+                        { "type": "dt", "text": "Go-Enjin <small>ゴ エンジン (固有名詞)</small>" },
                         {
                             "type": "dd",
                             "text": [
-                                ": このプロジェクトは主にGoプログラミング言語で書かれたオープンソースソフトウェアプロジェクトの構成で、",
+                                "- このプロジェクトは主にGoプログラミング言語で書かれたオープンソースソフトウェアプロジェクトの構成で、",
                                 "複数のenjinの構築に焦点を当てています"
                             ]
                         }
