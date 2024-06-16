@@ -36,14 +36,14 @@
                 {
                     "type": "p",
                     "text": [
-                        "Form fields are not normally presented to normal site visitors and are primarily used in the",
+                        "Form fields are not normally presented to normal site visitors and are primarily used in the ",
                         "administrative and content editing parts of the site."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "These fields are being presented simply to demonstrate the cosmetic styling of each field",
+                        "These fields are being presented simply to demonstrate the cosmetic styling of each field ",
                         "as supported by Go-Enjin."
                     ]
                 }

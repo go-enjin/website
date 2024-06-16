@@ -70,8 +70,8 @@
                 {
                     "type": "p",
                     "text": [
-                        "Header blocks are used to present page and content headings with optional navigational menus",
-                        "and footers. This page for example starts with a header block that has a navigational menu",
+                        "Header blocks are used to present page and content headings with optional navigational menus ",
+                        "and footers. This page for example starts with a header block that has a navigational menu ",
                         "with links to all the different inline block descriptions on this page."
                     ]
                 }
@@ -97,8 +97,8 @@
                 {
                     "type": "p",
                     "text": [
-                        "Notice blocks are used to present notifications within the normal page flow. A simple example",
-                        "would be a notice of site maintenance or other important information that is contextually",
+                        "Notice blocks are used to present notifications within the normal page flow. A simple example ",
+                        "would be a notice of site maintenance or other important information that is contextually ",
                         "outside the page flow."
                     ]
                 }
@@ -124,7 +124,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Table of Contents blocks are relatively self-explanatory, they present a list of links to the",
+                        "Table of Contents blocks are relatively self-explanatory, they present a list of links to the ",
                         "various sections of the page content."
                     ]
                 }
@@ -150,7 +150,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Link-List blocks are relatively simple lists of links, for example: a listing of downloadable",
+                        "Link-List blocks are relatively simple lists of links, for example: a listing of downloadable ",
                         "files."
                     ]
                 }
@@ -176,8 +176,8 @@
                 {
                     "type": "p",
                     "text": [
-                        "Like content blocks, image blocks are very commonly used. Image blocks display configured",
-                        "images with an array of aesthetic possibilities such as aspect-ratio constraints, positioning",
+                        "Like content blocks, image blocks are very commonly used. Image blocks display configured ",
+                        "images with an array of aesthetic possibilities such as aspect-ratio constraints, positioning ",
                         "and so on."
                     ]
                 }
@@ -228,8 +228,8 @@
                 {
                     "type": "p",
                     "text": [
-                        "Card blocks present summary content, typically with an accompanying image and linking to the",
-                        "actual content the block is summarizing. For example, the slides of a carousel block are card",
+                        "Card blocks present summary content, typically with an accompanying image and linking to the ",
+                        "actual content the block is summarizing. For example, the slides of a carousel block are card ",
                         "blocks."
                     ]
                 }
@@ -255,7 +255,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Content blocks are used to present general content and are likely the most common of all the",
+                        "Content blocks are used to present general content and are likely the most common of all the ",
                         "various enjin blocks."
                     ]
                 }

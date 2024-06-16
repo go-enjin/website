@@ -44,14 +44,14 @@
                     {
                         "type": "p",
                         "text": [
-                            "Image blocks can be configured for many different sizes. These are demonstrated on a",
+                            "Image blocks can be configured for many different sizes. These are demonstrated on a ",
                             "separate page because the full array of sizes takes up a lot of page space."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "This page focuses entirely on the different values for the <var>data-image-size</var>",
+                            "This page focuses entirely on the different values for the <var>data-image-size</var> ",
                             "attribute."
                         ]
                     }
@@ -85,7 +85,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>sliver</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>sliver</q>, or include the ",
                             "word <q>sliver</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -119,7 +119,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>thin</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>thin</q>, or include the ",
                             "word <q>thin</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -153,7 +153,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>banner</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>banner</q>, or include the ",
                             "word <q>banner</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -187,7 +187,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>normal</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>normal</q>, or include the ",
                             "word <q>normal</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -221,7 +221,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>tall</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>tall</q>, or include the ",
                             "word <q>tall</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -255,7 +255,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>huge</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>huge</q>, or include the ",
                             "word <q>huge</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -289,7 +289,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-size</var> attribute to <q>actual</q>, or include the",
+                            "Set either: the <var>data-image-size</var> attribute to <q>actual</q>, or include the ",
                             "word <q>actual</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }

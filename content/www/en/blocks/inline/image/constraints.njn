@@ -39,32 +39,32 @@
                     {
                         "type": "p",
                         "text": [
-                            "Image blocks present their pictures with two different containment constraints: width",
+                            "Image blocks present their pictures with two different containment constraints: width ",
                             "and height."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "When constrained by width (the default), the images have a <var>width</var> of",
-                            "<q>100%</q> and a <var>height</var> of <q>auto</q>. This means that the image should have",
+                            "When constrained by width (the default), the images have a <var>width</var> of ",
+                            "<q>100%</q> and a <var>height</var> of <q>auto</q>. This means that the image should have ",
                             "it's full width visible, limited to the actual width of the enjin block content."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "When constrained by height, the images have a <var>width</var> of <q>auto</q> and a",
-                            "<var>height</var> of <q>100%</q>. This means that the image should have it's full height",
-                            "visible and because it's not constrained by the height of this page content (blocks can",
+                            "When constrained by height, the images have a <var>width</var> of <q>auto</q> and a ",
+                            "<var>height</var> of <q>100%</q>. This means that the image should have it's full height ",
+                            "visible and because it's not constrained by the height of this page content (blocks can ",
                             "be as tall as their content needs), the image is actually it's full height on the page."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "For contrast demonstration purposes, the below constraint examples are both configured to",
-                            "have a <var>data-image-size</var> of <q>actual</q> so that there's no other limitations",
+                            "For contrast demonstration purposes, the below constraint examples are both configured to ",
+                            "have a <var>data-image-size</var> of <q>actual</q> so that there's no other limitations ",
                             "impacting the different constraint options."
                         ]
                     }
@@ -98,8 +98,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set nothing (as this is the default constraint), or set either: the",
-                            "<var>data-image-constraint</var> attribute to <q>width</q>, or include the word",
+                            "Set nothing (as this is the default constraint), or set either: the ",
+                            "<var>data-image-constraint</var> attribute to <q>width</q>, or include the word ",
                             "<q>width</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -133,7 +133,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-constraint</var> attribute to <q>height</q>, or include",
+                            "Set either: the <var>data-image-constraint</var> attribute to <q>height</q>, or include ",
                             "the word <q>height</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }

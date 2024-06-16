@@ -65,7 +65,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Carousel blocks (also known as sliders) present card blocks in a horizontally scrolling",
+                        "Carousel blocks (also known as sliders) present card blocks in a horizontally scrolling ",
                         "fashion and when reaching the end can loop back to the first card in the list."
                     ]
                 }
@@ -91,7 +91,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Pair blocks present two smaller sections of content side-by-side (stacked on mobile). The",
+                        "Pair blocks present two smaller sections of content side-by-side (stacked on mobile). The ",
                         "content can be copytext or images for example."
                     ]
                 }
@@ -117,9 +117,9 @@
                 {
                     "type": "p",
                     "text": [
-                        "Sidebar blocks are a sort of container of containers type of block. When placed on a page,",
-                        "an <q>aside</q> region is added that can contain other blocks like Link-Lists or Notices.",
-                        "Sidebar blocks also present a reduced-width content area where any other kind of block can be",
+                        "Sidebar blocks are a sort of container of containers type of block. When placed on a page, ",
+                        "an <q>aside</q> region is added that can contain other blocks like Link-Lists or Notices. ",
+                        "Sidebar blocks also present a reduced-width content area where any other kind of block can be ",
                         "placed, such as carousel, image and content blocks."
                     ]
                 }

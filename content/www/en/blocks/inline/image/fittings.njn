@@ -42,15 +42,15 @@
                     {
                         "type": "p",
                         "text": [
-                            "All image blocks have the capacity to alter how the image itself is fit to it's",
+                            "All image blocks have the capacity to alter how the image itself is fit to it's ",
                             "constraining viewport and dimension (height or width)."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "This page highlights on just the <var>data-image-fit</var> attribute and all it's possible",
-                            "values, each demonstrated with the same image to show a contrast as the effects can be",
+                            "This page highlights on just the <var>data-image-fit</var> attribute and all it's possible ",
+                            "values, each demonstrated with the same image to show a contrast as the effects can be ",
                             "subtle."
                         ]
                     }
@@ -83,8 +83,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set nothing (as this is the default fitting), or set either: the",
-                            "<var>data-image-fit</var> attribute to <q>cover</q>, or include the word <q>cover</q>",
+                            "Set nothing (as this is the default fitting), or set either: the ",
+                            "<var>data-image-fit</var> attribute to <q>cover</q>, or include the word <q>cover</q> ",
                             "in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -117,7 +117,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-fit</var> attribute to <q>fill</q>, or include the word",
+                            "Set either: the <var>data-image-fit</var> attribute to <q>fill</q>, or include the word ",
                             "<q>fill</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -150,7 +150,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-fit</var> attribute to <q>contain</q>, or include the",
+                            "Set either: the <var>data-image-fit</var> attribute to <q>contain</q>, or include the ",
                             "word <q>contain</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -183,7 +183,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-fit</var> attribute to <q>none</q>, or include the word",
+                            "Set either: the <var>data-image-fit</var> attribute to <q>none</q>, or include the word ",
                             "<q>none</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -216,7 +216,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-fit</var> attribute to <q>scale-down</q>, or include the",
+                            "Set either: the <var>data-image-fit</var> attribute to <q>scale-down</q>, or include the ",
                             "word <q>scale-down</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }

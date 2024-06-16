@@ -39,7 +39,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Icons are like image blocks with the exception that instead of literal picture data being",
+                            "Icons are like image blocks with the exception that instead of literal picture data being ",
                             "presented, these are custom bits of pure-CSS or font-awesome icons."
                         ]
                     },
@@ -108,13 +108,12 @@
                     {
                         "type": "p",
                         "text": [
-                            "Custom icons can be animated or not depending on what the icon artist decided. The above",
+                            "Custom icons can be animated or not depending on what the icon artist decided. The above ",
                             "is a simple scrolling mouse indicator icon."
                         ]
                     }
                 ]
             }
         }
-
 
 ]

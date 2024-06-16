@@ -42,30 +42,30 @@
                     {
                         "type": "p",
                         "text": [
-                            "The Image enjin block has a seemingly simple task: display the image that the editor has",
+                            "The Image enjin block has a seemingly simple task: display the image that the editor has ",
                             "chosen for the end-users to appreciate and maybe even learn something new from."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "There's a lot of complexity behind this task ranging from cross-browser supports to the",
+                            "There's a lot of complexity behind this task ranging from cross-browser supports to the ",
                             "wildly large array of screen sizes used by modern users."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "The image block provides a number of features beyond the simple display this image",
+                            "The image block provides a number of features beyond the simple display this image ",
                             "requirement."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "The image block is backed primarily by the <code>&lt;picture&gt;</code> HTML tag (rather",
-                            "than just the normal <code>&lt;img&gt;</code> tag) which delivers a clean way for editors",
-                            "to specify which version of their image needs to be displayed at whatever their",
+                            "The image block is backed primarily by the <code>&lt;picture&gt;</code> HTML tag (rather ",
+                            "than just the normal <code>&lt;img&gt;</code> tag) which delivers a clean way for editors ",
+                            "to specify which version of their image needs to be displayed at whatever their ",
                             "media-query needs are."
                         ]
                     }
@@ -104,8 +104,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Image blocks have just the picture as their primary content, however there is still the",
-                            "header and footer aspects which can be used to provide context around the image being",
+                            "Image blocks have just the picture as their primary content, however there is still the ",
+                            "header and footer aspects which can be used to provide context around the image being ",
                             "presented."
                         ]
                     },
@@ -118,7 +118,7 @@
                     {
                         "type": "ul",
                         "list": [
-                            "Greater than 1024 pixels wide: a painting of a bonsai tree",
+                            "Greater than 1024 pixels wide: a painting of a bonsai tree ",
                             "Less than 1024 pixels wide: a garage door with a samurai theme"
                         ]
                     }
@@ -175,7 +175,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "Image blocks can have their images be fitted within their viewport: <q>contain</q>,",
+                            "Image blocks can have their images be fitted within their viewport: <q>contain</q>, ",
                             "<q>cover</q>, <q>fill</q>, <q>none</q> and <q>scale-down</q>."
                         ]
                     },
@@ -207,8 +207,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Image blocks can be configured for one of the following positions: <q>center</q>,",
-                            "<q>top</q>, <q>top-left</q>, <q>left</q>, <q>bottom-left</q>, <q>bottom</q>,",
+                            "Image blocks can be configured for one of the following positions: <q>center</q>, ",
+                            "<q>top</q>, <q>top-left</q>, <q>left</q>, <q>bottom-left</q>, <q>bottom</q>, ",
                             "<q>bottom-right</q>, <q>right</q> and <q>top-right</q>."
                         ]
                     },
@@ -240,8 +240,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Image blocks can be configured for a range of viewport sizes (in the height dimension):",
-                            "<q>sliver</q>, <q>thin</q>, <q>banner</q>, <q>normal</q>, <q>tall</q>, <q>huge</q> and",
+                            "Image blocks can be configured for a range of viewport sizes (in the height dimension): ",
+                            "<q>sliver</q>, <q>thin</q>, <q>banner</q>, <q>normal</q>, <q>tall</q>, <q>huge</q> and ",
                             "<q>actual</q>."
                         ]
                     },

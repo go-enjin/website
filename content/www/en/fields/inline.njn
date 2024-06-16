@@ -38,40 +38,40 @@
                 {
                     "type": "p",
                     "text": [
-                        "Inline fields are the most basic types of fields available. They are composed of HTML tags",
+                        "Inline fields are the most basic types of fields available. They are composed of HTML tags ",
                         "of course and what makes them <q>inline</q> is the content that is allowed within these tags."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "The HTML standards allow for things like anchor tags to contain divs for example. Within",
-                        "Go-Enjin however, this is not allowed from a content-editor standpoint (with exceptions for",
+                        "The HTML standards allow for things like anchor tags to contain divs for example. Within ",
+                        "Go-Enjin however, this is not allowed from a content-editor standpoint (with exceptions for ",
                         "specific situations like custom-content blocks)."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "Go-Enjin allows for multiple types of page content. For example, a page can be composed of",
-                         "markdown, org-mode or raw HTML content. These however have nothing to do with Enjin Blocks",
-                         "or Enjin Fields in any way. They're simply features available to developers using Go-Enjin",
+                        "Go-Enjin allows for multiple types of page content. For example, a page can be composed of ",
+                         "markdown, org-mode or raw HTML content. These however have nothing to do with Enjin Blocks ",
+                         "or Enjin Fields in any way. They're simply features available to developers using Go-Enjin ",
                          "and that don't want to use the Semantic Enjin systems."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "This site is dedicated to just the Semantic Enjin systems and theming specifically. So, in",
-                        "these cases, the content of any given page is actually a JSON structure that supplies the",
+                        "This site is dedicated to just the Semantic Enjin systems and theming specifically. So, in ",
+                        "these cases, the content of any given page is actually a JSON structure that supplies the ",
                         "literal field content for a listing of one or more Enjin Blocks."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "This page demonstrates the basic user-visible fields that Go-Enjin content editors are able",
-                        "to work with when supplying content to the individual Enjin Blocks added to the page. The",
+                        "This page demonstrates the basic user-visible fields that Go-Enjin content editors are able ",
+                        "to work with when supplying content to the individual Enjin Blocks added to the page. The ",
                         "content block you're reading from right now is composed of paragraph fields for example."
                     ]
                 }

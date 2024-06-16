@@ -38,7 +38,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Container fields are just like the inline-fields with the exception that they are more like",
+                        "Container fields are just like the inline-fields with the exception that they are more like ",
                         "wrappers around content rather than finite content providers themselves."
                     ]
                 }
@@ -96,10 +96,10 @@
                                                                 "All paragraphs within a blockquote have quotes added."
                                                             ]
                                                         },
-                                                        "This text should not be quoted, yet still within the",
+                                                        "This text should not be quoted, yet still within the ",
                                                         "block-quoted content. With a caption given, a ",
-                                                        "<var>figcaption</var> immediately follows the blockquote",
-                                                        "with additional styles applied to visually compose the quote",
+                                                        "<var>figcaption</var> immediately follows the blockquote ",
+                                                        "with additional styles applied to visually compose the quote ",
                                                         "and the caption together."
                                                     ]
                                                 }
@@ -130,10 +130,10 @@
                                                 {
                                                     "type": "p",
                                                     "text": [
-                                                        "This paragraph contains a code fragment:",
-                                                        "<code>Example()</code>, which is inline with this text. The",
-                                                        "following is also a code fragment and because it is not",
-                                                        "within a paragraph, it will preserve the spacing as if it,",
+                                                        "This paragraph contains a code fragment: ",
+                                                        "<code>Example()</code>, which is inline with this text. The ",
+                                                        "following is also a code fragment and because it is not ",
+                                                        "within a paragraph, it will preserve the spacing as if it, ",
                                                         "were wrapped in a <var>pre</var> tag."
                                                     ]
                                                 },
@@ -153,13 +153,13 @@
                                                 {
                                                     "type": "p",
                                                     "text": [
-                                                        "The following is a <q>decorated</q> code field. Code fields",
-                                                        "typically have no fields in their content, just plain text.",
-                                                        "For these decorated code fields, Go-Enjin automatically",
-                                                        "splits the text on new-lines and wraps the entire list of",
-                                                        "lines of code as an ordered-list with each line it's own",
-                                                        "list-item. This is done to provide more interactivity",
-                                                        "such as highlight the hovered-over line and of course have",
+                                                        "The following is a <q>decorated</q> code field. Code fields ",
+                                                        "typically have no fields in their content, just plain text. ",
+                                                        "For these decorated code fields, Go-Enjin automatically ",
+                                                        "splits the text on new-lines and wraps the entire list of ",
+                                                        "lines of code as an ordered-list with each line it's own ",
+                                                        "list-item. This is done to provide more interactivity ",
+                                                        "such as highlight the hovered-over line and of course have ",
                                                         "the line numbers displayed beside."
                                                     ]
                                                 },
@@ -168,11 +168,11 @@
                                                     "type": "code",
                                                     "decorated": "true",
                                                     "code": [
-                                                        "// DecoratedExample is another Go function",
-                                                        "func DecoratedExample() {",
-                                                        "  // this demonstrates a multi-line code field",
-                                                        "  // which Go-Enjin prepared with each line wrapped in it's own list-item",
-                                                        "  // which allows Semantic Enjin to style with line numbers",
+                                                        "// DecoratedExample is another Go function ",
+                                                        "func DecoratedExample() { ",
+                                                        "  // this demonstrates a multi-line code field ",
+                                                        "  // which Go-Enjin prepared with each line wrapped in it's own list-item ",
+                                                        "  // which allows Semantic Enjin to style with line numbers ",
                                                         "}"
                                                     ]
                                                 }
@@ -215,8 +215,8 @@
                                                         {
                                                             "type": "dd",
                                                             "text": [
-                                                                "<q>dl</q> is the description list element which",
-                                                                "contains one or more description terms (dt) with",
+                                                                "<q>dl</q> is the description list element which ",
+                                                                "contains one or more description terms (dt) with ",
                                                                 "their corresponding description details (dd)."
                                                             ]
                                                         },
@@ -232,7 +232,7 @@
                                                         {
                                                             "type": "dd",
                                                             "text": [
-                                                                "<q>dt</q> is one description term described within",
+                                                                "<q>dt</q> is one description term described within ",
                                                                 "the description list."
                                                             ]
                                                         },
@@ -248,7 +248,7 @@
                                                         {
                                                             "type": "dd",
                                                             "text": [
-                                                                "<q>dt</q> is one description detail describing",
+                                                                "<q>dt</q> is one description detail describing ",
                                                                 "the preceding description term."
                                                             ]
                                                         }
@@ -342,9 +342,9 @@
                                                 {
                                                     "type": "p",
                                                     "text": [
-                                                        "This is paragraph content. It can only contain inline fields.",
-                                                        "The text within can be long and will line-wrap nicely. Lorem",
-                                                        "ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+                                                        "This is paragraph content. It can only contain inline fields. ",
+                                                        "The text within can be long and will line-wrap nicely. Lorem ",
+                                                        "ipsum dolor sit amet, consectetur adipiscing elit, sed do ",
                                                         "eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                                     ]
                                                 },

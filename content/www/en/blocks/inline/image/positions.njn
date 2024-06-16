@@ -46,15 +46,15 @@
                     {
                         "type": "p",
                         "text": [
-                            "All image blocks have the capacity to alter how the image itself is fit to it's",
+                            "All image blocks have the capacity to alter how the image itself is fit to it's ",
                             "constraining viewport and dimension (height or width)."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "This page highlights on just the <var>data-image-fit</var> attribute and all it's possible",
-                            "values, each demonstrated with the same image to show a contrast as the effects can be",
+                            "This page highlights on just the <var>data-image-fit</var> attribute and all it's possible ",
+                            "values, each demonstrated with the same image to show a contrast as the effects can be ",
                             "subtle."
                         ]
                     }
@@ -88,8 +88,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set nothing (as this is the default fitting), or set either: the",
-                            "<var>data-image-position</var> attribute to <q>center</q>, or include the word",
+                            "Set nothing (as this is the default fitting), or set either: the ",
+                            "<var>data-image-position</var> attribute to <q>center</q>, or include the word ",
                             "<q>center</q> in the shorthand <var>data-image</var> space separated attribute."
                         ]
                     }
@@ -123,8 +123,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>top</q>, or",
-                            "include the word <q>top</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>top</q>, or ",
+                            "include the word <q>top</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -158,8 +158,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>top-left</q>, or",
-                            "include the word <q>top-left</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>top-left</q>, or ",
+                            "include the word <q>top-left</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -193,8 +193,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>left</q>, or",
-                            "include the word <q>left</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>left</q>, or ",
+                            "include the word <q>left</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -228,8 +228,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>bottom-left</q>, or",
-                            "include the word <q>bottom-left</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>bottom-left</q>, or ",
+                            "include the word <q>bottom-left</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -263,8 +263,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>bottom</q>, or",
-                            "include the word <q>bottom</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>bottom</q>, or ",
+                            "include the word <q>bottom</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -298,8 +298,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>bottom-right</q>, or",
-                            "include the word <q>bottom-right</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>bottom-right</q>, or ",
+                            "include the word <q>bottom-right</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -333,8 +333,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>right</q>, or",
-                            "include the word <q>right</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>right</q>, or ",
+                            "include the word <q>right</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }
@@ -368,8 +368,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "Set either: the <var>data-image-position</var> attribute to <q>top-right</q>, or",
-                            "include the word <q>top-right</q> in the shorthand <var>data-image</var> space",
+                            "Set either: the <var>data-image-position</var> attribute to <q>top-right</q>, or ",
+                            "include the word <q>top-right</q> in the shorthand <var>data-image</var> space ",
                             "separated attribute."
                         ]
                     }

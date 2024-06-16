@@ -41,7 +41,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Enjin blocks are composed of Enjin Fields. There are several classifications of Enjin Fields,",
+                        "Enjin blocks are composed of Enjin Fields. There are several classifications of Enjin Fields, ",
                         "inline fields are things like span, italics or emphasis tags. Container fields are things ",
                         "like paragraph and code tags."
                     ]
@@ -49,7 +49,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "This page simply provides a glossary of terms and links to the different classifications of",
+                        "This page simply provides a glossary of terms and links to the different classifications of ",
                         "Enjin Fields."
                     ]
                 }
@@ -75,14 +75,14 @@
                 {
                     "type": "p",
                     "text": [
-                        "Inline fields are the most basic type of content representation. Essentially these are HTML",
+                        "Inline fields are the most basic type of content representation. Essentially these are HTML ",
                         "tags that should only contain plain text and/or other inline fields."
                     ]
                 },
                 {
                     "type": "p",
                     "text": [
-                        "<u>For example, we can have a whole sentence underlined with a few <i>words</i> also in <i>italics</i></u>.",
+                        "<u>For example, we can have a whole sentence underlined with a few <i>words</i> also in <i>italics</i></u>. ",
                         "Yet these are not considered to be Enjin Container Fields."
                     ]
                 }
@@ -108,8 +108,8 @@
                 {
                     "type": "p",
                     "text": [
-                        "Container fields are like inline-fields except that they're allowed to have more variable",
-                        "types of content within their HTML tags and typically aren't sources of content in-and-of",
+                        "Container fields are like inline-fields except that they're allowed to have more variable ",
+                        "types of content within their HTML tags and typically aren't sources of content in-and-of ",
                         "themselves. A good example are table fields while a murky example is the paragraph field."
                     ]
                 }
@@ -135,7 +135,7 @@
                 {
                     "type": "p",
                     "text": [
-                        "Form fields are not normally presented as end-user visible content. However, it's useful to",
+                        "Form fields are not normally presented as end-user visible content. However, it's useful to ",
                         "see what these things look like within the Semantic Enjin Theme."
                     ]
                 }
@@ -178,7 +178,7 @@
                                     "type": "p",
                                     "text": [
                                         "Space separated key/value pairs in the format of ",
-                                        "<strong>key='value'</strong>. For example, a decorated class link to the",
+                                        "<strong>key='value'</strong>. For example, a decorated class link to the ",
                                         "landing page:"
                                     ]
                                 },
@@ -259,8 +259,8 @@
                         {
                             "type": "dd",
                             "text": [
-                                "Content that is Go-Enjin has somehow modified, such as with the decorated code field",
-                                "which has what would normally be multiple lines of plain text pre-processed into an",
+                                "Content that is Go-Enjin has somehow modified, such as with the decorated code field ",
+                                "which has what would normally be multiple lines of plain text pre-processed into an ",
                                 "ordered-list with each line of code in its own list-item."
                             ]
                         }

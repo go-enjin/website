@@ -42,16 +42,16 @@
                     {
                         "type": "p",
                         "text": [
-                            "Cards are blocks of simple content that includes",
-                            "an image background and the entire card can be a",
+                            "Cards are blocks of simple content that includes ",
+                            "an image background and the entire card can be a ",
                             "link."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "The primary purpose of card blocks is that they",
-                            "are the only type of inline-block that is allowed",
+                            "The primary purpose of card blocks is that they ",
+                            "are the only type of inline-block that is allowed ",
                             "within ",
                             { "type": "a", "href": "blocks/container/carousel", "text": ["Carousel"] },
                             " container blocks."
@@ -90,10 +90,10 @@
                     {
                         "type": "p",
                         "text": [
-                            "Cards are intended to provide brief amounts of",
-                            "information. This card also has a link, which",
-                            "does nothing other than demonstrate the visual",
-                            "cue that there's something different about this",
+                            "Cards are intended to provide brief amounts of ",
+                            "information. This card also has a link, which ",
+                            "does nothing other than demonstrate the visual ",
+                            "cue that there's something different about this ",
                             "particular card."
                         ]
                     }
@@ -131,9 +131,9 @@
                     {
                         "type": "p",
                         "text": [
-                            "This card also has a link, which is set to open",
-                            "the linked content in a new tab rather than the",
-                            "default same-tab. Clicking on this card will open",
+                            "This card also has a link, which is set to open ",
+                            "the linked content in a new tab rather than the ",
+                            "default same-tab. Clicking on this card will open ",
                             "this same page in a new tab."
                         ]
                     }
@@ -223,8 +223,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "This one has no link, and features the selected",
-                            "image as a thumbnail top-left in the copytext",
+                            "This one has no link, and features the selected ",
+                            "image as a thumbnail top-left in the copytext ",
                             "area."
                         ]
                     }

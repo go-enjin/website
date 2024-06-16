@@ -47,7 +47,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "The block above this content block is a table of contents block. It contains an",
+                            "The block above this content block is a table of contents block. It contains an ",
                             "hierarchical, ordered, listing of all headings and sub-headings on this page."
                         ]
                     }
@@ -84,16 +84,16 @@
                     {
                         "type": "p",
                         "text": [
-                            "Heading levels dictate the ordered structure of table of contents blocks on the page.",
-                            "Because this block follows a second header block, the Another Heading heading, the actual",
-                            "heading level for this content block, and all non-header blocks to follow, are",
+                            "Heading levels dictate the ordered structure of table of contents blocks on the page. ",
+                            "Because this block follows a second header block, the Another Heading heading, the actual ",
+                            "heading level for this content block, and all non-header blocks to follow, are ",
                             "incremented one level."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "This content block is displayed as a child, or sub-heading, of the Another Heading",
+                            "This content block is displayed as a child, or sub-heading, of the Another Heading ",
                             "table of contents item."
                         ]
                     }
@@ -126,8 +126,8 @@
                     {
                         "type": "p",
                         "text": [
-                            "This table of contents does not have a header, though it does have this footer you're",
-                            "reading right now. It does not include the page title, nor a reference to the first table",
+                            "This table of contents does not have a header, though it does have this footer you're ",
+                            "reading right now. It does not include the page title, nor a reference to the first table ",
                             "of contents on the page and the item counters are not nested."
                         ]
                     }
@@ -151,26 +151,26 @@
                     {
                         "type": "p",
                         "text": [
-                            "This block follows yet another header block, however there is one important difference.",
-                            "The content editor specified that the last header block actually decrements the page",
+                            "This block follows yet another header block, however there is one important difference. ",
+                            "The content editor specified that the last header block actually decrements the page ",
                             "heading levels back one (h2 from h3)."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "As far as the Semantic Enjin stylesheets are concerned, there's nothing to do with this",
-                            "information as all the <code>&lt;h*&gt;</code> tags are already present in the page",
-                            "document (which are <q>hard-coded</q> to be level-specific). However there is a hint",
-                            "provided with the data-heading-reset block attribute being present and set to",
+                            "As far as the Semantic Enjin stylesheets are concerned, there's nothing to do with this ",
+                            "information as all the <code>&lt;h*&gt;</code> tags are already present in the page ",
+                            "document (which are <q>hard-coded</q> to be level-specific). However there is a hint ",
+                            "provided with the data-heading-reset block attribute being present and set to ",
                             "-1."
                         ]
                     },
                     {
                         "type": "p",
                         "text": [
-                            "The effect of this resetting of the header levels is that this content block has an",
-                            "<code>&lt;h2&gt;</code> tag for its heading instead of an <code>&lt;h3&gt;</code> like",
+                            "The effect of this resetting of the header levels is that this content block has an ",
+                            "<code>&lt;h2&gt;</code> tag for its heading instead of an <code>&lt;h3&gt;</code> like ",
                             "the previous content block."
                         ]
                     }

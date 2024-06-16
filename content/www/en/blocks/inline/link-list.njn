@@ -39,11 +39,11 @@
                     {
                         "type": "p",
                         "text": [
-                            "The Link-List block is really just that, a list of",
-                            "links. As with all blocks, theres a header and",
-                            "footer that can be configured along with the actual",
-                            "list of URLs, their labels and other metadata to",
-                            "help with the formal presentation of linked",
+                            "The Link-List block is really just that, a list of ",
+                            "links. As with all blocks, theres a header and ",
+                            "footer that can be configured along with the actual ",
+                            "list of URLs, their labels and other metadata to ",
+                            "help with the formal presentation of linked ",
                             "content."
                         ]
                     }
@@ -87,7 +87,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "This link-list block includes a footer, which you're",
+                            "This link-list block includes a footer, which you're ",
                             "reading right now."
                         ]
                     }
@@ -133,7 +133,7 @@
                     {
                         "type": "p",
                         "text": [
-                            "This link-list block includes a footer, which you're",
+                            "This link-list block includes a footer, which you're ",
                             "reading right now."
                         ]
                     }
