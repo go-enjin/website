@@ -17,6 +17,7 @@
 -include .env
 
 BE_LOCAL_PATH ?= ../be
+CL_LOCAL_PATH ?= ../../go-corelibs
 
 APP_NAME    ?= be-website
 APP_SUMMARY ?= Go-Enjin Website
@@ -30,6 +31,7 @@ COMMON_TAGS += driver_fts_bleve
 COMMON_TAGS += user_auth_basic
 COMMON_TAGS += user_base_htenv
 COMMON_TAGS += papertrail
+COMMON_TAGS += srv_eql
 COMMON_TAGS += page_pql
 COMMON_TAGS += page_robots
 COMMON_TAGS += page_sitemap
