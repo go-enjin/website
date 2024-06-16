@@ -59,8 +59,8 @@ func init() {
 		Make()
 	wwwContent = content.New().
 		MountEmbedPath("/", "content/www", contentFsWWW).
-		AddToIndexProviders("pages-pql-www").
-		AddToSearchProviders("bleve-fts-www").
+		AddToIndexProviders(gSrvEqlFeatureWWW).
+		AddToSearchProviders(gBleveFtsFeatureWWW).
 		Make()
 	wwwLocales = locale.New().
 		MountEmbedPath("/", "locales", localesFs).
@@ -74,8 +74,8 @@ func init() {
 		Make()
 	enjaContent = content.New().
 		MountEmbedPath("/", "content/enja", contentFsENJA).
-		AddToIndexProviders("pages-pql-enja").
-		AddToSearchProviders("bleve-fts-enja").
+		AddToIndexProviders(gSrvEqlFeatureENJA).
+		AddToSearchProviders(gBleveFtsFeatureWWW).
 		Make()
 	enjaLocales = locale.New().
 		MountEmbedPath("/", "locales", localesFs).

@@ -22,6 +22,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
+	"github.com/go-enjin/be/features/pages/permalink"
+	"github.com/go-enjin/be/features/srv/eql"
 	defaultTheme "github.com/go-enjin/default-enjin-theme"
 
 	"github.com/go-corelibs/x-text/language"
@@ -32,7 +34,6 @@ import (
 	"github.com/go-enjin/be/features/fs/content"
 	"github.com/go-enjin/be/features/fs/themes"
 	"github.com/go-enjin/be/features/pages/metrics"
-	"github.com/go-enjin/be/features/pages/pql"
 	"github.com/go-enjin/be/features/pages/robots"
 	"github.com/go-enjin/be/features/pages/search"
 	"github.com/go-enjin/be/features/pages/sitemap"
@@ -158,11 +159,8 @@ func main() {
 		SiteDefaultLanguage(language.English).
 		SiteLanguageMode(lang.NewPathMode().Make()).
 		AddFeature(bleve.NewTagged(gBleveFtsFeatureWWW).Make()).
-		AddFeature(gocache.NewTagged(gPagesPqlKvsFeatureWWW).
-			AddMemoryCache(gPagesPqlKvsCacheWWW).
-			Make()).
-		AddFeature(pql.NewTagged(gPagesPqlFeatureWWW).
-			SetKeyValueCache(gPagesPqlKvsFeatureWWW, gPagesPqlKvsCacheWWW).
+		AddFeature(eql.NewTagged(gSrvEqlFeatureWWW).
+			Including(permalink.Tag).
 			Make())
 	features(www, nil).
 		AddFeature(siteThemes).
@@ -181,11 +179,8 @@ func main() {
 			Make(),
 		).
 		AddFeature(bleve.NewTagged(gBleveFtsFeatureENJA).Make()).
-		AddFeature(gocache.NewTagged(gPagesPqlKvsFeatureENJA).
-			AddMemoryCache(gPagesPqlKvsCacheENJA).
-			Make()).
-		AddFeature(pql.NewTagged(gPagesPqlFeatureENJA).
-			SetKeyValueCache(gPagesPqlKvsFeatureENJA, gPagesPqlKvsCacheENJA).
+		AddFeature(eql.NewTagged(gSrvEqlFeatureENJA).
+			Including(permalink.Tag).
 			Make()).
 		AddFlags(
 			&cli.StringFlag{
@@ -255,9 +250,6 @@ const (
 	gNoncesKvsFeatureENJA = "nonces-kvs-feature-enja"
 	gNoncesKvsCacheENJA   = "nonces-kvs-cache-enja"
 
-	gPagesPqlKvsFeatureWWW = "pages-pql-kvs-feature-www"
-	gPagesPqlKvsCacheWWW   = "pages-pql-kvs-cache-www"
-
 	gSiteKvsFeature = "site-kvs-feature"
 	gSiteKvsCache   = "site-kvs-cache"
 
@@ -271,13 +263,11 @@ const (
 	gAdminAuthEmailTokenKvsCache  = "admin-auth-email-token-kvs-cache"
 	gAdminAuthEmailBackupKvsCache = "admin-auth-email-backup-kvs-cache"
 
-	gPagesPqlKvsFeatureENJA = "pages-pql-kvs-feature-enja"
-	gPagesPqlKvsCacheENJA   = "pages-pql-kvs-cache-enja"
-	gPagesPqlFeatureWWW     = "pages-pql-www"
-	gPagesPqlFeatureENJA    = "pages-pql-enja"
-
 	gBleveFtsFeatureWWW  = "bleve-fts-www"
 	gBleveFtsFeatureENJA = "bleve-fts-enja"
+
+	gSrvEqlFeatureWWW  = "srv-eql-www"  // same for both www and enja
+	gSrvEqlFeatureENJA = "srv-eql-enja" // same for both www and enja
 
 	main500tmpl = `500 - {{ _ "Internal Server Error" }}`
 	main404tmpl = `404 - {{ _ "Not Found" }}`

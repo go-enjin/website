@@ -50,6 +50,7 @@ import (
 	"github.com/go-enjin/be/features/site/fs-editor/pages"
 	themesEditor "github.com/go-enjin/be/features/site/fs-editor/themes"
 	"github.com/go-enjin/be/features/site/fs-editor/unsafe"
+	"github.com/go-enjin/be/features/site/menulinks"
 	"github.com/go-enjin/be/features/site/profile"
 	"github.com/go-enjin/be/features/site/settings"
 	user_manager "github.com/go-enjin/be/features/site/user-manager"
@@ -70,7 +71,7 @@ func init() {
 		Make()
 	wwwContent = content.NewTagged(gSiteContentTag).
 		MountLocalPath("/", "content/www").
-		AddToIndexProviders(gPagesPqlFeatureWWW).
+		AddToIndexProviders(gSrvEqlFeatureWWW).
 		AddToSearchProviders(gBleveFtsFeatureWWW).
 		Make()
 	wwwLocales = locale.NewTagged(gSiteLocalesTag).
@@ -85,7 +86,7 @@ func init() {
 		Make()
 	enjaContent = content.NewTagged(gSiteContentTag).
 		MountLocalPath("/", "content/enja").
-		AddToIndexProviders(gPagesPqlFeatureENJA).
+		AddToIndexProviders(gSrvEqlFeatureENJA).
 		AddToSearchProviders(gBleveFtsFeatureENJA).
 		Make()
 	enjaLocales = locale.NewTagged(gSiteLocalesTag).
@@ -110,6 +111,7 @@ func init() {
 		feature.NewAction("www-users", "view-own", "user"),
 		feature.NewAction("www-users", "update-own", "user"),
 		feature.NewAction("www-users", "delete-own", "user"),
+		feature.NewAction(menulinks.Tag.Kebab(), "access", "feature"),
 	}
 	for _, tag := range []feature.Tag{
 		editor.Tag, enjinInfo.Tag, locales.Tag, menus.Tag, pages.Tag,
@@ -215,6 +217,9 @@ func init() {
 					SetSiteFeatureKey("dashboard").
 					Make()).
 			IncludeSiteFeatures(
+				menulinks.New().
+					AddItemFuncs(menulinks.LandingPageMenuItemFn).
+					Make(),
 				editor.New().
 					Include(
 						enjinInfo.New().Make(),
