@@ -5,8 +5,8 @@
   "layout": "defaults",
   "permalink": null,
   "query": {
-    "-pages": "((.Language == \"en\") AND (.Url == m!^/pages/!)) ORDER BY .Title DSC",
-    "blocks": "((.Language == \"en\") AND (.Url == m!^/blocks/!)) ORDER BY .Title DSC"
+    "pages":  "QUERY WITHIN (.Language == \"en\") AND (.Url ^= \"/pages/\") ORDER BY .Url DSC",
+    "blocks": "QUERY WITHIN (.Language == \"en\") AND (.Url ^= \"/blocks/\") ORDER BY .Url DSC"
   },
   "sitemap-change-freq": "never",
   "sitemap-ignored": false,

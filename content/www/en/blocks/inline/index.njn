@@ -61,7 +61,7 @@
             "index-views": "link-list=Link List;profile=Profile",
             "index-num-per-page": 5,
             "index-pagination": "more",
-            "index-query": "((.Language == \"en\") AND ((.Url == m!^/blocks!) OR (.Archetype == \"blog\"))) ORDER BY .Title ASC",
+            "index-query": "QUERY WITHIN (.Language == \"en\") AND ((.Url ^= \"/blocks/\") OR (.Archetype == \"blog\")) ORDER BY .Url ASC",
             "search-ranked": "true",
             "search-enabled": "true",
             "index-filters": [
@@ -117,7 +117,7 @@
             "index-max-results": 100,
             "index-num-per-page": 3,
             "index-pagination": "page",
-            "index-query": "(.Type == \"page\")",
+            "index-query": "QUERY WITHIN .Type == \"page\"",
             "search-enabled": "true",
             "index-filters": [
                 [
