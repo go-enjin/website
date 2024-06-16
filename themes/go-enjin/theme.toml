@@ -32,18 +32,18 @@ homepage = "https://go-enjin.org/"
 [semantic.site]
     menu.mobile.style = "side"
     menu.desktop.style = "menu"
-    page.font-stylesheets = [
-        "https://fonts.googleapis.com/css2?display=swap&family=Source%20Sans%20Pro&family=Source%20Serif%20Pro"
-    ]
+    #page.font-stylesheets = [
+    #    "https://fonts.googleapis.com/css2?display=swap&family=Source%20Sans%20Pro&family=Source%20Serif%20Pro"
+    #]
     page.stylesheets = [
         "/css/go-enjin.css"
     ]
 
 [semantic.style]
-    page.heading.font-family = "'Source Sans Pro', sans-serif"
-    page.content.font-family = "'Source Serif Pro', serif"
-    page.monospace.font-family = "monospace"
-    page.dropcap.font-family = "'Source Sans Pro', sans-serif"
+    #page.heading.font-family = "'Source Sans Pro', sans-serif"
+    #page.content.font-family = "'Source Serif Pro', serif"
+    #page.monospace.font-family = "monospace"
+    #page.dropcap.font-family = "'Source Sans Pro', sans-serif"
 #    color.working = "#ff901e"
 
 # --theme--material--*
