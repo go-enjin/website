@@ -36,7 +36,6 @@
                             "type": "footnote",
                             "text": "Go-Enjinに関するライセンス",
                             "note": [
-                                "(ja) see the ",
                                 {"type": "a", "href": "/license", "text": "Go-Enjin に関するライセンス"},
                                 "詳細のページ"
                             ]
