@@ -1,7 +1,12 @@
 {{{
-"type":"page",
-"title":"Welcome",
-"description":"The official Go-Enjin website"
+
+  "description": "The official Go-Enjin website",
+  "layout": "defaults",
+  "sitemap-change-freq": "never",
+  "sitemap-priority": 0.5,
+  "title": "Welcome",
+  "type": "page"
+
 }}}
 [
 
