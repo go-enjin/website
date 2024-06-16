@@ -106,6 +106,25 @@
                         "or just the random bits (long or short form), the link will always redirect to the ",
                         "current page's actual permalink URL path."
                     ]
+                },
+                {
+	                "type": "p",
+	                "text": [
+		                "There is another form of link, the redirect. This blog page has a URL path set with the ",
+		                ".Redirect front-matter context key. Clicking the following link will redirect the visitor ",
+		                "back to this page (without any permalink). While this is not a permalink-specific feature, ",
+		                "this page is a good place to demonstrate this core enjin feature."
+	                ]
+                },
+                {
+                    "type": "ul",
+                    "list": [
+		                {
+			                "type": "a",
+			                "href": "/this-is-a-page-redirect-to-the-blog-example",
+			                "text": "/this-is-a-page-redirect-to-the-blog-example"
+			            }
+                    ]
                 }
             ]
         }
