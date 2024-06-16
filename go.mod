@@ -1,6 +1,6 @@
 module github.com/go-enjin/website
 
-go 1.21.6
+go 1.22.4
 
 require (
 	github.com/go-corelibs/env v1.1.1
