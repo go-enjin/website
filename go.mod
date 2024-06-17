@@ -6,9 +6,9 @@ require (
 	github.com/go-corelibs/env v1.1.2
 	github.com/go-corelibs/x-text v0.14.2
 	github.com/go-enjin/be v0.7.1
-	github.com/go-enjin/default-enjin-theme v0.7.0
+	github.com/go-enjin/default-enjin-theme v0.7.1
 	github.com/go-enjin/semantic-enjin-theme v0.7.1
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20240616190314-176ed07d89ad
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20240617181453-5ec28edb2a21
 	github.com/urfave/cli/v2 v2.27.2
 )
 
