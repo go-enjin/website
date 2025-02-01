@@ -7,8 +7,8 @@ require (
 	github.com/go-corelibs/x-text v0.14.2
 	github.com/go-enjin/be v0.7.8
 	github.com/go-enjin/default-enjin-theme v0.7.8
-	github.com/go-enjin/semantic-enjin-theme v0.7.8
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20250201194447-11e411ec63c4
+	github.com/go-enjin/semantic-enjin-theme v0.7.9
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20250201212340-a51de8f20d04
 	github.com/urfave/cli/v2 v2.27.5
 )
 
