@@ -220,8 +220,8 @@ github.com/go-enjin/default-enjin-theme v0.7.9 h1:IlXQSesFvTSsD6+cBmB9tbpqTZnzOJ
 github.com/go-enjin/default-enjin-theme v0.7.9/go.mod h1:6phbDi5mNFOZmaX2cu36m3t/Ar3euMU6nj7TtrJqQqc=
 github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a h1:Qr7FpRTxEBnNJtyYj6TyVPs12bn45xSLFkygcSby1g4=
 github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a/go.mod h1:hId0+St26leJQkTRaFYATZHMGja4wrv0hzf5SwKs3hA=
-github.com/go-enjin/semantic-enjin-theme v0.7.10 h1:Y/P78/mAZvnDOs9C9t2BQNFVmFIa1+2EUB7f3HGadtE=
-github.com/go-enjin/semantic-enjin-theme v0.7.10/go.mod h1:m7Jz+YhfnQiHJF1U2dYKxRp833syq8Ds4QyOdaUqvYk=
+github.com/go-enjin/semantic-enjin-theme v0.7.11 h1:cnVbnqDG7qOaB2E8hpLWq2Vxva4FhGqQtXYU8a4CaLg=
+github.com/go-enjin/semantic-enjin-theme v0.7.11/go.mod h1:m7Jz+YhfnQiHJF1U2dYKxRp833syq8Ds4QyOdaUqvYk=
 github.com/go-enjin/website-thisip-fyi v0.0.0-20250308090806-c798147e9fd1 h1:xK8Y+ex/CvopnV2spXeytFnTPOR+cP+Wy73J7FwPoVE=
 github.com/go-enjin/website-thisip-fyi v0.0.0-20250308090806-c798147e9fd1/go.mod h1:y8kKdhU2EdATctRErQRuktpfMXBEvJexVg8pPoeF0A8=
 github.com/go-sql-driver/mysql v1.7.0/go.mod h1:OXbVy3sEdcQ2Doequ6Z5BW6fXNQTmx+9S1MCJN5yJMI=
