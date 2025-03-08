@@ -1,14 +1,14 @@
 module github.com/go-enjin/website
 
-go 1.23.5
+go 1.24.1
 
 require (
 	github.com/go-corelibs/env v1.1.2
 	github.com/go-corelibs/x-text v0.14.2
-	github.com/go-enjin/be v0.7.8
-	github.com/go-enjin/default-enjin-theme v0.7.8
-	github.com/go-enjin/semantic-enjin-theme v0.7.9
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20250201212340-a51de8f20d04
+	github.com/go-enjin/be v0.7.9
+	github.com/go-enjin/default-enjin-theme v0.7.9
+	github.com/go-enjin/semantic-enjin-theme v0.7.10
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20250308090806-c798147e9fd1
 	github.com/urfave/cli/v2 v2.27.5
 )
 
@@ -72,7 +72,7 @@ require (
 	github.com/gdamore/encoding v1.0.1 // indirect
 	github.com/go-chi/chi/v5 v5.2.0 // indirect
 	github.com/go-chi/hostrouter v0.3.0 // indirect
-	github.com/go-corelibs/context v0.1.0 // indirect
+	github.com/go-corelibs/context v0.1.1 // indirect
 	github.com/go-corelibs/diff v1.1.1 // indirect
 	github.com/go-corelibs/enjinql v0.1.0 // indirect
 	github.com/go-corelibs/fmtstr v1.2.1 // indirect
@@ -80,7 +80,7 @@ require (
 	github.com/go-corelibs/go-sqlbuilder v1.1.0 // indirect
 	github.com/go-corelibs/htmlcss v1.0.1 // indirect
 	github.com/go-corelibs/lang v0.3.2 // indirect
-	github.com/go-corelibs/maps v1.2.0 // indirect
+	github.com/go-corelibs/maps v1.3.0 // indirect
 	github.com/go-corelibs/maths v1.2.1 // indirect
 	github.com/go-corelibs/mime v1.0.1 // indirect
 	github.com/go-corelibs/path v1.4.2 // indirect
