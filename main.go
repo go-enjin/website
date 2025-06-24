@@ -119,7 +119,7 @@ func setup(eb *be.EnjinBuilder) *be.EnjinBuilder {
 
 func features(eb feature.Builder, l feature.ServiceListener) feature.Builder {
 	return eb.
-		AddPreset(defaults.New().SetListener(l).Make()).
+		AddPreset(defaults.New().OmitLogs().SetListener(l).Make()).
 		AddFeature(gocache.NewTagged(gNoncesKvsFeatureWWW).
 			AddMemoryCache(gNoncesKvsCacheWWW).
 			Make()).
