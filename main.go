@@ -206,7 +206,7 @@ func main() {
 		AddFeature(enjaEditor)
 
 	enjin := be.New().
-		IncludeEnjin(www, enja, thisip_fyi.New().AddDomains(tifyiDomain)).
+		IncludeEnjin(www, enja, thisip_fyi.New(true).AddDomains(tifyiDomain)).
 		SiteTag("MAIN").
 		SiteName("main").
 		SiteDefaultLanguage(language.English).
