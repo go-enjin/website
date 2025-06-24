@@ -8,7 +8,7 @@ require (
 	github.com/go-enjin/be v0.7.12
 	github.com/go-enjin/default-enjin-theme v0.7.12
 	github.com/go-enjin/semantic-enjin-theme v0.7.14
-	github.com/go-enjin/website-thisip-fyi v0.0.0-20250624214328-d475d7dcc0f9
+	github.com/go-enjin/website-thisip-fyi v0.0.0-20250624220914-6d9ce6aa5795
 	github.com/urfave/cli/v2 v2.27.7
 )
 

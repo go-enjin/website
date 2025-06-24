@@ -226,8 +226,8 @@ github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a
 github.com/go-enjin/github-com-djherbis-times v0.0.0-20221101184323-aeef8854ee8a/go.mod h1:hId0+St26leJQkTRaFYATZHMGja4wrv0hzf5SwKs3hA=
 github.com/go-enjin/semantic-enjin-theme v0.7.14 h1:Cu92xPxOD/t31gWljQ7E5FZmf0+My+YXxbFFECajJQs=
 github.com/go-enjin/semantic-enjin-theme v0.7.14/go.mod h1:NoDlhozr37ycuhoPrZO2wMBbZvNB1UcFRTir8Q7ELMg=
-github.com/go-enjin/website-thisip-fyi v0.0.0-20250624214328-d475d7dcc0f9 h1:6oBfJ3ZXeB55PRCXA75DxCw8P1k+Zbn7OFHAfmsSsoM=
-github.com/go-enjin/website-thisip-fyi v0.0.0-20250624214328-d475d7dcc0f9/go.mod h1:hnYBBii1e6n7qf7QZRNtu2bF5DAlU5jskfVmBh5MHws=
+github.com/go-enjin/website-thisip-fyi v0.0.0-20250624220914-6d9ce6aa5795 h1:FVTL7I47JgIErACTM0SfJgQkK3b+HMk/SOQKPzMydU0=
+github.com/go-enjin/website-thisip-fyi v0.0.0-20250624220914-6d9ce6aa5795/go.mod h1:hnYBBii1e6n7qf7QZRNtu2bF5DAlU5jskfVmBh5MHws=
 github.com/go-sql-driver/mysql v1.8.1 h1:LedoTUt/eveggdHS9qUFC1EFSa8bU2+1pZjSRpvNJ1Y=
 github.com/go-sql-driver/mysql v1.8.1/go.mod h1:wEBSXgmK//2ZFJyE+qWnIsVGmvmEKlqwuVSjsCm7DZg=
 github.com/gofrs/uuid v4.4.0+incompatible h1:3qXRTX8/NbyulANqlc0lchS1gqAVxRgsuW1YrTJupqA=
